@@ -48,7 +48,6 @@
 				5D79D316F8E6F0061A9F53EE /* Pods-Cafeistic.debug.xcconfig */,
 				AFE2A4F6D2445A8B438413CF /* Pods-Cafeistic.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
