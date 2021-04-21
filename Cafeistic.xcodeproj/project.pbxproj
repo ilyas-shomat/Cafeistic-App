@@ -3,15 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		CD7B85AC59ABB498983A2B54 /* Pods_Cafeistic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7374E4838BCB145E057F8DF /* Pods_Cafeistic.framework */; };
+		FD4B1BBF262FFA64005E9BF9 /* TempTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4B1BBE262FFA64005E9BF9 /* TempTestViewController.swift */; };
+		FD4B1BD4262FFE5E005E9BF9 /* AppSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4B1BD3262FFE5E005E9BF9 /* AppSetup.swift */; };
 		FDEAD92C25C8269B0075F122 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEAD92B25C8269B0075F122 /* AppDelegate.swift */; };
 		FDEAD92E25C8269B0075F122 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEAD92D25C8269B0075F122 /* SceneDelegate.swift */; };
-		FDEAD93025C8269B0075F122 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEAD92F25C8269B0075F122 /* ViewController.swift */; };
-		FDEAD93325C8269B0075F122 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDEAD93125C8269B0075F122 /* Main.storyboard */; };
 		FDEAD93525C8269E0075F122 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDEAD93425C8269E0075F122 /* Assets.xcassets */; };
 		FDEAD93825C8269E0075F122 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDEAD93625C8269E0075F122 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -20,11 +20,11 @@
 		5D79D316F8E6F0061A9F53EE /* Pods-Cafeistic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cafeistic.debug.xcconfig"; path = "Target Support Files/Pods-Cafeistic/Pods-Cafeistic.debug.xcconfig"; sourceTree = "<group>"; };
 		AFE2A4F6D2445A8B438413CF /* Pods-Cafeistic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cafeistic.release.xcconfig"; path = "Target Support Files/Pods-Cafeistic/Pods-Cafeistic.release.xcconfig"; sourceTree = "<group>"; };
 		B7374E4838BCB145E057F8DF /* Pods_Cafeistic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cafeistic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD4B1BBE262FFA64005E9BF9 /* TempTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempTestViewController.swift; sourceTree = "<group>"; };
+		FD4B1BD3262FFE5E005E9BF9 /* AppSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSetup.swift; sourceTree = "<group>"; };
 		FDEAD92825C8269B0075F122 /* Cafeistic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cafeistic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDEAD92B25C8269B0075F122 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDEAD92D25C8269B0075F122 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FDEAD92F25C8269B0075F122 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FDEAD93225C8269B0075F122 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FDEAD93425C8269E0075F122 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDEAD93725C8269E0075F122 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDEAD93925C8269E0075F122 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,6 +59,47 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FD4B1BB8262FE861005E9BF9 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FDEAD92B25C8269B0075F122 /* AppDelegate.swift */,
+				FDEAD92D25C8269B0075F122 /* SceneDelegate.swift */,
+				FD4B1BD3262FFE5E005E9BF9 /* AppSetup.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FD4B1BBA262FE876005E9BF9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FD4B1BBB262FE88B005E9BF9 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				FDEAD93925C8269E0075F122 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		FD4B1BBC262FFA3B005E9BF9 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				FD4B1BBD262FFA46005E9BF9 /* TempTest */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		FD4B1BBD262FFA46005E9BF9 /* TempTest */ = {
+			isa = PBXGroup;
+			children = (
+				FD4B1BBE262FFA64005E9BF9 /* TempTestViewController.swift */,
+			);
+			path = TempTest;
+			sourceTree = "<group>";
+		};
 		FDEAD91F25C8269A0075F122 = {
 			isa = PBXGroup;
 			children = (
@@ -80,13 +121,12 @@
 		FDEAD92A25C8269B0075F122 /* Cafeistic */ = {
 			isa = PBXGroup;
 			children = (
-				FDEAD92B25C8269B0075F122 /* AppDelegate.swift */,
-				FDEAD92D25C8269B0075F122 /* SceneDelegate.swift */,
-				FDEAD92F25C8269B0075F122 /* ViewController.swift */,
-				FDEAD93125C8269B0075F122 /* Main.storyboard */,
+				FD4B1BBC262FFA3B005E9BF9 /* Scenes */,
+				FD4B1BBB262FE88B005E9BF9 /* SupportingFiles */,
+				FD4B1BBA262FE876005E9BF9 /* Common */,
+				FD4B1BB8262FE861005E9BF9 /* App */,
 				FDEAD93425C8269E0075F122 /* Assets.xcassets */,
 				FDEAD93625C8269E0075F122 /* LaunchScreen.storyboard */,
-				FDEAD93925C8269E0075F122 /* Info.plist */,
 			);
 			path = Cafeistic;
 			sourceTree = "<group>";
@@ -152,7 +192,6 @@
 			files = (
 				FDEAD93825C8269E0075F122 /* LaunchScreen.storyboard in Resources */,
 				FDEAD93525C8269E0075F122 /* Assets.xcassets in Resources */,
-				FDEAD93325C8269B0075F122 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,23 +244,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDEAD93025C8269B0075F122 /* ViewController.swift in Sources */,
 				FDEAD92C25C8269B0075F122 /* AppDelegate.swift in Sources */,
+				FD4B1BBF262FFA64005E9BF9 /* TempTestViewController.swift in Sources */,
 				FDEAD92E25C8269B0075F122 /* SceneDelegate.swift in Sources */,
+				FD4B1BD4262FFE5E005E9BF9 /* AppSetup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FDEAD93125C8269B0075F122 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FDEAD93225C8269B0075F122 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FDEAD93625C8269E0075F122 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -357,7 +389,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RH4ADBYDUN;
-				INFOPLIST_FILE = Cafeistic/Info.plist;
+				INFOPLIST_FILE = Cafeistic/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -377,7 +409,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RH4ADBYDUN;
-				INFOPLIST_FILE = Cafeistic/Info.plist;
+				INFOPLIST_FILE = Cafeistic/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
