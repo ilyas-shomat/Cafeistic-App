@@ -8,6 +8,7 @@ target 'Cafeistic' do
   pod 'SnapKit', '~> 5.0.0'
   pod 'KeychainAccess'
   pod 'Kingfisher', '~> 6.0'
+  pod 'IQKeyboardManagerSwift'
 
   # Pods for Cafeistic
 

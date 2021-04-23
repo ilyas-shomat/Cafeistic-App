@@ -7,13 +7,18 @@
 
 import Foundation
 import UIKit
+import IQKeyboardManagerSwift
 
 class AppSetup {
     
     public static let shared = AppSetup()
 
     func setupRootScene(window: UIWindow) {
-        window.rootViewController = TempTestViewController()
+        window.rootViewController = StartRouter.initiateScene()
         window.makeKeyAndVisible()
+    }
+    
+    func setupSerivces() {
+        IQKeyboardManager.shared.enable = true
     }
 }

@@ -15,6 +15,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
         AppSetup.shared.setupRootScene(window: window!)
+        AppSetup.shared.setupSerivces()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
