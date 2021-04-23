@@ -6,6 +6,9 @@ target 'Cafeistic' do
   use_frameworks!
   pod 'Moya', '~> 14.0'
   pod 'SnapKit', '~> 5.0.0'
+  pod 'KeychainAccess'
+  pod 'Kingfisher', '~> 6.0'
+
   # Pods for Cafeistic
 
 end
