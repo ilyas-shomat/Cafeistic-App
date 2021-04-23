@@ -14,8 +14,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
-        AppSetup.shared.setupRootScene(window: window!)
-        AppSetup.shared.setupSerivces()
+        setupRootScene()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -31,6 +30,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func sceneDidEnterBackground(_ scene: UIScene) {
+    }
+    
+    private func setupRootScene() {
+        guard let window = window else { return }
+        AppSetup.shared.setupRootScene(window: window)
+        AppSetup.shared.setupSerivces()
     }
 }
 

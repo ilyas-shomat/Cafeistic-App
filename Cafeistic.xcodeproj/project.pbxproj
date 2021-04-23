@@ -22,6 +22,7 @@
 		FDF281ED2632D32200B1829A /* PrintUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF281EC2632D32200B1829A /* PrintUtil.swift */; };
 		FDF281F42632D3AA00B1829A /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF281F32632D3AA00B1829A /* UIColor+Hex.swift */; };
 		FDF281FA2632D43800B1829A /* UITableViewCell+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF281F92632D43800B1829A /* UITableViewCell+UI.swift */; };
+		FDF282002632D79D00B1829A /* StartSceneBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF281FF2632D79D00B1829A /* StartSceneBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		FDF281EC2632D32200B1829A /* PrintUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintUtil.swift; sourceTree = "<group>"; };
 		FDF281F32632D3AA00B1829A /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		FDF281F92632D43800B1829A /* UITableViewCell+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+UI.swift"; sourceTree = "<group>"; };
+		FDF281FF2632D79D00B1829A /* StartSceneBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartSceneBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,14 +134,15 @@
 		FDEAD92A25C8269B0075F122 /* Cafeistic */ = {
 			isa = PBXGroup;
 			children = (
+				FD4B1BB8262FE861005E9BF9 /* App */,
+				FD4B1BBC262FFA3B005E9BF9 /* Scenes */,
+				FDF281E72632D24800B1829A /* Services */,
+				FDF281FD2632D57000B1829A /* Entities */,
+				FD4B1BBA262FE876005E9BF9 /* Common */,
 				FDF281F22632D38D00B1829A /* Extensions */,
 				FDF281F02632D34400B1829A /* Resources */,
 				FDF281EB2632D2FE00B1829A /* Utilities */,
-				FDF281E72632D24800B1829A /* Services */,
-				FD4B1BBC262FFA3B005E9BF9 /* Scenes */,
 				FD4B1BBB262FE88B005E9BF9 /* SupportingFiles */,
-				FD4B1BBA262FE876005E9BF9 /* Common */,
-				FD4B1BB8262FE861005E9BF9 /* App */,
 			);
 			path = Cafeistic;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 				FDF281B32632CED300B1829A /* StartViewController.swift */,
 				FDF281B42632CED300B1829A /* StartContract.swift */,
 				FDF281B52632CED300B1829A /* StartInteractor.swift */,
+				FDF281FF2632D79D00B1829A /* StartSceneBuilder.swift */,
 			);
 			path = Start;
 			sourceTree = "<group>";
@@ -265,6 +269,13 @@
 				FDF281F92632D43800B1829A /* UITableViewCell+UI.swift */,
 			);
 			path = UITableView;
+			sourceTree = "<group>";
+		};
+		FDF281FD2632D57000B1829A /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -391,6 +402,7 @@
 				FDF281C12632CFEE00B1829A /* DefaultViewController.swift in Sources */,
 				FDF281FA2632D43800B1829A /* UITableViewCell+UI.swift in Sources */,
 				FD4B1BD4262FFE5E005E9BF9 /* AppSetup.swift in Sources */,
+				FDF282002632D79D00B1829A /* StartSceneBuilder.swift in Sources */,
 				FDF281B92632CED300B1829A /* StartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

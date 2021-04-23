@@ -13,9 +13,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        window = UIWindow()
-        AppSetup.shared.setupRootScene(window: window!)
-        AppSetup.shared.setupSerivces()
+        window = UIWindow(frame: UIScreen.main.bounds)
+        setupRootScene()
+        
         return true
     }
 
@@ -24,6 +24,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
+    }
+    
+    private func setupRootScene() {
+        guard let window = window else { return }
+        AppSetup.shared.setupRootScene(window: window)
+        AppSetup.shared.setupSerivces()
     }
 }
 
