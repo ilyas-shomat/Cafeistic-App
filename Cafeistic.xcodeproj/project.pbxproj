@@ -3,31 +3,49 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		CD7B85AC59ABB498983A2B54 /* Pods_Cafeistic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7374E4838BCB145E057F8DF /* Pods_Cafeistic.framework */; };
+		FD4B1BD4262FFE5E005E9BF9 /* AppSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4B1BD3262FFE5E005E9BF9 /* AppSetup.swift */; };
 		FDEAD92C25C8269B0075F122 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEAD92B25C8269B0075F122 /* AppDelegate.swift */; };
 		FDEAD92E25C8269B0075F122 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEAD92D25C8269B0075F122 /* SceneDelegate.swift */; };
-		FDEAD93025C8269B0075F122 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEAD92F25C8269B0075F122 /* ViewController.swift */; };
-		FDEAD93325C8269B0075F122 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDEAD93125C8269B0075F122 /* Main.storyboard */; };
 		FDEAD93525C8269E0075F122 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDEAD93425C8269E0075F122 /* Assets.xcassets */; };
 		FDEAD93825C8269E0075F122 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDEAD93625C8269E0075F122 /* LaunchScreen.storyboard */; };
+		FDF281B72632CED300B1829A /* StartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF281B12632CED300B1829A /* StartPresenter.swift */; };
+		FDF281B82632CED300B1829A /* StartRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF281B22632CED300B1829A /* StartRouter.swift */; };
+		FDF281B92632CED300B1829A /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF281B32632CED300B1829A /* StartViewController.swift */; };
+		FDF281BA2632CED300B1829A /* StartContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF281B42632CED300B1829A /* StartContract.swift */; };
+		FDF281BB2632CED300B1829A /* StartInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF281B52632CED300B1829A /* StartInteractor.swift */; };
+		FDF281C12632CFEE00B1829A /* DefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF281C02632CFEE00B1829A /* DefaultViewController.swift */; };
+		FDF281ED2632D32200B1829A /* PrintUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF281EC2632D32200B1829A /* PrintUtil.swift */; };
+		FDF281F42632D3AA00B1829A /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF281F32632D3AA00B1829A /* UIColor+Hex.swift */; };
+		FDF281FA2632D43800B1829A /* UITableViewCell+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF281F92632D43800B1829A /* UITableViewCell+UI.swift */; };
+		FDF282002632D79D00B1829A /* StartSceneBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF281FF2632D79D00B1829A /* StartSceneBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5D79D316F8E6F0061A9F53EE /* Pods-Cafeistic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cafeistic.debug.xcconfig"; path = "Target Support Files/Pods-Cafeistic/Pods-Cafeistic.debug.xcconfig"; sourceTree = "<group>"; };
 		AFE2A4F6D2445A8B438413CF /* Pods-Cafeistic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cafeistic.release.xcconfig"; path = "Target Support Files/Pods-Cafeistic/Pods-Cafeistic.release.xcconfig"; sourceTree = "<group>"; };
 		B7374E4838BCB145E057F8DF /* Pods_Cafeistic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cafeistic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD4B1BD3262FFE5E005E9BF9 /* AppSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSetup.swift; sourceTree = "<group>"; };
 		FDEAD92825C8269B0075F122 /* Cafeistic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cafeistic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDEAD92B25C8269B0075F122 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDEAD92D25C8269B0075F122 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FDEAD92F25C8269B0075F122 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FDEAD93225C8269B0075F122 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FDEAD93425C8269E0075F122 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDEAD93725C8269E0075F122 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDEAD93925C8269E0075F122 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDF281B12632CED300B1829A /* StartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPresenter.swift; sourceTree = "<group>"; };
+		FDF281B22632CED300B1829A /* StartRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartRouter.swift; sourceTree = "<group>"; };
+		FDF281B32632CED300B1829A /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		FDF281B42632CED300B1829A /* StartContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartContract.swift; sourceTree = "<group>"; };
+		FDF281B52632CED300B1829A /* StartInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartInteractor.swift; sourceTree = "<group>"; };
+		FDF281C02632CFEE00B1829A /* DefaultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultViewController.swift; sourceTree = "<group>"; };
+		FDF281EC2632D32200B1829A /* PrintUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintUtil.swift; sourceTree = "<group>"; };
+		FDF281F32632D3AA00B1829A /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		FDF281F92632D43800B1829A /* UITableViewCell+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+UI.swift"; sourceTree = "<group>"; };
+		FDF281FF2632D79D00B1829A /* StartSceneBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartSceneBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +77,42 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FD4B1BB8262FE861005E9BF9 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FDEAD92B25C8269B0075F122 /* AppDelegate.swift */,
+				FDEAD92D25C8269B0075F122 /* SceneDelegate.swift */,
+				FD4B1BD3262FFE5E005E9BF9 /* AppSetup.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FD4B1BBA262FE876005E9BF9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FDF281CA2632D0FF00B1829A /* Constants */,
+				FDF281C92632D0E600B1829A /* Protocols */,
+				FDF281BE2632CFBF00B1829A /* Default */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FD4B1BBB262FE88B005E9BF9 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				FDEAD93925C8269E0075F122 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		FD4B1BBC262FFA3B005E9BF9 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				FDF281B02632CEBF00B1829A /* Start */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
 		FDEAD91F25C8269A0075F122 = {
 			isa = PBXGroup;
 			children = (
@@ -80,15 +134,148 @@
 		FDEAD92A25C8269B0075F122 /* Cafeistic */ = {
 			isa = PBXGroup;
 			children = (
-				FDEAD92B25C8269B0075F122 /* AppDelegate.swift */,
-				FDEAD92D25C8269B0075F122 /* SceneDelegate.swift */,
-				FDEAD92F25C8269B0075F122 /* ViewController.swift */,
-				FDEAD93125C8269B0075F122 /* Main.storyboard */,
-				FDEAD93425C8269E0075F122 /* Assets.xcassets */,
-				FDEAD93625C8269E0075F122 /* LaunchScreen.storyboard */,
-				FDEAD93925C8269E0075F122 /* Info.plist */,
+				FD4B1BB8262FE861005E9BF9 /* App */,
+				FD4B1BBC262FFA3B005E9BF9 /* Scenes */,
+				FDF281E72632D24800B1829A /* Services */,
+				FDF281FD2632D57000B1829A /* Entities */,
+				FD4B1BBA262FE876005E9BF9 /* Common */,
+				FDF281F22632D38D00B1829A /* Extensions */,
+				FDF281F02632D34400B1829A /* Resources */,
+				FDF281EB2632D2FE00B1829A /* Utilities */,
+				FD4B1BBB262FE88B005E9BF9 /* SupportingFiles */,
 			);
 			path = Cafeistic;
+			sourceTree = "<group>";
+		};
+		FDF281B02632CEBF00B1829A /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				FDF281B12632CED300B1829A /* StartPresenter.swift */,
+				FDF281B22632CED300B1829A /* StartRouter.swift */,
+				FDF281B32632CED300B1829A /* StartViewController.swift */,
+				FDF281B42632CED300B1829A /* StartContract.swift */,
+				FDF281B52632CED300B1829A /* StartInteractor.swift */,
+				FDF281FF2632D79D00B1829A /* StartSceneBuilder.swift */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		FDF281BE2632CFBF00B1829A /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				FDF281BF2632CFD600B1829A /* ViewController */,
+			);
+			path = Default;
+			sourceTree = "<group>";
+		};
+		FDF281BF2632CFD600B1829A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FDF281C02632CFEE00B1829A /* DefaultViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FDF281C92632D0E600B1829A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FDF281CA2632D0FF00B1829A /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		FDF281E72632D24800B1829A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FDF281EA2632D28700B1829A /* SessionTracker */,
+				FDF281E92632D26800B1829A /* Storage */,
+				FDF281E82632D25600B1829A /* Network */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FDF281E82632D25600B1829A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FDF281E92632D26800B1829A /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		FDF281EA2632D28700B1829A /* SessionTracker */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SessionTracker;
+			sourceTree = "<group>";
+		};
+		FDF281EB2632D2FE00B1829A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FDF281EC2632D32200B1829A /* PrintUtil.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		FDF281F02632D34400B1829A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FDEAD93625C8269E0075F122 /* LaunchScreen.storyboard */,
+				FDEAD93425C8269E0075F122 /* Assets.xcassets */,
+				FDF281F12632D35300B1829A /* Localization */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FDF281F12632D35300B1829A /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		FDF281F22632D38D00B1829A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FDF281F82632D42200B1829A /* UITableView */,
+				FDF281F72632D41A00B1829A /* UIColor */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FDF281F72632D41A00B1829A /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				FDF281F32632D3AA00B1829A /* UIColor+Hex.swift */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		FDF281F82632D42200B1829A /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				FDF281F92632D43800B1829A /* UITableViewCell+UI.swift */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		FDF281FD2632D57000B1829A /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +339,6 @@
 			files = (
 				FDEAD93825C8269E0075F122 /* LaunchScreen.storyboard in Resources */,
 				FDEAD93525C8269E0075F122 /* Assets.xcassets in Resources */,
-				FDEAD93325C8269B0075F122 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,23 +391,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDEAD93025C8269B0075F122 /* ViewController.swift in Sources */,
+				FDF281B82632CED300B1829A /* StartRouter.swift in Sources */,
+				FDF281BB2632CED300B1829A /* StartInteractor.swift in Sources */,
 				FDEAD92C25C8269B0075F122 /* AppDelegate.swift in Sources */,
+				FDF281ED2632D32200B1829A /* PrintUtil.swift in Sources */,
+				FDF281B72632CED300B1829A /* StartPresenter.swift in Sources */,
+				FDF281F42632D3AA00B1829A /* UIColor+Hex.swift in Sources */,
 				FDEAD92E25C8269B0075F122 /* SceneDelegate.swift in Sources */,
+				FDF281BA2632CED300B1829A /* StartContract.swift in Sources */,
+				FDF281C12632CFEE00B1829A /* DefaultViewController.swift in Sources */,
+				FDF281FA2632D43800B1829A /* UITableViewCell+UI.swift in Sources */,
+				FD4B1BD4262FFE5E005E9BF9 /* AppSetup.swift in Sources */,
+				FDF282002632D79D00B1829A /* StartSceneBuilder.swift in Sources */,
+				FDF281B92632CED300B1829A /* StartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FDEAD93125C8269B0075F122 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FDEAD93225C8269B0075F122 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FDEAD93625C8269E0075F122 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -357,7 +545,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RH4ADBYDUN;
-				INFOPLIST_FILE = Cafeistic/Info.plist;
+				INFOPLIST_FILE = Cafeistic/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -377,7 +565,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RH4ADBYDUN;
-				INFOPLIST_FILE = Cafeistic/Info.plist;
+				INFOPLIST_FILE = Cafeistic/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
