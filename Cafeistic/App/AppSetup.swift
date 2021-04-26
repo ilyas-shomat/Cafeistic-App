@@ -14,7 +14,7 @@ class AppSetup {
     public static let shared = AppSetup()
 
     func setupRootScene(window: UIWindow) {
-        window.rootViewController = StartScene.initiate()
+        window.rootViewController = LoginScene.initiate()
         window.makeKeyAndVisible()
     }
     

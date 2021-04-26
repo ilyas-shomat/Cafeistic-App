@@ -8,6 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		CD7B85AC59ABB498983A2B54 /* Pods_Cafeistic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7374E4838BCB145E057F8DF /* Pods_Cafeistic.framework */; };
+		FD45935D2636BB1200669AB4 /* WebApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD45935C2636BB1200669AB4 /* WebApiService.swift */; };
+		FD4593622636BB8800669AB4 /* BaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4593612636BB8800669AB4 /* BaseProvider.swift */; };
+		FD45936D2636BD8000669AB4 /* LoginContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4593672636BD8000669AB4 /* LoginContract.swift */; };
+		FD45936E2636BD8000669AB4 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4593682636BD8000669AB4 /* LoginPresenter.swift */; };
+		FD45936F2636BD8000669AB4 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4593692636BD8000669AB4 /* LoginRouter.swift */; };
+		FD4593702636BD8000669AB4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD45936A2636BD8000669AB4 /* LoginViewController.swift */; };
+		FD4593712636BD8000669AB4 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD45936B2636BD8000669AB4 /* LoginInteractor.swift */; };
+		FD4593722636BD8000669AB4 /* LoginSceneBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD45936C2636BD8000669AB4 /* LoginSceneBuilder.swift */; };
+		FD4593752636BDEE00669AB4 /* SetupBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4593742636BDEE00669AB4 /* SetupBaseViewController.swift */; };
+		FD45937A2636C0BC00669AB4 /* MainTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4593792636C0BC00669AB4 /* MainTextFieldStyle.swift */; };
+		FD45937E2636C0DB00669AB4 /* MainTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD45937D2636C0DB00669AB4 /* MainTextField.swift */; };
+		FD4593812636CA3100669AB4 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4593802636CA3100669AB4 /* Assets.swift */; };
+		FD4593842636D5D200669AB4 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4593832636D5D200669AB4 /* ColorPalette.swift */; };
+		FD4593872636D77B00669AB4 /* StringConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4593862636D77B00669AB4 /* StringConstant.swift */; };
 		FD4B1BD4262FFE5E005E9BF9 /* AppSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4B1BD3262FFE5E005E9BF9 /* AppSetup.swift */; };
 		FDEAD92C25C8269B0075F122 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEAD92B25C8269B0075F122 /* AppDelegate.swift */; };
 		FDEAD92E25C8269B0075F122 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEAD92D25C8269B0075F122 /* SceneDelegate.swift */; };
@@ -29,6 +43,20 @@
 		5D79D316F8E6F0061A9F53EE /* Pods-Cafeistic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cafeistic.debug.xcconfig"; path = "Target Support Files/Pods-Cafeistic/Pods-Cafeistic.debug.xcconfig"; sourceTree = "<group>"; };
 		AFE2A4F6D2445A8B438413CF /* Pods-Cafeistic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cafeistic.release.xcconfig"; path = "Target Support Files/Pods-Cafeistic/Pods-Cafeistic.release.xcconfig"; sourceTree = "<group>"; };
 		B7374E4838BCB145E057F8DF /* Pods_Cafeistic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cafeistic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD45935C2636BB1200669AB4 /* WebApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebApiService.swift; sourceTree = "<group>"; };
+		FD4593612636BB8800669AB4 /* BaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProvider.swift; sourceTree = "<group>"; };
+		FD4593672636BD8000669AB4 /* LoginContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContract.swift; sourceTree = "<group>"; };
+		FD4593682636BD8000669AB4 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		FD4593692636BD8000669AB4 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		FD45936A2636BD8000669AB4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FD45936B2636BD8000669AB4 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		FD45936C2636BD8000669AB4 /* LoginSceneBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSceneBuilder.swift; sourceTree = "<group>"; };
+		FD4593742636BDEE00669AB4 /* SetupBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupBaseViewController.swift; sourceTree = "<group>"; };
+		FD4593792636C0BC00669AB4 /* MainTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTextFieldStyle.swift; sourceTree = "<group>"; };
+		FD45937D2636C0DB00669AB4 /* MainTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTextField.swift; sourceTree = "<group>"; };
+		FD4593802636CA3100669AB4 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		FD4593832636D5D200669AB4 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
+		FD4593862636D77B00669AB4 /* StringConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstant.swift; sourceTree = "<group>"; };
 		FD4B1BD3262FFE5E005E9BF9 /* AppSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSetup.swift; sourceTree = "<group>"; };
 		FDEAD92825C8269B0075F122 /* Cafeistic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cafeistic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDEAD92B25C8269B0075F122 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +105,60 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FD4593592636AD9100669AB4 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				FD4593782636C09600669AB4 /* MainTextField */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		FD45935A2636BAB400669AB4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FD45935C2636BB1200669AB4 /* WebApiService.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FD45935B2636BAD200669AB4 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				FD4593612636BB8800669AB4 /* BaseProvider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		FD4593652636BD6400669AB4 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				FD4593662636BD6E00669AB4 /* Login */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		FD4593662636BD6E00669AB4 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FD4593672636BD8000669AB4 /* LoginContract.swift */,
+				FD4593682636BD8000669AB4 /* LoginPresenter.swift */,
+				FD4593692636BD8000669AB4 /* LoginRouter.swift */,
+				FD45936A2636BD8000669AB4 /* LoginViewController.swift */,
+				FD45936B2636BD8000669AB4 /* LoginInteractor.swift */,
+				FD45936C2636BD8000669AB4 /* LoginSceneBuilder.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		FD4593782636C09600669AB4 /* MainTextField */ = {
+			isa = PBXGroup;
+			children = (
+				FD4593792636C0BC00669AB4 /* MainTextFieldStyle.swift */,
+				FD45937D2636C0DB00669AB4 /* MainTextField.swift */,
+			);
+			path = MainTextField;
+			sourceTree = "<group>";
+		};
 		FD4B1BB8262FE861005E9BF9 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +190,7 @@
 		FD4B1BBC262FFA3B005E9BF9 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				FD4593652636BD6400669AB4 /* Auth */,
 				FDF281B02632CEBF00B1829A /* Start */,
 			);
 			path = Scenes;
@@ -138,6 +221,7 @@
 				FD4B1BBC262FFA3B005E9BF9 /* Scenes */,
 				FDF281E72632D24800B1829A /* Services */,
 				FDF281FD2632D57000B1829A /* Entities */,
+				FD4593592636AD9100669AB4 /* CustomViews */,
 				FD4B1BBA262FE876005E9BF9 /* Common */,
 				FDF281F22632D38D00B1829A /* Extensions */,
 				FDF281F02632D34400B1829A /* Resources */,
@@ -179,6 +263,7 @@
 		FDF281C92632D0E600B1829A /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				FD4593742636BDEE00669AB4 /* SetupBaseViewController.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -186,6 +271,8 @@
 		FDF281CA2632D0FF00B1829A /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				FD4593802636CA3100669AB4 /* Assets.swift */,
+				FD4593862636D77B00669AB4 /* StringConstant.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -203,6 +290,8 @@
 		FDF281E82632D25600B1829A /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				FD45935B2636BAD200669AB4 /* Providers */,
+				FD45935A2636BAB400669AB4 /* Common */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -259,6 +348,7 @@
 			isa = PBXGroup;
 			children = (
 				FDF281F32632D3AA00B1829A /* UIColor+Hex.swift */,
+				FD4593832636D5D200669AB4 /* ColorPalette.swift */,
 			);
 			path = UIColor;
 			sourceTree = "<group>";
@@ -391,19 +481,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD4593872636D77B00669AB4 /* StringConstant.swift in Sources */,
 				FDF281B82632CED300B1829A /* StartRouter.swift in Sources */,
 				FDF281BB2632CED300B1829A /* StartInteractor.swift in Sources */,
 				FDEAD92C25C8269B0075F122 /* AppDelegate.swift in Sources */,
 				FDF281ED2632D32200B1829A /* PrintUtil.swift in Sources */,
+				FD4593702636BD8000669AB4 /* LoginViewController.swift in Sources */,
 				FDF281B72632CED300B1829A /* StartPresenter.swift in Sources */,
+				FD45936D2636BD8000669AB4 /* LoginContract.swift in Sources */,
 				FDF281F42632D3AA00B1829A /* UIColor+Hex.swift in Sources */,
+				FD4593812636CA3100669AB4 /* Assets.swift in Sources */,
+				FD4593842636D5D200669AB4 /* ColorPalette.swift in Sources */,
+				FD4593712636BD8000669AB4 /* LoginInteractor.swift in Sources */,
 				FDEAD92E25C8269B0075F122 /* SceneDelegate.swift in Sources */,
 				FDF281BA2632CED300B1829A /* StartContract.swift in Sources */,
+				FD45936E2636BD8000669AB4 /* LoginPresenter.swift in Sources */,
+				FD45937E2636C0DB00669AB4 /* MainTextField.swift in Sources */,
 				FDF281C12632CFEE00B1829A /* DefaultViewController.swift in Sources */,
+				FD4593752636BDEE00669AB4 /* SetupBaseViewController.swift in Sources */,
+				FD45935D2636BB1200669AB4 /* WebApiService.swift in Sources */,
 				FDF281FA2632D43800B1829A /* UITableViewCell+UI.swift in Sources */,
 				FD4B1BD4262FFE5E005E9BF9 /* AppSetup.swift in Sources */,
+				FD4593722636BD8000669AB4 /* LoginSceneBuilder.swift in Sources */,
+				FD45936F2636BD8000669AB4 /* LoginRouter.swift in Sources */,
 				FDF282002632D79D00B1829A /* StartSceneBuilder.swift in Sources */,
+				FD45937A2636C0BC00669AB4 /* MainTextFieldStyle.swift in Sources */,
 				FDF281B92632CED300B1829A /* StartViewController.swift in Sources */,
+				FD4593622636BB8800669AB4 /* BaseProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
