@@ -10,13 +10,9 @@ import UIKit
 
 final class MaintextField: UITextField {
     
-    var style: MainTextFieldStyle {
-        didSet {
-            configure(style)
-        }
-    }
+    var style: MainTextFieldStyle
     
-    private lazy var containetViewForIcon: UIView = {
+    private lazy var containerViewForIcon: UIView = {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: 32, height: 40))
         let iconTappedGesture = UITapGestureRecognizer()
         iconTappedGesture.addTarget(self, action: #selector(textSecureIconTapped))
@@ -43,20 +39,20 @@ final class MaintextField: UITextField {
     }
     
     private func setupTextField() {
-        containetViewForIcon.addSubview(textSecureIcon)
+        containerViewForIcon.addSubview(textSecureIcon)
         rightViewMode = UITextField.ViewMode.always
-        rightView = containetViewForIcon
+        rightView = containerViewForIcon
         
         delegate = self
         
-        layer.borderWidth = 1
-        layer.cornerRadius = 5
-        layer.borderColor = UIColor.appOrange.cgColor
+        layer.cornerRadius = 22.5
+        self.backgroundColor = .white
         
         let paddingView: UIView = UIView(frame: CGRect(x: 0, y: 0, width: 17, height: self.frame.height))
         self.leftView = paddingView
         self.leftViewMode = .always
         
+        configure(style)
     }
     
     private func configure(_ style: MainTextFieldStyle) {
@@ -71,6 +67,7 @@ final class MaintextField: UITextField {
             placeholder = StringConstant.Scenes.Login.forgetPassword
             textSecureIcon.isHidden = false
             keyboardType = .asciiCapable
+            containerViewForIcon.isUserInteractionEnabled = true
         case .regular:
             isSecureTextEntry = false
             placeholder = ""
