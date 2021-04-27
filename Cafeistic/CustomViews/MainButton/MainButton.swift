@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-final class MainButton: UIButton {
+final class MainButton: UIButton, IndicatableView {
  
 //    var isActive: Bool = false {
 //        didSet {
