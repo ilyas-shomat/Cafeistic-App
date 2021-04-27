@@ -30,6 +30,13 @@ class LoginViewController: DefaultViewController {
         return textField
     }()
     
+    private lazy var signInButton: MainButton = {
+        let button = MainButton(style: .rounded)
+        button.setTitle(StringConstant.Scenes.Login.signIn, for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    
     var presenter: ViewToPresenterLoginProtocol?
     
     override func viewDidLoad() {
@@ -51,7 +58,8 @@ extension LoginViewController: SetupBaseViewController {
     private func configureSubViews() {
         view.addSubviews(logoImageView,
                          loginTextField,
-                         passwordTextField)
+                         passwordTextField,
+                         signInButton)
     }
     
     private func configureConstraints() {
@@ -69,6 +77,12 @@ extension LoginViewController: SetupBaseViewController {
         }
         passwordTextField.snp.makeConstraints {
             $0.top.equalTo(loginTextField.snp.bottom).inset(-10)
+            $0.height.equalTo(50)
+            $0.width.equalTo(loginTextField)
+            $0.centerX.equalToSuperview()
+        }
+        signInButton.snp.makeConstraints {
+            $0.top.equalTo(passwordTextField.snp.bottom).inset(-15)
             $0.height.equalTo(50)
             $0.width.equalTo(loginTextField)
             $0.centerX.equalToSuperview()
