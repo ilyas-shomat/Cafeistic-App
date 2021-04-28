@@ -22,6 +22,13 @@
 		FD4593812636CA3100669AB4 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4593802636CA3100669AB4 /* Assets.swift */; };
 		FD4593842636D5D200669AB4 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4593832636D5D200669AB4 /* ColorPalette.swift */; };
 		FD4593872636D77B00669AB4 /* StringConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4593862636D77B00669AB4 /* StringConstant.swift */; };
+		FD45938B2636E19F00669AB4 /* UIView+AddSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD45938A2636E19F00669AB4 /* UIView+AddSubviews.swift */; };
+		FD4593902637F1BD00669AB4 /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD45938F2637F1BD00669AB4 /* MainButton.swift */; };
+		FD4593932637F1F300669AB4 /* MainButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4593922637F1F300669AB4 /* MainButtonStyle.swift */; };
+		FD4593982637F2BA00669AB4 /* IndicatableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4593972637F2BA00669AB4 /* IndicatableView.swift */; };
+		FD45939C2637F2D000669AB4 /* IndicatableView+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD45939B2637F2D000669AB4 /* IndicatableView+UIButton.swift */; };
+		FD4593A02637F3F000669AB4 /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD45939F2637F3EF00669AB4 /* SpinnerView.swift */; };
+		FD4593A42637F9EA00669AB4 /* SpinnerIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4593A32637F9EA00669AB4 /* SpinnerIndicator.swift */; };
 		FD4B1BD4262FFE5E005E9BF9 /* AppSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4B1BD3262FFE5E005E9BF9 /* AppSetup.swift */; };
 		FDEAD92C25C8269B0075F122 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEAD92B25C8269B0075F122 /* AppDelegate.swift */; };
 		FDEAD92E25C8269B0075F122 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEAD92D25C8269B0075F122 /* SceneDelegate.swift */; };
@@ -57,6 +64,13 @@
 		FD4593802636CA3100669AB4 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		FD4593832636D5D200669AB4 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 		FD4593862636D77B00669AB4 /* StringConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstant.swift; sourceTree = "<group>"; };
+		FD45938A2636E19F00669AB4 /* UIView+AddSubviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AddSubviews.swift"; sourceTree = "<group>"; };
+		FD45938F2637F1BD00669AB4 /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
+		FD4593922637F1F300669AB4 /* MainButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButtonStyle.swift; sourceTree = "<group>"; };
+		FD4593972637F2BA00669AB4 /* IndicatableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatableView.swift; sourceTree = "<group>"; };
+		FD45939B2637F2D000669AB4 /* IndicatableView+UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IndicatableView+UIButton.swift"; sourceTree = "<group>"; };
+		FD45939F2637F3EF00669AB4 /* SpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
+		FD4593A32637F9EA00669AB4 /* SpinnerIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerIndicator.swift; sourceTree = "<group>"; };
 		FD4B1BD3262FFE5E005E9BF9 /* AppSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSetup.swift; sourceTree = "<group>"; };
 		FDEAD92825C8269B0075F122 /* Cafeistic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cafeistic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDEAD92B25C8269B0075F122 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +122,8 @@
 		FD4593592636AD9100669AB4 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				FD45939E2637F3D300669AB4 /* ActivityView */,
+				FD45938E2637F1B000669AB4 /* MainButton */,
 				FD4593782636C09600669AB4 /* MainTextField */,
 			);
 			path = CustomViews;
@@ -157,6 +173,49 @@
 				FD45937D2636C0DB00669AB4 /* MainTextField.swift */,
 			);
 			path = MainTextField;
+			sourceTree = "<group>";
+		};
+		FD4593892636E17900669AB4 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				FD45938A2636E19F00669AB4 /* UIView+AddSubviews.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		FD45938E2637F1B000669AB4 /* MainButton */ = {
+			isa = PBXGroup;
+			children = (
+				FD4593922637F1F300669AB4 /* MainButtonStyle.swift */,
+				FD45938F2637F1BD00669AB4 /* MainButton.swift */,
+			);
+			path = MainButton;
+			sourceTree = "<group>";
+		};
+		FD4593952637F29800669AB4 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FD4593742636BDEE00669AB4 /* SetupBaseViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FD4593962637F2A700669AB4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FD4593972637F2BA00669AB4 /* IndicatableView.swift */,
+				FD45939B2637F2D000669AB4 /* IndicatableView+UIButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FD45939E2637F3D300669AB4 /* ActivityView */ = {
+			isa = PBXGroup;
+			children = (
+				FD45939F2637F3EF00669AB4 /* SpinnerView.swift */,
+				FD4593A32637F9EA00669AB4 /* SpinnerIndicator.swift */,
+			);
+			path = ActivityView;
 			sourceTree = "<group>";
 		};
 		FD4B1BB8262FE861005E9BF9 /* App */ = {
@@ -263,7 +322,8 @@
 		FDF281C92632D0E600B1829A /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				FD4593742636BDEE00669AB4 /* SetupBaseViewController.swift */,
+				FD4593962637F2A700669AB4 /* View */,
+				FD4593952637F29800669AB4 /* ViewController */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -338,6 +398,7 @@
 		FDF281F22632D38D00B1829A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				FD4593892636E17900669AB4 /* UIView */,
 				FDF281F82632D42200B1829A /* UITableView */,
 				FDF281F72632D41A00B1829A /* UIColor */,
 			);
@@ -482,6 +543,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD4593872636D77B00669AB4 /* StringConstant.swift in Sources */,
+				FD4593902637F1BD00669AB4 /* MainButton.swift in Sources */,
 				FDF281B82632CED300B1829A /* StartRouter.swift in Sources */,
 				FDF281BB2632CED300B1829A /* StartInteractor.swift in Sources */,
 				FDEAD92C25C8269B0075F122 /* AppDelegate.swift in Sources */,
@@ -489,6 +551,8 @@
 				FD4593702636BD8000669AB4 /* LoginViewController.swift in Sources */,
 				FDF281B72632CED300B1829A /* StartPresenter.swift in Sources */,
 				FD45936D2636BD8000669AB4 /* LoginContract.swift in Sources */,
+				FD45939C2637F2D000669AB4 /* IndicatableView+UIButton.swift in Sources */,
+				FD45938B2636E19F00669AB4 /* UIView+AddSubviews.swift in Sources */,
 				FDF281F42632D3AA00B1829A /* UIColor+Hex.swift in Sources */,
 				FD4593812636CA3100669AB4 /* Assets.swift in Sources */,
 				FD4593842636D5D200669AB4 /* ColorPalette.swift in Sources */,
@@ -499,6 +563,9 @@
 				FD45937E2636C0DB00669AB4 /* MainTextField.swift in Sources */,
 				FDF281C12632CFEE00B1829A /* DefaultViewController.swift in Sources */,
 				FD4593752636BDEE00669AB4 /* SetupBaseViewController.swift in Sources */,
+				FD4593A42637F9EA00669AB4 /* SpinnerIndicator.swift in Sources */,
+				FD4593982637F2BA00669AB4 /* IndicatableView.swift in Sources */,
+				FD4593932637F1F300669AB4 /* MainButtonStyle.swift in Sources */,
 				FD45935D2636BB1200669AB4 /* WebApiService.swift in Sources */,
 				FDF281FA2632D43800B1829A /* UITableViewCell+UI.swift in Sources */,
 				FD4B1BD4262FFE5E005E9BF9 /* AppSetup.swift in Sources */,
@@ -507,6 +574,7 @@
 				FDF282002632D79D00B1829A /* StartSceneBuilder.swift in Sources */,
 				FD45937A2636C0BC00669AB4 /* MainTextFieldStyle.swift in Sources */,
 				FDF281B92632CED300B1829A /* StartViewController.swift in Sources */,
+				FD4593A02637F3F000669AB4 /* SpinnerView.swift in Sources */,
 				FD4593622636BB8800669AB4 /* BaseProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

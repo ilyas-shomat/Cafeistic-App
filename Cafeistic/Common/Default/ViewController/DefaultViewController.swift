@@ -15,6 +15,6 @@ class DefaultViewController: UIViewController {
     }
 
     private func setupBaseUI() {
-        view.backgroundColor = .appGrey
+        view.backgroundColor = .appGray
     }
 }
