@@ -36,5 +36,5 @@ protocol InteractorToPresenterStartProtocol {
 
 // MARK: - Router Input (Presenter -> Router)
 protocol PresenterToRouterStartProtocol {
-    
+    func showLoginScene(on view: PresenterToViewStartProtocol)
 }

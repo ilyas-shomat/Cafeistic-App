@@ -24,7 +24,7 @@ class LoginPresenter: ViewToPresenterLoginProtocol {
     }
     
     func handleForgetPasswordTap() {
-        
+        router?.showForgetPasswordScene(on: view!)
     }
     
     func handleSignUpTap() {

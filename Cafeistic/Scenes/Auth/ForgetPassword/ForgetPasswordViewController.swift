@@ -39,10 +39,10 @@ class ForgetPasswordViewController: DefaultViewController {
         setupViews()
         setupActions()
     }
-    
 }
 
 extension ForgetPasswordViewController: SetupBaseViewController {
+
     func setupViews() {
         configureSubViews()
         configureConstraints()

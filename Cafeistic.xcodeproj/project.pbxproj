@@ -39,6 +39,9 @@
 		FDACDF61263A8BCA00689B51 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF5B263A8BCA00689B51 /* ForgetPasswordViewController.swift */; };
 		FDACDF62263A8BCA00689B51 /* ForgetPasswordInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF5C263A8BCA00689B51 /* ForgetPasswordInteractor.swift */; };
 		FDACDF63263A8BCA00689B51 /* ForgetPasswordSceneBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF5D263A8BCA00689B51 /* ForgetPasswordSceneBuilder.swift */; };
+		FDACDF6D263AA00200689B51 /* CollectionViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF6C263AA00200689B51 /* CollectionViewProvider.swift */; };
+		FDACDF71263AA01700689B51 /* TableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF70263AA01700689B51 /* TableViewProvider.swift */; };
+		FDACDF76263AA0EA00689B51 /* DefaultNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF75263AA0EA00689B51 /* DefaultNavigationController.swift */; };
 		FDEAD92C25C8269B0075F122 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEAD92B25C8269B0075F122 /* AppDelegate.swift */; };
 		FDEAD92E25C8269B0075F122 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEAD92D25C8269B0075F122 /* SceneDelegate.swift */; };
 		FDEAD93525C8269E0075F122 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDEAD93425C8269E0075F122 /* Assets.xcassets */; };
@@ -90,6 +93,9 @@
 		FDACDF5B263A8BCA00689B51 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
 		FDACDF5C263A8BCA00689B51 /* ForgetPasswordInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordInteractor.swift; sourceTree = "<group>"; };
 		FDACDF5D263A8BCA00689B51 /* ForgetPasswordSceneBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordSceneBuilder.swift; sourceTree = "<group>"; };
+		FDACDF6C263AA00200689B51 /* CollectionViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewProvider.swift; sourceTree = "<group>"; };
+		FDACDF70263AA01700689B51 /* TableViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewProvider.swift; sourceTree = "<group>"; };
+		FDACDF75263AA0EA00689B51 /* DefaultNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNavigationController.swift; sourceTree = "<group>"; };
 		FDEAD92825C8269B0075F122 /* Cafeistic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cafeistic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDEAD92B25C8269B0075F122 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDEAD92D25C8269B0075F122 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -212,12 +218,12 @@
 			path = MainButton;
 			sourceTree = "<group>";
 		};
-		FD4593952637F29800669AB4 /* ViewController */ = {
+		FD4593952637F29800669AB4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				FD4593742636BDEE00669AB4 /* SetupBaseViewController.swift */,
 			);
-			path = ViewController;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		FD4593962637F2A700669AB4 /* View */ = {
@@ -305,6 +311,22 @@
 			path = ForgetPassword;
 			sourceTree = "<group>";
 		};
+		FDACDF6A263A9FD600689B51 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				FDACDF70263AA01700689B51 /* TableViewProvider.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		FDACDF6B263A9FDE00689B51 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				FDACDF6C263AA00200689B51 /* CollectionViewProvider.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
 		FDEAD91F25C8269A0075F122 = {
 			isa = PBXGroup;
 			children = (
@@ -356,24 +378,27 @@
 		FDF281BE2632CFBF00B1829A /* Default */ = {
 			isa = PBXGroup;
 			children = (
-				FDF281BF2632CFD600B1829A /* ViewController */,
+				FDF281BF2632CFD600B1829A /* Controllers */,
 			);
 			path = Default;
 			sourceTree = "<group>";
 		};
-		FDF281BF2632CFD600B1829A /* ViewController */ = {
+		FDF281BF2632CFD600B1829A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				FDF281C02632CFEE00B1829A /* DefaultViewController.swift */,
+				FDACDF75263AA0EA00689B51 /* DefaultNavigationController.swift */,
 			);
-			path = ViewController;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		FDF281C92632D0E600B1829A /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				FDACDF6B263A9FDE00689B51 /* CollectionView */,
+				FDACDF6A263A9FD600689B51 /* TableView */,
 				FD4593962637F2A700669AB4 /* View */,
-				FD4593952637F29800669AB4 /* ViewController */,
+				FD4593952637F29800669AB4 /* Controllers */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -596,6 +621,7 @@
 				FD4593872636D77B00669AB4 /* StringConstant.swift in Sources */,
 				FD4593902637F1BD00669AB4 /* MainButton.swift in Sources */,
 				FDF281B82632CED300B1829A /* StartRouter.swift in Sources */,
+				FDACDF76263AA0EA00689B51 /* DefaultNavigationController.swift in Sources */,
 				FDF281BB2632CED300B1829A /* StartInteractor.swift in Sources */,
 				FDEAD92C25C8269B0075F122 /* AppDelegate.swift in Sources */,
 				FDF281ED2632D32200B1829A /* PrintUtil.swift in Sources */,
@@ -622,7 +648,9 @@
 				FD4593752636BDEE00669AB4 /* SetupBaseViewController.swift in Sources */,
 				FDACDF61263A8BCA00689B51 /* ForgetPasswordViewController.swift in Sources */,
 				FD4593A42637F9EA00669AB4 /* SpinnerIndicator.swift in Sources */,
+				FDACDF6D263AA00200689B51 /* CollectionViewProvider.swift in Sources */,
 				FD4593982637F2BA00669AB4 /* IndicatableView.swift in Sources */,
+				FDACDF71263AA01700689B51 /* TableViewProvider.swift in Sources */,
 				FD4593932637F1F300669AB4 /* MainButtonStyle.swift in Sources */,
 				FD45935D2636BB1200669AB4 /* WebApiService.swift in Sources */,
 				FDF281FA2632D43800B1829A /* UITableViewCell+UI.swift in Sources */,

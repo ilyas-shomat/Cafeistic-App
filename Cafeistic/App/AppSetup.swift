@@ -14,7 +14,12 @@ class AppSetup {
     public static let shared = AppSetup()
 
     func setupRootScene(window: UIWindow) {
-        window.rootViewController = ForgetPasswordScene.initiate()
+        window.rootViewController = DefaultNavigationController()
+        guard let rootNavgiationController = window.rootViewController as? UINavigationController else {
+            fatalError("Root viewController must be inherited from UINavigationController")
+        }
+        rootNavgiationController.pushViewController(StartScene.initiate(), animated: false)
+//        window.rootViewController = ForgetPasswordScene.initiate()
         window.makeKeyAndVisible()
     }
     
