@@ -33,6 +33,12 @@
 		FDACDF1826391F6300689B51 /* DefaultAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF1726391F6300689B51 /* DefaultAlertViewController.swift */; };
 		FDACDF1D26391F7C00689B51 /* TwoButtonAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF1C26391F7C00689B51 /* TwoButtonAlertView.swift */; };
 		FDACDF22263930CA00689B51 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF21263930CA00689B51 /* UIViewController+Alert.swift */; };
+		FDACDF5E263A8BCA00689B51 /* ForgetPasswordContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF58263A8BCA00689B51 /* ForgetPasswordContract.swift */; };
+		FDACDF5F263A8BCA00689B51 /* ForgetPasswordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF59263A8BCA00689B51 /* ForgetPasswordPresenter.swift */; };
+		FDACDF60263A8BCA00689B51 /* ForgetPasswordRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF5A263A8BCA00689B51 /* ForgetPasswordRouter.swift */; };
+		FDACDF61263A8BCA00689B51 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF5B263A8BCA00689B51 /* ForgetPasswordViewController.swift */; };
+		FDACDF62263A8BCA00689B51 /* ForgetPasswordInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF5C263A8BCA00689B51 /* ForgetPasswordInteractor.swift */; };
+		FDACDF63263A8BCA00689B51 /* ForgetPasswordSceneBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF5D263A8BCA00689B51 /* ForgetPasswordSceneBuilder.swift */; };
 		FDEAD92C25C8269B0075F122 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEAD92B25C8269B0075F122 /* AppDelegate.swift */; };
 		FDEAD92E25C8269B0075F122 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEAD92D25C8269B0075F122 /* SceneDelegate.swift */; };
 		FDEAD93525C8269E0075F122 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDEAD93425C8269E0075F122 /* Assets.xcassets */; };
@@ -78,6 +84,12 @@
 		FDACDF1726391F6300689B51 /* DefaultAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAlertViewController.swift; sourceTree = "<group>"; };
 		FDACDF1C26391F7C00689B51 /* TwoButtonAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoButtonAlertView.swift; sourceTree = "<group>"; };
 		FDACDF21263930CA00689B51 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		FDACDF58263A8BCA00689B51 /* ForgetPasswordContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordContract.swift; sourceTree = "<group>"; };
+		FDACDF59263A8BCA00689B51 /* ForgetPasswordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordPresenter.swift; sourceTree = "<group>"; };
+		FDACDF5A263A8BCA00689B51 /* ForgetPasswordRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordRouter.swift; sourceTree = "<group>"; };
+		FDACDF5B263A8BCA00689B51 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
+		FDACDF5C263A8BCA00689B51 /* ForgetPasswordInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordInteractor.swift; sourceTree = "<group>"; };
+		FDACDF5D263A8BCA00689B51 /* ForgetPasswordSceneBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordSceneBuilder.swift; sourceTree = "<group>"; };
 		FDEAD92825C8269B0075F122 /* Cafeistic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cafeistic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDEAD92B25C8269B0075F122 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDEAD92D25C8269B0075F122 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -155,6 +167,7 @@
 		FD4593652636BD6400669AB4 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				FDACDF57263A8BAC00689B51 /* ForgetPassword */,
 				FD4593662636BD6E00669AB4 /* Login */,
 			);
 			path = Auth;
@@ -277,6 +290,19 @@
 				FDACDF21263930CA00689B51 /* UIViewController+Alert.swift */,
 			);
 			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		FDACDF57263A8BAC00689B51 /* ForgetPassword */ = {
+			isa = PBXGroup;
+			children = (
+				FDACDF58263A8BCA00689B51 /* ForgetPasswordContract.swift */,
+				FDACDF59263A8BCA00689B51 /* ForgetPasswordPresenter.swift */,
+				FDACDF5A263A8BCA00689B51 /* ForgetPasswordRouter.swift */,
+				FDACDF5B263A8BCA00689B51 /* ForgetPasswordViewController.swift */,
+				FDACDF5C263A8BCA00689B51 /* ForgetPasswordInteractor.swift */,
+				FDACDF5D263A8BCA00689B51 /* ForgetPasswordSceneBuilder.swift */,
+			);
+			path = ForgetPassword;
 			sourceTree = "<group>";
 		};
 		FDEAD91F25C8269A0075F122 = {
@@ -576,20 +602,25 @@
 				FD4593702636BD8000669AB4 /* LoginViewController.swift in Sources */,
 				FDF281B72632CED300B1829A /* StartPresenter.swift in Sources */,
 				FD45936D2636BD8000669AB4 /* LoginContract.swift in Sources */,
+				FDACDF5F263A8BCA00689B51 /* ForgetPasswordPresenter.swift in Sources */,
+				FDACDF5E263A8BCA00689B51 /* ForgetPasswordContract.swift in Sources */,
 				FD45939C2637F2D000669AB4 /* IndicatableView+UIButton.swift in Sources */,
 				FD45938B2636E19F00669AB4 /* UIView+AddSubviews.swift in Sources */,
 				FDF281F42632D3AA00B1829A /* UIColor+Hex.swift in Sources */,
 				FD4593812636CA3100669AB4 /* Assets.swift in Sources */,
 				FD4593842636D5D200669AB4 /* ColorPalette.swift in Sources */,
+				FDACDF60263A8BCA00689B51 /* ForgetPasswordRouter.swift in Sources */,
 				FD4593712636BD8000669AB4 /* LoginInteractor.swift in Sources */,
 				FDEAD92E25C8269B0075F122 /* SceneDelegate.swift in Sources */,
 				FDF281BA2632CED300B1829A /* StartContract.swift in Sources */,
 				FDACDF1D26391F7C00689B51 /* TwoButtonAlertView.swift in Sources */,
+				FDACDF63263A8BCA00689B51 /* ForgetPasswordSceneBuilder.swift in Sources */,
 				FD45936E2636BD8000669AB4 /* LoginPresenter.swift in Sources */,
 				FD45937E2636C0DB00669AB4 /* MainTextField.swift in Sources */,
 				FDF281C12632CFEE00B1829A /* DefaultViewController.swift in Sources */,
 				FDACDF22263930CA00689B51 /* UIViewController+Alert.swift in Sources */,
 				FD4593752636BDEE00669AB4 /* SetupBaseViewController.swift in Sources */,
+				FDACDF61263A8BCA00689B51 /* ForgetPasswordViewController.swift in Sources */,
 				FD4593A42637F9EA00669AB4 /* SpinnerIndicator.swift in Sources */,
 				FD4593982637F2BA00669AB4 /* IndicatableView.swift in Sources */,
 				FD4593932637F1F300669AB4 /* MainButtonStyle.swift in Sources */,
@@ -597,6 +628,7 @@
 				FDF281FA2632D43800B1829A /* UITableViewCell+UI.swift in Sources */,
 				FD4B1BD4262FFE5E005E9BF9 /* AppSetup.swift in Sources */,
 				FD4593722636BD8000669AB4 /* LoginSceneBuilder.swift in Sources */,
+				FDACDF62263A8BCA00689B51 /* ForgetPasswordInteractor.swift in Sources */,
 				FD45936F2636BD8000669AB4 /* LoginRouter.swift in Sources */,
 				FDF282002632D79D00B1829A /* StartSceneBuilder.swift in Sources */,
 				FD45937A2636C0BC00669AB4 /* MainTextFieldStyle.swift in Sources */,

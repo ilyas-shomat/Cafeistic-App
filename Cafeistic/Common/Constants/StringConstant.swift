@@ -20,6 +20,11 @@ struct StringConstant {
             static let signUp = "Зарегистрироваться"
         }
         
+        struct ForgetPassword {
+            static let enterEmail = "Введите почту"
+            static let send = "Отправить"
+        }
+        
         struct SignUp {
             
         }
