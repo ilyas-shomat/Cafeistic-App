@@ -144,7 +144,8 @@ extension LoginViewController: SetupBaseViewController {
     }
     
     @objc private func tapSignUpButton() {
-        presenter?.handleSignUpTap()
+        showDefaultAlert(message: "Выберите тип аккаунта", topButtonTitle: "Гость", bottomButtonTitle: "Заведения")
+//        presenter?.handleSignUpTap()
     }
 }
 

@@ -30,6 +30,9 @@
 		FD4593A02637F3F000669AB4 /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD45939F2637F3EF00669AB4 /* SpinnerView.swift */; };
 		FD4593A42637F9EA00669AB4 /* SpinnerIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4593A32637F9EA00669AB4 /* SpinnerIndicator.swift */; };
 		FD4B1BD4262FFE5E005E9BF9 /* AppSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4B1BD3262FFE5E005E9BF9 /* AppSetup.swift */; };
+		FDACDF1826391F6300689B51 /* DefaultAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF1726391F6300689B51 /* DefaultAlertViewController.swift */; };
+		FDACDF1D26391F7C00689B51 /* TwoButtonAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF1C26391F7C00689B51 /* TwoButtonAlertView.swift */; };
+		FDACDF22263930CA00689B51 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF21263930CA00689B51 /* UIViewController+Alert.swift */; };
 		FDEAD92C25C8269B0075F122 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEAD92B25C8269B0075F122 /* AppDelegate.swift */; };
 		FDEAD92E25C8269B0075F122 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEAD92D25C8269B0075F122 /* SceneDelegate.swift */; };
 		FDEAD93525C8269E0075F122 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDEAD93425C8269E0075F122 /* Assets.xcassets */; };
@@ -72,6 +75,9 @@
 		FD45939F2637F3EF00669AB4 /* SpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
 		FD4593A32637F9EA00669AB4 /* SpinnerIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerIndicator.swift; sourceTree = "<group>"; };
 		FD4B1BD3262FFE5E005E9BF9 /* AppSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSetup.swift; sourceTree = "<group>"; };
+		FDACDF1726391F6300689B51 /* DefaultAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAlertViewController.swift; sourceTree = "<group>"; };
+		FDACDF1C26391F7C00689B51 /* TwoButtonAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoButtonAlertView.swift; sourceTree = "<group>"; };
+		FDACDF21263930CA00689B51 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		FDEAD92825C8269B0075F122 /* Cafeistic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cafeistic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDEAD92B25C8269B0075F122 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDEAD92D25C8269B0075F122 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +128,7 @@
 		FD4593592636AD9100669AB4 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				FDACDF1626391EC000689B51 /* DefaultAlertView */,
 				FD45939E2637F3D300669AB4 /* ActivityView */,
 				FD45938E2637F1B000669AB4 /* MainButton */,
 				FD4593782636C09600669AB4 /* MainTextField */,
@@ -253,6 +260,23 @@
 				FDF281B02632CEBF00B1829A /* Start */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		FDACDF1626391EC000689B51 /* DefaultAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				FDACDF1726391F6300689B51 /* DefaultAlertViewController.swift */,
+				FDACDF1C26391F7C00689B51 /* TwoButtonAlertView.swift */,
+			);
+			path = DefaultAlertView;
+			sourceTree = "<group>";
+		};
+		FDACDF20263930B400689B51 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FDACDF21263930CA00689B51 /* UIViewController+Alert.swift */,
+			);
+			path = UIViewController;
 			sourceTree = "<group>";
 		};
 		FDEAD91F25C8269A0075F122 = {
@@ -398,6 +422,7 @@
 		FDF281F22632D38D00B1829A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				FDACDF20263930B400689B51 /* UIViewController */,
 				FD4593892636E17900669AB4 /* UIView */,
 				FDF281F82632D42200B1829A /* UITableView */,
 				FDF281F72632D41A00B1829A /* UIColor */,
@@ -559,9 +584,11 @@
 				FD4593712636BD8000669AB4 /* LoginInteractor.swift in Sources */,
 				FDEAD92E25C8269B0075F122 /* SceneDelegate.swift in Sources */,
 				FDF281BA2632CED300B1829A /* StartContract.swift in Sources */,
+				FDACDF1D26391F7C00689B51 /* TwoButtonAlertView.swift in Sources */,
 				FD45936E2636BD8000669AB4 /* LoginPresenter.swift in Sources */,
 				FD45937E2636C0DB00669AB4 /* MainTextField.swift in Sources */,
 				FDF281C12632CFEE00B1829A /* DefaultViewController.swift in Sources */,
+				FDACDF22263930CA00689B51 /* UIViewController+Alert.swift in Sources */,
 				FD4593752636BDEE00669AB4 /* SetupBaseViewController.swift in Sources */,
 				FD4593A42637F9EA00669AB4 /* SpinnerIndicator.swift in Sources */,
 				FD4593982637F2BA00669AB4 /* IndicatableView.swift in Sources */,
@@ -575,6 +602,7 @@
 				FD45937A2636C0BC00669AB4 /* MainTextFieldStyle.swift in Sources */,
 				FDF281B92632CED300B1829A /* StartViewController.swift in Sources */,
 				FD4593A02637F3F000669AB4 /* SpinnerView.swift in Sources */,
+				FDACDF1826391F6300689B51 /* DefaultAlertViewController.swift in Sources */,
 				FD4593622636BB8800669AB4 /* BaseProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

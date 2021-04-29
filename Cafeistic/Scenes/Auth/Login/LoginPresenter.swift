@@ -22,6 +22,14 @@ class LoginPresenter: ViewToPresenterLoginProtocol {
     func handleSignInTap() {
 //        consolePrint("/// tapped signIn")
     }
+    
+    func handleForgetPasswordTap() {
+        
+    }
+    
+    func handleSignUpTap() {
+        
+    }
 }
 
 // MARK: - (Interactor -> Presenter)
