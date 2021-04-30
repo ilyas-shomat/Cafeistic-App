@@ -83,14 +83,13 @@ final class DefaultAlertViewController: UIViewController, SetupBaseViewControlle
         self.dismiss(animated: true, completion: nil)
     }
     
-    
     private func handleViewTopButtonTap() {
+        close()
         delegate?.tappedTopButton()
-//        consolePrint("handleViewTopButtonTap")
     }
     
     private func handleViewBottomButtonTap() {
+        close()
         delegate?.tappedBottomButton()
-//        consolePrint("handleViewBottomButtonTap")
     }
 }

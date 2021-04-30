@@ -17,4 +17,8 @@ class LoginRouter: PresenterToRouterLoginProtocol {
         viewController?.navigationController?.pushViewController(ForgetPasswordScene.initiate(), animated: true)
     }
     
+    func showClientSignUp(on view: PresenterToViewLoginProtocol) {
+        let viewController = view as? LoginViewController
+        viewController?.navigationController?.pushViewController(ClientSignUpScene.initiate(), animated: true)
+    }
 }

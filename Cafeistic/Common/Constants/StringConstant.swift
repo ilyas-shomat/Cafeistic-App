@@ -18,6 +18,9 @@ struct StringConstant {
             static let forgetPassword = "Забыли пароль?"
             static let notSignUpYet = "Еще не зарегистрированы?"
             static let signUp = "Зарегистрироваться"
+            static let selectAccountType = "Выберите тип аккаунта"
+            static let guest = "Гость"
+            static let establishment = "Заведения"
         }
         
         struct ForgetPassword {

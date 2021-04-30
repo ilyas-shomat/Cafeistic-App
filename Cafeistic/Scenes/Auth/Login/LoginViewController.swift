@@ -83,10 +83,10 @@ extension LoginViewController: SetupBaseViewController {
     
     func setupViews() {
         handleTopAlertButtonTap = {
-            consolePrint("/// tap topAlert Button in Login")
+            self.presenter?.handleAlertTopButtonTap()
         }
         handleBottomAlertButtonTap = {
-            consolePrint("/// tap bottomAlert Button in Login")
+            self.presenter?.handleAlertBottomButtonTap()
         }
         configureSubViews()
         configureConstraints()
@@ -160,7 +160,9 @@ extension LoginViewController: SetupBaseViewController {
     }
     
     @objc private func tapSignUpButton() {
-        showDefaultAlert(message: "Выберите тип аккаунта", topButtonTitle: "Гость", bottomButtonTitle: "Заведения")
+        showDefaultAlert(message: StringConstant.Scenes.Login.selectAccountType,
+                         topButtonTitle: StringConstant.Scenes.Login.guest,
+                         bottomButtonTitle: StringConstant.Scenes.Login.establishment)
 //        presenter?.handleSignUpTap()
     }
 }

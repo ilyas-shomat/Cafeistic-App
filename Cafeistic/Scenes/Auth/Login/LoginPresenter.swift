@@ -30,6 +30,15 @@ class LoginPresenter: ViewToPresenterLoginProtocol {
     func handleSignUpTap() {
         
     }
+    
+    func handleAlertTopButtonTap() {
+        router?.showClientSignUp(on: view!)
+    }
+    
+    func handleAlertBottomButtonTap() {
+        
+    }
+    
 }
 
 // MARK: - (Interactor -> Presenter)
