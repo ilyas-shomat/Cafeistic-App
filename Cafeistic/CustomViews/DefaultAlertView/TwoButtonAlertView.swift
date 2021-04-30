@@ -20,12 +20,14 @@ final class TwoButtonAlertView: UIView {
     private lazy var topButton: MainButton = {
         let button = MainButton(style: .rounded)
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(tapTopButton), for: .touchUpInside)
         return button
     }()
     
     private lazy var bottomButton: MainButton = {
         let button = MainButton(style: .clear)
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(tapBottomButton), for: .touchUpInside)
         return button
     }()
     
@@ -46,6 +48,10 @@ final class TwoButtonAlertView: UIView {
             bottomButton.setTitle(bottomButtonTitile, for: .normal)
         }
     }
+    
+    var handleTopButtonTap: (() -> Void)?
+    var handleBottomButtonTap: (() -> Void)?
+
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -89,5 +95,13 @@ final class TwoButtonAlertView: UIView {
             $0.centerX.equalToSuperview()
             $0.bottom.equalToSuperview().inset(10)
         }
+    }
+    
+    @objc private func tapTopButton() {
+        handleTopButtonTap?()
+    }
+    
+    @objc private func tapBottomButton() {
+        handleBottomButtonTap?()
     }
 }

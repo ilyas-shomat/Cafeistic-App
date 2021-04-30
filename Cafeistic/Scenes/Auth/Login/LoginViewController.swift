@@ -82,6 +82,12 @@ class LoginViewController: DefaultViewController {
 extension LoginViewController: SetupBaseViewController {
     
     func setupViews() {
+        handleTopAlertButtonTap = {
+            consolePrint("/// tap topAlert Button in Login")
+        }
+        handleBottomAlertButtonTap = {
+            consolePrint("/// tap bottomAlert Button in Login")
+        }
         configureSubViews()
         configureConstraints()
     }
@@ -160,6 +166,6 @@ extension LoginViewController: SetupBaseViewController {
 }
 
 // MARK: - (Presenter -> View)
-extension LoginViewController: PresenterToViewLoginProtocol{
+extension LoginViewController: PresenterToViewLoginProtocol {
 
 }
