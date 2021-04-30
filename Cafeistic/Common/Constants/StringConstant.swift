@@ -28,8 +28,14 @@ struct StringConstant {
             static let send = "Отправить"
         }
         
-        struct SignUp {
-            
+        struct ClienSignUp {
+            static let accountSignUp = "Регистрация пользователя"
+            static let fullName = "Полное имя"
+            static let login = Login.login
+            static let email = "Почта"
+            static let password = Login.password
+            static let repeatPassword = "Повторите пароль"
+            static let signUp = Login.signUp
         }
     }
     

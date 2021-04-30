@@ -123,19 +123,19 @@ extension LoginViewController: SetupBaseViewController {
         }
         signInButton.snp.makeConstraints {
             $0.top.equalTo(passwordTextField.snp.bottom).inset(-15)
-            $0.height.equalTo(50)
+            $0.height.equalTo(45)
             $0.width.equalTo(loginTextField)
             $0.centerX.equalToSuperview()
         }
         forgetPasswordButton.snp.makeConstraints {
             $0.top.equalTo(signInButton.snp.bottom).inset(5)
-            $0.height.equalTo(50)
+            $0.height.equalTo(45)
             $0.width.equalTo(loginTextField)
             $0.centerX.equalToSuperview()
         }
         signUpButton.snp.makeConstraints {
             $0.bottom.equalToSuperview()
-            $0.height.equalTo(50)
+            $0.height.equalTo(45)
             $0.width.equalTo(loginTextField)
             $0.centerX.equalToSuperview()
         }

@@ -64,7 +64,7 @@ final class MaintextField: UITextField {
             keyboardType = .asciiCapable
         case .password:
             isSecureTextEntry = true
-            placeholder = StringConstant.Scenes.Login.forgetPassword
+            placeholder = StringConstant.Scenes.Login.password
             textSecureIcon.isHidden = false
             keyboardType = .asciiCapable
             containerViewForIcon.isUserInteractionEnabled = true
