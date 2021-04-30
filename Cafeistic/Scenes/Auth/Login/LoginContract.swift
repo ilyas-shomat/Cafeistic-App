@@ -39,5 +39,5 @@ protocol InteractorToPresenterLoginProtocol {
 
 // MARK: - Router Input (Presenter -> Router)
 protocol PresenterToRouterLoginProtocol {
-    
+    func showForgetPasswordScene(on view: PresenterToViewLoginProtocol)
 }

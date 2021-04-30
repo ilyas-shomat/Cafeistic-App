@@ -11,4 +11,10 @@ import UIKit
 
 // MARK: - (Presenter -> Router)
 class LoginRouter: PresenterToRouterLoginProtocol {
+    
+    func showForgetPasswordScene(on view: PresenterToViewLoginProtocol) {
+        let viewController = view as? LoginViewController
+        viewController?.navigationController?.pushViewController(ForgetPasswordScene.initiate(), animated: true)
+    }
+    
 }

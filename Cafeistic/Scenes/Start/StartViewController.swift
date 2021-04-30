@@ -15,8 +15,6 @@ class StartViewController: DefaultViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.load()
-        
-        view.backgroundColor = .red
     }
     
 }

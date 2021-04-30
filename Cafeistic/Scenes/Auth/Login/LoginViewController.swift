@@ -67,6 +67,16 @@ class LoginViewController: DefaultViewController {
         setupActions()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+       super.viewWillAppear(animated)
+       self.navigationController?.setNavigationBarHidden(true, animated: true)
+   }
+
+   override func viewWillDisappear(_ animated: Bool) {
+       super.viewWillDisappear(animated)
+       self.navigationController?.setNavigationBarHidden(false, animated:true)
+   }
+    
 }
 
 extension LoginViewController: SetupBaseViewController {
@@ -144,7 +154,8 @@ extension LoginViewController: SetupBaseViewController {
     }
     
     @objc private func tapSignUpButton() {
-        presenter?.handleSignUpTap()
+        showDefaultAlert(message: "Выберите тип аккаунта", topButtonTitle: "Гость", bottomButtonTitle: "Заведения")
+//        presenter?.handleSignUpTap()
     }
 }
 

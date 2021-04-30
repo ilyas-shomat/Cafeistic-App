@@ -16,7 +16,7 @@ class StartPresenter: ViewToPresenterStartProtocol {
     var router: PresenterToRouterStartProtocol?
     
     func load() {
-        
+        router?.showLoginScene(on: view!)
     }
 }
 
