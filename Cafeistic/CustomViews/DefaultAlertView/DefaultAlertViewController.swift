@@ -9,12 +9,22 @@ import Foundation
 import UIKit
 import SnapKit
 
+protocol DefaultAlertViewControllerActionsHandle {
+    func tappedTopButton()
+    func tappedBottomButton()
+}
 
 final class DefaultAlertViewController: UIViewController, SetupBaseViewController {
     
     private lazy var twoButtonAlertView: TwoButtonAlertView = {
         let view = TwoButtonAlertView()
         view.translatesAutoresizingMaskIntoConstraints = false
+        view.handleTopButtonTap = { [weak self] in
+            self?.handleViewTopButtonTap()
+        }
+        view.handleBottomButtonTap = { [weak self] in
+            self?.handleViewBottomButtonTap()
+        }
         return view
     }()
     
@@ -35,6 +45,8 @@ final class DefaultAlertViewController: UIViewController, SetupBaseViewControlle
             twoButtonAlertView.bottomButtonTitile = bottomButtonTitile
         }
     }
+    
+    var delegate: DefaultAlertViewControllerActionsHandle?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,12 +81,15 @@ final class DefaultAlertViewController: UIViewController, SetupBaseViewControlle
     
     @objc private func close() {
         self.dismiss(animated: true, completion: nil)
-//        UIView.animate(withDuration: 0.3, animations: {
-//            self.view.backgroundColor = .clear
-//            self.twoButtonAlertView.alpha = 0.0
-//        }, completion: { _ in
-//            self.dismiss(animated: false, completion: nil)
-//        })
     }
     
+    private func handleViewTopButtonTap() {
+        close()
+        delegate?.tappedTopButton()
+    }
+    
+    private func handleViewBottomButtonTap() {
+        close()
+        delegate?.tappedBottomButton()
+    }
 }

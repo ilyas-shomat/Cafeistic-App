@@ -24,6 +24,8 @@ protocol ViewToPresenterLoginProtocol {
     func handleSignInTap()
     func handleForgetPasswordTap()
     func handleSignUpTap()
+    func handleAlertTopButtonTap()
+    func handleAlertBottomButtonTap()
 }
 
 // MARK: - Interactor Input/Presenter Output (Presenter -> Interactor)
@@ -40,4 +42,5 @@ protocol InteractorToPresenterLoginProtocol {
 // MARK: - Router Input (Presenter -> Router)
 protocol PresenterToRouterLoginProtocol {
     func showForgetPasswordScene(on view: PresenterToViewLoginProtocol)
+    func showClientSignUp(on view: PresenterToViewLoginProtocol)
 }

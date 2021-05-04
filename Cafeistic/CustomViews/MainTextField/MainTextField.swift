@@ -23,7 +23,7 @@ final class MaintextField: UITextField {
     
     private lazy var textSecureIcon: UIImageView = {
         let imageView = UIImageView(frame: CGRect(x: -4.0, y: 8.0, width: 22.0, height: 22.0))
-        imageView.image = Assets.visibilityOnIcon.image
+        imageView.image = Assets.visibilityOffIcon.image
         imageView.contentMode = .scaleAspectFit
         return imageView
     }()
@@ -63,8 +63,8 @@ final class MaintextField: UITextField {
             textSecureIcon.isHidden = true
             keyboardType = .asciiCapable
         case .password:
-            isSecureTextEntry = false
-            placeholder = StringConstant.Scenes.Login.forgetPassword
+            isSecureTextEntry = true
+            placeholder = StringConstant.Scenes.Login.password
             textSecureIcon.isHidden = false
             keyboardType = .asciiCapable
             containerViewForIcon.isUserInteractionEnabled = true
