@@ -8,4 +8,4 @@
 import Foundation
 import UIKit
 
-protocol CollectionViewProvider: UICollectionViewDataSource, UICollectionViewDelegate { }
+protocol CollectionViewProvider: UICollectionViewDataSource, UICollectionViewDelegate {}

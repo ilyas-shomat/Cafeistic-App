@@ -43,4 +43,8 @@ protocol InteractorToPresenterLoginProtocol {
 protocol PresenterToRouterLoginProtocol {
     func showForgetPasswordScene(on view: PresenterToViewLoginProtocol)
     func showClientSignUp(on view: PresenterToViewLoginProtocol)
+    func showEstablishmentSignUp(on view: PresenterToViewLoginProtocol)
+    
+    //MARK: - Temp Code
+    func showMenu(on view: PresenterToViewLoginProtocol)
 }

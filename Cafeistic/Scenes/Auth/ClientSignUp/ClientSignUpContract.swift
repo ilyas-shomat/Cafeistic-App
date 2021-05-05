@@ -21,6 +21,7 @@ protocol ViewToPresenterClientSignUpProtocol {
     var router: PresenterToRouterClientSignUpProtocol? { get set }
     
     func load()
+    func handleSignUpTap()
 }
 
 // MARK: - Interactor Input/Presenter Output (Presenter -> Interactor)

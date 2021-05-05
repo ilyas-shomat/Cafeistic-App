@@ -92,7 +92,7 @@ extension LoginViewController: SetupBaseViewController {
         configureConstraints()
     }
     
-    private func configureSubViews() {
+    func configureSubViews() {
         view.addSubviews(logoImageView,
                          loginTextField,
                          passwordTextField,
@@ -102,7 +102,7 @@ extension LoginViewController: SetupBaseViewController {
                          notSignUpYetLabel)
     }
     
-    private func configureConstraints() {
+    func configureConstraints() {
         logoImageView.snp.makeConstraints {
             $0.top.equalToSuperview().inset(90)
             $0.centerX.equalToSuperview()

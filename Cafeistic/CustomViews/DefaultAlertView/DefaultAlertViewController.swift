@@ -15,6 +15,8 @@ protocol DefaultAlertViewControllerActionsHandle {
 }
 
 final class DefaultAlertViewController: UIViewController, SetupBaseViewController {
+
+    
     
     private lazy var twoButtonAlertView: TwoButtonAlertView = {
         let view = TwoButtonAlertView()
@@ -60,7 +62,7 @@ final class DefaultAlertViewController: UIViewController, SetupBaseViewControlle
         let tap = UITapGestureRecognizer(target: self, action: #selector(close))
         view.addGestureRecognizer(tap)
         
-        configureSubviews()
+        configureSubViews()
         configureConstraints()
     }
     
@@ -68,7 +70,7 @@ final class DefaultAlertViewController: UIViewController, SetupBaseViewControlle
         
     }
     
-    func configureSubviews() {
+    func configureSubViews() {
         view.addSubview(twoButtonAlertView)
     }
     

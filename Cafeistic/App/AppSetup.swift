@@ -18,8 +18,7 @@ class AppSetup {
         guard let rootNavgiationController = window.rootViewController as? UINavigationController else {
             fatalError("Root viewController must be inherited from UINavigationController")
         }
-        rootNavgiationController.pushViewController(StartScene.initiate(), animated: false)
-//        window.rootViewController = ForgetPasswordScene.initiate()
+        rootNavgiationController.pushViewController(LoginScene.initiate(), animated: false)
         window.makeKeyAndVisible()
     }
     

@@ -36,6 +36,29 @@
 		FD6B8897263BCBCB0026D3E0 /* ClientSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B8891263BCBCB0026D3E0 /* ClientSignUpViewController.swift */; };
 		FD6B8898263BCBCB0026D3E0 /* ClientSignUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B8892263BCBCB0026D3E0 /* ClientSignUpInteractor.swift */; };
 		FD6B8899263BCBCB0026D3E0 /* ClientSignUpSceneBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B8893263BCBCB0026D3E0 /* ClientSignUpSceneBuilder.swift */; };
+		FD6B88A6263C03EC0026D3E0 /* EstablishmentSignUpContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B88A0263C03EB0026D3E0 /* EstablishmentSignUpContract.swift */; };
+		FD6B88A7263C03EC0026D3E0 /* EstablishmentSignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B88A1263C03EB0026D3E0 /* EstablishmentSignUpPresenter.swift */; };
+		FD6B88A8263C03EC0026D3E0 /* EstablishmentSignUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B88A2263C03EB0026D3E0 /* EstablishmentSignUpRouter.swift */; };
+		FD6B88A9263C03EC0026D3E0 /* EstablishmentSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B88A3263C03EB0026D3E0 /* EstablishmentSignUpViewController.swift */; };
+		FD6B88AA263C03EC0026D3E0 /* EstablishmentSignUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B88A4263C03EB0026D3E0 /* EstablishmentSignUpInteractor.swift */; };
+		FD6B88AB263C03EC0026D3E0 /* EstablishmentSignUpSceneBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B88A5263C03EB0026D3E0 /* EstablishmentSignUpSceneBuilder.swift */; };
+		FD6B88B0263C04C70026D3E0 /* EstablishmentStaffView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B88AF263C04C70026D3E0 /* EstablishmentStaffView.swift */; };
+		FD6B88B4263C04E30026D3E0 /* EstablishmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B88B3263C04E30026D3E0 /* EstablishmentView.swift */; };
+		FD6B88BD263C06620026D3E0 /* SignUpType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B88BC263C06620026D3E0 /* SignUpType.swift */; };
+		FD6B88C2263C0DE20026D3E0 /* MainSegmentControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B88C1263C0DE20026D3E0 /* MainSegmentControl.swift */; };
+		FD9BB1A72641029300835B98 /* MenuType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9BB1A62641029300835B98 /* MenuType.swift */; };
+		FD9BB1AF2641034D00835B98 /* MenuContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9BB1A92641034D00835B98 /* MenuContract.swift */; };
+		FD9BB1B02641034D00835B98 /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9BB1AA2641034D00835B98 /* MenuPresenter.swift */; };
+		FD9BB1B12641034D00835B98 /* MenuRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9BB1AB2641034D00835B98 /* MenuRouter.swift */; };
+		FD9BB1B22641034D00835B98 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9BB1AC2641034D00835B98 /* MenuViewController.swift */; };
+		FD9BB1B32641034D00835B98 /* MenuInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9BB1AD2641034D00835B98 /* MenuInteractor.swift */; };
+		FD9BB1B42641034D00835B98 /* MenuSceneBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9BB1AE2641034D00835B98 /* MenuSceneBuilder.swift */; };
+		FD9BB1B82641083000835B98 /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9BB1B72641083000835B98 /* UICollectionViewExtension.swift */; };
+		FD9BB1BE2641098300835B98 /* UIView+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9BB1BD2641098300835B98 /* UIView+Identifier.swift */; };
+		FD9BB1C226410C3500835B98 /* CategoryMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9BB1C126410C3500835B98 /* CategoryMenuCell.swift */; };
+		FD9BB1C626410C4800835B98 /* CategoryMenuCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9BB1C526410C4800835B98 /* CategoryMenuCellModel.swift */; };
+		FD9BB1C926410C5D00835B98 /* MealMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9BB1C826410C5D00835B98 /* MealMenuCell.swift */; };
+		FD9BB1CC26410C6F00835B98 /* MealMenuCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9BB1CB26410C6F00835B98 /* MealMenuCellModel.swift */; };
 		FDACDF1826391F6300689B51 /* DefaultAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF1726391F6300689B51 /* DefaultAlertViewController.swift */; };
 		FDACDF1D26391F7C00689B51 /* TwoButtonAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF1C26391F7C00689B51 /* TwoButtonAlertView.swift */; };
 		FDACDF22263930CA00689B51 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF21263930CA00689B51 /* UIViewController+Alert.swift */; };
@@ -48,6 +71,7 @@
 		FDACDF6D263AA00200689B51 /* CollectionViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF6C263AA00200689B51 /* CollectionViewProvider.swift */; };
 		FDACDF71263AA01700689B51 /* TableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF70263AA01700689B51 /* TableViewProvider.swift */; };
 		FDACDF76263AA0EA00689B51 /* DefaultNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF75263AA0EA00689B51 /* DefaultNavigationController.swift */; };
+		FDE2CEC626426BCA00FE1EA7 /* UIView+Corners.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE2CEC526426BCA00FE1EA7 /* UIView+Corners.swift */; };
 		FDEAD92C25C8269B0075F122 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEAD92B25C8269B0075F122 /* AppDelegate.swift */; };
 		FDEAD92E25C8269B0075F122 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEAD92D25C8269B0075F122 /* SceneDelegate.swift */; };
 		FDEAD93525C8269E0075F122 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDEAD93425C8269E0075F122 /* Assets.xcassets */; };
@@ -96,6 +120,29 @@
 		FD6B8891263BCBCB0026D3E0 /* ClientSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientSignUpViewController.swift; sourceTree = "<group>"; };
 		FD6B8892263BCBCB0026D3E0 /* ClientSignUpInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientSignUpInteractor.swift; sourceTree = "<group>"; };
 		FD6B8893263BCBCB0026D3E0 /* ClientSignUpSceneBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientSignUpSceneBuilder.swift; sourceTree = "<group>"; };
+		FD6B88A0263C03EB0026D3E0 /* EstablishmentSignUpContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentSignUpContract.swift; sourceTree = "<group>"; };
+		FD6B88A1263C03EB0026D3E0 /* EstablishmentSignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentSignUpPresenter.swift; sourceTree = "<group>"; };
+		FD6B88A2263C03EB0026D3E0 /* EstablishmentSignUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentSignUpRouter.swift; sourceTree = "<group>"; };
+		FD6B88A3263C03EB0026D3E0 /* EstablishmentSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentSignUpViewController.swift; sourceTree = "<group>"; };
+		FD6B88A4263C03EB0026D3E0 /* EstablishmentSignUpInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentSignUpInteractor.swift; sourceTree = "<group>"; };
+		FD6B88A5263C03EB0026D3E0 /* EstablishmentSignUpSceneBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentSignUpSceneBuilder.swift; sourceTree = "<group>"; };
+		FD6B88AF263C04C70026D3E0 /* EstablishmentStaffView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentStaffView.swift; sourceTree = "<group>"; };
+		FD6B88B3263C04E30026D3E0 /* EstablishmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentView.swift; sourceTree = "<group>"; };
+		FD6B88BC263C06620026D3E0 /* SignUpType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpType.swift; sourceTree = "<group>"; };
+		FD6B88C1263C0DE20026D3E0 /* MainSegmentControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSegmentControl.swift; sourceTree = "<group>"; };
+		FD9BB1A62641029300835B98 /* MenuType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuType.swift; sourceTree = "<group>"; };
+		FD9BB1A92641034D00835B98 /* MenuContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuContract.swift; sourceTree = "<group>"; };
+		FD9BB1AA2641034D00835B98 /* MenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
+		FD9BB1AB2641034D00835B98 /* MenuRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRouter.swift; sourceTree = "<group>"; };
+		FD9BB1AC2641034D00835B98 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		FD9BB1AD2641034D00835B98 /* MenuInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuInteractor.swift; sourceTree = "<group>"; };
+		FD9BB1AE2641034D00835B98 /* MenuSceneBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSceneBuilder.swift; sourceTree = "<group>"; };
+		FD9BB1B72641083000835B98 /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
+		FD9BB1BD2641098300835B98 /* UIView+Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Identifier.swift"; sourceTree = "<group>"; };
+		FD9BB1C126410C3500835B98 /* CategoryMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryMenuCell.swift; sourceTree = "<group>"; };
+		FD9BB1C526410C4800835B98 /* CategoryMenuCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryMenuCellModel.swift; sourceTree = "<group>"; };
+		FD9BB1C826410C5D00835B98 /* MealMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealMenuCell.swift; sourceTree = "<group>"; };
+		FD9BB1CB26410C6F00835B98 /* MealMenuCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealMenuCellModel.swift; sourceTree = "<group>"; };
 		FDACDF1726391F6300689B51 /* DefaultAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAlertViewController.swift; sourceTree = "<group>"; };
 		FDACDF1C26391F7C00689B51 /* TwoButtonAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoButtonAlertView.swift; sourceTree = "<group>"; };
 		FDACDF21263930CA00689B51 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
@@ -108,6 +155,7 @@
 		FDACDF6C263AA00200689B51 /* CollectionViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewProvider.swift; sourceTree = "<group>"; };
 		FDACDF70263AA01700689B51 /* TableViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewProvider.swift; sourceTree = "<group>"; };
 		FDACDF75263AA0EA00689B51 /* DefaultNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNavigationController.swift; sourceTree = "<group>"; };
+		FDE2CEC526426BCA00FE1EA7 /* UIView+Corners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Corners.swift"; sourceTree = "<group>"; };
 		FDEAD92825C8269B0075F122 /* Cafeistic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cafeistic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDEAD92B25C8269B0075F122 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDEAD92D25C8269B0075F122 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -158,6 +206,7 @@
 		FD4593592636AD9100669AB4 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				FD6B88C0263C0DCC0026D3E0 /* MainSegmentControl */,
 				FDACDF1626391EC000689B51 /* DefaultAlertView */,
 				FD45939E2637F3D300669AB4 /* ActivityView */,
 				FD45938E2637F1B000669AB4 /* MainButton */,
@@ -185,6 +234,7 @@
 		FD4593652636BD6400669AB4 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				FD6B889F263C03CD0026D3E0 /* EstablishmentSignUp */,
 				FD6B888D263BCBAD0026D3E0 /* ClientSignUp */,
 				FDACDF57263A8BAC00689B51 /* ForgetPassword */,
 				FD4593662636BD6E00669AB4 /* Login */,
@@ -218,6 +268,8 @@
 			isa = PBXGroup;
 			children = (
 				FD45938A2636E19F00669AB4 /* UIView+AddSubviews.swift */,
+				FD9BB1BD2641098300835B98 /* UIView+Identifier.swift */,
+				FDE2CEC526426BCA00FE1EA7 /* UIView+Corners.swift */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -288,6 +340,10 @@
 		FD4B1BBC262FFA3B005E9BF9 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				FD6B889E263C00E90026D3E0 /* Menu */,
+				FD6B889D263C00D30026D3E0 /* Profile */,
+				FD6B889C263C00B10026D3E0 /* Establishment */,
+				FD6B889B263C00A80026D3E0 /* Client */,
 				FD4593652636BD6400669AB4 /* Auth */,
 				FDF281B02632CEBF00B1829A /* Start */,
 			);
@@ -305,6 +361,101 @@
 				FD6B8893263BCBCB0026D3E0 /* ClientSignUpSceneBuilder.swift */,
 			);
 			path = ClientSignUp;
+			sourceTree = "<group>";
+		};
+		FD6B889B263C00A80026D3E0 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		FD6B889C263C00B10026D3E0 /* Establishment */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Establishment;
+			sourceTree = "<group>";
+		};
+		FD6B889D263C00D30026D3E0 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		FD6B889E263C00E90026D3E0 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				FD9BB1C026410BFE00835B98 /* Cells */,
+				FD9BB1A62641029300835B98 /* MenuType.swift */,
+				FD9BB1A92641034D00835B98 /* MenuContract.swift */,
+				FD9BB1AA2641034D00835B98 /* MenuPresenter.swift */,
+				FD9BB1AB2641034D00835B98 /* MenuRouter.swift */,
+				FD9BB1AC2641034D00835B98 /* MenuViewController.swift */,
+				FD9BB1AD2641034D00835B98 /* MenuInteractor.swift */,
+				FD9BB1AE2641034D00835B98 /* MenuSceneBuilder.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		FD6B889F263C03CD0026D3E0 /* EstablishmentSignUp */ = {
+			isa = PBXGroup;
+			children = (
+				FD6B88BB263C06440026D3E0 /* Types */,
+				FD6B88AE263C04A20026D3E0 /* Views */,
+				FD6B88A0263C03EB0026D3E0 /* EstablishmentSignUpContract.swift */,
+				FD6B88A1263C03EB0026D3E0 /* EstablishmentSignUpPresenter.swift */,
+				FD6B88A2263C03EB0026D3E0 /* EstablishmentSignUpRouter.swift */,
+				FD6B88A3263C03EB0026D3E0 /* EstablishmentSignUpViewController.swift */,
+				FD6B88A4263C03EB0026D3E0 /* EstablishmentSignUpInteractor.swift */,
+				FD6B88A5263C03EB0026D3E0 /* EstablishmentSignUpSceneBuilder.swift */,
+			);
+			path = EstablishmentSignUp;
+			sourceTree = "<group>";
+		};
+		FD6B88AE263C04A20026D3E0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FD6B88AF263C04C70026D3E0 /* EstablishmentStaffView.swift */,
+				FD6B88B3263C04E30026D3E0 /* EstablishmentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FD6B88BB263C06440026D3E0 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				FD6B88BC263C06620026D3E0 /* SignUpType.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		FD6B88C0263C0DCC0026D3E0 /* MainSegmentControl */ = {
+			isa = PBXGroup;
+			children = (
+				FD6B88C1263C0DE20026D3E0 /* MainSegmentControl.swift */,
+			);
+			path = MainSegmentControl;
+			sourceTree = "<group>";
+		};
+		FD9BB1B62641073000835B98 /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				FD9BB1B72641083000835B98 /* UICollectionViewExtension.swift */,
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		FD9BB1C026410BFE00835B98 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FD9BB1C126410C3500835B98 /* CategoryMenuCell.swift */,
+				FD9BB1C526410C4800835B98 /* CategoryMenuCellModel.swift */,
+				FD9BB1C826410C5D00835B98 /* MealMenuCell.swift */,
+				FD9BB1CB26410C6F00835B98 /* MealMenuCellModel.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		FDACDF1626391EC000689B51 /* DefaultAlertView */ = {
@@ -499,6 +650,7 @@
 		FDF281F22632D38D00B1829A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				FD9BB1B62641073000835B98 /* UICollectionView */,
 				FDACDF20263930B400689B51 /* UIViewController */,
 				FD4593892636E17900669AB4 /* UIView */,
 				FDF281F82632D42200B1829A /* UITableView */,
@@ -644,7 +796,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD9BB1AF2641034D00835B98 /* MenuContract.swift in Sources */,
 				FD4593872636D77B00669AB4 /* StringConstant.swift in Sources */,
+				FD9BB1BE2641098300835B98 /* UIView+Identifier.swift in Sources */,
 				FD4593902637F1BD00669AB4 /* MainButton.swift in Sources */,
 				FDF281B82632CED300B1829A /* StartRouter.swift in Sources */,
 				FDACDF76263AA0EA00689B51 /* DefaultNavigationController.swift in Sources */,
@@ -656,8 +810,11 @@
 				FD45936D2636BD8000669AB4 /* LoginContract.swift in Sources */,
 				FDACDF5F263A8BCA00689B51 /* ForgetPasswordPresenter.swift in Sources */,
 				FDACDF5E263A8BCA00689B51 /* ForgetPasswordContract.swift in Sources */,
+				FD6B88A8263C03EC0026D3E0 /* EstablishmentSignUpRouter.swift in Sources */,
+				FD6B88AA263C03EC0026D3E0 /* EstablishmentSignUpInteractor.swift in Sources */,
 				FD45939C2637F2D000669AB4 /* IndicatableView+UIButton.swift in Sources */,
 				FD45938B2636E19F00669AB4 /* UIView+AddSubviews.swift in Sources */,
+				FD9BB1CC26410C6F00835B98 /* MealMenuCellModel.swift in Sources */,
 				FDF281F42632D3AA00B1829A /* UIColor+Hex.swift in Sources */,
 				FD4593812636CA3100669AB4 /* Assets.swift in Sources */,
 				FD4593842636D5D200669AB4 /* ColorPalette.swift in Sources */,
@@ -668,18 +825,29 @@
 				FDF281BA2632CED300B1829A /* StartContract.swift in Sources */,
 				FDACDF1D26391F7C00689B51 /* TwoButtonAlertView.swift in Sources */,
 				FDACDF63263A8BCA00689B51 /* ForgetPasswordSceneBuilder.swift in Sources */,
+				FD9BB1B32641034D00835B98 /* MenuInteractor.swift in Sources */,
 				FD6B8896263BCBCB0026D3E0 /* ClientSignUpRouter.swift in Sources */,
+				FD6B88A9263C03EC0026D3E0 /* EstablishmentSignUpViewController.swift in Sources */,
 				FD45936E2636BD8000669AB4 /* LoginPresenter.swift in Sources */,
+				FD6B88BD263C06620026D3E0 /* SignUpType.swift in Sources */,
 				FD45937E2636C0DB00669AB4 /* MainTextField.swift in Sources */,
 				FDF281C12632CFEE00B1829A /* DefaultViewController.swift in Sources */,
 				FDACDF22263930CA00689B51 /* UIViewController+Alert.swift in Sources */,
+				FD9BB1C226410C3500835B98 /* CategoryMenuCell.swift in Sources */,
 				FD4593752636BDEE00669AB4 /* SetupBaseViewController.swift in Sources */,
 				FDACDF61263A8BCA00689B51 /* ForgetPasswordViewController.swift in Sources */,
+				FD6B88AB263C03EC0026D3E0 /* EstablishmentSignUpSceneBuilder.swift in Sources */,
 				FD6B8899263BCBCB0026D3E0 /* ClientSignUpSceneBuilder.swift in Sources */,
+				FD9BB1C926410C5D00835B98 /* MealMenuCell.swift in Sources */,
 				FD4593A42637F9EA00669AB4 /* SpinnerIndicator.swift in Sources */,
 				FDACDF6D263AA00200689B51 /* CollectionViewProvider.swift in Sources */,
+				FD9BB1B82641083000835B98 /* UICollectionViewExtension.swift in Sources */,
 				FD4593982637F2BA00669AB4 /* IndicatableView.swift in Sources */,
+				FD9BB1B12641034D00835B98 /* MenuRouter.swift in Sources */,
+				FD9BB1B22641034D00835B98 /* MenuViewController.swift in Sources */,
 				FDACDF71263AA01700689B51 /* TableViewProvider.swift in Sources */,
+				FD6B88B0263C04C70026D3E0 /* EstablishmentStaffView.swift in Sources */,
+				FD9BB1B42641034D00835B98 /* MenuSceneBuilder.swift in Sources */,
 				FD6B8894263BCBCB0026D3E0 /* ClientSignUpContract.swift in Sources */,
 				FD6B8898263BCBCB0026D3E0 /* ClientSignUpInteractor.swift in Sources */,
 				FD4593932637F1F300669AB4 /* MainButtonStyle.swift in Sources */,
@@ -688,13 +856,21 @@
 				FDF281FA2632D43800B1829A /* UITableViewCell+UI.swift in Sources */,
 				FD4B1BD4262FFE5E005E9BF9 /* AppSetup.swift in Sources */,
 				FD4593722636BD8000669AB4 /* LoginSceneBuilder.swift in Sources */,
+				FD6B88A7263C03EC0026D3E0 /* EstablishmentSignUpPresenter.swift in Sources */,
+				FD9BB1C626410C4800835B98 /* CategoryMenuCellModel.swift in Sources */,
+				FD6B88A6263C03EC0026D3E0 /* EstablishmentSignUpContract.swift in Sources */,
 				FDACDF62263A8BCA00689B51 /* ForgetPasswordInteractor.swift in Sources */,
 				FD45936F2636BD8000669AB4 /* LoginRouter.swift in Sources */,
+				FD9BB1A72641029300835B98 /* MenuType.swift in Sources */,
 				FDF282002632D79D00B1829A /* StartSceneBuilder.swift in Sources */,
 				FD45937A2636C0BC00669AB4 /* MainTextFieldStyle.swift in Sources */,
 				FDF281B92632CED300B1829A /* StartViewController.swift in Sources */,
+				FD6B88B4263C04E30026D3E0 /* EstablishmentView.swift in Sources */,
+				FD6B88C2263C0DE20026D3E0 /* MainSegmentControl.swift in Sources */,
+				FDE2CEC626426BCA00FE1EA7 /* UIView+Corners.swift in Sources */,
 				FD4593A02637F3F000669AB4 /* SpinnerView.swift in Sources */,
 				FDACDF1826391F6300689B51 /* DefaultAlertViewController.swift in Sources */,
+				FD9BB1B02641034D00835B98 /* MenuPresenter.swift in Sources */,
 				FD4593622636BB8800669AB4 /* BaseProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

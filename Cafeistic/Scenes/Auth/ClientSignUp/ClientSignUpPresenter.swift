@@ -18,6 +18,10 @@ class ClientSignUpPresenter: ViewToPresenterClientSignUpProtocol {
     func load() {
         
     }
+    
+    func handleSignUpTap() {
+        
+    }
 }
 
 // MARK: - (Interactor -> Presenter)

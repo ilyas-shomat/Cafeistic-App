@@ -73,7 +73,7 @@ extension ClientSignUpViewController: SetupBaseViewController {
         configureConstraints()
     }
     
-    private func configureSubViews() {
+    func configureSubViews() {
         view.addSubviews(signUpLabel,
                          fullNameTextField,
                          loginTextField,
@@ -83,7 +83,7 @@ extension ClientSignUpViewController: SetupBaseViewController {
                          signUpButton)
     }
     
-    private func configureConstraints() {
+    func configureConstraints() {
         signUpLabel.snp.makeConstraints {
             $0.top.equalToSuperview().inset(70)
             $0.width.equalToSuperview().multipliedBy(0.85)
@@ -129,7 +129,11 @@ extension ClientSignUpViewController: SetupBaseViewController {
     }
     
     func setupActions() {
-        
+        signUpButton.addTarget(self, action: #selector(tapSignUpButton), for: .touchUpInside)
+    }
+    
+    @objc private func tapSignUpButton() {
+        presenter?.handleSignUpTap()
     }
 }
 
