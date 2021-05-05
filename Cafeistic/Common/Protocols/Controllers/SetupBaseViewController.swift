@@ -7,7 +7,9 @@
 
 import Foundation
 
-protocol SetupBaseViewController {
+protocol SetupBaseViewController: class {
     func setupViews()
     func setupActions()
+    func configureSubViews()
+    func configureConstraints()
 }

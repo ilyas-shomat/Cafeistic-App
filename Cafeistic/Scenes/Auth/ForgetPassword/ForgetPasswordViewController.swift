@@ -52,13 +52,13 @@ extension ForgetPasswordViewController: SetupBaseViewController {
         
     }
     
-    private func configureSubViews() {
+    func configureSubViews() {
         view.addSubviews(logoImageView,
                          emailTextField,
                          sendButton)
     }
     
-    private func configureConstraints() {
+    func configureConstraints() {
         logoImageView.snp.makeConstraints {
             $0.top.equalToSuperview().inset(90)
             $0.centerX.equalToSuperview()

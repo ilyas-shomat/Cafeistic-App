@@ -20,7 +20,7 @@ class LoginPresenter: ViewToPresenterLoginProtocol {
     }
     
     func handleSignInTap() {
-//        consolePrint("/// tapped signIn")
+        router?.showMenu(on: view!)
     }
     
     func handleForgetPasswordTap() {
@@ -36,10 +36,11 @@ class LoginPresenter: ViewToPresenterLoginProtocol {
     }
     
     func handleAlertBottomButtonTap() {
-        
+        router?.showEstablishmentSignUp(on: view!)
     }
     
 }
+
 
 // MARK: - (Interactor -> Presenter)
 extension LoginPresenter: InteractorToPresenterLoginProtocol {
