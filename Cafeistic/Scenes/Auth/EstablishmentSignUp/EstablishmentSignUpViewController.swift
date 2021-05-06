@@ -28,6 +28,17 @@ class EstablishmentSignUpViewController: DefaultViewController {
         setupViews()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setupNavigationBarSwitchView()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        switchView.removeFromSuperview()
+        
+    }
+    
 }
 
 extension EstablishmentSignUpViewController {
@@ -38,15 +49,10 @@ extension EstablishmentSignUpViewController {
     }
     
     func configureBaseSubViews() {
-        navigationController?.navigationBar.addSubview(switchView)
     }
     
     func configureBaseConstraints() {
-        switchView.snp.makeConstraints {
-            $0.width.equalTo(264)
-            $0.height.equalTo(34)
-            $0.center.equalToSuperview()
-        }
+
     }
     
     func setupStaffViews(signUpType: SignUpType) {
@@ -59,6 +65,16 @@ extension EstablishmentSignUpViewController {
     func setupActions() {
         
     }
+    
+    private func setupNavigationBarSwitchView() {
+        navigationController?.navigationBar.addSubview(switchView)
+        switchView.snp.makeConstraints {
+            $0.width.equalTo(264)
+            $0.height.equalTo(34)
+            $0.center.equalToSuperview()
+        }
+    }
+    
 }
 
 // MARK: - (Presenter -> View)
@@ -68,6 +84,5 @@ extension EstablishmentSignUpViewController: PresenterToViewEstablishmentSignUpP
 
 extension EstablishmentSignUpViewController: MainSwitchViewDelegate {
     func didSelect(option: Int) {
-        
     }
 }

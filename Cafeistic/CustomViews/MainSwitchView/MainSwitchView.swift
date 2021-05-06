@@ -62,7 +62,7 @@ final class MainSwitchView: UIView {
     private lazy var switchView: UIView = {
         let view = UIView()
         view.backgroundColor = UIColor.white
-        view.layer.cornerRadius = 9
+        view.layer.cornerRadius = 14
         view.layer.masksToBounds = true
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
@@ -84,18 +84,14 @@ final class MainSwitchView: UIView {
     required init?(coder aDecoder: NSCoder) {
         fatalError()
     }
-    
-    // MARK: - Setup
-    
+        
     private func setupView() {
-        layer.cornerRadius = 10
+        layer.cornerRadius = 16
         layer.masksToBounds = true
         backgroundColor = .appOrange
         configureSubviews()
         configureConstraints()
         update(with: selectedOption)
-        
-        consolePrint("///", self.frame)
     }
     
     private func configureSubviews() {
