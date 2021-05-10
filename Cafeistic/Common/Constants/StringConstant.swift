@@ -37,6 +37,11 @@ struct StringConstant {
             static let repeatPassword = "Повторите пароль"
             static let signUp = Login.signUp
         }
+        
+        struct EstablishmentSignUp {
+            static let staff = "Персонал"
+            static let owner = "Владелец"
+        }
     }
     
     struct Services {

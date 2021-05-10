@@ -30,6 +30,7 @@
 		FD4593A02637F3F000669AB4 /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD45939F2637F3EF00669AB4 /* SpinnerView.swift */; };
 		FD4593A42637F9EA00669AB4 /* SpinnerIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4593A32637F9EA00669AB4 /* SpinnerIndicator.swift */; };
 		FD4B1BD4262FFE5E005E9BF9 /* AppSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4B1BD3262FFE5E005E9BF9 /* AppSetup.swift */; };
+		FD6117992643AE7E00794EB5 /* MainSwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6117982643AE7E00794EB5 /* MainSwitchView.swift */; };
 		FD6B8894263BCBCB0026D3E0 /* ClientSignUpContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B888E263BCBCB0026D3E0 /* ClientSignUpContract.swift */; };
 		FD6B8895263BCBCB0026D3E0 /* ClientSignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B888F263BCBCB0026D3E0 /* ClientSignUpPresenter.swift */; };
 		FD6B8896263BCBCB0026D3E0 /* ClientSignUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B8890263BCBCB0026D3E0 /* ClientSignUpRouter.swift */; };
@@ -45,7 +46,6 @@
 		FD6B88B0263C04C70026D3E0 /* EstablishmentStaffView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B88AF263C04C70026D3E0 /* EstablishmentStaffView.swift */; };
 		FD6B88B4263C04E30026D3E0 /* EstablishmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B88B3263C04E30026D3E0 /* EstablishmentView.swift */; };
 		FD6B88BD263C06620026D3E0 /* SignUpType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B88BC263C06620026D3E0 /* SignUpType.swift */; };
-		FD6B88C2263C0DE20026D3E0 /* MainSegmentControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B88C1263C0DE20026D3E0 /* MainSegmentControl.swift */; };
 		FD9BB1A72641029300835B98 /* MenuType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9BB1A62641029300835B98 /* MenuType.swift */; };
 		FD9BB1AF2641034D00835B98 /* MenuContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9BB1A92641034D00835B98 /* MenuContract.swift */; };
 		FD9BB1B02641034D00835B98 /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9BB1AA2641034D00835B98 /* MenuPresenter.swift */; };
@@ -114,6 +114,7 @@
 		FD45939F2637F3EF00669AB4 /* SpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
 		FD4593A32637F9EA00669AB4 /* SpinnerIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerIndicator.swift; sourceTree = "<group>"; };
 		FD4B1BD3262FFE5E005E9BF9 /* AppSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSetup.swift; sourceTree = "<group>"; };
+		FD6117982643AE7E00794EB5 /* MainSwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSwitchView.swift; sourceTree = "<group>"; };
 		FD6B888E263BCBCB0026D3E0 /* ClientSignUpContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientSignUpContract.swift; sourceTree = "<group>"; };
 		FD6B888F263BCBCB0026D3E0 /* ClientSignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientSignUpPresenter.swift; sourceTree = "<group>"; };
 		FD6B8890263BCBCB0026D3E0 /* ClientSignUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientSignUpRouter.swift; sourceTree = "<group>"; };
@@ -129,7 +130,6 @@
 		FD6B88AF263C04C70026D3E0 /* EstablishmentStaffView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentStaffView.swift; sourceTree = "<group>"; };
 		FD6B88B3263C04E30026D3E0 /* EstablishmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentView.swift; sourceTree = "<group>"; };
 		FD6B88BC263C06620026D3E0 /* SignUpType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpType.swift; sourceTree = "<group>"; };
-		FD6B88C1263C0DE20026D3E0 /* MainSegmentControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSegmentControl.swift; sourceTree = "<group>"; };
 		FD9BB1A62641029300835B98 /* MenuType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuType.swift; sourceTree = "<group>"; };
 		FD9BB1A92641034D00835B98 /* MenuContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuContract.swift; sourceTree = "<group>"; };
 		FD9BB1AA2641034D00835B98 /* MenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
@@ -206,7 +206,7 @@
 		FD4593592636AD9100669AB4 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
-				FD6B88C0263C0DCC0026D3E0 /* MainSegmentControl */,
+				FD6B88C0263C0DCC0026D3E0 /* MainSwitchView */,
 				FDACDF1626391EC000689B51 /* DefaultAlertView */,
 				FD45939E2637F3D300669AB4 /* ActivityView */,
 				FD45938E2637F1B000669AB4 /* MainButton */,
@@ -431,12 +431,12 @@
 			path = Types;
 			sourceTree = "<group>";
 		};
-		FD6B88C0263C0DCC0026D3E0 /* MainSegmentControl */ = {
+		FD6B88C0263C0DCC0026D3E0 /* MainSwitchView */ = {
 			isa = PBXGroup;
 			children = (
-				FD6B88C1263C0DE20026D3E0 /* MainSegmentControl.swift */,
+				FD6117982643AE7E00794EB5 /* MainSwitchView.swift */,
 			);
-			path = MainSegmentControl;
+			path = MainSwitchView;
 			sourceTree = "<group>";
 		};
 		FD9BB1B62641073000835B98 /* UICollectionView */ = {
@@ -813,6 +813,7 @@
 				FD6B88A8263C03EC0026D3E0 /* EstablishmentSignUpRouter.swift in Sources */,
 				FD6B88AA263C03EC0026D3E0 /* EstablishmentSignUpInteractor.swift in Sources */,
 				FD45939C2637F2D000669AB4 /* IndicatableView+UIButton.swift in Sources */,
+				FD6117992643AE7E00794EB5 /* MainSwitchView.swift in Sources */,
 				FD45938B2636E19F00669AB4 /* UIView+AddSubviews.swift in Sources */,
 				FD9BB1CC26410C6F00835B98 /* MealMenuCellModel.swift in Sources */,
 				FDF281F42632D3AA00B1829A /* UIColor+Hex.swift in Sources */,
@@ -866,7 +867,6 @@
 				FD45937A2636C0BC00669AB4 /* MainTextFieldStyle.swift in Sources */,
 				FDF281B92632CED300B1829A /* StartViewController.swift in Sources */,
 				FD6B88B4263C04E30026D3E0 /* EstablishmentView.swift in Sources */,
-				FD6B88C2263C0DE20026D3E0 /* MainSegmentControl.swift in Sources */,
 				FDE2CEC626426BCA00FE1EA7 /* UIView+Corners.swift in Sources */,
 				FD4593A02637F3F000669AB4 /* SpinnerView.swift in Sources */,
 				FDACDF1826391F6300689B51 /* DefaultAlertViewController.swift in Sources */,

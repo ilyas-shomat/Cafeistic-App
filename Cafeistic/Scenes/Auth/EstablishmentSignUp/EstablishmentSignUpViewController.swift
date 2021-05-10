@@ -11,16 +11,13 @@ import SnapKit
 
 class EstablishmentSignUpViewController: DefaultViewController {
     
-    private lazy var segmentControl: UISegmentedControl = {
-        let segmentControl = UISegmentedControl(items: ["Персонал", "Владелец"])
-        segmentControl.selectedSegmentTintColor = .white
-        segmentControl.backgroundColor = .appOrange
-        segmentControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.appOrange], for: .normal)
-        segmentControl.selectedSegmentIndex = 0
-        segmentControl.setWidth(view.frame.width * 0.35, forSegmentAt: 0)
-        segmentControl.setWidth(view.frame.width * 0.35, forSegmentAt: 1)
-        segmentControl.layer.cornerRadius = segmentControl.bounds.height / 2
-        return segmentControl
+    private lazy var switchView: MainSwitchView = {
+        let view = MainSwitchView(frame: CGRect(x: 0, y: 0, width: 264, height: 34))
+        view.firstOptionText = StringConstant.Scenes.EstablishmentSignUp.staff
+        view.secondOptionText = StringConstant.Scenes.EstablishmentSignUp.owner
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.delegate = self
+        return view
     }()
     
     var presenter: ViewToPresenterEstablishmentSignUpProtocol?
@@ -31,22 +28,31 @@ class EstablishmentSignUpViewController: DefaultViewController {
         setupViews()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setupNavigationBarSwitchView()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        switchView.removeFromSuperview()
+        
+    }
+    
 }
 
 extension EstablishmentSignUpViewController {
     
     func setupViews() {
-        navigationItem.titleView = segmentControl
-        
-//        configureBaseSubViews()
-//        configureBaseConstraints()
+        configureBaseSubViews()
+        configureBaseConstraints()
     }
     
     func configureBaseSubViews() {
-//        view.addSubviews(segmentControl)
     }
     
     func configureBaseConstraints() {
+
     }
     
     func setupStaffViews(signUpType: SignUpType) {
@@ -59,9 +65,24 @@ extension EstablishmentSignUpViewController {
     func setupActions() {
         
     }
+    
+    private func setupNavigationBarSwitchView() {
+        navigationController?.navigationBar.addSubview(switchView)
+        switchView.snp.makeConstraints {
+            $0.width.equalTo(264)
+            $0.height.equalTo(34)
+            $0.center.equalToSuperview()
+        }
+    }
+    
 }
 
 // MARK: - (Presenter -> View)
-extension EstablishmentSignUpViewController: PresenterToViewEstablishmentSignUpProtocol{
+extension EstablishmentSignUpViewController: PresenterToViewEstablishmentSignUpProtocol {
 
+}
+
+extension EstablishmentSignUpViewController: MainSwitchViewDelegate {
+    func didSelect(option: Int) {
+    }
 }
