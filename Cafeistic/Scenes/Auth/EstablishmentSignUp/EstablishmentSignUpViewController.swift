@@ -27,7 +27,9 @@ class EstablishmentSignUpViewController: DefaultViewController {
         .textField(style: .password,
                    placeholder: StringConstant.Scenes.EstablishmentSignUp.password),
         .textField(style: .password,
-                   placeholder: StringConstant.Scenes.EstablishmentSignUp.repeatPassword)
+                   placeholder: StringConstant.Scenes.EstablishmentSignUp.repeatPassword),
+        .button(style: .rounded,
+                title: StringConstant.Scenes.EstablishmentSignUp.signUp)
     ]
     
     private lazy var switchView: MainSwitchView = {
@@ -48,6 +50,7 @@ class EstablishmentSignUpViewController: DefaultViewController {
         tableView.allowsSelection = false
         tableView.register(TableViewLabelCell.self)
         tableView.register(TableViewTextFieldCell.self)
+        tableView.register(TableViewButtonCell.self)
         tableView.showsVerticalScrollIndicator = false
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.separatorStyle = .none

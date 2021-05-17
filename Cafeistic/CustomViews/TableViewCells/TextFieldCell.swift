@@ -69,7 +69,6 @@ final class TableViewTextFieldCell: UITableViewCell {
     private func configureConstraints() {
         textField.snp.makeConstraints {
             $0.top.bottom.equalToSuperview().inset(5)
-//            $0.bottom.equalToSuperview()
             $0.centerX.equalToSuperview()
             $0.width.equalToSuperview().multipliedBy(0.85)
             $0.height.equalTo(45)

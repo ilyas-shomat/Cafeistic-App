@@ -36,8 +36,10 @@ enum TableViewCellType {
             cell.textFont = font
             cell.color = textColor
             return cell
-        case .button(style: let style, title: let title):
-            let cell = tableView.dequeueReusableCell(indexPath: indexPath)
+        case .button(let style, let title):
+            let cell = tableView.dequeueReusableCell(indexPath: indexPath) as TableViewButtonCell
+            cell.style = style
+            cell.title = title
             return cell
         }
     }
