@@ -32,6 +32,7 @@ final class TableViewLabelCell: UITableViewCell {
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
 //        label.font = UIFont.boldSystemFont(ofSize: 20)
+        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
@@ -50,7 +51,8 @@ final class TableViewLabelCell: UITableViewCell {
     }
     
     private func configureSubviews() {
-        addSubview(titleLabel)
+        contentView.addSubview(titleLabel)
+//        addSubview(titleLabel)
     }
     
     private func configureConstraints() {

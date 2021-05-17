@@ -43,6 +43,7 @@ final class TableViewTextFieldCell: UITableViewCell {
 
     private lazy var textField: MaintextField = {
         let textField = MaintextField(style: .regular)
+        textField.backgroundColor = .appOrange
         return textField
     }()
     
@@ -61,7 +62,7 @@ final class TableViewTextFieldCell: UITableViewCell {
     }
     
     private func configureSubviews() {
-        addSubview(textField)
+        contentView.addSubview(textField)
     }
     
     private func configureConstraints() {
