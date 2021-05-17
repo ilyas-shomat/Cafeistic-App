@@ -75,6 +75,9 @@
 		FDCBAD30264A58F6005B9608 /* LabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCBAD2F264A58F6005B9608 /* LabelCell.swift */; };
 		FDE2CEC626426BCA00FE1EA7 /* UIView+Corners.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE2CEC526426BCA00FE1EA7 /* UIView+Corners.swift */; };
 		FDEA5C7C265245DD00BB08A1 /* TextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEA5C7B265245DD00BB08A1 /* TextFieldCell.swift */; };
+		FDEA5CCB2652963900BB08A1 /* UIButton+SetImageTintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEA5CCA2652963800BB08A1 /* UIButton+SetImageTintColor.swift */; };
+		FDEA5CD0265296B700BB08A1 /* UIImageView+SetImageColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEA5CCF265296B700BB08A1 /* UIImageView+SetImageColor.swift */; };
+		FDEA5CD42652976800BB08A1 /* UIImage+MaskWithColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEA5CD32652976800BB08A1 /* UIImage+MaskWithColor.swift */; };
 		FDEAD92C25C8269B0075F122 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEAD92B25C8269B0075F122 /* AppDelegate.swift */; };
 		FDEAD92E25C8269B0075F122 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEAD92D25C8269B0075F122 /* SceneDelegate.swift */; };
 		FDEAD93525C8269E0075F122 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDEAD93425C8269E0075F122 /* Assets.xcassets */; };
@@ -162,6 +165,9 @@
 		FDCBAD2F264A58F6005B9608 /* LabelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelCell.swift; sourceTree = "<group>"; };
 		FDE2CEC526426BCA00FE1EA7 /* UIView+Corners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Corners.swift"; sourceTree = "<group>"; };
 		FDEA5C7B265245DD00BB08A1 /* TextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldCell.swift; sourceTree = "<group>"; };
+		FDEA5CCA2652963800BB08A1 /* UIButton+SetImageTintColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+SetImageTintColor.swift"; sourceTree = "<group>"; };
+		FDEA5CCF265296B700BB08A1 /* UIImageView+SetImageColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+SetImageColor.swift"; sourceTree = "<group>"; };
+		FDEA5CD32652976800BB08A1 /* UIImage+MaskWithColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+MaskWithColor.swift"; sourceTree = "<group>"; };
 		FDEAD92825C8269B0075F122 /* Cafeistic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cafeistic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDEAD92B25C8269B0075F122 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDEAD92D25C8269B0075F122 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -512,6 +518,30 @@
 			path = TableViewCells;
 			sourceTree = "<group>";
 		};
+		FDEA5CC92652961700BB08A1 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				FDEA5CCA2652963800BB08A1 /* UIButton+SetImageTintColor.swift */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		FDEA5CCE2652969700BB08A1 /* UIImageView */ = {
+			isa = PBXGroup;
+			children = (
+				FDEA5CCF265296B700BB08A1 /* UIImageView+SetImageColor.swift */,
+			);
+			path = UIImageView;
+			sourceTree = "<group>";
+		};
+		FDEA5CD22652974E00BB08A1 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				FDEA5CD32652976800BB08A1 /* UIImage+MaskWithColor.swift */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
 		FDEAD91F25C8269A0075F122 = {
 			isa = PBXGroup;
 			children = (
@@ -658,6 +688,9 @@
 		FDF281F22632D38D00B1829A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				FDEA5CD22652974E00BB08A1 /* UIImage */,
+				FDEA5CCE2652969700BB08A1 /* UIImageView */,
+				FDEA5CC92652961700BB08A1 /* UIButton */,
 				FD9BB1B62641073000835B98 /* UICollectionView */,
 				FDACDF20263930B400689B51 /* UIViewController */,
 				FD4593892636E17900669AB4 /* UIView */,
@@ -825,6 +858,7 @@
 				FD45939C2637F2D000669AB4 /* IndicatableView+UIButton.swift in Sources */,
 				FD6117992643AE7E00794EB5 /* MainSwitchView.swift in Sources */,
 				FD45938B2636E19F00669AB4 /* UIView+AddSubviews.swift in Sources */,
+				FDEA5CD0265296B700BB08A1 /* UIImageView+SetImageColor.swift in Sources */,
 				FD9BB1CC26410C6F00835B98 /* MealMenuCellModel.swift in Sources */,
 				FDF281F42632D3AA00B1829A /* UIColor+Hex.swift in Sources */,
 				FD4593812636CA3100669AB4 /* Assets.swift in Sources */,
@@ -837,6 +871,7 @@
 				FDACDF1D26391F7C00689B51 /* TwoButtonAlertView.swift in Sources */,
 				FDACDF63263A8BCA00689B51 /* ForgetPasswordSceneBuilder.swift in Sources */,
 				FD9BB1B32641034D00835B98 /* MenuInteractor.swift in Sources */,
+				FDEA5CD42652976800BB08A1 /* UIImage+MaskWithColor.swift in Sources */,
 				FD6B8896263BCBCB0026D3E0 /* ClientSignUpRouter.swift in Sources */,
 				FD6B88A9263C03EC0026D3E0 /* EstablishmentSignUpViewController.swift in Sources */,
 				FD45936E2636BD8000669AB4 /* LoginPresenter.swift in Sources */,
@@ -863,6 +898,7 @@
 				FD6B8894263BCBCB0026D3E0 /* ClientSignUpContract.swift in Sources */,
 				FD6B8898263BCBCB0026D3E0 /* ClientSignUpInteractor.swift in Sources */,
 				FD4593932637F1F300669AB4 /* MainButtonStyle.swift in Sources */,
+				FDEA5CCB2652963900BB08A1 /* UIButton+SetImageTintColor.swift in Sources */,
 				FDCBAD30264A58F6005B9608 /* LabelCell.swift in Sources */,
 				FD6B8895263BCBCB0026D3E0 /* ClientSignUpPresenter.swift in Sources */,
 				FD45935D2636BB1200669AB4 /* WebApiService.swift in Sources */,
