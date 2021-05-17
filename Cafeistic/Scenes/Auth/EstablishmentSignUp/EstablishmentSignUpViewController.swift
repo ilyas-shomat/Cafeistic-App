@@ -11,6 +11,14 @@ import SnapKit
 
 class EstablishmentSignUpViewController: DefaultViewController {
     
+    
+    private var rows: [TableViewCellType] = [
+        .label(title: StringConstant.Scenes.EstablishmentSignUp.signUp,
+               color: .appOrange,
+               textFont: UIFont.boldSystemFont(ofSize: 20)),
+        .textField(style: .regular)
+    ]
+    
     private lazy var switchView: MainSwitchView = {
         let view = MainSwitchView(frame: CGRect(x: 0, y: 0, width: 264, height: 34))
         view.firstOptionText = StringConstant.Scenes.EstablishmentSignUp.staff
@@ -18,6 +26,19 @@ class EstablishmentSignUpViewController: DefaultViewController {
         view.translatesAutoresizingMaskIntoConstraints = false
         view.delegate = self
         return view
+    }()
+    
+    
+    private lazy var tableView: UITableView = {
+        let tableView = UITableView()
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.allowsSelection = false
+        tableView.register(TableViewLabelCell.self)
+        tableView.register(TableViewTextFieldCell.self)
+        tableView.showsVerticalScrollIndicator = false
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        return tableView
     }()
     
     var presenter: ViewToPresenterEstablishmentSignUpProtocol?
@@ -41,25 +62,23 @@ class EstablishmentSignUpViewController: DefaultViewController {
     
 }
 
-extension EstablishmentSignUpViewController {
+extension EstablishmentSignUpViewController: SetupBaseViewController {
     
     func setupViews() {
-        configureBaseSubViews()
-        configureBaseConstraints()
+        configureSubViews()
+        configureConstraints()
     }
-    
-    func configureBaseSubViews() {
-    }
-    
-    func configureBaseConstraints() {
 
+    func configureSubViews() {
+        view.addSubview(tableView)
     }
     
-    func setupStaffViews(signUpType: SignUpType) {
-    }
-    
-    func setupEstablishmentViews() {
-        
+    func configureConstraints() {
+        tableView.snp.makeConstraints {
+            $0.top.equalToSuperview()
+            $0.bottom.equalToSuperview().inset(-20)
+            $0.leading.trailing.equalToSuperview()
+        }
     }
     
     func setupActions() {
@@ -74,6 +93,27 @@ extension EstablishmentSignUpViewController {
             $0.center.equalToSuperview()
         }
     }
+    
+}
+
+extension EstablishmentSignUpViewController: TableViewProvider {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return rows.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        switch rows[indexPath.row] {
+        case .label(let title, let color, let textFont):
+            let cell = tableView.dequeueReusableCell(indexPath: indexPath) as TableViewLabelCell
+            cell.title = title
+            cell.color = color
+            cell.textFont = textFont
+            return cell
+        default:
+            return rows[indexPath.row].cell(tableView: tableView, indexPath: indexPath)
+        }
+    }
+    
     
 }
 

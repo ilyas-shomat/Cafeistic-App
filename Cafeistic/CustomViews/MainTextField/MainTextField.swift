@@ -10,7 +10,11 @@ import UIKit
 
 final class MaintextField: UITextField {
     
-    var style: MainTextFieldStyle
+    var style: MainTextFieldStyle {
+        didSet {
+            configure(style)
+        }
+    }
     
     private lazy var containerViewForIcon: UIView = {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: 32, height: 40))

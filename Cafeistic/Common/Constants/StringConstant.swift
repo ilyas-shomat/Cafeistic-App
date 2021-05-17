@@ -41,6 +41,7 @@ struct StringConstant {
         struct EstablishmentSignUp {
             static let staff = "Персонал"
             static let owner = "Владелец"
+            static let signUp = ClienSignUp.signUp
         }
     }
     
