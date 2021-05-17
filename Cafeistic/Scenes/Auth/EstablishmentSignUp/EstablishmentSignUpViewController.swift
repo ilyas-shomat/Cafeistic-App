@@ -12,11 +12,22 @@ import SnapKit
 class EstablishmentSignUpViewController: DefaultViewController {
     
     
-    private var rows: [TableViewCellType] = [
-        .label(title: StringConstant.Scenes.EstablishmentSignUp.signUp,
+    private var staffRows: [TableViewCellType] = [
+        .label(title: StringConstant.Scenes.EstablishmentSignUp.staffSignUp,
                color: .appOrange,
                textFont: UIFont.boldSystemFont(ofSize: 20)),
-        .textField(style: .regular)
+        .textField(style: .regular,
+                   placeholder: StringConstant.Scenes.EstablishmentSignUp.fullName),
+        .textField(style: .regular,
+                   placeholder: StringConstant.Scenes.EstablishmentSignUp.establismentId),
+        .textField(style: .login,
+                   placeholder: StringConstant.Scenes.EstablishmentSignUp.login),
+        .textField(style: .email,
+                   placeholder: StringConstant.Scenes.EstablishmentSignUp.email),
+        .textField(style: .password,
+                   placeholder: StringConstant.Scenes.EstablishmentSignUp.password),
+        .textField(style: .password,
+                   placeholder: StringConstant.Scenes.EstablishmentSignUp.repeatPassword)
     ]
     
     private lazy var switchView: MainSwitchView = {
@@ -31,6 +42,7 @@ class EstablishmentSignUpViewController: DefaultViewController {
     
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
+        tableView.backgroundColor = .clear
         tableView.dataSource = self
         tableView.delegate = self
         tableView.allowsSelection = false
@@ -38,6 +50,8 @@ class EstablishmentSignUpViewController: DefaultViewController {
         tableView.register(TableViewTextFieldCell.self)
         tableView.showsVerticalScrollIndicator = false
         tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.separatorStyle = .none
+        tableView.isScrollEnabled = false
         return tableView
     }()
     
@@ -98,20 +112,21 @@ extension EstablishmentSignUpViewController: SetupBaseViewController {
 
 extension EstablishmentSignUpViewController: TableViewProvider {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return rows.count
+        return staffRows.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        switch rows[indexPath.row] {
-        case .label(let title, let color, let textFont):
-            let cell = tableView.dequeueReusableCell(indexPath: indexPath) as TableViewLabelCell
-            cell.title = title
-            cell.color = color
-            cell.textFont = textFont
-            return cell
-        default:
-            return rows[indexPath.row].cell(tableView: tableView, indexPath: indexPath)
-        }
+        staffRows[indexPath.row].cell(tableView: tableView, indexPath: indexPath)
+//        switch rows[indexPath.row] {
+//        case .label(let title, let color, let textFont):
+//            let cell = tableView.dequeueReusableCell(indexPath: indexPath) as TableViewLabelCell
+//            cell.title = title
+//            cell.color = color
+//            cell.textFont = textFont
+//            return cell
+//        default:
+//            return rows[indexPath.row].cell(tableView: tableView, indexPath: indexPath)
+//        }
     }
     
     

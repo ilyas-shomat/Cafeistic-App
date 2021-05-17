@@ -43,7 +43,7 @@ final class TableViewTextFieldCell: UITableViewCell {
 
     private lazy var textField: MaintextField = {
         let textField = MaintextField(style: .regular)
-        textField.backgroundColor = .appOrange
+        textField.backgroundColor = .white
         return textField
     }()
     
@@ -57,6 +57,7 @@ final class TableViewTextFieldCell: UITableViewCell {
     }
     
     private func setupView() {
+        backgroundColor = .clear
         configureSubviews()
         configureConstraints()
     }
@@ -67,9 +68,11 @@ final class TableViewTextFieldCell: UITableViewCell {
     
     private func configureConstraints() {
         textField.snp.makeConstraints {
-            $0.top.bottom.equalToSuperview()
-            $0.leading.trailing.equalToSuperview().inset(20)
-            $0.height.equalTo(50)
+            $0.top.bottom.equalToSuperview().inset(5)
+//            $0.bottom.equalToSuperview()
+            $0.centerX.equalToSuperview()
+            $0.width.equalToSuperview().multipliedBy(0.85)
+            $0.height.equalTo(45)
         }
     }
 }

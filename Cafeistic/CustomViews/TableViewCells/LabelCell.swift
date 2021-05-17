@@ -31,7 +31,6 @@ final class TableViewLabelCell: UITableViewCell {
     
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
-//        label.font = UIFont.boldSystemFont(ofSize: 20)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -46,20 +45,21 @@ final class TableViewLabelCell: UITableViewCell {
     }
     
     private func setupView() {
+        backgroundColor = .clear
         configureSubviews()
         configureConstraints()
     }
     
     private func configureSubviews() {
         contentView.addSubview(titleLabel)
-//        addSubview(titleLabel)
     }
     
     private func configureConstraints() {
         titleLabel.snp.makeConstraints {
-            $0.top.bottom.equalToSuperview()
-            $0.leading.trailing.equalToSuperview().inset(20)
-            $0.height.equalTo(100)
+            $0.top.equalToSuperview().inset(10)
+            $0.bottom.equalToSuperview().inset(15)
+            $0.centerX.equalToSuperview()
+            $0.width.equalToSuperview().multipliedBy(0.85)
         }
     }
 }

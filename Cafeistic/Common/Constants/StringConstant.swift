@@ -41,7 +41,16 @@ struct StringConstant {
         struct EstablishmentSignUp {
             static let staff = "Персонал"
             static let owner = "Владелец"
-            static let signUp = ClienSignUp.signUp
+            static let staffSignUp = "Регистрация персонала"
+            static let establishmentSignUp = "Регистрация заведения"
+            static let ownerSignUp = "Регистрация владельца"
+            static let fullName = ClienSignUp.fullName
+            static let login = Login.login
+            static let establismentId = "ID номер заведения"
+            static let email = ClienSignUp.email
+            static let password = Login.password
+            static let repeatPassword = ClienSignUp.repeatPassword
+            static let signUp = Login.signUp
         }
     }
     
