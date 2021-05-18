@@ -11,7 +11,6 @@ import SnapKit
 
 class EstablishmentSignUpViewController: DefaultViewController {
     
-    
     private var staffRows: [TableViewCellType] = [
         .label(title: StringConstant.Scenes.EstablishmentSignUp.staffSignUp,
                color: .appOrange,
@@ -30,6 +29,25 @@ class EstablishmentSignUpViewController: DefaultViewController {
                    placeholder: StringConstant.Scenes.EstablishmentSignUp.repeatPassword),
         .button(style: .rounded,
                 title: StringConstant.Scenes.EstablishmentSignUp.signUp)
+    ]
+    
+    private var establishmentRows: [TableViewCellType] = [
+        .label(title: StringConstant.Scenes.EstablishmentSignUp.establishmentSignUp,
+               color: .appOrange,
+               textFont: UIFont.boldSystemFont(ofSize: 20)),
+        .textField(style: .regular,
+                   placeholder: StringConstant.Scenes.EstablishmentSignUp.establishmentName),
+        .textField(style: .regular,
+                   placeholder: StringConstant.Scenes.EstablishmentSignUp.establismentCity),
+        .textField(style: .regular,
+                   placeholder: StringConstant.Scenes.EstablishmentSignUp.establismentPhone),
+        .textField(style: .regular,
+                   placeholder: StringConstant.Scenes.EstablishmentSignUp.establisnetEmail),
+        .button(style: .rounded,
+                title: StringConstant.Scenes.EstablishmentSignUp.signUp)
+    ]
+    
+    private var ownerRows: [TableViewCellType] = [
     ]
     
     private lazy var switchView: MainSwitchView = {
@@ -57,6 +75,12 @@ class EstablishmentSignUpViewController: DefaultViewController {
         tableView.isScrollEnabled = false
         return tableView
     }()
+    
+    var signUpType: SignUpType = .staff {
+        didSet {
+            tableView.reloadData()
+        }
+    }
     
     var presenter: ViewToPresenterEstablishmentSignUpProtocol?
     
@@ -115,11 +139,28 @@ extension EstablishmentSignUpViewController: SetupBaseViewController {
 
 extension EstablishmentSignUpViewController: TableViewProvider {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return staffRows.count
+        switch signUpType {
+        case .staff:
+            return staffRows.count
+        case .establishment:
+            return establishmentRows.count
+        case .owner:
+            return ownerRows.count
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        staffRows[indexPath.row].cell(tableView: tableView, indexPath: indexPath)
+        
+        switch signUpType {
+        case .staff:
+            return staffRows[indexPath.row].cell(tableView: tableView, indexPath: indexPath)
+        case .establishment:
+            return establishmentRows[indexPath.row].cell(tableView: tableView, indexPath: indexPath)
+        case .owner:
+            return ownerRows[indexPath.row].cell(tableView: tableView, indexPath: indexPath)
+        }
+
+        
 //        switch rows[indexPath.row] {
 //        case .label(let title, let color, let textFont):
 //            let cell = tableView.dequeueReusableCell(indexPath: indexPath) as TableViewLabelCell
@@ -142,5 +183,11 @@ extension EstablishmentSignUpViewController: PresenterToViewEstablishmentSignUpP
 
 extension EstablishmentSignUpViewController: MainSwitchViewDelegate {
     func didSelect(option: Int) {
+        if option == 0 {
+            signUpType = .staff
+        }
+        else {
+            signUpType = .establishment
+        }
     }
 }

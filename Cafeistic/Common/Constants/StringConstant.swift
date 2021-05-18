@@ -51,6 +51,10 @@ struct StringConstant {
             static let password = Login.password
             static let repeatPassword = ClienSignUp.repeatPassword
             static let signUp = Login.signUp
+            static let establishmentName = "Название заведения"
+            static let establismentCity = "Город заведения"
+            static let establismentPhone = "Контактный номер заведения"
+            static let establisnetEmail = "Почта заведения (необьязательно)"
         }
     }
     

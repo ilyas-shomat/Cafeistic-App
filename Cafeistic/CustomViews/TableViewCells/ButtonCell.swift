@@ -9,6 +9,8 @@ import Foundation
 import UIKit
 import SnapKit
 
+
+
 final class TableViewButtonCell: UITableViewCell {
     
     var style: MainButtonStyle? {
@@ -25,8 +27,10 @@ final class TableViewButtonCell: UITableViewCell {
     
     private lazy var button: MainButton = {
         let button = MainButton(style: .rounded)
+        button.addTarget(self, action: #selector(tapButton), for: .touchUpInside)
         return button
     }()
+    
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -54,5 +58,8 @@ final class TableViewButtonCell: UITableViewCell {
             $0.width.equalToSuperview().multipliedBy(0.85)
             $0.height.equalTo(45)
         }
+    }
+    
+    @objc func tapButton() {
     }
 }
