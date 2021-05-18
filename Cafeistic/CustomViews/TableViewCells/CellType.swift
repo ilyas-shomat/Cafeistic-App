@@ -13,6 +13,7 @@ enum TableViewCellType {
                color: UIColor?,
                textFont: UIFont?)
     case textField(style: MainTextFieldStyle,
+                   type: TableViewTextFieldCellType,
                    title: String? = nil,
                    placeholder: String? = nil,
                    font: UIFont? = nil,
@@ -29,9 +30,10 @@ enum TableViewCellType {
             cell.color = color
             cell.textFont = font
             return cell
-        case .textField(let style, let title, let placeholder, let font, let textColor):
+        case .textField(let style ,let type, let title, let placeholder, let font, let textColor):
             let cell = tableView.dequeueReusableCell(indexPath: indexPath) as TableViewTextFieldCell
             cell.style = style
+            cell.type = type
             cell.title = title
             cell.placeholder = placeholder
             cell.textFont = font

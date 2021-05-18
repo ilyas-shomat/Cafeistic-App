@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 
 protocol TableViewTextFieldCellDelegate: TableViewCellActionsDelegate {
-    func textFieldDidChange(value: String)
+    func textFieldDidChange(value: String, type: TableViewTextFieldCellType)
 }
 
 final class TableViewTextFieldCell: UITableViewCell {
@@ -20,6 +20,8 @@ final class TableViewTextFieldCell: UITableViewCell {
             textField.style = style ?? .regular
         }
     }
+    
+    var type: TableViewTextFieldCellType?
     
     var title: String? {
         didSet {
@@ -83,6 +85,6 @@ final class TableViewTextFieldCell: UITableViewCell {
     }
     
     @objc private func didChageText() {
-        delegate?.textFieldDidChange(value: textField.text ?? "")
+        delegate?.textFieldDidChange(value: textField.text ?? "", type: type ?? .empty)
     }
 }

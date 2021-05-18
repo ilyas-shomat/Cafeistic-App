@@ -9,6 +9,8 @@
 import UIKit
 import SnapKit
 
+
+
 class EstablishmentSignUpViewController: DefaultViewController {
     
     private var staffRows: [TableViewCellType] = [
@@ -16,16 +18,22 @@ class EstablishmentSignUpViewController: DefaultViewController {
                color: .appOrange,
                textFont: UIFont.boldSystemFont(ofSize: 20)),
         .textField(style: .regular,
+                   type: .fullname,
                    placeholder: StringConstant.Scenes.EstablishmentSignUp.fullName),
         .textField(style: .regular,
+                   type: .establishmentId,
                    placeholder: StringConstant.Scenes.EstablishmentSignUp.establismentId),
         .textField(style: .login,
+                   type: .login,
                    placeholder: StringConstant.Scenes.EstablishmentSignUp.login),
         .textField(style: .email,
+                   type: .email,
                    placeholder: StringConstant.Scenes.EstablishmentSignUp.email),
         .textField(style: .password,
+                   type: .password,
                    placeholder: StringConstant.Scenes.EstablishmentSignUp.password),
         .textField(style: .password,
+                   type: .repeatedPassword,
                    placeholder: StringConstant.Scenes.EstablishmentSignUp.repeatPassword),
         .button(style: .rounded,
                 title: StringConstant.Scenes.EstablishmentSignUp.signUp)
@@ -36,12 +44,16 @@ class EstablishmentSignUpViewController: DefaultViewController {
                color: .appOrange,
                textFont: UIFont.boldSystemFont(ofSize: 20)),
         .textField(style: .regular,
+                   type: .establismentName,
                    placeholder: StringConstant.Scenes.EstablishmentSignUp.establishmentName),
         .textField(style: .regular,
+                   type: .establishmentCity,
                    placeholder: StringConstant.Scenes.EstablishmentSignUp.establismentCity),
         .textField(style: .regular,
+                   type: .establishmentPhone,
                    placeholder: StringConstant.Scenes.EstablishmentSignUp.establismentPhone),
         .textField(style: .regular,
+                   type: .establismentEmail,
                    placeholder: StringConstant.Scenes.EstablishmentSignUp.establisnetEmail),
         .button(style: .rounded,
                 title: StringConstant.Scenes.EstablishmentSignUp.next)
@@ -52,14 +64,19 @@ class EstablishmentSignUpViewController: DefaultViewController {
                color: .appOrange,
                textFont: UIFont.boldSystemFont(ofSize: 20)),
         .textField(style: .regular,
+                   type: .fullname,
                    placeholder: StringConstant.Scenes.EstablishmentSignUp.fullName),
         .textField(style: .login,
+                   type: .login,
                    placeholder: StringConstant.Scenes.EstablishmentSignUp.login),
         .textField(style: .email,
+                   type: .email,
                    placeholder: StringConstant.Scenes.EstablishmentSignUp.email),
         .textField(style: .password,
+                   type: .password,
                    placeholder: StringConstant.Scenes.EstablishmentSignUp.password),
         .textField(style: .password,
+                   type: .repeatedPassword,
                    placeholder: StringConstant.Scenes.EstablishmentSignUp.repeatPassword),
         .button(style: .rounded,
                 title: StringConstant.Scenes.EstablishmentSignUp.signUp)
@@ -75,6 +92,7 @@ class EstablishmentSignUpViewController: DefaultViewController {
         return view
     }()
     
+    private var textFieldType: [TableViewTextFieldCellType:String] = [:]
     
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
@@ -114,7 +132,6 @@ class EstablishmentSignUpViewController: DefaultViewController {
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         switchView.removeFromSuperview()
-        
     }
     
 }
@@ -150,7 +167,6 @@ extension EstablishmentSignUpViewController: SetupBaseViewController {
             $0.center.equalToSuperview()
         }
     }
-    
 }
 
 extension EstablishmentSignUpViewController: TableViewProvider {
@@ -180,8 +196,6 @@ extension EstablishmentSignUpViewController: TableViewProvider {
         
         return rows[indexPath.row].cell(tableView: tableView, indexPath: indexPath, delegate: self)
     }
-    
-    
 }
 
 // MARK: - (Presenter -> View)
@@ -206,15 +220,39 @@ extension EstablishmentSignUpViewController: TableViewButtonCellDelegate {
         case .establishment:
             signUpType = .owner
         case .staff:
-            print("do some")
+            consolePrint(textFieldType)
         case .owner:
-            print("do some")
+            consolePrint(textFieldType)
         }
     }
 }
 
 extension EstablishmentSignUpViewController: TableViewTextFieldCellDelegate {
-    func textFieldDidChange(value: String) {
-        consolePrint(value)
+    
+    func textFieldDidChange(value: String, type: TableViewTextFieldCellType) {
+        switch type {
+        case .fullname:
+            textFieldType[.fullname] = value
+        case .establishmentId:
+            textFieldType[.establishmentId] = value
+        case .login:
+            textFieldType[.login] = value
+        case .email:
+            textFieldType[.email] = value
+        case .password:
+            textFieldType[.password] = value
+        case .repeatedPassword:
+            textFieldType[.repeatedPassword] = value
+        case .establismentName:
+            textFieldType[.establismentName] = value
+        case .establishmentCity:
+            textFieldType[.establishmentCity] = value
+        case .establishmentPhone:
+            textFieldType[.establishmentPhone] = value
+        case .establismentEmail:
+            textFieldType[.establismentEmail] = value
+        default:
+            return
+        }
     }
 }
