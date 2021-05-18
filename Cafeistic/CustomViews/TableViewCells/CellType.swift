@@ -36,6 +36,7 @@ enum TableViewCellType {
             cell.placeholder = placeholder
             cell.textFont = font
             cell.color = textColor
+            cell.delegate = delegate as? TableViewTextFieldCellDelegate
             return cell
         case .button(let style, let title):
             let cell = tableView.dequeueReusableCell(indexPath: indexPath) as TableViewButtonCell

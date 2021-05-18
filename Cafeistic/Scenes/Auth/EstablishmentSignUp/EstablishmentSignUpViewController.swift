@@ -179,17 +179,6 @@ extension EstablishmentSignUpViewController: TableViewProvider {
         }
         
         return rows[indexPath.row].cell(tableView: tableView, indexPath: indexPath, delegate: self)
-
-//        switch rows[indexPath.row] {
-//        case .label(let title, let color, let textFont):
-//            let cell = tableView.dequeueReusableCell(indexPath: indexPath) as TableViewLabelCell
-//            cell.title = title
-//            cell.color = color
-//            cell.textFont = textFont
-//            return cell
-//        default:
-//            return rows[indexPath.row].cell(tableView: tableView, indexPath: indexPath)
-//        }
     }
     
     
@@ -221,5 +210,11 @@ extension EstablishmentSignUpViewController: TableViewButtonCellDelegate {
         case .owner:
             print("do some")
         }
+    }
+}
+
+extension EstablishmentSignUpViewController: TableViewTextFieldCellDelegate {
+    func textFieldDidChange(value: String) {
+        consolePrint(value)
     }
 }

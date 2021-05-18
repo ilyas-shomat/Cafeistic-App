@@ -9,6 +9,10 @@ import Foundation
 import UIKit
 import SnapKit
 
+protocol TableViewTextFieldCellDelegate: TableViewCellActionsDelegate {
+    func textFieldDidChange(value: String)
+}
+
 final class TableViewTextFieldCell: UITableViewCell {
     
     var style: MainTextFieldStyle? {
@@ -40,10 +44,13 @@ final class TableViewTextFieldCell: UITableViewCell {
             textField.tintColor = color
         }
     }
+    
+    var delegate: TableViewTextFieldCellDelegate?
 
     private lazy var textField: MaintextField = {
         let textField = MaintextField(style: .regular)
         textField.backgroundColor = .white
+        textField.addTarget(self, action: #selector(didChageText), for: .editingChanged)
         return textField
     }()
     
@@ -73,5 +80,9 @@ final class TableViewTextFieldCell: UITableViewCell {
             $0.width.equalToSuperview().multipliedBy(0.85)
             $0.height.equalTo(45)
         }
+    }
+    
+    @objc private func didChageText() {
+        delegate?.textFieldDidChange(value: textField.text ?? "")
     }
 }
