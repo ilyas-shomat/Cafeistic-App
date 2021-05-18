@@ -18,10 +18,10 @@ enum TableViewCellType {
                    font: UIFont? = nil,
                    textColor: UIColor? = nil)
     case button(style: MainButtonStyle,
-                title: String,
-                delegate: TableViewButtonCellDelegate)
+                title: String)
     
-    func cell(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
+    func cell(tableView: UITableView, indexPath: IndexPath, delegate: TableViewCellActionsDelegate) -> UITableViewCell {
+        
         switch self {
         case .label(let title, let color, let font):
             let cell = tableView.dequeueReusableCell(indexPath: indexPath) as TableViewLabelCell
@@ -37,11 +37,11 @@ enum TableViewCellType {
             cell.textFont = font
             cell.color = textColor
             return cell
-        case .button(let style, let title, let delegate):
+        case .button(let style, let title):
             let cell = tableView.dequeueReusableCell(indexPath: indexPath) as TableViewButtonCell
             cell.style = style
             cell.title = title
-            cell.delegate = delegate
+            cell.delegate = delegate as? TableViewButtonCellDelegate
             return cell
         }
     }

@@ -44,10 +44,26 @@ class EstablishmentSignUpViewController: DefaultViewController {
         .textField(style: .regular,
                    placeholder: StringConstant.Scenes.EstablishmentSignUp.establisnetEmail),
         .button(style: .rounded,
-                title: StringConstant.Scenes.EstablishmentSignUp.signUp)
+                title: StringConstant.Scenes.EstablishmentSignUp.next)
     ]
     
     private var ownerRows: [TableViewCellType] = [
+        .label(title: StringConstant.Scenes.EstablishmentSignUp.ownerSignUp,
+               color: .appOrange,
+               textFont: UIFont.boldSystemFont(ofSize: 20)),
+        .textField(style: .regular,
+                   placeholder: StringConstant.Scenes.EstablishmentSignUp.fullName),
+        .textField(style: .login,
+                   placeholder: StringConstant.Scenes.EstablishmentSignUp.login),
+        .textField(style: .email,
+                   placeholder: StringConstant.Scenes.EstablishmentSignUp.email),
+        .textField(style: .password,
+                   placeholder: StringConstant.Scenes.EstablishmentSignUp.password),
+        .textField(style: .password,
+                   placeholder: StringConstant.Scenes.EstablishmentSignUp.repeatPassword),
+        .button(style: .rounded,
+                title: StringConstant.Scenes.EstablishmentSignUp.signUp)
+            
     ]
     
     private lazy var switchView: MainSwitchView = {
@@ -151,16 +167,19 @@ extension EstablishmentSignUpViewController: TableViewProvider {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        var rows = [TableViewCellType]()
+
         switch signUpType {
         case .staff:
-            return staffRows[indexPath.row].cell(tableView: tableView, indexPath: indexPath)
+            rows = staffRows
         case .establishment:
-            return establishmentRows[indexPath.row].cell(tableView: tableView, indexPath: indexPath)
+            rows = establishmentRows
         case .owner:
-            return ownerRows[indexPath.row].cell(tableView: tableView, indexPath: indexPath)
+            rows = ownerRows
         }
-
         
+        return rows[indexPath.row].cell(tableView: tableView, indexPath: indexPath, delegate: self)
+
 //        switch rows[indexPath.row] {
 //        case .label(let title, let color, let textFont):
 //            let cell = tableView.dequeueReusableCell(indexPath: indexPath) as TableViewLabelCell
@@ -188,6 +207,19 @@ extension EstablishmentSignUpViewController: MainSwitchViewDelegate {
         }
         else {
             signUpType = .establishment
+        }
+    }
+}
+
+extension EstablishmentSignUpViewController: TableViewButtonCellDelegate {
+    func tapButtonAction() {
+        switch signUpType {
+        case .establishment:
+            signUpType = .owner
+        case .staff:
+            print("do some")
+        case .owner:
+            print("do some")
         }
     }
 }

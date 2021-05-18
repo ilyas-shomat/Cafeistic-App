@@ -9,7 +9,9 @@ import Foundation
 import UIKit
 import SnapKit
 
-
+protocol TableViewButtonCellDelegate: TableViewCellActionsDelegate {
+    func tapButtonAction()
+}
 
 final class TableViewButtonCell: UITableViewCell {
     
@@ -24,6 +26,8 @@ final class TableViewButtonCell: UITableViewCell {
             button.setTitle(title, for: .normal)
         }
     }
+    
+    var delegate: TableViewButtonCellDelegate?
     
     private lazy var button: MainButton = {
         let button = MainButton(style: .rounded)
@@ -61,5 +65,6 @@ final class TableViewButtonCell: UITableViewCell {
     }
     
     @objc func tapButton() {
+        delegate?.tapButtonAction()
     }
 }
