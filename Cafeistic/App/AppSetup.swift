@@ -18,8 +18,7 @@ class AppSetup {
         guard let rootNavgiationController = window.rootViewController as? UINavigationController else {
             fatalError("Root viewController must be inherited from UINavigationController")
         }
-        rootNavgiationController.pushViewController(MenuScene.initiate(), animated: false)
-//        rootNavgiationController.pushViewController(DefaultTabBarController(type: .client), animated: false)
+        rootNavgiationController.pushViewController(StartScene.initiate(), animated: false)
         window.makeKeyAndVisible()
     }
     

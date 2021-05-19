@@ -30,6 +30,8 @@ class LoginRouter: PresenterToRouterLoginProtocol {
     //MARK: - Temp Code
     func showMenu(on view: PresenterToViewLoginProtocol) {
         let viewController = view as? LoginViewController
-        viewController?.navigationController?.pushViewController(MenuScene.initiate(), animated: true)
+        let showingTabBarController = MainTabBarController(type: .client)
+        showingTabBarController.modalPresentationStyle = .overFullScreen
+        viewController?.navigationController?.present(showingTabBarController, animated: true, completion: nil)
     }
 }
