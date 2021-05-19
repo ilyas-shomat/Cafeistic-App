@@ -20,7 +20,7 @@ final class MainTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupScenes()
-        setupView()
+//        setupView()
     }
     
     required init?(coder: NSCoder) {
@@ -32,26 +32,22 @@ final class MainTabBarController: UITabBarController {
     }
     
     private func setupScenes() {
-        let scenes: [UIViewController]?
+        var scenes: [UIViewController] = []
+        
         switch type {
         case .establishment:
             scenes = setupEstablishmentMain()
         case .client:
-//            scenes = setupClienMain()
-        viewControllers = setupClienMain().map { scene in
-            let navigationController = DefaultNavigationController()
-            navigationController.setViewControllers([scene], animated: false)
-            return navigationController
-        }
+            scenes = setupClienMain()
         default:
             return
         }
         
-//        viewControllers = scenes.map { scene in
-//            let navigationController = DefaultNavigationController()
-//            navigationController.setViewControllers([scene], animated: false)
-//            return navigationController
-//        }
+        viewControllers = scenes.map { scene in
+            let navigationController = DefaultNavigationController()
+            navigationController.setViewControllers([scene], animated: false)
+            return navigationController
+        }
     }
     
     private func setupClienMain() -> [UIViewController] {
