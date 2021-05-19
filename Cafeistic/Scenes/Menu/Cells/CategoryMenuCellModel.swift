@@ -8,5 +8,6 @@
 import Foundation
 
 struct CategoryMenuCellModel {
+    var isSelected: Bool?
     var title: String?
 }

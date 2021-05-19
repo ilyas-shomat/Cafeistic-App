@@ -13,6 +13,10 @@ final class CategoryMenuCell: UICollectionViewCell {
     
     var viewModel: CategoryMenuCellModel? {
         didSet {
+            if viewModel?.isSelected == true {
+                self.backgroundColor = .appOrange
+                self.categoryNameLabel.textColor = .white
+            }
             categoryNameLabel.text = viewModel?.title
         }
     }
@@ -21,7 +25,7 @@ final class CategoryMenuCell: UICollectionViewCell {
         let label = UILabel()
         label.text = "temp text"
         label.font = UIFont.systemFont(ofSize: 15)
-        label.textColor = .white
+        label.textColor = .appOrange
         return label
     }()
         
@@ -35,7 +39,7 @@ final class CategoryMenuCell: UICollectionViewCell {
     }
     
     private func setupView() {
-        self.backgroundColor = .appOrange
+        self.backgroundColor = .white
         self.layer.cornerRadius = 10
         configureSubViews()
         configureConstraints()
