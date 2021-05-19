@@ -45,6 +45,8 @@
 		FD6B88AB263C03EC0026D3E0 /* EstablishmentSignUpSceneBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B88A5263C03EB0026D3E0 /* EstablishmentSignUpSceneBuilder.swift */; };
 		FD6B88BD263C06620026D3E0 /* SignUpType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B88BC263C06620026D3E0 /* SignUpType.swift */; };
 		FD6CE0D22654D67D00541521 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CE0D12654D67D00541521 /* Category.swift */; };
+		FD6CE0FD2655168900541521 /* DefaultTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CE0FC2655168900541521 /* DefaultTabBarController.swift */; };
+		FD6CE100265516F500541521 /* TabBarControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CE0FF265516F500541521 /* TabBarControllerType.swift */; };
 		FD9BB1A72641029300835B98 /* MenuType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9BB1A62641029300835B98 /* MenuType.swift */; };
 		FD9BB1AF2641034D00835B98 /* MenuContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9BB1A92641034D00835B98 /* MenuContract.swift */; };
 		FD9BB1B02641034D00835B98 /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9BB1AA2641034D00835B98 /* MenuPresenter.swift */; };
@@ -138,6 +140,8 @@
 		FD6B88A5263C03EB0026D3E0 /* EstablishmentSignUpSceneBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentSignUpSceneBuilder.swift; sourceTree = "<group>"; };
 		FD6B88BC263C06620026D3E0 /* SignUpType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpType.swift; sourceTree = "<group>"; };
 		FD6CE0D12654D67D00541521 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		FD6CE0FC2655168900541521 /* DefaultTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTabBarController.swift; sourceTree = "<group>"; };
+		FD6CE0FF265516F500541521 /* TabBarControllerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarControllerType.swift; sourceTree = "<group>"; };
 		FD9BB1A62641029300835B98 /* MenuType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuType.swift; sourceTree = "<group>"; };
 		FD9BB1A92641034D00835B98 /* MenuContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuContract.swift; sourceTree = "<group>"; };
 		FD9BB1AA2641034D00835B98 /* MenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
@@ -542,6 +546,7 @@
 			isa = PBXGroup;
 			children = (
 				FDBBB6BE2653E573007D8D88 /* TableViewTextFieldCellType.swift */,
+				FD6CE0FF265516F500541521 /* TabBarControllerType.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -642,6 +647,7 @@
 			children = (
 				FDF281C02632CFEE00B1829A /* DefaultViewController.swift */,
 				FDACDF75263AA0EA00689B51 /* DefaultNavigationController.swift */,
+				FD6CE0FC2655168900541521 /* DefaultTabBarController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -922,6 +928,7 @@
 				FD6B88BD263C06620026D3E0 /* SignUpType.swift in Sources */,
 				FD45937E2636C0DB00669AB4 /* MainTextField.swift in Sources */,
 				FDF281C12632CFEE00B1829A /* DefaultViewController.swift in Sources */,
+				FD6CE0FD2655168900541521 /* DefaultTabBarController.swift in Sources */,
 				FDCBAD2B264A587D005B9608 /* ButtonCell.swift in Sources */,
 				FDACDF22263930CA00689B51 /* UIViewController+Alert.swift in Sources */,
 				FD9BB1C226410C3500835B98 /* CategoryMenuCell.swift in Sources */,
@@ -958,6 +965,7 @@
 				FDF282002632D79D00B1829A /* StartSceneBuilder.swift in Sources */,
 				FD45937A2636C0BC00669AB4 /* MainTextFieldStyle.swift in Sources */,
 				FDF281B92632CED300B1829A /* StartViewController.swift in Sources */,
+				FD6CE100265516F500541521 /* TabBarControllerType.swift in Sources */,
 				FDE2CEC626426BCA00FE1EA7 /* UIView+Corners.swift in Sources */,
 				FD4593A02637F3F000669AB4 /* SpinnerView.swift in Sources */,
 				FDCBAD24264A4B8B005B9608 /* CellType.swift in Sources */,
