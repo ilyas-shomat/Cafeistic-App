@@ -47,6 +47,22 @@ class MenuViewController: DefaultViewController {
         return collectionView
     }()
     
+    private lazy var menuLabel: UILabel = {
+        let label = UILabel()
+        label.text = StringConstant.Scenes.Menu.menu
+        label.textColor = .appOrange
+        label.font = UIFont.boldSystemFont(ofSize: 20)
+        label.sizeToFit()
+        return label
+    }()
+    
+    private lazy var orderCartButton: UIButton = {
+        let button = UIButton()
+        button.setImage(Assets.orderCart.image, for: .normal)
+        button.addTarget(self, action: #selector(tapOrderCartButton), for: .touchUpInside)
+        return button
+    }()
+    
     var presenter: ViewToPresenterMenuProtocol?
     
     private var categoryModels: [CategoryMenuCellModel] = [] {
@@ -131,13 +147,11 @@ extension MenuViewController: SetupBaseViewController {
     }
     
     private func setupNavigationBar() {
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: Assets.orderCart.image,
-                                                            style: .done,
-                                                           target: self,
-                                                           action: #selector(tapOrderCart))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: orderCartButton)
+        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: menuLabel)
     }
     
-    @objc private func tapOrderCart() {
+    @objc private func tapOrderCartButton() {
         
     }
 }

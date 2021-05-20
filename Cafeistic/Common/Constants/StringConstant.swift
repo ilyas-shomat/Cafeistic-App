@@ -57,6 +57,10 @@ struct StringConstant {
             static let establismentPhone = "Контактный номер заведения"
             static let establisnetEmail = "Почта заведения (необьязательно)"
         }
+        
+        struct Menu {
+            static let menu = "Меню"
+        }
     }
     
     struct Services {
