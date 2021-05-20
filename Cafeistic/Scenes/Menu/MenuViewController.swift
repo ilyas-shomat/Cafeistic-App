@@ -103,6 +103,7 @@ extension MenuViewController: SetupBaseViewController {
     func setupViews() {
         configureSubViews()
         configureConstraints()
+        setupNavigationBar()
     }
     
     func configureSubViews() {
@@ -128,6 +129,17 @@ extension MenuViewController: SetupBaseViewController {
     func setupActions() {
         
     }
+    
+    private func setupNavigationBar() {
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: Assets.orderCart.image,
+                                                            style: .done,
+                                                           target: self,
+                                                           action: #selector(tapOrderCart))
+    }
+    
+    @objc private func tapOrderCart() {
+        
+    }
 }
 
 // MARK: - (Presenter -> View)
@@ -145,7 +157,7 @@ extension MenuViewController {
         categoryModels.append(CategoryMenuCellModel(title: "long text"))
         categoryModels.append(CategoryMenuCellModel(title: "long "))
         
-        mealModels.append(MealMenuCellModel(name: "Домашний Лагман Сүйру", price: "250 tg", imageName: "tepm_1_img"))
+        mealModels.append(MealMenuCellModel(name: "Домашний Лагман", price: "250 tg", imageName: "tepm_1_img"))
         mealModels.append(MealMenuCellModel(name: "Домашний Лагман", price: "250 tg", imageName: "tepm_1_img"))
         mealModels.append(MealMenuCellModel(name: "Домашний Лагман", price: "250 tg", imageName: "tepm_1_img"))
         mealModels.append(MealMenuCellModel(name: "Домашний Лагман", price: "250 tg", imageName: "tepm_1_img"))

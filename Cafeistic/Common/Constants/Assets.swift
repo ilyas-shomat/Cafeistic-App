@@ -12,6 +12,8 @@ internal enum Assets {
     case appLogo
     case visibilityOnIcon
     case visibilityOffIcon
+    case orderCart
+    case trash
     
     public var image: UIImage? {
         switch self {
@@ -21,6 +23,10 @@ internal enum Assets {
             return UIImage(named: "visibility_on_icon")
         case .visibilityOffIcon:
             return UIImage(named: "visibility_off_icon")
+        case .orderCart:
+            return UIImage(named: "order_cart")
+        case .trash:
+            return UIImage(named: "trash")
         }
     }
 }
