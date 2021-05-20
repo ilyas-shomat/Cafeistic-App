@@ -66,20 +66,9 @@ class MenuViewController: DefaultViewController {
         presenter?.load()
         setupViews()
         
-        //MARK: Temp Code to Delete after setup NetworkLayer
-        categoryModels.append(CategoryMenuCellModel(title: "long long text"))
-        categoryModels.append(CategoryMenuCellModel(title: "long text"))
-        categoryModels.append(CategoryMenuCellModel(title: "long "))
-        categoryModels.append(CategoryMenuCellModel(title: "long text"))
-        categoryModels.append(CategoryMenuCellModel(title: "long "))
-        
-        mealModels.append(MealMenuCellModel(name: "Домашний Лагман Сүйру", price: "250 tg", imageName: "tepm_1_img"))
-        mealModels.append(MealMenuCellModel(name: "Домашний Лагман", price: "250 tg", imageName: "tepm_1_img"))
-        mealModels.append(MealMenuCellModel(name: "Домашний Лагман", price: "250 tg", imageName: "tepm_1_img"))
-        mealModels.append(MealMenuCellModel(name: "Домашний Лагман", price: "250 tg", imageName: "tepm_1_img"))
-        mealModels.append(MealMenuCellModel(name: "Домашний Лагман", price: "250 tg", imageName: "tepm_1_img"))
-        mealModels.append(MealMenuCellModel(name: "Домашний Лагман", price: "250 tg", imageName: "tepm_1_img"))
-        mealModels.append(MealMenuCellModel(name: "Домашний Лагман", price: "250 tg", imageName: "tepm_1_img"))
+        //MARK: - Delete code below after integrating with API
+        tepmFunc()
+    
     }
     
 }
@@ -144,4 +133,24 @@ extension MenuViewController: SetupBaseViewController {
 // MARK: - (Presenter -> View)
 extension MenuViewController: PresenterToViewMenuProtocol {
 
+}
+
+
+//MARK: - Delete code below after integrating with API
+extension MenuViewController {
+    private func tepmFunc() {
+        categoryModels.append(CategoryMenuCellModel(isSelected: true, title: "long long text"))
+        categoryModels.append(CategoryMenuCellModel(title: "long text"))
+        categoryModels.append(CategoryMenuCellModel(title: "long "))
+        categoryModels.append(CategoryMenuCellModel(title: "long text"))
+        categoryModels.append(CategoryMenuCellModel(title: "long "))
+        
+        mealModels.append(MealMenuCellModel(name: "Домашний Лагман Сүйру", price: "250 tg", imageName: "tepm_1_img"))
+        mealModels.append(MealMenuCellModel(name: "Домашний Лагман", price: "250 tg", imageName: "tepm_1_img"))
+        mealModels.append(MealMenuCellModel(name: "Домашний Лагман", price: "250 tg", imageName: "tepm_1_img"))
+        mealModels.append(MealMenuCellModel(name: "Домашний Лагман", price: "250 tg", imageName: "tepm_1_img"))
+        mealModels.append(MealMenuCellModel(name: "Домашний Лагман", price: "250 tg", imageName: "tepm_1_img"))
+        mealModels.append(MealMenuCellModel(name: "Домашний Лагман", price: "250 tg", imageName: "tepm_1_img"))
+        mealModels.append(MealMenuCellModel(name: "Домашний Лагман", price: "250 tg", imageName: "tepm_1_img"))
+    }
 }

@@ -19,4 +19,12 @@ class StartRouter: PresenterToRouterStartProtocol {
         navigationController?.setViewControllers([LoginScene.initiate()], animated: false)
     }
     
+    func showClientMainTab(on view: PresenterToViewStartProtocol) {
+        let viewController = view as? StartViewController
+        let openingTabBarController = MainTabBarController(type: .client)
+        openingTabBarController.modalPresentationStyle = .overFullScreen
+        
+        viewController?.present(openingTabBarController, animated: false)
+    }
+    
 }

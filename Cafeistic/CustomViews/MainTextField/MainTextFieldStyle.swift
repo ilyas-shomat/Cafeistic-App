@@ -11,4 +11,5 @@ internal enum MainTextFieldStyle {
     case login
     case password
     case regular
+    case email
 }

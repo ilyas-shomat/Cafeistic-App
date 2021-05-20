@@ -16,7 +16,11 @@ final class MainButton: UIButton, IndicatableView {
 //        }
 //    }
     
-    var style: MainButtonStyle
+    var style: MainButtonStyle {
+        didSet {
+            configure(style)
+        }
+    }
     
     init(style: MainButtonStyle) {
         self.style = style

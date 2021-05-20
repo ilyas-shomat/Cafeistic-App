@@ -65,6 +65,7 @@ class LoginViewController: DefaultViewController {
         presenter?.load()
         setupViews()
         setupActions()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
