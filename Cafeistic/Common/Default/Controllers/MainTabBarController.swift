@@ -20,7 +20,7 @@ final class MainTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupScenes()
-//        setupView()
+        setupView()
     }
     
     required init?(coder: NSCoder) {
@@ -54,20 +54,19 @@ final class MainTabBarController: UITabBarController {
         let menuScene = MenuScene.initiate()
         menuScene.tabBarItem.title = "Меню"
         
-        let secondScene = MenuScene.initiate()
-//        secondScene.view.backgroundColor = .blue
+        let secondScene = UIViewController()
+        secondScene.view.backgroundColor = .blue
         secondScene.tabBarItem.title = "Заказ"
         
-//        let thirdScene = UIViewController()
-//        thirdScene.view.backgroundColor = .yellow
-//        thirdScene.tabBarItem.title = "История"
-//
-//        let fourthScene = UIViewController()
-//        fourthScene.view.backgroundColor = .green
-//        fourthScene.tabBarItem.title = "Профиль"
+        let thirdScene = UIViewController()
+        thirdScene.view.backgroundColor = .yellow
+        thirdScene.tabBarItem.title = "История"
+
+        let fourthScene = UIViewController()
+        fourthScene.view.backgroundColor = .green
+        fourthScene.tabBarItem.title = "Профиль"
         
-        let scenes = [menuScene, secondScene]
-        
+        let scenes = [menuScene, secondScene, thirdScene, fourthScene]
         
         return scenes
     }

@@ -47,6 +47,22 @@ class MenuViewController: DefaultViewController {
         return collectionView
     }()
     
+    private lazy var menuLabel: UILabel = {
+        let label = UILabel()
+        label.text = StringConstant.Scenes.Menu.menu
+        label.textColor = .appOrange
+        label.font = UIFont.boldSystemFont(ofSize: 20)
+        label.sizeToFit()
+        return label
+    }()
+    
+    private lazy var orderCartButton: UIButton = {
+        let button = UIButton()
+        button.setImage(Assets.orderCart.image, for: .normal)
+        button.addTarget(self, action: #selector(tapOrderCartButton), for: .touchUpInside)
+        return button
+    }()
+    
     var presenter: ViewToPresenterMenuProtocol?
     
     private var categoryModels: [CategoryMenuCellModel] = [] {
@@ -103,6 +119,7 @@ extension MenuViewController: SetupBaseViewController {
     func setupViews() {
         configureSubViews()
         configureConstraints()
+        setupNavigationBar()
     }
     
     func configureSubViews() {
@@ -128,6 +145,15 @@ extension MenuViewController: SetupBaseViewController {
     func setupActions() {
         
     }
+    
+    private func setupNavigationBar() {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: orderCartButton)
+        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: menuLabel)
+    }
+    
+    @objc private func tapOrderCartButton() {
+        
+    }
 }
 
 // MARK: - (Presenter -> View)
@@ -145,7 +171,7 @@ extension MenuViewController {
         categoryModels.append(CategoryMenuCellModel(title: "long text"))
         categoryModels.append(CategoryMenuCellModel(title: "long "))
         
-        mealModels.append(MealMenuCellModel(name: "Домашний Лагман Сүйру", price: "250 tg", imageName: "tepm_1_img"))
+        mealModels.append(MealMenuCellModel(name: "Домашний Лагман", price: "250 tg", imageName: "tepm_1_img"))
         mealModels.append(MealMenuCellModel(name: "Домашний Лагман", price: "250 tg", imageName: "tepm_1_img"))
         mealModels.append(MealMenuCellModel(name: "Домашний Лагман", price: "250 tg", imageName: "tepm_1_img"))
         mealModels.append(MealMenuCellModel(name: "Домашний Лагман", price: "250 tg", imageName: "tepm_1_img"))
