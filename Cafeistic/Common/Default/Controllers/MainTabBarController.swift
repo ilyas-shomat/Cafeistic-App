@@ -52,7 +52,7 @@ final class MainTabBarController: UITabBarController {
     
     private func setupClienMain() -> [UIViewController] {
         let menuScene = MenuScene.initiate()
-        menuScene.tabBarItem.title = "Меню"
+//        menuScene.tabBarItem.title = "Меню"
         
         let secondScene = UIViewController()
         secondScene.view.backgroundColor = .blue

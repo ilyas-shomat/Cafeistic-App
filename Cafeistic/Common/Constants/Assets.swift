@@ -14,6 +14,8 @@ internal enum Assets {
     case visibilityOffIcon
     case orderCart
     case trash
+    case menuTabBar
+    case menuUnselectedTabBar
     
     public var image: UIImage? {
         switch self {
@@ -27,6 +29,10 @@ internal enum Assets {
             return UIImage(named: "order_cart")
         case .trash:
             return UIImage(named: "trash")
+        case .menuTabBar:
+            return UIImage(named: "menu_tab_bar")
+        case .menuUnselectedTabBar:
+            return UIImage(named: "menu_unselected_tab_bar")
         }
     }
 }
