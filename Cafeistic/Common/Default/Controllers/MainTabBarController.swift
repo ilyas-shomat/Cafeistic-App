@@ -31,32 +31,32 @@ final class MainTabBarController: UITabBarController {
         self.tabBar.tintColor = .appOrange
     }
     
-    private func setupScenes() {
-        var scenes: [UIViewController] = []
-        
+    private func setupScenes() {        
         switch type {
         case .establishment:
-            scenes = setupEstablishmentMain()
+            viewControllers = setupEstablishmentMain()
         case .client:
-            scenes = setupClienMain()
+            viewControllers = setupClienMain()
         default:
             return
-        }
-        
-        viewControllers = scenes.map { scene in
-            let navigationController = DefaultNavigationController()
-            navigationController.setViewControllers([scene], animated: false)
-            return navigationController
         }
     }
     
     private func setupClienMain() -> [UIViewController] {
         let menuScene = MenuScene.initiate()
-//        menuScene.tabBarItem.title = "Меню"
+        let menuNavigationController = DefaultNavigationController()
+        menuNavigationController.setViewControllers([menuScene], animated: false)
+        menuScene.navigationController?.tabBarItem  = UITabBarItem(title: "",
+                                                                   image: Assets.menuUnselectedTabBar.image,
+                                                                   selectedImage: Assets.menuTabBar.image)
         
-        let secondScene = UIViewController()
-        secondScene.view.backgroundColor = .blue
-        secondScene.tabBarItem.title = "Заказ"
+        
+        let clientCurrentOrderScene = ClientCurrentOrderScene.initiate()
+        let clientCurrentOrderNavigationController = DefaultNavigationController()
+        clientCurrentOrderNavigationController.setViewControllers([clientCurrentOrderScene], animated: false)
+        clientCurrentOrderScene.navigationController?.tabBarItem = UITabBarItem(title: "",
+                                                                                image: Assets.currentOrderUnselectedTabBar.image,
+                                                                                selectedImage: Assets.currentOrderTabBar.image)
         
         let thirdScene = UIViewController()
         thirdScene.view.backgroundColor = .yellow
@@ -66,7 +66,7 @@ final class MainTabBarController: UITabBarController {
         fourthScene.view.backgroundColor = .green
         fourthScene.tabBarItem.title = "Профиль"
         
-        let scenes = [menuScene, secondScene, thirdScene, fourthScene]
+        let scenes = [menuNavigationController, clientCurrentOrderNavigationController, thirdScene, fourthScene]
         
         return scenes
     }

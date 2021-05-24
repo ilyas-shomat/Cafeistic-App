@@ -120,7 +120,7 @@ extension MenuViewController: SetupBaseViewController {
         configureSubViews()
         configureConstraints()
         setupNavigationBar()
-        setupTabBar()
+//        setupTabBar()
     }
     
     func configureSubViews() {
@@ -152,11 +152,11 @@ extension MenuViewController: SetupBaseViewController {
         navigationItem.leftBarButtonItem = UIBarButtonItem(customView: menuLabel)
     }
     
-    private func setupTabBar() {
-        navigationController?.tabBarItem = UITabBarItem(title: "",
-                                                        image: Assets.menuUnselectedTabBar.image,
-                                                        selectedImage: Assets.menuTabBar.image)
-    }
+//    private func setupTabBar() {
+//        navigationController?.tabBarItem = UITabBarItem(title: "",
+//                                                        image: Assets.menuUnselectedTabBar.image,
+//                                                        selectedImage: Assets.menuTabBar.image)
+//    }
     
     @objc private func tapOrderCartButton() {
         
