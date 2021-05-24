@@ -84,7 +84,6 @@ class MenuViewController: DefaultViewController {
         
         //MARK: - Delete code below after integrating with API
         tepmFunc()
-    
     }
     
 }

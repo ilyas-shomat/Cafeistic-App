@@ -53,6 +53,8 @@
 		FD9118AE265B7508008F122C /* ClientCurrentOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9118A8265B7508008F122C /* ClientCurrentOrderViewController.swift */; };
 		FD9118AF265B7508008F122C /* ClientCurrentOrderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9118A9265B7508008F122C /* ClientCurrentOrderInteractor.swift */; };
 		FD9118B0265B7508008F122C /* ClientCurrentOrderSceneBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9118AA265B7508008F122C /* ClientCurrentOrderSceneBuilder.swift */; };
+		FD9118B5265B9734008F122C /* ClientCurrentOrderMealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9118B4265B9734008F122C /* ClientCurrentOrderMealCell.swift */; };
+		FD9118B8265B974A008F122C /* ClientCurrentOrderMealCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9118B7265B974A008F122C /* ClientCurrentOrderMealCellModel.swift */; };
 		FD9BB1A72641029300835B98 /* MenuType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9BB1A62641029300835B98 /* MenuType.swift */; };
 		FD9BB1AF2641034D00835B98 /* MenuContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9BB1A92641034D00835B98 /* MenuContract.swift */; };
 		FD9BB1B02641034D00835B98 /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9BB1AA2641034D00835B98 /* MenuPresenter.swift */; };
@@ -103,7 +105,6 @@
 		FDF281F42632D3AA00B1829A /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF281F32632D3AA00B1829A /* UIColor+Hex.swift */; };
 		FDF281FA2632D43800B1829A /* UITableViewCell+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF281F92632D43800B1829A /* UITableViewCell+UI.swift */; };
 		FDF282002632D79D00B1829A /* StartSceneBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF281FF2632D79D00B1829A /* StartSceneBuilder.swift */; };
-		FDF9CA5D2656567600DB8E93 /* TempVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF9CA5C2656567600DB8E93 /* TempVCViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -155,6 +156,8 @@
 		FD9118A8265B7508008F122C /* ClientCurrentOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientCurrentOrderViewController.swift; sourceTree = "<group>"; };
 		FD9118A9265B7508008F122C /* ClientCurrentOrderInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientCurrentOrderInteractor.swift; sourceTree = "<group>"; };
 		FD9118AA265B7508008F122C /* ClientCurrentOrderSceneBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientCurrentOrderSceneBuilder.swift; sourceTree = "<group>"; };
+		FD9118B4265B9734008F122C /* ClientCurrentOrderMealCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientCurrentOrderMealCell.swift; sourceTree = "<group>"; };
+		FD9118B7265B974A008F122C /* ClientCurrentOrderMealCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientCurrentOrderMealCellModel.swift; sourceTree = "<group>"; };
 		FD9BB1A62641029300835B98 /* MenuType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuType.swift; sourceTree = "<group>"; };
 		FD9BB1A92641034D00835B98 /* MenuContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuContract.swift; sourceTree = "<group>"; };
 		FD9BB1AA2641034D00835B98 /* MenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
@@ -207,7 +210,6 @@
 		FDF281F32632D3AA00B1829A /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		FDF281F92632D43800B1829A /* UITableViewCell+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+UI.swift"; sourceTree = "<group>"; };
 		FDF281FF2632D79D00B1829A /* StartSceneBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartSceneBuilder.swift; sourceTree = "<group>"; };
-		FDF9CA5C2656567600DB8E93 /* TempVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempVCViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -494,6 +496,7 @@
 		FD9118A3265B73A5008F122C /* CurrentOrder */ = {
 			isa = PBXGroup;
 			children = (
+				FD9118B3265B9712008F122C /* Cells */,
 				FD9118A5265B7508008F122C /* ClientCurrentOrderContract.swift */,
 				FD9118A6265B7508008F122C /* ClientCurrentOrderPresenter.swift */,
 				FD9118A7265B7508008F122C /* ClientCurrentOrderRouter.swift */,
@@ -502,6 +505,15 @@
 				FD9118AA265B7508008F122C /* ClientCurrentOrderSceneBuilder.swift */,
 			);
 			path = CurrentOrder;
+			sourceTree = "<group>";
+		};
+		FD9118B3265B9712008F122C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FD9118B4265B9734008F122C /* ClientCurrentOrderMealCell.swift */,
+				FD9118B7265B974A008F122C /* ClientCurrentOrderMealCellModel.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		FD9BB1B62641073000835B98 /* UICollectionView */ = {
@@ -635,7 +647,6 @@
 		FDEAD92A25C8269B0075F122 /* Cafeistic */ = {
 			isa = PBXGroup;
 			children = (
-				FDF9CA5B2656565A00DB8E93 /* TempFolder */,
 				FD4B1BB8262FE861005E9BF9 /* App */,
 				FD4B1BBC262FFA3B005E9BF9 /* Scenes */,
 				FDF281E72632D24800B1829A /* Services */,
@@ -801,14 +812,6 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
-		FDF9CA5B2656565A00DB8E93 /* TempFolder */ = {
-			isa = PBXGroup;
-			children = (
-				FDF9CA5C2656567600DB8E93 /* TempVCViewController.swift */,
-			);
-			path = TempFolder;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -958,6 +961,7 @@
 				FD4593712636BD8000669AB4 /* LoginInteractor.swift in Sources */,
 				FDEAD92E25C8269B0075F122 /* SceneDelegate.swift in Sources */,
 				FDF281BA2632CED300B1829A /* StartContract.swift in Sources */,
+				FD9118B5265B9734008F122C /* ClientCurrentOrderMealCell.swift in Sources */,
 				FDACDF1D26391F7C00689B51 /* TwoButtonAlertView.swift in Sources */,
 				FDACDF63263A8BCA00689B51 /* ForgetPasswordSceneBuilder.swift in Sources */,
 				FD9BB1B32641034D00835B98 /* MenuInteractor.swift in Sources */,
@@ -979,6 +983,7 @@
 				FD6B88AB263C03EC0026D3E0 /* EstablishmentSignUpSceneBuilder.swift in Sources */,
 				FD6B8899263BCBCB0026D3E0 /* ClientSignUpSceneBuilder.swift in Sources */,
 				FD9BB1C926410C5D00835B98 /* MealMenuCell.swift in Sources */,
+				FD9118B8265B974A008F122C /* ClientCurrentOrderMealCellModel.swift in Sources */,
 				FD4593A42637F9EA00669AB4 /* SpinnerIndicator.swift in Sources */,
 				FDCBAD28264A4DFF005B9608 /* UITableViewExtension.swift in Sources */,
 				FDACDF6D263AA00200689B51 /* CollectionViewProvider.swift in Sources */,
@@ -1003,7 +1008,6 @@
 				FD9BB1C626410C4800835B98 /* CategoryMenuCellModel.swift in Sources */,
 				FD6B88A6263C03EC0026D3E0 /* EstablishmentSignUpContract.swift in Sources */,
 				FDACDF62263A8BCA00689B51 /* ForgetPasswordInteractor.swift in Sources */,
-				FDF9CA5D2656567600DB8E93 /* TempVCViewController.swift in Sources */,
 				FD45936F2636BD8000669AB4 /* LoginRouter.swift in Sources */,
 				FD9BB1A72641029300835B98 /* MenuType.swift in Sources */,
 				FDF282002632D79D00B1829A /* StartSceneBuilder.swift in Sources */,
