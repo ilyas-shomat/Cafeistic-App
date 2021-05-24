@@ -39,7 +39,7 @@ final class MealMenuCell: UICollectionViewCell {
     private lazy var mealImageView: UIImageView = {
         let imageView = UIImageView()
 //        imageView.image = UIImage(named: "tepm_1_img")
-        imageView.contentMode = .scaleToFill
+        imageView.contentMode = .scaleAspectFill
         imageView.layer.cornerRadius = 15.0
         imageView.clipsToBounds = true
         return imageView

@@ -87,8 +87,9 @@ extension ClientCurrentOrderViewController: PresenterToViewClientCurrentOrderPro
 //MARK: - Delete code below after integrating with API
 extension ClientCurrentOrderViewController {
     private func tempFunc() {
-        mealModel.append(ClientCurrentOrderMealCellModel(mealName: "sadss", image: UIImage(named: "tepm_1_img"), description: "safda", count: "1"))
-        mealModel.append(ClientCurrentOrderMealCellModel(mealName: "sadss", image: UIImage(named: "tepm_1_img"), description: "safda", count: "1"))
-        mealModel.append(ClientCurrentOrderMealCellModel(mealName: "sadss", image: UIImage(named: "tepm_1_img"), description: "safda", count: "1"))
+        mealModel.append(ClientCurrentOrderMealCellModel(mealName: "Яблочный сок", image: UIImage(named: "tepm_1_img"), description: "1л - 300 тг", count: "1"))
+        mealModel.append(ClientCurrentOrderMealCellModel(mealName: "Яблочный сок", image: UIImage(named: "tepm_1_img"), description: "1л - 300 тг", count: "1"))
+        mealModel.append(ClientCurrentOrderMealCellModel(mealName: "Яблочный сок", image: UIImage(named: "tepm_1_img"), description: "1л - 300 тг", count: "1"))
+        mealModel.append(ClientCurrentOrderMealCellModel(mealName: "Яблочный сок", image: UIImage(named: "tepm_1_img"), description: "1л - 300 тг", count: "1"))
     }
 }

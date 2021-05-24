@@ -30,6 +30,7 @@ final class ClientCurrentOrderMealCell: UITableViewCell {
     
     private lazy var mealImageView: UIImageView = {
         let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFill
         imageView.layer.masksToBounds = true
         imageView.layer.cornerRadius = 10
         return imageView
@@ -37,21 +38,29 @@ final class ClientCurrentOrderMealCell: UITableViewCell {
     
     private lazy var mealNameLabel: UILabel = {
         let label = UILabel()
+        label.font = UIFont.boldSystemFont(ofSize: 14)
+        label.textColor = .appOrange
         return label
     }()
     
     private lazy var mealDescriptionLabel: UILabel = {
         let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 14)
+        label.textColor = .lightGray
         return label
     }()
     
     private lazy var mealCountView: UIView = {
         let view = UIView()
+        view.backgroundColor = .appOrange
+        view.layer.masksToBounds = true
+        view.layer.cornerRadius = 10
         return view
     }()
     
     private lazy var mealCountLabel: UILabel = {
         let label = UILabel()
+        label.textColor = .white
         return label
     }()
     
@@ -88,6 +97,25 @@ final class ClientCurrentOrderMealCell: UITableViewCell {
             $0.top.bottom.equalToSuperview().inset(5)
             $0.height.width.equalTo(45)
             $0.centerY.equalToSuperview()
+        }
+        mealNameLabel.snp.makeConstraints {
+            $0.leading.equalTo(mealImageView.snp.trailing).offset(10)
+            $0.trailing.equalToSuperview().inset(10)
+            $0.top.equalToSuperview().inset(8)
+        }
+        mealDescriptionLabel.snp.makeConstraints {
+            $0.leading.equalTo(mealImageView.snp.trailing).offset(10)
+            $0.trailing.equalTo(mealCountView.snp.leading).offset(-10)
+            $0.top.equalTo(mealNameLabel.snp.bottom).offset(5)
+        }
+        mealCountView.snp.makeConstraints {
+            $0.trailing.equalToSuperview().inset(5)
+            $0.bottom.equalToSuperview().inset(5)
+            $0.width.equalTo(36)
+            $0.height.equalTo(30)
+        }
+        mealCountLabel.snp.makeConstraints {
+            $0.center.equalToSuperview()
         }
     }
 }
