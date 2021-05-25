@@ -55,6 +55,8 @@
 		FD9118B0265B7508008F122C /* ClientCurrentOrderSceneBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9118AA265B7508008F122C /* ClientCurrentOrderSceneBuilder.swift */; };
 		FD9118B5265B9734008F122C /* ClientCurrentOrderMealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9118B4265B9734008F122C /* ClientCurrentOrderMealCell.swift */; };
 		FD9118B8265B974A008F122C /* ClientCurrentOrderMealCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9118B7265B974A008F122C /* ClientCurrentOrderMealCellModel.swift */; };
+		FD91191B265D0223008F122C /* MainNavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91191A265D0223008F122C /* MainNavigationBarView.swift */; };
+		FD91191E265D0774008F122C /* ViewRoundingCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91191D265D0774008F122C /* ViewRoundingCorners.swift */; };
 		FD9BB1A72641029300835B98 /* MenuType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9BB1A62641029300835B98 /* MenuType.swift */; };
 		FD9BB1AF2641034D00835B98 /* MenuContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9BB1A92641034D00835B98 /* MenuContract.swift */; };
 		FD9BB1B02641034D00835B98 /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9BB1AA2641034D00835B98 /* MenuPresenter.swift */; };
@@ -158,6 +160,8 @@
 		FD9118AA265B7508008F122C /* ClientCurrentOrderSceneBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientCurrentOrderSceneBuilder.swift; sourceTree = "<group>"; };
 		FD9118B4265B9734008F122C /* ClientCurrentOrderMealCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientCurrentOrderMealCell.swift; sourceTree = "<group>"; };
 		FD9118B7265B974A008F122C /* ClientCurrentOrderMealCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientCurrentOrderMealCellModel.swift; sourceTree = "<group>"; };
+		FD91191A265D0223008F122C /* MainNavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationBarView.swift; sourceTree = "<group>"; };
+		FD91191D265D0774008F122C /* ViewRoundingCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRoundingCorners.swift; sourceTree = "<group>"; };
 		FD9BB1A62641029300835B98 /* MenuType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuType.swift; sourceTree = "<group>"; };
 		FD9BB1A92641034D00835B98 /* MenuContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuContract.swift; sourceTree = "<group>"; };
 		FD9BB1AA2641034D00835B98 /* MenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
@@ -244,6 +248,7 @@
 		FD4593592636AD9100669AB4 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				FD911919265D01F9008F122C /* MainNavigationBarView */,
 				FDCBAD21264A4A0A005B9608 /* TableViewCells */,
 				FD6B88C0263C0DCC0026D3E0 /* MainSwitchView */,
 				FDACDF1626391EC000689B51 /* DefaultAlertView */,
@@ -516,6 +521,14 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		FD911919265D01F9008F122C /* MainNavigationBarView */ = {
+			isa = PBXGroup;
+			children = (
+				FD91191A265D0223008F122C /* MainNavigationBarView.swift */,
+			);
+			path = MainNavigationBarView;
+			sourceTree = "<group>";
+		};
 		FD9BB1B62641073000835B98 /* UICollectionView */ = {
 			isa = PBXGroup;
 			children = (
@@ -587,6 +600,7 @@
 			children = (
 				FDBBB6BE2653E573007D8D88 /* TableViewTextFieldCellType.swift */,
 				FD6CE0FF265516F500541521 /* TabBarControllerType.swift */,
+				FD91191D265D0774008F122C /* ViewRoundingCorners.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -1013,9 +1027,11 @@
 				FDF282002632D79D00B1829A /* StartSceneBuilder.swift in Sources */,
 				FD45937A2636C0BC00669AB4 /* MainTextFieldStyle.swift in Sources */,
 				FDF281B92632CED300B1829A /* StartViewController.swift in Sources */,
+				FD91191E265D0774008F122C /* ViewRoundingCorners.swift in Sources */,
 				FD6CE100265516F500541521 /* TabBarControllerType.swift in Sources */,
 				FDE2CEC626426BCA00FE1EA7 /* UIView+Corners.swift in Sources */,
 				FD4593A02637F3F000669AB4 /* SpinnerView.swift in Sources */,
+				FD91191B265D0223008F122C /* MainNavigationBarView.swift in Sources */,
 				FDCBAD24264A4B8B005B9608 /* CellType.swift in Sources */,
 				FDACDF1826391F6300689B51 /* DefaultAlertViewController.swift in Sources */,
 				FD9BB1B02641034D00835B98 /* MenuPresenter.swift in Sources */,

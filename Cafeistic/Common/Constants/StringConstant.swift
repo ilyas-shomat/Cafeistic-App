@@ -61,6 +61,10 @@ struct StringConstant {
         struct Menu {
             static let menu = "Меню"
         }
+        
+        struct ClientCurrentOrder {
+            static let order = "Заказ #"
+        }
     }
     
     struct Services {
