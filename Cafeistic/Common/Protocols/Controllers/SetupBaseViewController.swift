@@ -9,7 +9,7 @@ import Foundation
 
 protocol SetupBaseViewController: class {
     func setupViews()
-    func setupActions()
     func configureSubViews()
     func configureConstraints()
+    func setupActions()
 }
