@@ -57,6 +57,7 @@
 		FD9118B8265B974A008F122C /* ClientCurrentOrderMealCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9118B7265B974A008F122C /* ClientCurrentOrderMealCellModel.swift */; };
 		FD91191B265D0223008F122C /* MainNavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91191A265D0223008F122C /* MainNavigationBarView.swift */; };
 		FD91191E265D0774008F122C /* ViewRoundingCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91191D265D0774008F122C /* ViewRoundingCorners.swift */; };
+		FD911928265D22FE008F122C /* CurrentOrderAcceptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD911927265D22FE008F122C /* CurrentOrderAcceptView.swift */; };
 		FD9BB1A72641029300835B98 /* MenuType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9BB1A62641029300835B98 /* MenuType.swift */; };
 		FD9BB1AF2641034D00835B98 /* MenuContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9BB1A92641034D00835B98 /* MenuContract.swift */; };
 		FD9BB1B02641034D00835B98 /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9BB1AA2641034D00835B98 /* MenuPresenter.swift */; };
@@ -162,6 +163,7 @@
 		FD9118B7265B974A008F122C /* ClientCurrentOrderMealCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientCurrentOrderMealCellModel.swift; sourceTree = "<group>"; };
 		FD91191A265D0223008F122C /* MainNavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationBarView.swift; sourceTree = "<group>"; };
 		FD91191D265D0774008F122C /* ViewRoundingCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRoundingCorners.swift; sourceTree = "<group>"; };
+		FD911927265D22FE008F122C /* CurrentOrderAcceptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentOrderAcceptView.swift; sourceTree = "<group>"; };
 		FD9BB1A62641029300835B98 /* MenuType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuType.swift; sourceTree = "<group>"; };
 		FD9BB1A92641034D00835B98 /* MenuContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuContract.swift; sourceTree = "<group>"; };
 		FD9BB1AA2641034D00835B98 /* MenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
@@ -248,6 +250,7 @@
 		FD4593592636AD9100669AB4 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				FD911926265D22C9008F122C /* ScenesCustomViews */,
 				FD911919265D01F9008F122C /* MainNavigationBarView */,
 				FDCBAD21264A4A0A005B9608 /* TableViewCells */,
 				FD6B88C0263C0DCC0026D3E0 /* MainSwitchView */,
@@ -527,6 +530,14 @@
 				FD91191A265D0223008F122C /* MainNavigationBarView.swift */,
 			);
 			path = MainNavigationBarView;
+			sourceTree = "<group>";
+		};
+		FD911926265D22C9008F122C /* ScenesCustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				FD911927265D22FE008F122C /* CurrentOrderAcceptView.swift */,
+			);
+			path = ScenesCustomViews;
 			sourceTree = "<group>";
 		};
 		FD9BB1B62641073000835B98 /* UICollectionView */ = {
@@ -988,6 +999,7 @@
 				FD45937E2636C0DB00669AB4 /* MainTextField.swift in Sources */,
 				FDF281C12632CFEE00B1829A /* DefaultViewController.swift in Sources */,
 				FD6CE0FD2655168900541521 /* MainTabBarController.swift in Sources */,
+				FD911928265D22FE008F122C /* CurrentOrderAcceptView.swift in Sources */,
 				FDCBAD2B264A587D005B9608 /* ButtonCell.swift in Sources */,
 				FDACDF22263930CA00689B51 /* UIViewController+Alert.swift in Sources */,
 				FD9BB1C226410C3500835B98 /* CategoryMenuCell.swift in Sources */,

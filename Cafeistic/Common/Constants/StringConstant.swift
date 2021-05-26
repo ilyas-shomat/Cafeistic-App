@@ -64,6 +64,8 @@ struct StringConstant {
         
         struct ClientCurrentOrder {
             static let order = "Заказ #"
+            static let total = "Итого"
+            static let acceptReceiving = "Подвердить получение"
         }
     }
     
