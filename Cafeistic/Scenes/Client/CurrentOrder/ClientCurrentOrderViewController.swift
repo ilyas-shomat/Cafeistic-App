@@ -20,6 +20,11 @@ class ClientCurrentOrderViewController: DefaultViewController {
         return tableView
     }()
     
+    private lazy var navigationView: MainNavigationBarView = {
+        let view = MainNavigationBarView(title: StringConstant.Scenes.ClientCurrentOrder.order)
+        return view
+    }()
+    
     private var mealModel: [ClientCurrentOrderMealCellModel] = [] {
         didSet {
             tableView.reloadData()
@@ -46,6 +51,7 @@ extension ClientCurrentOrderViewController: SetupBaseViewController {
 //        setupTabBar()
         configureSubViews()
         configureConstraints()
+        setupNavigationBarView()
     }
     
     func configureSubViews() {
@@ -61,6 +67,15 @@ extension ClientCurrentOrderViewController: SetupBaseViewController {
     
     func setupActions() {
         
+    }
+    
+    private func setupNavigationBarView() {
+        navigationController?.navigationBar.addSubview(navigationView)
+        navigationView.snp.makeConstraints {
+            $0.top.bottom.equalToSuperview().inset(5)
+            $0.leading.equalToSuperview()
+            $0.width.equalTo(230)
+        }
     }
 }
 
