@@ -67,6 +67,11 @@ struct StringConstant {
             static let total = "Итого"
             static let acceptReceiving = "Подвердить получение"
         }
+        
+        struct ClientOrderHistory {
+            static let orderHistory = "История заказов"
+            static let detail = "Подробнее"
+        }
     }
     
     struct Services {

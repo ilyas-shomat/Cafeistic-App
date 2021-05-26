@@ -21,18 +21,16 @@ final class ClientCurrentOrderMealCell: UITableViewCell {
     }
     
     private lazy var backgroudWhiteView: UIView = {
-        let view  = UIView()
+        let view = UIView()
         view.backgroundColor = .white
-        view.layer.masksToBounds = true
-        view.layer.cornerRadius = 10
+        view.roundCorders(corners: .all, radius: 10)
         return view
     }()
     
     private lazy var mealImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
-        imageView.layer.masksToBounds = true
-        imageView.layer.cornerRadius = 10
+        imageView.roundCorders(corners: .all, radius: 10)
         return imageView
     }()
     
