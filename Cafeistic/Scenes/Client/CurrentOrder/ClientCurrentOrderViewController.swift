@@ -25,6 +25,12 @@ class ClientCurrentOrderViewController: DefaultViewController {
         return view
     }()
     
+    private lazy var bottomView: CurrentOrderAcceptView = {
+        let view = CurrentOrderAcceptView()
+        view.price = "7300 тг"
+        return view
+    }()
+    
     private var mealModel: [ClientCurrentOrderMealCellModel] = [] {
         didSet {
             tableView.reloadData()
@@ -55,13 +61,20 @@ extension ClientCurrentOrderViewController: SetupBaseViewController {
     }
     
     func configureSubViews() {
-        view.addSubview(tableView)
+        view.addSubviews(tableView,
+                         bottomView)
     }
     
     func configureConstraints() {
         tableView.snp.makeConstraints {
             $0.leading.trailing.equalToSuperview().inset(12)
-            $0.top.bottom.equalToSuperview()
+            $0.top.equalToSuperview()
+            $0.bottom.equalTo(bottomView.snp.top)
+        }
+        bottomView.snp.makeConstraints {
+            $0.leading.trailing.equalToSuperview()
+            $0.bottom.equalToSuperview().inset(50)
+            $0.height.equalTo(120)
         }
     }
     

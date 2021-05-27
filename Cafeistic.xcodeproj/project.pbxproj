@@ -57,6 +57,7 @@
 		FD9118B8265B974A008F122C /* ClientCurrentOrderMealCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9118B7265B974A008F122C /* ClientCurrentOrderMealCellModel.swift */; };
 		FD91191B265D0223008F122C /* MainNavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91191A265D0223008F122C /* MainNavigationBarView.swift */; };
 		FD91191E265D0774008F122C /* ViewRoundingCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91191D265D0774008F122C /* ViewRoundingCorners.swift */; };
+		FD911928265D22FE008F122C /* CurrentOrderAcceptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD911927265D22FE008F122C /* CurrentOrderAcceptView.swift */; };
 		FD9BB1A72641029300835B98 /* MenuType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9BB1A62641029300835B98 /* MenuType.swift */; };
 		FD9BB1AF2641034D00835B98 /* MenuContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9BB1A92641034D00835B98 /* MenuContract.swift */; };
 		FD9BB1B02641034D00835B98 /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9BB1AA2641034D00835B98 /* MenuPresenter.swift */; };
@@ -84,6 +85,14 @@
 		FDACDF76263AA0EA00689B51 /* DefaultNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF75263AA0EA00689B51 /* DefaultNavigationController.swift */; };
 		FDBBB6B82653DABA007D8D88 /* TableViewCellActionsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBBB6B72653DABA007D8D88 /* TableViewCellActionsDelegate.swift */; };
 		FDBBB6BF2653E573007D8D88 /* TableViewTextFieldCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBBB6BE2653E573007D8D88 /* TableViewTextFieldCellType.swift */; };
+		FDBDEADA265E1D2500B03B9E /* ClientOrderHistoryContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBDEAD4265E1D2500B03B9E /* ClientOrderHistoryContract.swift */; };
+		FDBDEADB265E1D2500B03B9E /* ClientOrderHistoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBDEAD5265E1D2500B03B9E /* ClientOrderHistoryPresenter.swift */; };
+		FDBDEADC265E1D2500B03B9E /* ClientOrderHistoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBDEAD6265E1D2500B03B9E /* ClientOrderHistoryRouter.swift */; };
+		FDBDEADD265E1D2500B03B9E /* ClientOrderHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBDEAD7265E1D2500B03B9E /* ClientOrderHistoryViewController.swift */; };
+		FDBDEADE265E1D2500B03B9E /* ClientOrderHistoryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBDEAD8265E1D2500B03B9E /* ClientOrderHistoryInteractor.swift */; };
+		FDBDEADF265E1D2500B03B9E /* ClientOrderHistorySceneBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBDEAD9265E1D2500B03B9E /* ClientOrderHistorySceneBuilder.swift */; };
+		FDBDEAE4265E267C00B03B9E /* ClientOrderHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBDEAE3265E267C00B03B9E /* ClientOrderHistoryCell.swift */; };
+		FDBDEAE8265E269100B03B9E /* ClientOrderHistoryCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBDEAE7265E269100B03B9E /* ClientOrderHistoryCellModel.swift */; };
 		FDCBAD24264A4B8B005B9608 /* CellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCBAD23264A4B8B005B9608 /* CellType.swift */; };
 		FDCBAD28264A4DFF005B9608 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCBAD27264A4DFF005B9608 /* UITableViewExtension.swift */; };
 		FDCBAD2B264A587D005B9608 /* ButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCBAD2A264A587D005B9608 /* ButtonCell.swift */; };
@@ -162,6 +171,7 @@
 		FD9118B7265B974A008F122C /* ClientCurrentOrderMealCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientCurrentOrderMealCellModel.swift; sourceTree = "<group>"; };
 		FD91191A265D0223008F122C /* MainNavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationBarView.swift; sourceTree = "<group>"; };
 		FD91191D265D0774008F122C /* ViewRoundingCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRoundingCorners.swift; sourceTree = "<group>"; };
+		FD911927265D22FE008F122C /* CurrentOrderAcceptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentOrderAcceptView.swift; sourceTree = "<group>"; };
 		FD9BB1A62641029300835B98 /* MenuType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuType.swift; sourceTree = "<group>"; };
 		FD9BB1A92641034D00835B98 /* MenuContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuContract.swift; sourceTree = "<group>"; };
 		FD9BB1AA2641034D00835B98 /* MenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
@@ -189,6 +199,14 @@
 		FDACDF75263AA0EA00689B51 /* DefaultNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNavigationController.swift; sourceTree = "<group>"; };
 		FDBBB6B72653DABA007D8D88 /* TableViewCellActionsDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellActionsDelegate.swift; sourceTree = "<group>"; };
 		FDBBB6BE2653E573007D8D88 /* TableViewTextFieldCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewTextFieldCellType.swift; sourceTree = "<group>"; };
+		FDBDEAD4265E1D2500B03B9E /* ClientOrderHistoryContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientOrderHistoryContract.swift; sourceTree = "<group>"; };
+		FDBDEAD5265E1D2500B03B9E /* ClientOrderHistoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientOrderHistoryPresenter.swift; sourceTree = "<group>"; };
+		FDBDEAD6265E1D2500B03B9E /* ClientOrderHistoryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientOrderHistoryRouter.swift; sourceTree = "<group>"; };
+		FDBDEAD7265E1D2500B03B9E /* ClientOrderHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientOrderHistoryViewController.swift; sourceTree = "<group>"; };
+		FDBDEAD8265E1D2500B03B9E /* ClientOrderHistoryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientOrderHistoryInteractor.swift; sourceTree = "<group>"; };
+		FDBDEAD9265E1D2500B03B9E /* ClientOrderHistorySceneBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientOrderHistorySceneBuilder.swift; sourceTree = "<group>"; };
+		FDBDEAE3265E267C00B03B9E /* ClientOrderHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientOrderHistoryCell.swift; sourceTree = "<group>"; };
+		FDBDEAE7265E269100B03B9E /* ClientOrderHistoryCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientOrderHistoryCellModel.swift; sourceTree = "<group>"; };
 		FDCBAD23264A4B8B005B9608 /* CellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellType.swift; sourceTree = "<group>"; };
 		FDCBAD27264A4DFF005B9608 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		FDCBAD2A264A587D005B9608 /* ButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCell.swift; sourceTree = "<group>"; };
@@ -248,6 +266,7 @@
 		FD4593592636AD9100669AB4 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				FD911926265D22C9008F122C /* ScenesCustomViews */,
 				FD911919265D01F9008F122C /* MainNavigationBarView */,
 				FDCBAD21264A4A0A005B9608 /* TableViewCells */,
 				FD6B88C0263C0DCC0026D3E0 /* MainSwitchView */,
@@ -412,6 +431,7 @@
 			isa = PBXGroup;
 			children = (
 				FD9118A3265B73A5008F122C /* CurrentOrder */,
+				FDBDEAD3265E1D0800B03B9E /* OrderHistory */,
 			);
 			path = Client;
 			sourceTree = "<group>";
@@ -529,6 +549,14 @@
 			path = MainNavigationBarView;
 			sourceTree = "<group>";
 		};
+		FD911926265D22C9008F122C /* ScenesCustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				FD911927265D22FE008F122C /* CurrentOrderAcceptView.swift */,
+			);
+			path = ScenesCustomViews;
+			sourceTree = "<group>";
+		};
 		FD9BB1B62641073000835B98 /* UICollectionView */ = {
 			isa = PBXGroup;
 			children = (
@@ -603,6 +631,29 @@
 				FD91191D265D0774008F122C /* ViewRoundingCorners.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		FDBDEAD3265E1D0800B03B9E /* OrderHistory */ = {
+			isa = PBXGroup;
+			children = (
+				FDBDEAE2265E265400B03B9E /* Cells */,
+				FDBDEAD4265E1D2500B03B9E /* ClientOrderHistoryContract.swift */,
+				FDBDEAD5265E1D2500B03B9E /* ClientOrderHistoryPresenter.swift */,
+				FDBDEAD6265E1D2500B03B9E /* ClientOrderHistoryRouter.swift */,
+				FDBDEAD7265E1D2500B03B9E /* ClientOrderHistoryViewController.swift */,
+				FDBDEAD8265E1D2500B03B9E /* ClientOrderHistoryInteractor.swift */,
+				FDBDEAD9265E1D2500B03B9E /* ClientOrderHistorySceneBuilder.swift */,
+			);
+			path = OrderHistory;
+			sourceTree = "<group>";
+		};
+		FDBDEAE2265E265400B03B9E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FDBDEAE3265E267C00B03B9E /* ClientOrderHistoryCell.swift */,
+				FDBDEAE7265E269100B03B9E /* ClientOrderHistoryCellModel.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		FDCBAD21264A4A0A005B9608 /* TableViewCells */ = {
@@ -944,6 +995,7 @@
 				FDEA5C7C265245DD00BB08A1 /* TextFieldCell.swift in Sources */,
 				FDBBB6BF2653E573007D8D88 /* TableViewTextFieldCellType.swift in Sources */,
 				FD9BB1AF2641034D00835B98 /* MenuContract.swift in Sources */,
+				FDBDEADE265E1D2500B03B9E /* ClientOrderHistoryInteractor.swift in Sources */,
 				FD4593872636D77B00669AB4 /* StringConstant.swift in Sources */,
 				FD9BB1BE2641098300835B98 /* UIView+Identifier.swift in Sources */,
 				FD4593902637F1BD00669AB4 /* MainButton.swift in Sources */,
@@ -959,12 +1011,15 @@
 				FD45936D2636BD8000669AB4 /* LoginContract.swift in Sources */,
 				FDACDF5F263A8BCA00689B51 /* ForgetPasswordPresenter.swift in Sources */,
 				FDACDF5E263A8BCA00689B51 /* ForgetPasswordContract.swift in Sources */,
+				FDBDEADC265E1D2500B03B9E /* ClientOrderHistoryRouter.swift in Sources */,
 				FD6B88A8263C03EC0026D3E0 /* EstablishmentSignUpRouter.swift in Sources */,
 				FD6B88AA263C03EC0026D3E0 /* EstablishmentSignUpInteractor.swift in Sources */,
 				FD45939C2637F2D000669AB4 /* IndicatableView+UIButton.swift in Sources */,
 				FD6117992643AE7E00794EB5 /* MainSwitchView.swift in Sources */,
 				FD45938B2636E19F00669AB4 /* UIView+AddSubviews.swift in Sources */,
 				FDEA5CD0265296B700BB08A1 /* UIImageView+SetImageColor.swift in Sources */,
+				FDBDEAE8265E269100B03B9E /* ClientOrderHistoryCellModel.swift in Sources */,
+				FDBDEAE4265E267C00B03B9E /* ClientOrderHistoryCell.swift in Sources */,
 				FD9BB1CC26410C6F00835B98 /* MealMenuCellModel.swift in Sources */,
 				FDF281F42632D3AA00B1829A /* UIColor+Hex.swift in Sources */,
 				FD4593812636CA3100669AB4 /* Assets.swift in Sources */,
@@ -973,6 +1028,7 @@
 				FDACDF60263A8BCA00689B51 /* ForgetPasswordRouter.swift in Sources */,
 				FD6B8897263BCBCB0026D3E0 /* ClientSignUpViewController.swift in Sources */,
 				FD4593712636BD8000669AB4 /* LoginInteractor.swift in Sources */,
+				FDBDEADD265E1D2500B03B9E /* ClientOrderHistoryViewController.swift in Sources */,
 				FDEAD92E25C8269B0075F122 /* SceneDelegate.swift in Sources */,
 				FDF281BA2632CED300B1829A /* StartContract.swift in Sources */,
 				FD9118B5265B9734008F122C /* ClientCurrentOrderMealCell.swift in Sources */,
@@ -988,6 +1044,8 @@
 				FD45937E2636C0DB00669AB4 /* MainTextField.swift in Sources */,
 				FDF281C12632CFEE00B1829A /* DefaultViewController.swift in Sources */,
 				FD6CE0FD2655168900541521 /* MainTabBarController.swift in Sources */,
+				FDBDEADA265E1D2500B03B9E /* ClientOrderHistoryContract.swift in Sources */,
+				FD911928265D22FE008F122C /* CurrentOrderAcceptView.swift in Sources */,
 				FDCBAD2B264A587D005B9608 /* ButtonCell.swift in Sources */,
 				FDACDF22263930CA00689B51 /* UIViewController+Alert.swift in Sources */,
 				FD9BB1C226410C3500835B98 /* CategoryMenuCell.swift in Sources */,
@@ -996,6 +1054,7 @@
 				FDACDF61263A8BCA00689B51 /* ForgetPasswordViewController.swift in Sources */,
 				FD6B88AB263C03EC0026D3E0 /* EstablishmentSignUpSceneBuilder.swift in Sources */,
 				FD6B8899263BCBCB0026D3E0 /* ClientSignUpSceneBuilder.swift in Sources */,
+				FDBDEADB265E1D2500B03B9E /* ClientOrderHistoryPresenter.swift in Sources */,
 				FD9BB1C926410C5D00835B98 /* MealMenuCell.swift in Sources */,
 				FD9118B8265B974A008F122C /* ClientCurrentOrderMealCellModel.swift in Sources */,
 				FD4593A42637F9EA00669AB4 /* SpinnerIndicator.swift in Sources */,
@@ -1022,6 +1081,7 @@
 				FD9BB1C626410C4800835B98 /* CategoryMenuCellModel.swift in Sources */,
 				FD6B88A6263C03EC0026D3E0 /* EstablishmentSignUpContract.swift in Sources */,
 				FDACDF62263A8BCA00689B51 /* ForgetPasswordInteractor.swift in Sources */,
+				FDBDEADF265E1D2500B03B9E /* ClientOrderHistorySceneBuilder.swift in Sources */,
 				FD45936F2636BD8000669AB4 /* LoginRouter.swift in Sources */,
 				FD9BB1A72641029300835B98 /* MenuType.swift in Sources */,
 				FDF282002632D79D00B1829A /* StartSceneBuilder.swift in Sources */,
