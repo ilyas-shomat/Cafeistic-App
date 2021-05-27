@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import SnapKit
 
-final class ClientCurrentOrderMealCell: UITableViewCell {
+final class ClientOrderMealCell: UITableViewCell {
     
     var viewModel: ClientCurrentOrderMealCellModel? {
         didSet {
