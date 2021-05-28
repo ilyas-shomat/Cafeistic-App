@@ -88,6 +88,10 @@ extension ClientOrderHistoryViewController: TableViewProvider {
         cell.viewModel = historyModel[indexPath.row]
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter?.openOrderHistoryItem()
+    }
 }
 
 // MARK: - (Presenter -> View)

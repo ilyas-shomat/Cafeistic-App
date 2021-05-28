@@ -18,6 +18,10 @@ class ClientOrderHistoryPresenter: ViewToPresenterClientOrderHistoryProtocol {
     func load() {
         
     }
+    
+    func openOrderHistoryItem() {
+        router?.showClientItemOrderHistory(on: view!)
+    }
 }
 
 // MARK: - (Interactor -> Presenter)

@@ -21,6 +21,7 @@ protocol ViewToPresenterClientOrderHistoryProtocol {
     var router: PresenterToRouterClientOrderHistoryProtocol? { get set }
     
     func load()
+    func openOrderHistoryItem()
 }
 
 // MARK: - Interactor Input/Presenter Output (Presenter -> Interactor)
@@ -36,5 +37,5 @@ protocol InteractorToPresenterClientOrderHistoryProtocol {
 
 // MARK: - Router Input (Presenter -> Router)
 protocol PresenterToRouterClientOrderHistoryProtocol {
-    
+    func showClientItemOrderHistory(on view: PresenterToViewClientOrderHistoryProtocol)
 }

@@ -36,5 +36,4 @@ protocol InteractorToPresenterClientCurrentOrderProtocol {
 
 // MARK: - Router Input (Presenter -> Router)
 protocol PresenterToRouterClientCurrentOrderProtocol {
-    
 }
