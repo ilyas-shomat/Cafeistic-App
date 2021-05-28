@@ -118,6 +118,7 @@
 		FDEE44CA2660E5680080CC66 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEE44C42660E5680080CC66 /* ProfileViewController.swift */; };
 		FDEE44CB2660E5680080CC66 /* ProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEE44C52660E5680080CC66 /* ProfileInteractor.swift */; };
 		FDEE44CC2660E5680080CC66 /* ProfileSceneBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEE44C62660E5680080CC66 /* ProfileSceneBuilder.swift */; };
+		FDEE44CF2660EC6D0080CC66 /* DefaultNavigationControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEE44CE2660EC6D0080CC66 /* DefaultNavigationControllerType.swift */; };
 		FDF281B72632CED300B1829A /* StartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF281B12632CED300B1829A /* StartPresenter.swift */; };
 		FDF281B82632CED300B1829A /* StartRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF281B22632CED300B1829A /* StartRouter.swift */; };
 		FDF281B92632CED300B1829A /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF281B32632CED300B1829A /* StartViewController.swift */; };
@@ -246,6 +247,7 @@
 		FDEE44C42660E5680080CC66 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		FDEE44C52660E5680080CC66 /* ProfileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInteractor.swift; sourceTree = "<group>"; };
 		FDEE44C62660E5680080CC66 /* ProfileSceneBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSceneBuilder.swift; sourceTree = "<group>"; };
+		FDEE44CE2660EC6D0080CC66 /* DefaultNavigationControllerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNavigationControllerType.swift; sourceTree = "<group>"; };
 		FDF281B12632CED300B1829A /* StartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPresenter.swift; sourceTree = "<group>"; };
 		FDF281B22632CED300B1829A /* StartRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartRouter.swift; sourceTree = "<group>"; };
 		FDF281B32632CED300B1829A /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
@@ -730,6 +732,7 @@
 				FDBBB6BE2653E573007D8D88 /* TableViewTextFieldCellType.swift */,
 				FD6CE0FF265516F500541521 /* TabBarControllerType.swift */,
 				FD91191D265D0774008F122C /* ViewRoundingCorners.swift */,
+				FDEE44CE2660EC6D0080CC66 /* DefaultNavigationControllerType.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -1100,6 +1103,7 @@
 				FD9118AD265B7508008F122C /* ClientCurrentOrderRouter.swift in Sources */,
 				FDF281ED2632D32200B1829A /* PrintUtil.swift in Sources */,
 				FD4593702636BD8000669AB4 /* LoginViewController.swift in Sources */,
+				FDEE44CF2660EC6D0080CC66 /* DefaultNavigationControllerType.swift in Sources */,
 				FDF281B72632CED300B1829A /* StartPresenter.swift in Sources */,
 				FD45936D2636BD8000669AB4 /* LoginContract.swift in Sources */,
 				FDACDF5F263A8BCA00689B51 /* ForgetPasswordPresenter.swift in Sources */,

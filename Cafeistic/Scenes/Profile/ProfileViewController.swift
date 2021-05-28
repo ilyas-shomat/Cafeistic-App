@@ -10,11 +10,6 @@ import UIKit
 
 class ProfileViewController: DefaultViewController {
     
-    private lazy var navigationView: MainNavigationBarView = {
-        let view = MainNavigationBarView(title: StringConstant.Scenes.Profile.profile)
-        return view
-    }()
-    
     var presenter: ViewToPresenterProfileProtocol?
     
     override func viewDidLoad() {
@@ -29,7 +24,6 @@ extension ProfileViewController: SetupBaseViewController {
     func setupViews() {
         configureSubViews()
         configureConstraints()
-        setupNavigationBarView()
     }
     
     func configureSubViews() {
@@ -42,16 +36,6 @@ extension ProfileViewController: SetupBaseViewController {
     
     func setupActions() {
         
-    }
-    
-    private func setupNavigationBarView() {
-        navigationController?.navigationBar.addSubview(navigationView)
-
-        navigationView.snp.makeConstraints {
-            $0.top.bottom.equalToSuperview().inset(5)
-            $0.leading.equalToSuperview()
-            $0.width.equalTo(230)
-        }
     }
     
 }

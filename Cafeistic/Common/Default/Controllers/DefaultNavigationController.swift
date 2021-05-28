@@ -10,6 +10,24 @@ import UIKit
 
 class DefaultNavigationController: UINavigationController {
     
+    var navigationViewTitle: String?
+    
+    private var type: DefaultNavigationControllerType
+    
+    private lazy var navigationView: MainNavigationBarView = {
+        let view = MainNavigationBarView(title: navigationViewTitle ?? "")
+        return view
+    }()
+    
+    init(type: DefaultNavigationControllerType) {
+        self.type = type
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     // MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +37,10 @@ class DefaultNavigationController: UINavigationController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setupNavigationBar()
+        
+        if type == .withView {
+            setupNavigationBarView()
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,9 +57,19 @@ class DefaultNavigationController: UINavigationController {
     }
     
     private func setupNavigationBar() {
-        self.navigationBar.tintColor = UIColor.appOrange
-        self.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationBar.shadowImage = UIImage()
-        self.navigationBar.isTranslucent = true
+        navigationBar.tintColor = UIColor.appOrange
+        navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationBar.shadowImage = UIImage()
+        navigationBar.isTranslucent = true
+    }
+    
+    private func setupNavigationBarView() {
+        navigationBar.addSubview(navigationView)
+
+        navigationView.snp.makeConstraints {
+            $0.top.bottom.equalToSuperview().inset(5)
+            $0.leading.equalToSuperview()
+            $0.width.equalTo(230)
+        }
     }
 }
