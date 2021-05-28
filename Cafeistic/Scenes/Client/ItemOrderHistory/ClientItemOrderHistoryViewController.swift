@@ -44,6 +44,7 @@ extension ClientItemOrderHistoryViewController: SetupBaseViewController {
     func setupViews() {
         configureSubViews()
         configureConstraints()
+        configureNavigationBar()
     }
     
     func configureSubViews() {
@@ -62,6 +63,10 @@ extension ClientItemOrderHistoryViewController: SetupBaseViewController {
         
     }
     
+    private func configureNavigationBar() {
+        navigationController?.navigationBar.tintColor = .white
+//        navigationController?.navigationBar
+    }
     
 }
 

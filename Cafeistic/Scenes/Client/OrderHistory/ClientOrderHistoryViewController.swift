@@ -62,17 +62,18 @@ extension ClientOrderHistoryViewController: SetupBaseViewController {
         }
     }
     
-    func setupActions() {
-        
-    }
-    
     private func setupNavigationBarView() {
         navigationController?.navigationBar.addSubview(navigationView)
+
         navigationView.snp.makeConstraints {
             $0.top.bottom.equalToSuperview().inset(5)
             $0.leading.equalToSuperview()
             $0.width.equalTo(230)
         }
+    }
+    
+    func setupActions() {
+        
     }
     
 }

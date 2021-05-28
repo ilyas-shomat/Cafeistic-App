@@ -112,6 +112,12 @@
 		FDEAD92E25C8269B0075F122 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEAD92D25C8269B0075F122 /* SceneDelegate.swift */; };
 		FDEAD93525C8269E0075F122 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDEAD93425C8269E0075F122 /* Assets.xcassets */; };
 		FDEAD93825C8269E0075F122 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDEAD93625C8269E0075F122 /* LaunchScreen.storyboard */; };
+		FDEE44C72660E5680080CC66 /* ProfileContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEE44C12660E5680080CC66 /* ProfileContract.swift */; };
+		FDEE44C82660E5680080CC66 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEE44C22660E5680080CC66 /* ProfilePresenter.swift */; };
+		FDEE44C92660E5680080CC66 /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEE44C32660E5680080CC66 /* ProfileRouter.swift */; };
+		FDEE44CA2660E5680080CC66 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEE44C42660E5680080CC66 /* ProfileViewController.swift */; };
+		FDEE44CB2660E5680080CC66 /* ProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEE44C52660E5680080CC66 /* ProfileInteractor.swift */; };
+		FDEE44CC2660E5680080CC66 /* ProfileSceneBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEE44C62660E5680080CC66 /* ProfileSceneBuilder.swift */; };
 		FDF281B72632CED300B1829A /* StartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF281B12632CED300B1829A /* StartPresenter.swift */; };
 		FDF281B82632CED300B1829A /* StartRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF281B22632CED300B1829A /* StartRouter.swift */; };
 		FDF281B92632CED300B1829A /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF281B32632CED300B1829A /* StartViewController.swift */; };
@@ -234,6 +240,12 @@
 		FDEAD93425C8269E0075F122 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDEAD93725C8269E0075F122 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDEAD93925C8269E0075F122 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDEE44C12660E5680080CC66 /* ProfileContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileContract.swift; sourceTree = "<group>"; };
+		FDEE44C22660E5680080CC66 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		FDEE44C32660E5680080CC66 /* ProfileRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
+		FDEE44C42660E5680080CC66 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		FDEE44C52660E5680080CC66 /* ProfileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInteractor.swift; sourceTree = "<group>"; };
+		FDEE44C62660E5680080CC66 /* ProfileSceneBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSceneBuilder.swift; sourceTree = "<group>"; };
 		FDF281B12632CED300B1829A /* StartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPresenter.swift; sourceTree = "<group>"; };
 		FDF281B22632CED300B1829A /* StartRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartRouter.swift; sourceTree = "<group>"; };
 		FDF281B32632CED300B1829A /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
@@ -444,8 +456,8 @@
 			isa = PBXGroup;
 			children = (
 				FD9118A3265B73A5008F122C /* CurrentOrder */,
-				FDB1AF48265F692800419153 /* ItemOrderHistory */,
 				FDBDEAD3265E1D0800B03B9E /* OrderHistory */,
+				FDB1AF48265F692800419153 /* ItemOrderHistory */,
 			);
 			path = Client;
 			sourceTree = "<group>";
@@ -460,6 +472,12 @@
 		FD6B889D263C00D30026D3E0 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				FDEE44C12660E5680080CC66 /* ProfileContract.swift */,
+				FDEE44C22660E5680080CC66 /* ProfilePresenter.swift */,
+				FDEE44C32660E5680080CC66 /* ProfileRouter.swift */,
+				FDEE44C42660E5680080CC66 /* ProfileViewController.swift */,
+				FDEE44C52660E5680080CC66 /* ProfileInteractor.swift */,
+				FDEE44C62660E5680080CC66 /* ProfileSceneBuilder.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -1106,6 +1124,7 @@
 				FDBDEADD265E1D2500B03B9E /* ClientOrderHistoryViewController.swift in Sources */,
 				FDEAD92E25C8269B0075F122 /* SceneDelegate.swift in Sources */,
 				FDF281BA2632CED300B1829A /* StartContract.swift in Sources */,
+				FDEE44CA2660E5680080CC66 /* ProfileViewController.swift in Sources */,
 				FD9118B5265B9734008F122C /* ClientOrderMealCell.swift in Sources */,
 				FDACDF1D26391F7C00689B51 /* TwoButtonAlertView.swift in Sources */,
 				FDACDF63263A8BCA00689B51 /* ForgetPasswordSceneBuilder.swift in Sources */,
@@ -1118,6 +1137,7 @@
 				FD6B88BD263C06620026D3E0 /* SignUpType.swift in Sources */,
 				FD45937E2636C0DB00669AB4 /* MainTextField.swift in Sources */,
 				FDF281C12632CFEE00B1829A /* DefaultViewController.swift in Sources */,
+				FDEE44C92660E5680080CC66 /* ProfileRouter.swift in Sources */,
 				FD6CE0FD2655168900541521 /* MainTabBarController.swift in Sources */,
 				FDBDEADA265E1D2500B03B9E /* ClientOrderHistoryContract.swift in Sources */,
 				FD911928265D22FE008F122C /* CurrentOrderAcceptView.swift in Sources */,
@@ -1128,10 +1148,12 @@
 				FD9118AE265B7508008F122C /* ClientCurrentOrderViewController.swift in Sources */,
 				FDB1AF52265F694F00419153 /* ClientItemOrderHistoryViewController.swift in Sources */,
 				FDACDF61263A8BCA00689B51 /* ForgetPasswordViewController.swift in Sources */,
+				FDEE44CC2660E5680080CC66 /* ProfileSceneBuilder.swift in Sources */,
 				FD6B88AB263C03EC0026D3E0 /* EstablishmentSignUpSceneBuilder.swift in Sources */,
 				FD6B8899263BCBCB0026D3E0 /* ClientSignUpSceneBuilder.swift in Sources */,
 				FDBDEADB265E1D2500B03B9E /* ClientOrderHistoryPresenter.swift in Sources */,
 				FD9BB1C926410C5D00835B98 /* MealMenuCell.swift in Sources */,
+				FDEE44C82660E5680080CC66 /* ProfilePresenter.swift in Sources */,
 				FDB1AF53265F694F00419153 /* ClientItemOrderHistoryInteractor.swift in Sources */,
 				FD9118B8265B974A008F122C /* ClientCurrentOrderMealCellModel.swift in Sources */,
 				FD4593A42637F9EA00669AB4 /* SpinnerIndicator.swift in Sources */,
@@ -1144,10 +1166,12 @@
 				FDACDF71263AA01700689B51 /* TableViewProvider.swift in Sources */,
 				FD9BB1B42641034D00835B98 /* MenuSceneBuilder.swift in Sources */,
 				FD6B8894263BCBCB0026D3E0 /* ClientSignUpContract.swift in Sources */,
+				FDEE44C72660E5680080CC66 /* ProfileContract.swift in Sources */,
 				FD6B8898263BCBCB0026D3E0 /* ClientSignUpInteractor.swift in Sources */,
 				FD4593932637F1F300669AB4 /* MainButtonStyle.swift in Sources */,
 				FDEA5CCB2652963900BB08A1 /* UIButton+SetImageTintColor.swift in Sources */,
 				FD9118AC265B7508008F122C /* ClientCurrentOrderPresenter.swift in Sources */,
+				FDEE44CB2660E5680080CC66 /* ProfileInteractor.swift in Sources */,
 				FDB1AF54265F694F00419153 /* ClientItemOrderHistorySceneBuilder.swift in Sources */,
 				FDCBAD30264A58F6005B9608 /* LabelCell.swift in Sources */,
 				FD6B8895263BCBCB0026D3E0 /* ClientSignUpPresenter.swift in Sources */,

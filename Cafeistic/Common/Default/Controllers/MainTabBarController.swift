@@ -65,16 +65,18 @@ final class MainTabBarController: UITabBarController {
                                                                                 image: Assets.orderHistoryUnselectedTabBar.image,
                                                                                 selectedImage: Assets.orderHistoryTabBar.image)
         
-
-        let fourthScene = UIViewController()
-        fourthScene.view.backgroundColor = .green
-        fourthScene.tabBarItem.title = "Профиль"
+        let profileScene = ProfileScene.initiate()
+        let profileNavigationController = DefaultNavigationController()
+        profileNavigationController.setViewControllers([profileScene], animated: false)
+        profileScene.navigationController?.tabBarItem = UITabBarItem(title: "",
+                                                                     image: Assets.profileUnselectedTabBar.image,
+                                                                     selectedImage: Assets.profileTabBar.image)
         
         let scenes = [
             menuNavigationController,
             clientCurrentOrderNavigationController,
             clientOrderHistoryNavigationController,
-            fourthScene
+            profileNavigationController
         ]
         
         return scenes
