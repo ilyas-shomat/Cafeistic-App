@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class DefaultNavigationController: UINavigationController {
+class BaseNavigationController: UINavigationController {
     
     var navigationViewTitle: String?
     
@@ -31,16 +31,15 @@ class DefaultNavigationController: UINavigationController {
     // MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.navigationBar.ba
+        
+        if type == .withView {
+            setupNavigationBarView()
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setupNavigationBar()
-        
-        if type == .withView {
-            setupNavigationBarView()
-        }
     }
 
     override func didReceiveMemoryWarning() {
