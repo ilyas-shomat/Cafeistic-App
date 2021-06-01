@@ -14,7 +14,7 @@ class AppSetup {
     public static let shared = AppSetup()
 
     func setupRootScene(window: UIWindow) {
-        window.rootViewController = DefaultNavigationController()
+        window.rootViewController = BaseNavigationController(type: .regular)
         guard let rootNavgiationController = window.rootViewController as? UINavigationController else {
             fatalError("Root viewController must be inherited from UINavigationController")
         }

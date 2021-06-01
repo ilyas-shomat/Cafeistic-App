@@ -44,7 +44,7 @@ final class MainTabBarController: UITabBarController {
     
     private func setupClienMain() -> [UIViewController] {
         let menuScene = MenuScene.initiate()
-        let menuNavigationController = DefaultNavigationController()
+        let menuNavigationController = BaseNavigationController(type: .regular)
         menuNavigationController.setViewControllers([menuScene], animated: false)
         menuScene.navigationController?.tabBarItem  = UITabBarItem(title: "",
                                                                    image: Assets.menuUnselectedTabBar.image,
@@ -52,29 +52,34 @@ final class MainTabBarController: UITabBarController {
         
         
         let clientCurrentOrderScene = ClientCurrentOrderScene.initiate()
-        let clientCurrentOrderNavigationController = DefaultNavigationController()
+        let clientCurrentOrderNavigationController = BaseNavigationController(type: .withView)
+        clientCurrentOrderNavigationController.navigationViewTitle = StringConstant.Scenes.ClientCurrentOrder.order
         clientCurrentOrderNavigationController.setViewControllers([clientCurrentOrderScene], animated: false)
         clientCurrentOrderScene.navigationController?.tabBarItem = UITabBarItem(title: "",
                                                                                 image: Assets.currentOrderUnselectedTabBar.image,
                                                                                 selectedImage: Assets.currentOrderTabBar.image)
         
         let clientOrderHistoryScene = ClientOrderHistoryScene.initiate()
-        let clientOrderHistoryNavigationController = DefaultNavigationController()
+        let clientOrderHistoryNavigationController = BaseNavigationController(type: .withView)
+        clientOrderHistoryNavigationController.navigationViewTitle = StringConstant.Scenes.ClientOrderHistory.orderHistory
         clientOrderHistoryNavigationController.setViewControllers([clientOrderHistoryScene], animated: false)
         clientOrderHistoryScene.navigationController?.tabBarItem = UITabBarItem(title: "",
                                                                                 image: Assets.orderHistoryUnselectedTabBar.image,
                                                                                 selectedImage: Assets.orderHistoryTabBar.image)
         
-
-        let fourthScene = UIViewController()
-        fourthScene.view.backgroundColor = .green
-        fourthScene.tabBarItem.title = "Профиль"
+        let profileScene = ProfileScene.initiate()
+        let profileNavigationController = BaseNavigationController(type: .withView)
+        profileNavigationController.navigationViewTitle = StringConstant.Scenes.Profile.profile
+        profileNavigationController.setViewControllers([profileScene], animated: false)
+        profileScene.navigationController?.tabBarItem = UITabBarItem(title: "",
+                                                                     image: Assets.profileUnselectedTabBar.image,
+                                                                     selectedImage: Assets.profileTabBar.image)
         
         let scenes = [
             menuNavigationController,
             clientCurrentOrderNavigationController,
             clientOrderHistoryNavigationController,
-            fourthScene
+            profileNavigationController
         ]
         
         return scenes

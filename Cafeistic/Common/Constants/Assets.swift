@@ -20,6 +20,8 @@ internal enum Assets {
     case currentOrderUnselectedTabBar
     case orderHistoryTabBar
     case orderHistoryUnselectedTabBar
+    case profileTabBar
+    case profileUnselectedTabBar
     
     public var image: UIImage? {
         switch self {
@@ -45,6 +47,10 @@ internal enum Assets {
             return UIImage(named: "order_history_tab_bar")
         case .orderHistoryUnselectedTabBar:
             return UIImage(named: "order_history_unselected_tab_bar")
+        case .profileTabBar:
+            return UIImage(named: "profile_tab_bar")
+        case .profileUnselectedTabBar:
+            return UIImage(named: "profile_unselected_tab_bar")
         }
     }
 }

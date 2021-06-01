@@ -72,6 +72,12 @@ struct StringConstant {
             static let orderHistory = "История заказов"
             static let detail = "Подробнее"
         }
+        
+        struct Profile {
+            static let profile = "Профиль"
+            static let editUserInfo = "Редактировать данные"
+            static let changePassword = "Сменить пароль"
+        }
     }
     
     struct Services {
