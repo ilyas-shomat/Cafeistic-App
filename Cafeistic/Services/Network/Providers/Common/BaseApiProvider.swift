@@ -2,26 +2,20 @@
 //  BaseProvider.swift
 //  Cafeistic
 //
-//  Created by Ilyas Shomat on 26.04.2021.
+//  Created by Ilyas Shomat on 31.05.2021.
 //
 
 import Foundation
 import Moya
 
-protocol BaseApiDelegate: TargetType {}
+protocol BaseApiProvider: TargetType {}
 
-extension BaseApiDelegate {
+extension BaseApiProvider {
     var baseURL: URL {
         #if DEBUG
-        guard let url = URL(string: "http://127.0.0.1:8000") else {
-            fatalError()
-        }
-        return url
+        return ApiConstants.debugUrl
         #else
-        guard let url = URL(string: "") else {
-            fatalError()
-        }
-        return url
+        return ApiConstants.releaseUrl
         #endif
     }
     

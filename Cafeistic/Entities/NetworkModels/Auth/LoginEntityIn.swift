@@ -7,12 +7,15 @@
 
 import Foundation
 
-struct LoginEntity: Codable {
+// Request Params
+struct LoginEntityIn: Codable {
     
-    // Request Params
     var username: String?
     var password: String?
+}
+
+// Response Params
+struct LoginEntityOut {
     
-    // Response Params
     var token: String?
 }
