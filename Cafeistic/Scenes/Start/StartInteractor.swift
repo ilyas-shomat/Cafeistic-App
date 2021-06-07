@@ -10,6 +10,6 @@ import Foundation
 
 // MARK: - (Presenter -> Interactor)
 class StartInteractor: PresenterToInteractorStartProtocol {
-
+    
     var presenter: InteractorToPresenterStartProtocol?
 }

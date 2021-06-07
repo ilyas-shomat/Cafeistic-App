@@ -9,10 +9,10 @@ import Foundation
 import Moya
 
 protocol Networkable {
-//    func load(target: AnyTargetConvertible)
+    func load<T: Codable>(target: AnyTargetConvertible, onComplete: @escaping (T?, Error?) -> ())
 }
 
-final class NetworkService: Networkable {
+final class NetworkApiService: Networkable {
     
     private let provider: MoyaProvider<AnyTarget>
     
@@ -35,13 +35,5 @@ final class NetworkService: Networkable {
                 onComplete(nil, error)
             }
         }
-//        provider.request(target.any, callbackQueue: DispatchQueue.main, progress: nil) { result in
-//            switch result {
-//            case .success(let response):
-//                let json  = JSONDecoder().decode(<#T##type: Decodable.Protocol##Decodable.Protocol#>, from: <#T##Data#>)
-//            case .failure(let error):
-//                onComplete(.error(.networkFail))
-//            }
-//        }
     }
 }
