@@ -48,7 +48,6 @@
 		FD6CE100265516F500541521 /* TabBarControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CE0FF265516F500541521 /* TabBarControllerType.swift */; };
 		FD79682226650606007C4C4A /* ApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD79682126650606007C4C4A /* ApiConstants.swift */; };
 		FD796826266507C8007C4C4A /* AuthTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD796825266507C8007C4C4A /* AuthTarget.swift */; };
-		FD8753D42669FBA700699A0A /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8753D32669FBA700699A0A /* ServiceLocator.swift */; };
 		FD9078D62664D3F70094BACD /* LoginEntityIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9078D52664D3F70094BACD /* LoginEntityIn.swift */; };
 		FD9078DC266503790094BACD /* AnyTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9078DB266503790094BACD /* AnyTarget.swift */; };
 		FD9078DF266503B80094BACD /* BaseApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9078DE266503B80094BACD /* BaseApiProvider.swift */; };
@@ -180,7 +179,6 @@
 		FD6CE0FF265516F500541521 /* TabBarControllerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarControllerType.swift; sourceTree = "<group>"; };
 		FD79682126650606007C4C4A /* ApiConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConstants.swift; sourceTree = "<group>"; };
 		FD796825266507C8007C4C4A /* AuthTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTarget.swift; sourceTree = "<group>"; };
-		FD8753D32669FBA700699A0A /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
 		FD9078D52664D3F70094BACD /* LoginEntityIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginEntityIn.swift; path = Cafeistic/Entities/NetworkModels/Auth/LoginEntityIn.swift; sourceTree = SOURCE_ROOT; };
 		FD9078DB266503790094BACD /* AnyTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyTarget.swift; sourceTree = "<group>"; };
 		FD9078DE266503B80094BACD /* BaseApiProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseApiProvider.swift; sourceTree = "<group>"; };
@@ -572,14 +570,6 @@
 			path = Auth;
 			sourceTree = "<group>";
 		};
-		FD8753D22669FB9500699A0A /* ServiceLocator */ = {
-			isa = PBXGroup;
-			children = (
-				FD8753D32669FBA700699A0A /* ServiceLocator.swift */,
-			);
-			path = ServiceLocator;
-			sourceTree = "<group>";
-		};
 		FD9078D42664CFB90094BACD /* Auth */ = {
 			isa = PBXGroup;
 			children = (
@@ -922,7 +912,6 @@
 		FDF281E72632D24800B1829A /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				FD8753D22669FB9500699A0A /* ServiceLocator */,
 				FDF281EA2632D28700B1829A /* SessionTracker */,
 				FDF281E92632D26800B1829A /* Storage */,
 				FDF281E82632D25600B1829A /* Network */,
@@ -1165,7 +1154,6 @@
 				FDEA5CD0265296B700BB08A1 /* UIImageView+SetImageColor.swift in Sources */,
 				FDBDEAE8265E269100B03B9E /* ClientOrderHistoryCellModel.swift in Sources */,
 				FDBDEAE4265E267C00B03B9E /* ClientOrderHistoryCell.swift in Sources */,
-				FD8753D42669FBA700699A0A /* ServiceLocator.swift in Sources */,
 				FD9BB1CC26410C6F00835B98 /* MealMenuCellModel.swift in Sources */,
 				FD796826266507C8007C4C4A /* AuthTarget.swift in Sources */,
 				FDF281F42632D3AA00B1829A /* UIColor+Hex.swift in Sources */,

@@ -12,8 +12,9 @@ class LoginScene {
     
     static func initiate() -> UIViewController {
         let viewController = LoginViewController()
-        
         let presenter: ViewToPresenterLoginProtocol & InteractorToPresenterLoginProtocol = LoginPresenter()
+        
+        
         
         viewController.presenter = presenter
         viewController.presenter?.router = LoginRouter()
