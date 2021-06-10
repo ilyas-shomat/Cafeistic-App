@@ -22,13 +22,13 @@ class LoginInteractor: PresenterToInteractorLoginProtocol {
     
     private func sendWithAuthData(loginEntityIn: LoginEntityIn) {
         let target = AuthTarget.login(loginEntityIn: loginEntityIn)
-//        networkApiService.load<LoginEntityOut>(target: target) { (data, error) in
-//            print("/// data:", data)
-//            print("/// error:", error)
-//        }
-        networkApiService.load(target: target, jsonType: LoginEntityOut.self) { (data, error) in
-            print("/// data:", data)
-            print("/// error:", error)
+        networkApiService.load(target: target, jsonType: LoginEntityOut.self) { (result) in
+            switch result {
+            case .success(let data):
+                print("/// data:", data)
+            case .failure(let error):
+                print("/// error:", error)
+            }
         }
     }
 }
