@@ -15,7 +15,7 @@ struct LoginEntityIn: Codable {
 }
 
 // Response Params
-struct LoginEntityOut {
+struct LoginEntityOut: Codable {
     
     var token: String?
 }

@@ -31,6 +31,7 @@ extension AuthTarget: BaseApiProvider, AnyTargetConvertible {
     var task: Task {
         switch self {
         case .login(let loginEntityIn):
+            print("/// loginEntityIn", loginEntityIn)
             return .requestJSONEncodable(loginEntityIn)
         }
     }
