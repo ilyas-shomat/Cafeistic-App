@@ -12,4 +12,7 @@ import Foundation
 class LoginInteractor: PresenterToInteractorLoginProtocol {
 
     var presenter: InteractorToPresenterLoginProtocol?
+        
+    init() {
+    }
 }
