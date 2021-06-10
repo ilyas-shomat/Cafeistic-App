@@ -9,7 +9,7 @@ import Foundation
 import Moya
 
 enum AuthTarget {
-    case login(loginEntity: LoginEntityIn)
+    case login(loginEntityIn: LoginEntityIn)
 }
 
 extension AuthTarget: BaseApiProvider, AnyTargetConvertible {
@@ -30,8 +30,8 @@ extension AuthTarget: BaseApiProvider, AnyTargetConvertible {
     
     var task: Task {
         switch self {
-        case .login(let loginEntity):
-            return .requestJSONEncodable(loginEntity)
+        case .login(let loginEntityIn):
+            return .requestJSONEncodable(loginEntityIn)
         }
     }
 }
