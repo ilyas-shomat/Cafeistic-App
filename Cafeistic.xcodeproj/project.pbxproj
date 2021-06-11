@@ -46,6 +46,9 @@
 		FD6CE0D22654D67D00541521 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CE0D12654D67D00541521 /* Category.swift */; };
 		FD6CE0FD2655168900541521 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CE0FC2655168900541521 /* MainTabBarController.swift */; };
 		FD6CE100265516F500541521 /* TabBarControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CE0FF265516F500541521 /* TabBarControllerType.swift */; };
+		FD77D37B2671DFD400AF8671 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD77D37A2671DFD400AF8671 /* ServiceLocator.swift */; };
+		FD77D37F2671EF9300AF8671 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD77D37E2671EF9300AF8671 /* NetworkError.swift */; };
+		FD77D3822671F02F00AF8671 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD77D3812671F02F00AF8671 /* ApiResponse.swift */; };
 		FD79682226650606007C4C4A /* ApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD79682126650606007C4C4A /* ApiConstants.swift */; };
 		FD796826266507C8007C4C4A /* AuthTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD796825266507C8007C4C4A /* AuthTarget.swift */; };
 		FD9078D62664D3F70094BACD /* LoginEntityIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9078D52664D3F70094BACD /* LoginEntityIn.swift */; };
@@ -177,6 +180,9 @@
 		FD6CE0D12654D67D00541521 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		FD6CE0FC2655168900541521 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		FD6CE0FF265516F500541521 /* TabBarControllerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarControllerType.swift; sourceTree = "<group>"; };
+		FD77D37A2671DFD400AF8671 /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
+		FD77D37E2671EF9300AF8671 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		FD77D3812671F02F00AF8671 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
 		FD79682126650606007C4C4A /* ApiConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConstants.swift; sourceTree = "<group>"; };
 		FD796825266507C8007C4C4A /* AuthTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTarget.swift; sourceTree = "<group>"; };
 		FD9078D52664D3F70094BACD /* LoginEntityIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginEntityIn.swift; path = Cafeistic/Entities/NetworkModels/Auth/LoginEntityIn.swift; sourceTree = SOURCE_ROOT; };
@@ -318,6 +324,8 @@
 			children = (
 				FD45935C2636BB1200669AB4 /* NetworkApiService.swift */,
 				FD79682126650606007C4C4A /* ApiConstants.swift */,
+				FD77D37E2671EF9300AF8671 /* NetworkError.swift */,
+				FD77D3812671F02F00AF8671 /* ApiResponse.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -560,6 +568,14 @@
 				FD6CE0D12654D67D00541521 /* Category.swift */,
 			);
 			path = Menu;
+			sourceTree = "<group>";
+		};
+		FD77D3792671DFC500AF8671 /* SeviceLocator */ = {
+			isa = PBXGroup;
+			children = (
+				FD77D37A2671DFD400AF8671 /* ServiceLocator.swift */,
+			);
+			path = SeviceLocator;
 			sourceTree = "<group>";
 		};
 		FD796824266507B4007C4C4A /* Auth */ = {
@@ -912,6 +928,7 @@
 		FDF281E72632D24800B1829A /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				FD77D3792671DFC500AF8671 /* SeviceLocator */,
 				FDF281EA2632D28700B1829A /* SessionTracker */,
 				FDF281E92632D26800B1829A /* Storage */,
 				FDF281E82632D25600B1829A /* Network */,
@@ -1154,6 +1171,7 @@
 				FDEA5CD0265296B700BB08A1 /* UIImageView+SetImageColor.swift in Sources */,
 				FDBDEAE8265E269100B03B9E /* ClientOrderHistoryCellModel.swift in Sources */,
 				FDBDEAE4265E267C00B03B9E /* ClientOrderHistoryCell.swift in Sources */,
+				FD77D37B2671DFD400AF8671 /* ServiceLocator.swift in Sources */,
 				FD9BB1CC26410C6F00835B98 /* MealMenuCellModel.swift in Sources */,
 				FD796826266507C8007C4C4A /* AuthTarget.swift in Sources */,
 				FDF281F42632D3AA00B1829A /* UIColor+Hex.swift in Sources */,
@@ -1208,6 +1226,7 @@
 				FD4593982637F2BA00669AB4 /* IndicatableView.swift in Sources */,
 				FD9BB1B12641034D00835B98 /* MenuRouter.swift in Sources */,
 				FD9BB1B22641034D00835B98 /* MenuViewController.swift in Sources */,
+				FD77D3822671F02F00AF8671 /* ApiResponse.swift in Sources */,
 				FDACDF71263AA01700689B51 /* TableViewProvider.swift in Sources */,
 				FD9BB1B42641034D00835B98 /* MenuSceneBuilder.swift in Sources */,
 				FD6B8894263BCBCB0026D3E0 /* ClientSignUpContract.swift in Sources */,
@@ -1240,6 +1259,7 @@
 				FD6CE100265516F500541521 /* TabBarControllerType.swift in Sources */,
 				FDE2CEC626426BCA00FE1EA7 /* UIView+Corners.swift in Sources */,
 				FD4593A02637F3F000669AB4 /* SpinnerView.swift in Sources */,
+				FD77D37F2671EF9300AF8671 /* NetworkError.swift in Sources */,
 				FDB1AF51265F694F00419153 /* ClientItemOrderHistoryRouter.swift in Sources */,
 				FD91191B265D0223008F122C /* MainNavigationBarView.swift in Sources */,
 				FDCBAD24264A4B8B005B9608 /* CellType.swift in Sources */,

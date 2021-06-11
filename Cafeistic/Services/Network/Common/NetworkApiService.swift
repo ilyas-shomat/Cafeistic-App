@@ -9,7 +9,7 @@ import Foundation
 import Moya
 
 protocol Networkable {
-    func load<T: Codable>(target: AnyTargetConvertible, onComplete: @escaping (T?, Error?) -> ())
+    func load<T: Codable>(target: AnyTargetConvertible, jsonType: T.Type, onComplete: @escaping (ApiResponse<T>) -> ())
 }
 
 final class NetworkApiService: Networkable {
@@ -20,19 +20,28 @@ final class NetworkApiService: Networkable {
         self.provider = provider
     }
     
-    func load<T: Codable>(target: AnyTargetConvertible, onComplete: @escaping (T?, Error?) -> ()) {
-        provider.request(target.any) { (response) in
-            switch response {
-            case .success(let json):
-                do {
-                    let data = try JSONDecoder().decode(T.self, from: json.data)
-                    onComplete(data, nil)
+    func load<T: Codable>(target: AnyTargetConvertible, jsonType: T.Type, onComplete: @escaping (ApiResponse<T>) -> ()) {
+        provider.request(target.any) { (result) in
+            switch result {
+            case .success(let response):
+                switch response.statusCode {
+                case 200, 201:
+                    do {
+                        let data = try JSONDecoder().decode(T.self, from: response.data)
+                        onComplete(.success(data))
+                    }
+                    catch {
+                        onComplete(.failure(.unknowedError))
+                    }
+                case 401:
+                    onComplete(.failure(.notAuthorized))
+                case 404:
+                    onComplete(.failure(.apiEndPointNotFound))
+                default:
+                    onComplete(.failure(.unknowedError))
                 }
-                catch {
-                    onComplete(nil, error)
-                }
-            case .failure(let error):
-                onComplete(nil, error)
+            case .failure:
+                onComplete(.failure(.netwotkFail))
             }
         }
     }

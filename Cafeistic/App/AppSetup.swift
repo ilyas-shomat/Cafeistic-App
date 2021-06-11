@@ -10,11 +10,13 @@ import UIKit
 import IQKeyboardManagerSwift
 import Moya
 
+var serloc: ServiceLocator!
+
 class AppSetup {
     
     public static let shared = AppSetup()
     
-    var networkApiService: Networkable? {
+    var networkApiService: Networkable {
         let provider = MoyaProvider<AnyTarget>(plugins: [NetworkLoggerPlugin()])
 //        let provider = MoyaProvider<AnyTarget>()
         
@@ -31,6 +33,11 @@ class AppSetup {
     }
     
     func setupSerivces() {
+        let registry = LazyServiceLocator()
+        serloc = registry
+        
         IQKeyboardManager.shared.enable = true
+
+        registry.addService { self.networkApiService as Networkable }
     }
 }
