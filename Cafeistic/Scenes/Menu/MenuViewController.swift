@@ -34,7 +34,6 @@ class MenuViewController: DefaultViewController {
 //        layout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
         layout.scrollDirection = .vertical
         layout.itemSize = CGSize(width: 165, height: 155)
-
         
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.dataSource = self

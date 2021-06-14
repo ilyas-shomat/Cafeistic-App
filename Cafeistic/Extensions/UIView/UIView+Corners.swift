@@ -10,7 +10,7 @@ import UIKit
 
 extension UIView {
     
-    func roundCorders(corners: [ViewRoundingCorners], radius: CGFloat) {
+    func roundCorners(corners: [ViewRoundingCorners], radius: CGFloat) {
         layer.masksToBounds = true
         layer.cornerRadius = radius
 
@@ -34,7 +34,7 @@ extension UIView {
         layer.maskedCorners = cornerMasks
     }
     
-    func roundCorders(corners: ViewRoundingCorners, radius: CGFloat) {
+    func roundCorners(corners: ViewRoundingCorners, radius: CGFloat) {
         layer.masksToBounds = true
         layer.cornerRadius = radius
         

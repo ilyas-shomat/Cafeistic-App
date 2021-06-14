@@ -29,7 +29,7 @@ final class MainNavigationBarView: UIView {
     
     private func setupView() {
         backgroundColor = .appOrange
-        roundCorders(corners: [.topRight, .bottomRight], radius: 10)
+        roundCorners(corners: [.topRight, .bottomRight], radius: 10)
         
         configureSubviews()
         configureConstraints()

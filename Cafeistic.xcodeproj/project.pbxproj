@@ -83,6 +83,7 @@
 		FDA3C8AC267715300042715E /* StorageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA3C8AB267715300042715E /* StorageProtocol.swift */; };
 		FDA3C8AF2677272F0042715E /* UserDefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA3C8AE2677272F0042715E /* UserDefaultsStorage.swift */; };
 		FDA3C8B2267727410042715E /* KeyChainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA3C8B1267727410042715E /* KeyChainStorage.swift */; };
+		FDA3C8B626772D820042715E /* StorageKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA3C8B526772D820042715E /* StorageKey.swift */; };
 		FDACDF1826391F6300689B51 /* DefaultAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF1726391F6300689B51 /* DefaultAlertViewController.swift */; };
 		FDACDF1D26391F7C00689B51 /* TwoButtonAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF1C26391F7C00689B51 /* TwoButtonAlertView.swift */; };
 		FDACDF22263930CA00689B51 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF21263930CA00689B51 /* UIViewController+Alert.swift */; };
@@ -222,6 +223,7 @@
 		FDA3C8AB267715300042715E /* StorageProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StorageProtocol.swift; path = Cafeistic/Services/Network/Common/StorageProtocol.swift; sourceTree = SOURCE_ROOT; };
 		FDA3C8AE2677272F0042715E /* UserDefaultsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserDefaultsStorage.swift; path = Cafeistic/Services/Network/Common/UserDefaultsStorage.swift; sourceTree = SOURCE_ROOT; };
 		FDA3C8B1267727410042715E /* KeyChainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = KeyChainStorage.swift; path = Cafeistic/Services/Network/Common/KeyChainStorage.swift; sourceTree = SOURCE_ROOT; };
+		FDA3C8B526772D820042715E /* StorageKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageKey.swift; sourceTree = "<group>"; };
 		FDACDF1726391F6300689B51 /* DefaultAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAlertViewController.swift; sourceTree = "<group>"; };
 		FDACDF1C26391F7C00689B51 /* TwoButtonAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoButtonAlertView.swift; sourceTree = "<group>"; };
 		FDACDF21263930CA00689B51 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
@@ -931,6 +933,7 @@
 			children = (
 				FD4593802636CA3100669AB4 /* Assets.swift */,
 				FD4593862636D77B00669AB4 /* StringConstant.swift */,
+				FDA3C8B526772D820042715E /* StorageKey.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -1191,6 +1194,7 @@
 				FD9BB1CC26410C6F00835B98 /* MealMenuCellModel.swift in Sources */,
 				FD796826266507C8007C4C4A /* AuthTarget.swift in Sources */,
 				FDF281F42632D3AA00B1829A /* UIColor+Hex.swift in Sources */,
+				FDA3C8B626772D820042715E /* StorageKey.swift in Sources */,
 				FD4593812636CA3100669AB4 /* Assets.swift in Sources */,
 				FD9118AF265B7508008F122C /* ClientCurrentOrderInteractor.swift in Sources */,
 				FD4593842636D5D200669AB4 /* ColorPalette.swift in Sources */,
