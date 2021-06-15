@@ -78,6 +78,12 @@
 		FD9BB1C626410C4800835B98 /* CategoryMenuCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9BB1C526410C4800835B98 /* CategoryMenuCellModel.swift */; };
 		FD9BB1C926410C5D00835B98 /* MealMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9BB1C826410C5D00835B98 /* MealMenuCell.swift */; };
 		FD9BB1CC26410C6F00835B98 /* MealMenuCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9BB1CB26410C6F00835B98 /* MealMenuCellModel.swift */; };
+		FDA3C8A626770C890042715E /* SessionTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA3C8A526770C890042715E /* SessionTracker.swift */; };
+		FDA3C8A926770D1C0042715E /* SessionTrackerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA3C8A826770D1C0042715E /* SessionTrackerImpl.swift */; };
+		FDA3C8AC267715300042715E /* StorageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA3C8AB267715300042715E /* StorageProtocol.swift */; };
+		FDA3C8AF2677272F0042715E /* UserDefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA3C8AE2677272F0042715E /* UserDefaultsStorage.swift */; };
+		FDA3C8B2267727410042715E /* KeyChainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA3C8B1267727410042715E /* KeyChainStorage.swift */; };
+		FDA3C8B626772D820042715E /* StorageKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA3C8B526772D820042715E /* StorageKey.swift */; };
 		FDACDF1826391F6300689B51 /* DefaultAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF1726391F6300689B51 /* DefaultAlertViewController.swift */; };
 		FDACDF1D26391F7C00689B51 /* TwoButtonAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF1C26391F7C00689B51 /* TwoButtonAlertView.swift */; };
 		FDACDF22263930CA00689B51 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF21263930CA00689B51 /* UIViewController+Alert.swift */; };
@@ -212,6 +218,12 @@
 		FD9BB1C526410C4800835B98 /* CategoryMenuCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryMenuCellModel.swift; sourceTree = "<group>"; };
 		FD9BB1C826410C5D00835B98 /* MealMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealMenuCell.swift; sourceTree = "<group>"; };
 		FD9BB1CB26410C6F00835B98 /* MealMenuCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealMenuCellModel.swift; sourceTree = "<group>"; };
+		FDA3C8A526770C890042715E /* SessionTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SessionTracker.swift; path = Cafeistic/Services/Network/Common/SessionTracker.swift; sourceTree = SOURCE_ROOT; };
+		FDA3C8A826770D1C0042715E /* SessionTrackerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SessionTrackerImpl.swift; path = Cafeistic/Services/Network/Common/SessionTrackerImpl.swift; sourceTree = SOURCE_ROOT; };
+		FDA3C8AB267715300042715E /* StorageProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StorageProtocol.swift; path = Cafeistic/Services/Network/Common/StorageProtocol.swift; sourceTree = SOURCE_ROOT; };
+		FDA3C8AE2677272F0042715E /* UserDefaultsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserDefaultsStorage.swift; path = Cafeistic/Services/Network/Common/UserDefaultsStorage.swift; sourceTree = SOURCE_ROOT; };
+		FDA3C8B1267727410042715E /* KeyChainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = KeyChainStorage.swift; path = Cafeistic/Services/Network/Common/KeyChainStorage.swift; sourceTree = SOURCE_ROOT; };
+		FDA3C8B526772D820042715E /* StorageKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageKey.swift; sourceTree = "<group>"; };
 		FDACDF1726391F6300689B51 /* DefaultAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAlertViewController.swift; sourceTree = "<group>"; };
 		FDACDF1C26391F7C00689B51 /* TwoButtonAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoButtonAlertView.swift; sourceTree = "<group>"; };
 		FDACDF21263930CA00689B51 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
@@ -921,6 +933,7 @@
 			children = (
 				FD4593802636CA3100669AB4 /* Assets.swift */,
 				FD4593862636D77B00669AB4 /* StringConstant.swift */,
+				FDA3C8B526772D820042715E /* StorageKey.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -948,6 +961,9 @@
 		FDF281E92632D26800B1829A /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				FDA3C8AB267715300042715E /* StorageProtocol.swift */,
+				FDA3C8AE2677272F0042715E /* UserDefaultsStorage.swift */,
+				FDA3C8B1267727410042715E /* KeyChainStorage.swift */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -955,6 +971,8 @@
 		FDF281EA2632D28700B1829A /* SessionTracker */ = {
 			isa = PBXGroup;
 			children = (
+				FDA3C8A526770C890042715E /* SessionTracker.swift */,
+				FDA3C8A826770D1C0042715E /* SessionTrackerImpl.swift */,
 			);
 			path = SessionTracker;
 			sourceTree = "<group>";
@@ -1140,6 +1158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDBBB6B82653DABA007D8D88 /* TableViewCellActionsDelegate.swift in Sources */,
+				FDA3C8AC267715300042715E /* StorageProtocol.swift in Sources */,
 				FD9118AB265B7508008F122C /* ClientCurrentOrderContract.swift in Sources */,
 				FDEA5C7C265245DD00BB08A1 /* TextFieldCell.swift in Sources */,
 				FDB1AF4F265F694F00419153 /* ClientItemOrderHistoryContract.swift in Sources */,
@@ -1175,6 +1194,7 @@
 				FD9BB1CC26410C6F00835B98 /* MealMenuCellModel.swift in Sources */,
 				FD796826266507C8007C4C4A /* AuthTarget.swift in Sources */,
 				FDF281F42632D3AA00B1829A /* UIColor+Hex.swift in Sources */,
+				FDA3C8B626772D820042715E /* StorageKey.swift in Sources */,
 				FD4593812636CA3100669AB4 /* Assets.swift in Sources */,
 				FD9118AF265B7508008F122C /* ClientCurrentOrderInteractor.swift in Sources */,
 				FD4593842636D5D200669AB4 /* ColorPalette.swift in Sources */,
@@ -1192,6 +1212,7 @@
 				FDEA5CD42652976800BB08A1 /* UIImage+MaskWithColor.swift in Sources */,
 				FD9118B0265B7508008F122C /* ClientCurrentOrderSceneBuilder.swift in Sources */,
 				FD9078D62664D3F70094BACD /* LoginEntityIn.swift in Sources */,
+				FDA3C8A926770D1C0042715E /* SessionTrackerImpl.swift in Sources */,
 				FD6B8896263BCBCB0026D3E0 /* ClientSignUpRouter.swift in Sources */,
 				FD6B88A9263C03EC0026D3E0 /* EstablishmentSignUpViewController.swift in Sources */,
 				FD45936E2636BD8000669AB4 /* LoginPresenter.swift in Sources */,
@@ -1234,8 +1255,10 @@
 				FD6B8898263BCBCB0026D3E0 /* ClientSignUpInteractor.swift in Sources */,
 				FD79682226650606007C4C4A /* ApiConstants.swift in Sources */,
 				FD4593932637F1F300669AB4 /* MainButtonStyle.swift in Sources */,
+				FDA3C8A626770C890042715E /* SessionTracker.swift in Sources */,
 				FDEA5CCB2652963900BB08A1 /* UIButton+SetImageTintColor.swift in Sources */,
 				FD9118AC265B7508008F122C /* ClientCurrentOrderPresenter.swift in Sources */,
+				FDA3C8AF2677272F0042715E /* UserDefaultsStorage.swift in Sources */,
 				FDEE44CB2660E5680080CC66 /* ProfileInteractor.swift in Sources */,
 				FDB1AF54265F694F00419153 /* ClientItemOrderHistorySceneBuilder.swift in Sources */,
 				FDCBAD30264A58F6005B9608 /* LabelCell.swift in Sources */,
@@ -1258,6 +1281,7 @@
 				FD91191E265D0774008F122C /* ViewRoundingCorners.swift in Sources */,
 				FD6CE100265516F500541521 /* TabBarControllerType.swift in Sources */,
 				FDE2CEC626426BCA00FE1EA7 /* UIView+Corners.swift in Sources */,
+				FDA3C8B2267727410042715E /* KeyChainStorage.swift in Sources */,
 				FD4593A02637F3F000669AB4 /* SpinnerView.swift in Sources */,
 				FD77D37F2671EF9300AF8671 /* NetworkError.swift in Sources */,
 				FDB1AF51265F694F00419153 /* ClientItemOrderHistoryRouter.swift in Sources */,

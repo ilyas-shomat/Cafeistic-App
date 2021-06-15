@@ -48,7 +48,7 @@ final class CurrentOrderAcceptView: UIView {
     
     private func setupView() {
         backgroundColor = .white
-        roundCorders(corners: [.topLeft, .topRight], radius: 20)
+        roundCorners(corners: [.topLeft, .topRight], radius: 20)
         
         configureSubviews()
         configureConstraints()

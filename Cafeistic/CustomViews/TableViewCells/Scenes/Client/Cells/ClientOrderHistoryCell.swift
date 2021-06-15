@@ -23,14 +23,14 @@ final class ClientOrderHistoryCell: UITableViewCell {
     private lazy var backgroudWhiteView: UIView = {
         let view = UIView()
         view.backgroundColor = .white
-        view.roundCorders(corners: .all, radius: 10)
+        view.roundCorners(corners: .all, radius: 10)
         return view
     }()
     
     private lazy var establismentImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
-        imageView.roundCorders(corners: .all, radius: 10)
+        imageView.roundCorners(corners: .all, radius: 10)
         return imageView
     }()
     
@@ -59,7 +59,7 @@ final class ClientOrderHistoryCell: UITableViewCell {
         let button = UIButton()
         button.setTitle(StringConstant.Scenes.ClientOrderHistory.detail, for: .normal)
         button.backgroundColor = .appOrange
-        button.roundCorders(corners: .all, radius: 7)
+        button.roundCorners(corners: .all, radius: 7)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 10)
         return button
     }()
