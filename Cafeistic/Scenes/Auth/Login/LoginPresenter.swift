@@ -56,13 +56,12 @@ class LoginPresenter: ViewToPresenterLoginProtocol {
 
 // MARK: - (Interactor -> Presenter)
 extension LoginPresenter: InteractorToPresenterLoginProtocol {
+    
     func successAuthorized() {
         router?.showMenu(on: view!)
     }
     
     func errorAuthorized(error: String) {
-        view?.showErrorAlert(message: .defaultServerError(message: error))
+        view?.showErrorAlert(message: .defaultApiError(message: error))
     }
-    
-    
 }

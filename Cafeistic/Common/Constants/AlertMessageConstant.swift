@@ -9,13 +9,13 @@ import Foundation
 
 enum AlertMessageConstant {
     case usernameOrPasswordEmpty
-    case defaultServerError(message: String)
+    case defaultApiError(message: String)
     
     var title: String {
         switch self {
         case .usernameOrPasswordEmpty:
             return StringConstant.Scenes.Login.error
-        case .defaultServerError:
+        case .defaultApiError:
             return StringConstant.Services.AlertMessage.error
         }
     }
@@ -24,7 +24,7 @@ enum AlertMessageConstant {
         switch self {
         case .usernameOrPasswordEmpty:
             return StringConstant.Scenes.Login.message
-        case .defaultServerError(let message):
+        case .defaultApiError(let message):
             return message
         }
     }
@@ -33,7 +33,7 @@ enum AlertMessageConstant {
         switch self {
         case .usernameOrPasswordEmpty:
             return StringConstant.Scenes.Login.ok
-        case .defaultServerError:
+        case .defaultApiError:
             return StringConstant.Services.AlertMessage.ok
         }
     }
