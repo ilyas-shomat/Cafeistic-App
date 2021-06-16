@@ -25,7 +25,10 @@ class LoginInteractor: PresenterToInteractorLoginProtocol {
         networkApiService.load(target: target, jsonType: LoginEntityOut.self) { (result) in
             switch result {
             case .success(let data):
-                print("/// data:", data)
+                guard let token = data?.token else {
+                    return
+                }
+                AuthenticationStore.shared.store(token: token)
             case .failure(let error):
                 print("/// error:", error)
             }

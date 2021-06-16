@@ -12,3 +12,7 @@ func consolePrint(_ items: Any..., separator: String = " ", terminator: String =
     debugPrint("///", items, separator: separator, terminator: terminator)
     #endif
 }
+
+func consolePrint(_ item: Any) {
+    debugPrint("///", item)
+}

@@ -84,6 +84,8 @@
 		FDA3C8AF2677272F0042715E /* UserDefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA3C8AE2677272F0042715E /* UserDefaultsStorage.swift */; };
 		FDA3C8B2267727410042715E /* KeyChainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA3C8B1267727410042715E /* KeyChainStorage.swift */; };
 		FDA3C8B626772D820042715E /* StorageKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA3C8B526772D820042715E /* StorageKey.swift */; };
+		FDA3C8BB26776EFA0042715E /* KeyChainKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA3C8BA26776EFA0042715E /* KeyChainKey.swift */; };
+		FDA3C8BF2677774D0042715E /* AuthenticationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA3C8BE2677774D0042715E /* AuthenticationStore.swift */; };
 		FDACDF1826391F6300689B51 /* DefaultAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF1726391F6300689B51 /* DefaultAlertViewController.swift */; };
 		FDACDF1D26391F7C00689B51 /* TwoButtonAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF1C26391F7C00689B51 /* TwoButtonAlertView.swift */; };
 		FDACDF22263930CA00689B51 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF21263930CA00689B51 /* UIViewController+Alert.swift */; };
@@ -224,6 +226,8 @@
 		FDA3C8AE2677272F0042715E /* UserDefaultsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserDefaultsStorage.swift; path = Cafeistic/Services/Network/Common/UserDefaultsStorage.swift; sourceTree = SOURCE_ROOT; };
 		FDA3C8B1267727410042715E /* KeyChainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = KeyChainStorage.swift; path = Cafeistic/Services/Network/Common/KeyChainStorage.swift; sourceTree = SOURCE_ROOT; };
 		FDA3C8B526772D820042715E /* StorageKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageKey.swift; sourceTree = "<group>"; };
+		FDA3C8BA26776EFA0042715E /* KeyChainKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainKey.swift; sourceTree = "<group>"; };
+		FDA3C8BE2677774D0042715E /* AuthenticationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationStore.swift; sourceTree = "<group>"; };
 		FDACDF1726391F6300689B51 /* DefaultAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAlertViewController.swift; sourceTree = "<group>"; };
 		FDACDF1C26391F7C00689B51 /* TwoButtonAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoButtonAlertView.swift; sourceTree = "<group>"; };
 		FDACDF21263930CA00689B51 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
@@ -653,6 +657,14 @@
 			path = UICollectionView;
 			sourceTree = "<group>";
 		};
+		FDA3C8BD2677773D0042715E /* AuthenticationStore */ = {
+			isa = PBXGroup;
+			children = (
+				FDA3C8BE2677774D0042715E /* AuthenticationStore.swift */,
+			);
+			path = AuthenticationStore;
+			sourceTree = "<group>";
+		};
 		FDACDF1626391EC000689B51 /* DefaultAlertView */ = {
 			isa = PBXGroup;
 			children = (
@@ -934,6 +946,7 @@
 				FD4593802636CA3100669AB4 /* Assets.swift */,
 				FD4593862636D77B00669AB4 /* StringConstant.swift */,
 				FDA3C8B526772D820042715E /* StorageKey.swift */,
+				FDA3C8BA26776EFA0042715E /* KeyChainKey.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -941,6 +954,7 @@
 		FDF281E72632D24800B1829A /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				FDA3C8BD2677773D0042715E /* AuthenticationStore */,
 				FD77D3792671DFC500AF8671 /* SeviceLocator */,
 				FDF281EA2632D28700B1829A /* SessionTracker */,
 				FDF281E92632D26800B1829A /* Storage */,
@@ -1190,6 +1204,7 @@
 				FDEA5CD0265296B700BB08A1 /* UIImageView+SetImageColor.swift in Sources */,
 				FDBDEAE8265E269100B03B9E /* ClientOrderHistoryCellModel.swift in Sources */,
 				FDBDEAE4265E267C00B03B9E /* ClientOrderHistoryCell.swift in Sources */,
+				FDA3C8BF2677774D0042715E /* AuthenticationStore.swift in Sources */,
 				FD77D37B2671DFD400AF8671 /* ServiceLocator.swift in Sources */,
 				FD9BB1CC26410C6F00835B98 /* MealMenuCellModel.swift in Sources */,
 				FD796826266507C8007C4C4A /* AuthTarget.swift in Sources */,
@@ -1229,6 +1244,7 @@
 				FD4593752636BDEE00669AB4 /* SetupBaseViewController.swift in Sources */,
 				FD9118AE265B7508008F122C /* ClientCurrentOrderViewController.swift in Sources */,
 				FDB1AF52265F694F00419153 /* ClientItemOrderHistoryViewController.swift in Sources */,
+				FDA3C8BB26776EFA0042715E /* KeyChainKey.swift in Sources */,
 				FDACDF61263A8BCA00689B51 /* ForgetPasswordViewController.swift in Sources */,
 				FDEE44CC2660E5680080CC66 /* ProfileSceneBuilder.swift in Sources */,
 				FD6B88AB263C03EC0026D3E0 /* EstablishmentSignUpSceneBuilder.swift in Sources */,
