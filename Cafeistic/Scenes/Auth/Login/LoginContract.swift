@@ -40,6 +40,8 @@ protocol PresenterToInteractorLoginProtocol {
 // MARK: - Interactor Output/Presenter Input (Interactor -> Presenter)
 protocol InteractorToPresenterLoginProtocol {
     
+    func successAuthorized()
+    func errorAuthorized(error: String)
 }
 
 // MARK: - Router Input (Presenter -> Router)

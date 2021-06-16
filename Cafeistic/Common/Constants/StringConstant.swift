@@ -85,5 +85,16 @@ struct StringConstant {
     
     struct Services {
         
+        struct ErrorMessage {
+            static let notFount = "Страница не найдена"
+            static let unknowedError = "Неизвестная ошибка"
+            static let networkFail = "Проверьте интернет соединение"
+            static let notAuthorized = "Пользователь не авторизован"
+        }
+        
+        struct AlertMessage {
+            static let error = "Ошибка"
+            static let ok = "ОК"
+        }
     }
 }

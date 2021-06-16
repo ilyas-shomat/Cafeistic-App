@@ -18,7 +18,6 @@ class LoginInteractor: PresenterToInteractorLoginProtocol {
     init(networkApiService: Networkable, sessionTracker: SessionTracker) {
         self.networkApiService = networkApiService
         self.sessionTracker = sessionTracker
-//        sendWithAuthData(loginEntityIn: LoginEntityIn(username: "first_user", password: "first_user"))
     }
     
     func loginWithData(loginEntity: LoginEntity) {
@@ -36,8 +35,9 @@ class LoginInteractor: PresenterToInteractorLoginProtocol {
                     return
                 }
                 self.sessionTracker.updateToken(token: token)
+                self.presenter?.successAuthorized()
             case .failure(let error):
-                print("/// error:", error)
+                self.presenter?.errorAuthorized(error: error?.message ?? "")
             }
         }
     }
