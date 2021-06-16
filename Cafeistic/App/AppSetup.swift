@@ -24,6 +24,10 @@ class AppSetup {
         
         return NetworkApiService(provider: provider)
     }
+    
+    var sessionTracker: SessionTracker {
+        return SessionTrackerImpl(storage: UserDefaultsStorage(), netwotkApiService: networkApiService)
+    }
 
     func setupRootScene(window: UIWindow) {
         window.rootViewController = BaseNavigationController(type: .regular)
@@ -41,5 +45,6 @@ class AppSetup {
         IQKeyboardManager.shared.enable = true
 
         registry.addService { self.networkApiService as Networkable }
+        registry.addService { self.sessionTracker as SessionTracker }
     }
 }

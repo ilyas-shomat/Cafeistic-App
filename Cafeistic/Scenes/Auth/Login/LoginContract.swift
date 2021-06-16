@@ -11,6 +11,7 @@ import Foundation
 // MARK: - View Input (Presenter -> View)
 protocol PresenterToViewLoginProtocol {
    
+    func showErrorAlert(message: AlertMessageConstant)
 }
 
 // MARK: - View Output/Presenter Input (View -> Presenter)
@@ -21,7 +22,7 @@ protocol ViewToPresenterLoginProtocol {
     var router: PresenterToRouterLoginProtocol? { get set }
     
     func load()
-    func handleSignInTap()
+    func handleSignInTap(username: String, password: String)
     func handleForgetPasswordTap()
     func handleSignUpTap()
     func handleAlertTopButtonTap()
@@ -32,6 +33,8 @@ protocol ViewToPresenterLoginProtocol {
 protocol PresenterToInteractorLoginProtocol {
     
     var presenter: InteractorToPresenterLoginProtocol? { get set }
+    
+    func loginWithData(loginEntity: LoginEntity)
 }
 
 // MARK: - Interactor Output/Presenter Input (Interactor -> Presenter)

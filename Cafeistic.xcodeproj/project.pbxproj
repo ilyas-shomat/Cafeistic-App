@@ -86,6 +86,8 @@
 		FDA3C8B626772D820042715E /* StorageKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA3C8B526772D820042715E /* StorageKey.swift */; };
 		FDA3C8BB26776EFA0042715E /* KeyChainKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA3C8BA26776EFA0042715E /* KeyChainKey.swift */; };
 		FDA3C8BF2677774D0042715E /* AuthenticationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA3C8BE2677774D0042715E /* AuthenticationStore.swift */; };
+		FDA3C8C42678BA060042715E /* LoginEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA3C8C32678BA060042715E /* LoginEntity.swift */; };
+		FDA3C8C92678BBA40042715E /* AlertMessageConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA3C8C82678BBA40042715E /* AlertMessageConstant.swift */; };
 		FDACDF1826391F6300689B51 /* DefaultAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF1726391F6300689B51 /* DefaultAlertViewController.swift */; };
 		FDACDF1D26391F7C00689B51 /* TwoButtonAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF1C26391F7C00689B51 /* TwoButtonAlertView.swift */; };
 		FDACDF22263930CA00689B51 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF21263930CA00689B51 /* UIViewController+Alert.swift */; };
@@ -228,6 +230,8 @@
 		FDA3C8B526772D820042715E /* StorageKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageKey.swift; sourceTree = "<group>"; };
 		FDA3C8BA26776EFA0042715E /* KeyChainKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainKey.swift; sourceTree = "<group>"; };
 		FDA3C8BE2677774D0042715E /* AuthenticationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationStore.swift; sourceTree = "<group>"; };
+		FDA3C8C32678BA060042715E /* LoginEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEntity.swift; sourceTree = "<group>"; };
+		FDA3C8C82678BBA40042715E /* AlertMessageConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertMessageConstant.swift; sourceTree = "<group>"; };
 		FDACDF1726391F6300689B51 /* DefaultAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAlertViewController.swift; sourceTree = "<group>"; };
 		FDACDF1C26391F7C00689B51 /* TwoButtonAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoButtonAlertView.swift; sourceTree = "<group>"; };
 		FDACDF21263930CA00689B51 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
@@ -573,6 +577,7 @@
 		FD6CE0CF2654D65000541521 /* PresentationModels */ = {
 			isa = PBXGroup;
 			children = (
+				FDA3C8C22678B9EC0042715E /* Auth */,
 				FD6CE0D02654D65F00541521 /* Menu */,
 			);
 			path = PresentationModels;
@@ -663,6 +668,14 @@
 				FDA3C8BE2677774D0042715E /* AuthenticationStore.swift */,
 			);
 			path = AuthenticationStore;
+			sourceTree = "<group>";
+		};
+		FDA3C8C22678B9EC0042715E /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				FDA3C8C32678BA060042715E /* LoginEntity.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		FDACDF1626391EC000689B51 /* DefaultAlertView */ = {
@@ -947,6 +960,7 @@
 				FD4593862636D77B00669AB4 /* StringConstant.swift */,
 				FDA3C8B526772D820042715E /* StorageKey.swift */,
 				FDA3C8BA26776EFA0042715E /* KeyChainKey.swift */,
+				FDA3C8C82678BBA40042715E /* AlertMessageConstant.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -1207,6 +1221,7 @@
 				FDA3C8BF2677774D0042715E /* AuthenticationStore.swift in Sources */,
 				FD77D37B2671DFD400AF8671 /* ServiceLocator.swift in Sources */,
 				FD9BB1CC26410C6F00835B98 /* MealMenuCellModel.swift in Sources */,
+				FDA3C8C92678BBA40042715E /* AlertMessageConstant.swift in Sources */,
 				FD796826266507C8007C4C4A /* AuthTarget.swift in Sources */,
 				FDF281F42632D3AA00B1829A /* UIColor+Hex.swift in Sources */,
 				FDA3C8B626772D820042715E /* StorageKey.swift in Sources */,
@@ -1215,6 +1230,7 @@
 				FD4593842636D5D200669AB4 /* ColorPalette.swift in Sources */,
 				FDACDF60263A8BCA00689B51 /* ForgetPasswordRouter.swift in Sources */,
 				FD6B8897263BCBCB0026D3E0 /* ClientSignUpViewController.swift in Sources */,
+				FDA3C8C42678BA060042715E /* LoginEntity.swift in Sources */,
 				FD4593712636BD8000669AB4 /* LoginInteractor.swift in Sources */,
 				FDBDEADD265E1D2500B03B9E /* ClientOrderHistoryViewController.swift in Sources */,
 				FDEAD92E25C8269B0075F122 /* SceneDelegate.swift in Sources */,

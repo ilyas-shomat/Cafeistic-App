@@ -21,6 +21,9 @@ struct StringConstant {
             static let selectAccountType = "Выберите тип аккаунта"
             static let guest = "Гость"
             static let establishment = "Заведения"
+            static let error = "Ошибка"
+            static let message = "Некоторые данные не введены"
+            static let ok = "ОК"
         }
         
         struct ForgetPassword {

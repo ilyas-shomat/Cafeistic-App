@@ -153,7 +153,7 @@ extension LoginViewController: SetupBaseViewController {
     }
     
     @objc private func tapSignInButton() {
-        presenter?.handleSignInTap()
+        presenter?.handleSignInTap(username: loginTextField.text ?? "", password: passwordTextField.text ?? "")
     }
     
     @objc private func tapForgetPasswordButton() {
@@ -170,5 +170,8 @@ extension LoginViewController: SetupBaseViewController {
 
 // MARK: - (Presenter -> View)
 extension LoginViewController: PresenterToViewLoginProtocol {
-
+    
+    func showErrorAlert(message: AlertMessageConstant) {
+        showDefaultAlert(title: message.title, message: message.message, buttonTitle: message.buttonTitle)
+    }
 }

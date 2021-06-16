@@ -15,12 +15,16 @@ class LoginPresenter: ViewToPresenterLoginProtocol {
     var interactor: PresenterToInteractorLoginProtocol?
     var router: PresenterToRouterLoginProtocol?
     
+    var loginEntity: LoginEntity?
+    
     func load() {
         
     }
     
-    func handleSignInTap() {
-        router?.showMenu(on: view!)
+    func handleSignInTap(username: String, password: String) {
+//        router?.showMenu(on: view!)
+        checkEnteringUserData(username: username, password: password)
+        interactor?.loginWithData(loginEntity: loginEntity ?? LoginEntity())
     }
     
     func handleForgetPasswordTap() {
@@ -39,6 +43,14 @@ class LoginPresenter: ViewToPresenterLoginProtocol {
         router?.showEstablishmentSignUp(on: view!)
     }
     
+    private func checkEnteringUserData(username: String, password: String) {
+        if username == "" || password == "" {
+            view?.showErrorAlert(message: .usernameOrPasswordEmpty)
+        }
+        else {
+            loginEntity = LoginEntity(username: username, password: password)
+        }
+    }
 }
 
 
