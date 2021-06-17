@@ -16,6 +16,9 @@ class ProfileViewController: DefaultViewController {
         super.viewDidLoad()
         presenter?.load()
         setupViews()
+        
+        //MARK: Not forget to delete it
+        AuthenticationStore.shared.removeToken()
     }
     
 }

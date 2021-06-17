@@ -27,11 +27,15 @@ protocol ViewToPresenterStartProtocol {
 protocol PresenterToInteractorStartProtocol {
     
     var presenter: InteractorToPresenterStartProtocol? { get set }
+    
+    func checkUserSession()
 }
 
 // MARK: - Interactor Output/Presenter Input (Interactor -> Presenter)
 protocol InteractorToPresenterStartProtocol {
     
+    func userAuthorizedBefore()
+    func userLoginFirstTime()
 }
 
 // MARK: - Router Input (Presenter -> Router)

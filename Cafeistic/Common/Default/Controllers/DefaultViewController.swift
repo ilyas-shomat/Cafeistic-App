@@ -53,10 +53,13 @@ extension DefaultViewController {
         alertViewController.modalTransitionStyle = .crossDissolve
         alertViewController.delegate = self
         present(alertViewController, animated: true)
-        
     }
     
+    
+    //MARK: - Later need to change it to DefaultAlertViewController()
     func showDefaultAlert(title: String, message: String, buttonTitle: String) {
-        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: buttonTitle, style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
 }

@@ -18,7 +18,8 @@ class StartPresenter: ViewToPresenterStartProtocol {
     var serloc: ServiceLocator!
     
     func load() {
-        router?.showLoginScene(on: view!)
+        interactor?.checkUserSession()
+//        router?.showLoginScene(on: view!)
 //        router?.showClientMainTab(on: view!)
     }
 }
@@ -26,4 +27,11 @@ class StartPresenter: ViewToPresenterStartProtocol {
 // MARK: - (Interactor -> Presenter)
 extension StartPresenter: InteractorToPresenterStartProtocol {
     
+    func userAuthorizedBefore() {
+        router?.showClientMainTab(on: view!)
+    }
+    
+    func userLoginFirstTime() {
+        router?.showLoginScene(on: view!)
+    }
 }

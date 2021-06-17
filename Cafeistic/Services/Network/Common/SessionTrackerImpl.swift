@@ -37,7 +37,7 @@ extension SessionTrackerImpl: SessionTracker {
     }
     
     func updateToken(token: String) {
-        
+        AuthenticationStore.shared.store(token: token)
     }
     
     func logout() {

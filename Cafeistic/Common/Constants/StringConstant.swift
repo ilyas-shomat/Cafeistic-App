@@ -21,6 +21,9 @@ struct StringConstant {
             static let selectAccountType = "Выберите тип аккаунта"
             static let guest = "Гость"
             static let establishment = "Заведения"
+            static let error = "Ошибка"
+            static let message = "Некоторые данные не введены"
+            static let ok = "ОК"
         }
         
         struct ForgetPassword {
@@ -82,5 +85,16 @@ struct StringConstant {
     
     struct Services {
         
+        struct ErrorMessage {
+            static let notFount = "Страница не найдена"
+            static let unknowedError = "Неизвестная ошибка"
+            static let networkFail = "Проверьте интернет соединение"
+            static let notAuthorized = "Пользователь не авторизован"
+        }
+        
+        struct AlertMessage {
+            static let error = "Ошибка"
+            static let ok = "ОК"
+        }
     }
 }

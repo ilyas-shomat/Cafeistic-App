@@ -34,8 +34,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     private func setupRootScene() {
         guard let window = window else { return }
-        AppSetup.shared.setupRootScene(window: window)
         AppSetup.shared.setupSerivces()
+        AppSetup.shared.setupRootScene(window: window)
     }
 }
 
