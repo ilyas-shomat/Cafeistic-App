@@ -11,4 +11,13 @@ import UIKit
 
 // MARK: - (Presenter -> Router)
 class ProfileRouter: PresenterToRouterProfileProtocol {
+    
+    func showLoginScene(on view: PresenterToViewProfileProtocol) {
+        let viewController = view as? ProfileViewController
+        let showingScene = LoginScene.initiate()
+        showingScene.modalPresentationStyle = .overFullScreen
+        showingScene.modalTransitionStyle = .flipHorizontal
+        viewController?.present(showingScene, animated: true)
+    }
+    
 }

@@ -22,6 +22,7 @@ internal enum Assets {
     case orderHistoryUnselectedTabBar
     case profileTabBar
     case profileUnselectedTabBar
+    case logoutIcon
     
     public var image: UIImage? {
         switch self {
@@ -51,6 +52,8 @@ internal enum Assets {
             return UIImage(named: "profile_tab_bar")
         case .profileUnselectedTabBar:
             return UIImage(named: "profile_unselected_tab_bar")
+        case .logoutIcon:
+            return UIImage(named: "logout_icon")
         }
     }
 }

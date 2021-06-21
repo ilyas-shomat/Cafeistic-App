@@ -21,12 +21,15 @@ protocol ViewToPresenterProfileProtocol {
     var router: PresenterToRouterProfileProtocol? { get set }
     
     func load()
+    func handleLogoutTap()
 }
 
 // MARK: - Interactor Input/Presenter Output (Presenter -> Interactor)
 protocol PresenterToInteractorProfileProtocol {
     
     var presenter: InteractorToPresenterProfileProtocol? { get set }
+    
+    func logout()
 }
 
 // MARK: - Interactor Output/Presenter Input (Interactor -> Presenter)
@@ -37,4 +40,5 @@ protocol InteractorToPresenterProfileProtocol {
 // MARK: - Router Input (Presenter -> Router)
 protocol PresenterToRouterProfileProtocol {
     
+    func showLoginScene(on view: PresenterToViewProfileProtocol)
 }

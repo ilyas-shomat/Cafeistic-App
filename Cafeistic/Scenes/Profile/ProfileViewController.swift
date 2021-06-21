@@ -10,6 +10,13 @@ import UIKit
 
 class ProfileViewController: DefaultViewController {
     
+    private lazy var logoutButton: UIButton = {
+        let button = UIButton()
+        button.setImage(Assets.logoutIcon.image, for: .normal)
+        button.addTarget(self, action: #selector(tapLogoutButton), for: .touchUpInside)
+        return button
+    }()
+    
     var presenter: ViewToPresenterProfileProtocol?
     
     override func viewDidLoad() {
@@ -18,7 +25,7 @@ class ProfileViewController: DefaultViewController {
         setupViews()
         
         //MARK: Not forget to delete it
-        AuthenticationStore.shared.removeToken()
+//        AuthenticationStore.shared.removeToken()
     }
     
 }
@@ -27,6 +34,7 @@ extension ProfileViewController: SetupBaseViewController {
     func setupViews() {
         configureSubViews()
         configureConstraints()
+        setupNavigationBar()
     }
     
     func configureSubViews() {
@@ -39,6 +47,14 @@ extension ProfileViewController: SetupBaseViewController {
     
     func setupActions() {
         
+    }
+    
+    private func setupNavigationBar() {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: logoutButton)
+    }
+    
+    @objc private func tapLogoutButton() {
+        presenter?.handleLogoutTap()
     }
     
 }

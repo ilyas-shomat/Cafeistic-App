@@ -15,10 +15,13 @@ class ProfileScene {
         
         let presenter: ViewToPresenterProfileProtocol & InteractorToPresenterProfileProtocol = ProfilePresenter()
         
+        let networkApiSerive = serloc.getService(Networkable.self)
+        let sessionTracker = serloc.getService(SessionTracker.self)
+        
         viewController.presenter = presenter
         viewController.presenter?.router = ProfileRouter()
         viewController.presenter?.view = viewController
-        viewController.presenter?.interactor = ProfileInteractor()
+        viewController.presenter?.interactor = ProfileInteractor(networkApiService: networkApiSerive, sessionTracker: sessionTracker)
         viewController.presenter?.interactor?.presenter = presenter
         
         return viewController

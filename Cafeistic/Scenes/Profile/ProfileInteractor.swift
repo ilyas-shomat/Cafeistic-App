@@ -12,4 +12,15 @@ import Foundation
 class ProfileInteractor: PresenterToInteractorProfileProtocol {
 
     var presenter: InteractorToPresenterProfileProtocol?
+    var networkApiService: Networkable
+    var sessionTracker: SessionTracker
+    
+    init(networkApiService: Networkable, sessionTracker: SessionTracker) {
+        self.networkApiService = networkApiService
+        self.sessionTracker = sessionTracker
+    }
+    
+    func logout() {
+        sessionTracker.logout()
+    }
 }
