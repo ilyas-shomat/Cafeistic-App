@@ -18,6 +18,11 @@ class ProfilePresenter: ViewToPresenterProfileProtocol {
     func load() {
         
     }
+    
+    func handleLogoutTap() {
+        interactor?.logout()
+        router?.showLoginScene(on: view!)
+    }
 }
 
 // MARK: - (Interactor -> Presenter)
