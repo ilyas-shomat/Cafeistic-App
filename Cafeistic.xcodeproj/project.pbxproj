@@ -53,6 +53,17 @@
 		FD796826266507C8007C4C4A /* AuthTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD796825266507C8007C4C4A /* AuthTarget.swift */; };
 		FD838817268F2FDB00286A87 /* CafeisticUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD838816268F2FDB00286A87 /* CafeisticUITests.swift */; };
 		FD83885C2690398700286A87 /* CafeisticTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD83885B2690398700286A87 /* CafeisticTests.swift */; };
+		FD8388692690445200286A87 /* LoginViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8388682690445200286A87 /* LoginViewUITests.swift */; };
+		FD8388712690464500286A87 /* ViewAccessibilityIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8388702690464500286A87 /* ViewAccessibilityIdentifier.swift */; };
+		FD83887F2690480300286A87 /* ViewAccessibilityIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8388702690464500286A87 /* ViewAccessibilityIdentifier.swift */; };
+		FD83889726905BA700286A87 /* LoginRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD83889626905BA700286A87 /* LoginRouterTest.swift */; };
+		FD83889F26905DD400286A87 /* LoginPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD83889E26905DD400286A87 /* LoginPresenterTest.swift */; };
+		FD8388CE26905FF000286A87 /* LoginInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8388CD26905FF000286A87 /* LoginInteractorTest.swift */; };
+		FD8388F4269070B200286A87 /* MockNetworkApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8388D72690662700286A87 /* MockNetworkApiService.swift */; };
+		FD8388FB2690718600286A87 /* MockSessionTrackerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8388DF269067C300286A87 /* MockSessionTrackerImpl.swift */; };
+		FD838903269072C100286A87 /* UnitTestToken.json in Resources */ = {isa = PBXBuildFile; fileRef = FD838902269072C100286A87 /* UnitTestToken.json */; };
+		FD83890D2690730800286A87 /* JSONUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD83890C2690730800286A87 /* JSONUtil.swift */; };
+		FD8389152690735600286A87 /* JsonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8389142690735600286A87 /* JsonFactory.swift */; };
 		FD9078D62664D3F70094BACD /* LoginEntityIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9078D52664D3F70094BACD /* LoginEntityIn.swift */; };
 		FD9078DC266503790094BACD /* AnyTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9078DB266503790094BACD /* AnyTarget.swift */; };
 		FD9078DF266503B80094BACD /* BaseApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9078DE266503B80094BACD /* BaseApiProvider.swift */; };
@@ -221,6 +232,16 @@
 		FD8388592690398700286A87 /* CafeisticTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CafeisticTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD83885B2690398700286A87 /* CafeisticTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeisticTests.swift; sourceTree = "<group>"; };
 		FD83885D2690398700286A87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD8388682690445200286A87 /* LoginViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewUITests.swift; sourceTree = "<group>"; };
+		FD8388702690464500286A87 /* ViewAccessibilityIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAccessibilityIdentifier.swift; sourceTree = "<group>"; };
+		FD83889626905BA700286A87 /* LoginRouterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouterTest.swift; sourceTree = "<group>"; };
+		FD83889E26905DD400286A87 /* LoginPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterTest.swift; sourceTree = "<group>"; };
+		FD8388CD26905FF000286A87 /* LoginInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorTest.swift; sourceTree = "<group>"; };
+		FD8388D72690662700286A87 /* MockNetworkApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkApiService.swift; sourceTree = "<group>"; };
+		FD8388DF269067C300286A87 /* MockSessionTrackerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSessionTrackerImpl.swift; sourceTree = "<group>"; };
+		FD838902269072C100286A87 /* UnitTestToken.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UnitTestToken.json; sourceTree = "<group>"; };
+		FD83890C2690730800286A87 /* JSONUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONUtil.swift; sourceTree = "<group>"; };
+		FD8389142690735600286A87 /* JsonFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonFactory.swift; sourceTree = "<group>"; };
 		FD9078D52664D3F70094BACD /* LoginEntityIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginEntityIn.swift; path = Cafeistic/Entities/NetworkModels/Auth/LoginEntityIn.swift; sourceTree = SOURCE_ROOT; };
 		FD9078DB266503790094BACD /* AnyTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyTarget.swift; sourceTree = "<group>"; };
 		FD9078DE266503B80094BACD /* BaseApiProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseApiProvider.swift; sourceTree = "<group>"; };
@@ -661,6 +682,7 @@
 		FD838823268F39A300286A87 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				FD8388662690442E00286A87 /* Auth */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -668,10 +690,90 @@
 		FD83885A2690398700286A87 /* CafeisticTests */ = {
 			isa = PBXGroup;
 			children = (
+				FD83890B269072F700286A87 /* Common */,
+				FD8388F32690709B00286A87 /* Mocks */,
+				FD83888F2690599700286A87 /* Scenes */,
 				FD83885B2690398700286A87 /* CafeisticTests.swift */,
 				FD83885D2690398700286A87 /* Info.plist */,
 			);
 			path = CafeisticTests;
+			sourceTree = "<group>";
+		};
+		FD8388662690442E00286A87 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				FD8388672690443400286A87 /* Login */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		FD8388672690443400286A87 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FD8388682690445200286A87 /* LoginViewUITests.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		FD83888F2690599700286A87 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				FD838890269059A900286A87 /* Auth */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		FD838890269059A900286A87 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				FD838891269059AE00286A87 /* Login */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		FD838891269059AE00286A87 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FD83889626905BA700286A87 /* LoginRouterTest.swift */,
+				FD83889E26905DD400286A87 /* LoginPresenterTest.swift */,
+				FD8388CD26905FF000286A87 /* LoginInteractorTest.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		FD8388F026906AF200286A87 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FD8388D72690662700286A87 /* MockNetworkApiService.swift */,
+				FD8388DF269067C300286A87 /* MockSessionTrackerImpl.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		FD8388F32690709B00286A87 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				FD838907269072D700286A87 /* Jsons */,
+				FD8388F026906AF200286A87 /* Service */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		FD838907269072D700286A87 /* Jsons */ = {
+			isa = PBXGroup;
+			children = (
+				FD838902269072C100286A87 /* UnitTestToken.json */,
+			);
+			path = Jsons;
+			sourceTree = "<group>";
+		};
+		FD83890B269072F700286A87 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FD83890C2690730800286A87 /* JSONUtil.swift */,
+				FD8389142690735600286A87 /* JsonFactory.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		FD9078D42664CFB90094BACD /* Auth */ = {
@@ -1033,6 +1135,7 @@
 				FDA3C8B526772D820042715E /* StorageKey.swift */,
 				FDA3C8BA26776EFA0042715E /* KeyChainKey.swift */,
 				FDA3C8C82678BBA40042715E /* AlertMessageConstant.swift */,
+				FD8388702690464500286A87 /* ViewAccessibilityIdentifier.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -1256,6 +1359,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD838903269072C100286A87 /* UnitTestToken.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1317,6 +1421,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD83887F2690480300286A87 /* ViewAccessibilityIdentifier.swift in Sources */,
+				FD8388692690445200286A87 /* LoginViewUITests.swift in Sources */,
 				FD838817268F2FDB00286A87 /* CafeisticUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1325,7 +1431,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD8388F4269070B200286A87 /* MockNetworkApiService.swift in Sources */,
+				FD8388CE26905FF000286A87 /* LoginInteractorTest.swift in Sources */,
+				FD83889726905BA700286A87 /* LoginRouterTest.swift in Sources */,
+				FD8388FB2690718600286A87 /* MockSessionTrackerImpl.swift in Sources */,
+				FD83889F26905DD400286A87 /* LoginPresenterTest.swift in Sources */,
 				FD83885C2690398700286A87 /* CafeisticTests.swift in Sources */,
+				FD8389152690735600286A87 /* JsonFactory.swift in Sources */,
+				FD83890D2690730800286A87 /* JSONUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1465,6 +1578,7 @@
 				FDA3C8B2267727410042715E /* KeyChainStorage.swift in Sources */,
 				FD4593A02637F3F000669AB4 /* SpinnerView.swift in Sources */,
 				FD77D37F2671EF9300AF8671 /* NetworkError.swift in Sources */,
+				FD8388712690464500286A87 /* ViewAccessibilityIdentifier.swift in Sources */,
 				FDB1AF51265F694F00419153 /* ClientItemOrderHistoryRouter.swift in Sources */,
 				FD91191B265D0223008F122C /* MainNavigationBarView.swift in Sources */,
 				FDCBAD24264A4B8B005B9608 /* CellType.swift in Sources */,
@@ -1506,7 +1620,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RH4ADBYDUN;
 				INFOPLIST_FILE = CafeisticUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1526,7 +1640,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RH4ADBYDUN;
 				INFOPLIST_FILE = CafeisticUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1547,7 +1661,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RH4ADBYDUN;
 				INFOPLIST_FILE = CafeisticTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1568,7 +1682,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RH4ADBYDUN;
 				INFOPLIST_FILE = CafeisticTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1707,6 +1821,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RH4ADBYDUN;
 				INFOPLIST_FILE = Cafeistic/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1727,6 +1842,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RH4ADBYDUN;
 				INFOPLIST_FILE = Cafeistic/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
