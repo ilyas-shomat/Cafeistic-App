@@ -26,7 +26,7 @@ class LoginInteractor: PresenterToInteractorLoginProtocol {
         postWithAuthData(loginEntityIn: loginEntityIn)
     }
     
-    private func postWithAuthData(loginEntityIn: LoginEntityIn) {
+    func postWithAuthData(loginEntityIn: LoginEntityIn) {
         let target = AuthTarget.login(loginEntityIn: loginEntityIn)
         networkApiService.load(target: target, jsonType: LoginEntityOut.self) { (result) in
             switch result {

@@ -21,12 +21,14 @@ class LoginViewController: DefaultViewController {
     private lazy var loginTextField: MaintextField = {
         let textField = MaintextField(style: .login)
         textField.translatesAutoresizingMaskIntoConstraints = false
+        textField.accessibilityIdentifier = ViewAccessibilityIdentifier.Scenes.Login.loginTextField
         return textField
     }()
     
     private lazy var passwordTextField: MaintextField = {
         let textField = MaintextField(style: .password)
         textField.translatesAutoresizingMaskIntoConstraints = false
+        textField.accessibilityIdentifier = ViewAccessibilityIdentifier.Scenes.Login.passwordTextField
         return textField
     }()
     
@@ -65,6 +67,7 @@ class LoginViewController: DefaultViewController {
         presenter?.load()
         setupViews()
         setupActions()
+        
         
     }
     
@@ -172,6 +175,8 @@ extension LoginViewController: SetupBaseViewController {
 extension LoginViewController: PresenterToViewLoginProtocol {
     
     func showErrorAlert(message: AlertMessageConstant) {
-        showDefaultAlert(title: message.title, message: message.message, buttonTitle: message.buttonTitle)
+        showDefaultAlert(title: message.title,
+                         message: message.message,
+                         buttonTitle: message.buttonTitle)
     }
 }
