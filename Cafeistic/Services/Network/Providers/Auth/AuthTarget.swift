@@ -23,7 +23,7 @@ extension AuthTarget: BaseApiProvider, AnyTargetConvertible {
     
     var method: Moya.Method {
         switch self {
-        case.login:
+        case .login:
             return .post
         }
     }
@@ -31,7 +31,6 @@ extension AuthTarget: BaseApiProvider, AnyTargetConvertible {
     var task: Task {
         switch self {
         case .login(let loginEntityIn):
-//            print("/// loginEntityIn", loginEntityIn)
             return .requestJSONEncodable(loginEntityIn)
         }
     }

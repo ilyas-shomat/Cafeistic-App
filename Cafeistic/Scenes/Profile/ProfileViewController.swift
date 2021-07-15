@@ -10,6 +10,44 @@ import UIKit
 
 class ProfileViewController: DefaultViewController {
     
+    private lazy var profileImageView: UIImageView = {
+        let imageView = UIImageView()
+        return imageView
+    }()
+    
+    private lazy var usernameLabel: UILabel = {
+        let label = UILabel()
+        return label
+    }()
+    
+    private lazy var editDataButton: UIButton = {
+        let button = UIButton()
+        return button
+    }()
+    
+    private lazy var usernameView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .black
+        return view
+    }()
+    
+    private lazy var phoneNumberView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .black
+        return view
+    }()
+    
+    private lazy var emailView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .black
+        return view
+    }()
+    
+    private lazy var changePasswordButton: MainButton = {
+        let button = MainButton(style: .squared)
+        return button
+    }()
+    
     private lazy var logoutButton: UIButton = {
         let button = UIButton()
         button.setImage(Assets.logoutIcon.image, for: .normal)

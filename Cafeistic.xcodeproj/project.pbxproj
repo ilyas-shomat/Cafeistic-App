@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CD7B85AC59ABB498983A2B54 /* Pods_Cafeistic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7374E4838BCB145E057F8DF /* Pods_Cafeistic.framework */; };
+		FD0D4355269EF891002FC500 /* LoginPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0D4354269EF891002FC500 /* LoginPresenterTest.swift */; };
 		FD45935D2636BB1200669AB4 /* NetworkApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD45935C2636BB1200669AB4 /* NetworkApiService.swift */; };
 		FD45936D2636BD8000669AB4 /* LoginContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4593672636BD8000669AB4 /* LoginContract.swift */; };
 		FD45936E2636BD8000669AB4 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4593682636BD8000669AB4 /* LoginPresenter.swift */; };
@@ -51,6 +52,16 @@
 		FD77D3822671F02F00AF8671 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD77D3812671F02F00AF8671 /* ApiResponse.swift */; };
 		FD79682226650606007C4C4A /* ApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD79682126650606007C4C4A /* ApiConstants.swift */; };
 		FD796826266507C8007C4C4A /* AuthTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD796825266507C8007C4C4A /* AuthTarget.swift */; };
+		FD838817268F2FDB00286A87 /* CafeisticUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD838816268F2FDB00286A87 /* CafeisticUITests.swift */; };
+		FD83885C2690398700286A87 /* CafeisticTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD83885B2690398700286A87 /* CafeisticTests.swift */; };
+		FD8388692690445200286A87 /* LoginViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8388682690445200286A87 /* LoginViewUITests.swift */; };
+		FD8388712690464500286A87 /* ViewAccessibilityIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8388702690464500286A87 /* ViewAccessibilityIdentifier.swift */; };
+		FD83887F2690480300286A87 /* ViewAccessibilityIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8388702690464500286A87 /* ViewAccessibilityIdentifier.swift */; };
+		FD83889726905BA700286A87 /* LoginRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD83889626905BA700286A87 /* LoginRouterTest.swift */; };
+		FD8388CE26905FF000286A87 /* LoginInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8388CD26905FF000286A87 /* LoginInteractorTest.swift */; };
+		FD838903269072C100286A87 /* UnitTestToken.json in Resources */ = {isa = PBXBuildFile; fileRef = FD838902269072C100286A87 /* UnitTestToken.json */; };
+		FD83890D2690730800286A87 /* JSONUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD83890C2690730800286A87 /* JSONUtil.swift */; };
+		FD8389152690735600286A87 /* JsonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8389142690735600286A87 /* JsonFactory.swift */; };
 		FD9078D62664D3F70094BACD /* LoginEntityIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9078D52664D3F70094BACD /* LoginEntityIn.swift */; };
 		FD9078DC266503790094BACD /* AnyTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9078DB266503790094BACD /* AnyTarget.swift */; };
 		FD9078DF266503B80094BACD /* BaseApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9078DE266503B80094BACD /* BaseApiProvider.swift */; };
@@ -65,6 +76,7 @@
 		FD91191B265D0223008F122C /* MainNavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91191A265D0223008F122C /* MainNavigationBarView.swift */; };
 		FD91191E265D0774008F122C /* ViewRoundingCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91191D265D0774008F122C /* ViewRoundingCorners.swift */; };
 		FD911928265D22FE008F122C /* CurrentOrderAcceptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD911927265D22FE008F122C /* CurrentOrderAcceptView.swift */; };
+		FD9B980C268068CF0031131F /* ProfileInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9B980B268068CF0031131F /* ProfileInfoView.swift */; };
 		FD9BB1A72641029300835B98 /* MenuType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9BB1A62641029300835B98 /* MenuType.swift */; };
 		FD9BB1AF2641034D00835B98 /* MenuContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9BB1A92641034D00835B98 /* MenuContract.swift */; };
 		FD9BB1B02641034D00835B98 /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9BB1AA2641034D00835B98 /* MenuPresenter.swift */; };
@@ -100,6 +112,8 @@
 		FDACDF6D263AA00200689B51 /* CollectionViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF6C263AA00200689B51 /* CollectionViewProvider.swift */; };
 		FDACDF71263AA01700689B51 /* TableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF70263AA01700689B51 /* TableViewProvider.swift */; };
 		FDACDF76263AA0EA00689B51 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF75263AA0EA00689B51 /* BaseNavigationController.swift */; };
+		FDB1826226A00E7C0096E38E /* MockSessionTrackerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB1826026A00E7C0096E38E /* MockSessionTrackerImpl.swift */; };
+		FDB1826326A00E7C0096E38E /* MockNetworkApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB1826126A00E7C0096E38E /* MockNetworkApiService.swift */; };
 		FDB1AF4F265F694F00419153 /* ClientItemOrderHistoryContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB1AF49265F694F00419153 /* ClientItemOrderHistoryContract.swift */; };
 		FDB1AF50265F694F00419153 /* ClientItemOrderHistoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB1AF4A265F694F00419153 /* ClientItemOrderHistoryPresenter.swift */; };
 		FDB1AF51265F694F00419153 /* ClientItemOrderHistoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB1AF4B265F694F00419153 /* ClientItemOrderHistoryRouter.swift */; };
@@ -148,10 +162,28 @@
 		FDF282002632D79D00B1829A /* StartSceneBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF281FF2632D79D00B1829A /* StartSceneBuilder.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		FD838819268F2FDB00286A87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDEAD92025C8269B0075F122 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDEAD92725C8269B0075F122;
+			remoteInfo = Cafeistic;
+		};
+		FD83885E2690398700286A87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDEAD92025C8269B0075F122 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDEAD92725C8269B0075F122;
+			remoteInfo = Cafeistic;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		5D79D316F8E6F0061A9F53EE /* Pods-Cafeistic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cafeistic.debug.xcconfig"; path = "Target Support Files/Pods-Cafeistic/Pods-Cafeistic.debug.xcconfig"; sourceTree = "<group>"; };
 		AFE2A4F6D2445A8B438413CF /* Pods-Cafeistic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cafeistic.release.xcconfig"; path = "Target Support Files/Pods-Cafeistic/Pods-Cafeistic.release.xcconfig"; sourceTree = "<group>"; };
 		B7374E4838BCB145E057F8DF /* Pods_Cafeistic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cafeistic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD0D4354269EF891002FC500 /* LoginPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterTest.swift; sourceTree = "<group>"; };
 		FD45935C2636BB1200669AB4 /* NetworkApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkApiService.swift; sourceTree = "<group>"; };
 		FD4593672636BD8000669AB4 /* LoginContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContract.swift; sourceTree = "<group>"; };
 		FD4593682636BD8000669AB4 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
@@ -195,6 +227,19 @@
 		FD77D3812671F02F00AF8671 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
 		FD79682126650606007C4C4A /* ApiConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConstants.swift; sourceTree = "<group>"; };
 		FD796825266507C8007C4C4A /* AuthTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTarget.swift; sourceTree = "<group>"; };
+		FD838814268F2FDB00286A87 /* CafeisticUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CafeisticUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD838816268F2FDB00286A87 /* CafeisticUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeisticUITests.swift; sourceTree = "<group>"; };
+		FD838818268F2FDB00286A87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD8388592690398700286A87 /* CafeisticTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CafeisticTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD83885B2690398700286A87 /* CafeisticTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeisticTests.swift; sourceTree = "<group>"; };
+		FD83885D2690398700286A87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD8388682690445200286A87 /* LoginViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewUITests.swift; sourceTree = "<group>"; };
+		FD8388702690464500286A87 /* ViewAccessibilityIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAccessibilityIdentifier.swift; sourceTree = "<group>"; };
+		FD83889626905BA700286A87 /* LoginRouterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouterTest.swift; sourceTree = "<group>"; };
+		FD8388CD26905FF000286A87 /* LoginInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorTest.swift; sourceTree = "<group>"; };
+		FD838902269072C100286A87 /* UnitTestToken.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UnitTestToken.json; sourceTree = "<group>"; };
+		FD83890C2690730800286A87 /* JSONUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONUtil.swift; sourceTree = "<group>"; };
+		FD8389142690735600286A87 /* JsonFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonFactory.swift; sourceTree = "<group>"; };
 		FD9078D52664D3F70094BACD /* LoginEntityIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginEntityIn.swift; path = Cafeistic/Entities/NetworkModels/Auth/LoginEntityIn.swift; sourceTree = SOURCE_ROOT; };
 		FD9078DB266503790094BACD /* AnyTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyTarget.swift; sourceTree = "<group>"; };
 		FD9078DE266503B80094BACD /* BaseApiProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseApiProvider.swift; sourceTree = "<group>"; };
@@ -209,6 +254,7 @@
 		FD91191A265D0223008F122C /* MainNavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationBarView.swift; sourceTree = "<group>"; };
 		FD91191D265D0774008F122C /* ViewRoundingCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRoundingCorners.swift; sourceTree = "<group>"; };
 		FD911927265D22FE008F122C /* CurrentOrderAcceptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentOrderAcceptView.swift; sourceTree = "<group>"; };
+		FD9B980B268068CF0031131F /* ProfileInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoView.swift; sourceTree = "<group>"; };
 		FD9BB1A62641029300835B98 /* MenuType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuType.swift; sourceTree = "<group>"; };
 		FD9BB1A92641034D00835B98 /* MenuContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuContract.swift; sourceTree = "<group>"; };
 		FD9BB1AA2641034D00835B98 /* MenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
@@ -244,6 +290,8 @@
 		FDACDF6C263AA00200689B51 /* CollectionViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewProvider.swift; sourceTree = "<group>"; };
 		FDACDF70263AA01700689B51 /* TableViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewProvider.swift; sourceTree = "<group>"; };
 		FDACDF75263AA0EA00689B51 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		FDB1826026A00E7C0096E38E /* MockSessionTrackerImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockSessionTrackerImpl.swift; sourceTree = "<group>"; };
+		FDB1826126A00E7C0096E38E /* MockNetworkApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockNetworkApiService.swift; sourceTree = "<group>"; };
 		FDB1AF49265F694F00419153 /* ClientItemOrderHistoryContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientItemOrderHistoryContract.swift; sourceTree = "<group>"; };
 		FDB1AF4A265F694F00419153 /* ClientItemOrderHistoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientItemOrderHistoryPresenter.swift; sourceTree = "<group>"; };
 		FDB1AF4B265F694F00419153 /* ClientItemOrderHistoryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientItemOrderHistoryRouter.swift; sourceTree = "<group>"; };
@@ -295,6 +343,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FD838811268F2FDB00286A87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD8388562690398700286A87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FDEAD92525C8269B0075F122 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -326,8 +388,8 @@
 		FD4593592636AD9100669AB4 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
-				FDB1AF63265F746600419153 /* CollectionViewCells */,
 				FD911926265D22C9008F122C /* ScenesCustomViews */,
+				FDB1AF63265F746600419153 /* CollectionViewCells */,
 				FD911919265D01F9008F122C /* MainNavigationBarView */,
 				FDCBAD21264A4A0A005B9608 /* TableViewCells */,
 				FD6B88C0263C0DCC0026D3E0 /* MainSwitchView */,
@@ -607,6 +669,104 @@
 			path = Auth;
 			sourceTree = "<group>";
 		};
+		FD838815268F2FDB00286A87 /* CafeisticUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FD838823268F39A300286A87 /* Scenes */,
+				FD838816268F2FDB00286A87 /* CafeisticUITests.swift */,
+				FD838818268F2FDB00286A87 /* Info.plist */,
+			);
+			path = CafeisticUITests;
+			sourceTree = "<group>";
+		};
+		FD838823268F39A300286A87 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				FD8388662690442E00286A87 /* Auth */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		FD83885A2690398700286A87 /* CafeisticTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD83890B269072F700286A87 /* Common */,
+				FD8388F32690709B00286A87 /* Mocks */,
+				FD83888F2690599700286A87 /* Scenes */,
+				FD83885B2690398700286A87 /* CafeisticTests.swift */,
+				FD83885D2690398700286A87 /* Info.plist */,
+			);
+			path = CafeisticTests;
+			sourceTree = "<group>";
+		};
+		FD8388662690442E00286A87 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				FD8388672690443400286A87 /* Login */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		FD8388672690443400286A87 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FD8388682690445200286A87 /* LoginViewUITests.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		FD83888F2690599700286A87 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				FD838890269059A900286A87 /* Auth */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		FD838890269059A900286A87 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				FD838891269059AE00286A87 /* Login */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		FD838891269059AE00286A87 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FD83889626905BA700286A87 /* LoginRouterTest.swift */,
+				FD8388CD26905FF000286A87 /* LoginInteractorTest.swift */,
+				FD0D4354269EF891002FC500 /* LoginPresenterTest.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		FD8388F32690709B00286A87 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				FDB1825F26A00E5C0096E38E /* Service */,
+				FD838907269072D700286A87 /* Jsons */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		FD838907269072D700286A87 /* Jsons */ = {
+			isa = PBXGroup;
+			children = (
+				FD838902269072C100286A87 /* UnitTestToken.json */,
+			);
+			path = Jsons;
+			sourceTree = "<group>";
+		};
+		FD83890B269072F700286A87 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FD83890C2690730800286A87 /* JSONUtil.swift */,
+				FD8389142690735600286A87 /* JsonFactory.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		FD9078D42664CFB90094BACD /* Auth */ = {
 			isa = PBXGroup;
 			children = (
@@ -650,6 +810,7 @@
 			isa = PBXGroup;
 			children = (
 				FD911927265D22FE008F122C /* CurrentOrderAcceptView.swift */,
+				FD9B980B268068CF0031131F /* ProfileInfoView.swift */,
 			);
 			path = ScenesCustomViews;
 			sourceTree = "<group>";
@@ -723,6 +884,15 @@
 				FDACDF6C263AA00200689B51 /* CollectionViewProvider.swift */,
 			);
 			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		FDB1825F26A00E5C0096E38E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FDB1826126A00E7C0096E38E /* MockNetworkApiService.swift */,
+				FDB1826026A00E7C0096E38E /* MockSessionTrackerImpl.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		FDB1AF48265F692800419153 /* ItemOrderHistory */ = {
@@ -880,6 +1050,8 @@
 			isa = PBXGroup;
 			children = (
 				FDEAD92A25C8269B0075F122 /* Cafeistic */,
+				FD838815268F2FDB00286A87 /* CafeisticUITests */,
+				FD83885A2690398700286A87 /* CafeisticTests */,
 				FDEAD92925C8269B0075F122 /* Products */,
 				6465A32FA8A8C6BFD61FB9AA /* Pods */,
 				D0AF952A11BD5C18158D9B79 /* Frameworks */,
@@ -890,6 +1062,8 @@
 			isa = PBXGroup;
 			children = (
 				FDEAD92825C8269B0075F122 /* Cafeistic.app */,
+				FD838814268F2FDB00286A87 /* CafeisticUITests.xctest */,
+				FD8388592690398700286A87 /* CafeisticTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -961,6 +1135,7 @@
 				FDA3C8B526772D820042715E /* StorageKey.swift */,
 				FDA3C8BA26776EFA0042715E /* KeyChainKey.swift */,
 				FDA3C8C82678BBA40042715E /* AlertMessageConstant.swift */,
+				FD8388702690464500286A87 /* ViewAccessibilityIdentifier.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -1075,6 +1250,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FD838813268F2FDB00286A87 /* CafeisticUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD83881D268F2FDB00286A87 /* Build configuration list for PBXNativeTarget "CafeisticUITests" */;
+			buildPhases = (
+				FD838810268F2FDB00286A87 /* Sources */,
+				FD838811268F2FDB00286A87 /* Frameworks */,
+				FD838812268F2FDB00286A87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD83881A268F2FDB00286A87 /* PBXTargetDependency */,
+			);
+			name = CafeisticUITests;
+			productName = CafeisticUITests;
+			productReference = FD838814268F2FDB00286A87 /* CafeisticUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		FD8388582690398700286A87 /* CafeisticTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD8388602690398700286A87 /* Build configuration list for PBXNativeTarget "CafeisticTests" */;
+			buildPhases = (
+				FD8388552690398700286A87 /* Sources */,
+				FD8388562690398700286A87 /* Frameworks */,
+				FD8388572690398700286A87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD83885F2690398700286A87 /* PBXTargetDependency */,
+			);
+			name = CafeisticTests;
+			productName = CafeisticTests;
+			productReference = FD8388592690398700286A87 /* CafeisticTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		FDEAD92725C8269B0075F122 /* Cafeistic */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDEAD93C25C8269E0075F122 /* Build configuration list for PBXNativeTarget "Cafeistic" */;
@@ -1100,9 +1311,17 @@
 		FDEAD92025C8269B0075F122 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1230;
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
+					FD838813268F2FDB00286A87 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = FDEAD92725C8269B0075F122;
+					};
+					FD8388582690398700286A87 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = FDEAD92725C8269B0075F122;
+					};
 					FDEAD92725C8269B0075F122 = {
 						CreatedOnToolsVersion = 12.3;
 					};
@@ -1122,11 +1341,28 @@
 			projectRoot = "";
 			targets = (
 				FDEAD92725C8269B0075F122 /* Cafeistic */,
+				FD838813268F2FDB00286A87 /* CafeisticUITests */,
+				FD8388582690398700286A87 /* CafeisticTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		FD838812268F2FDB00286A87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD8388572690398700286A87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD838903269072C100286A87 /* UnitTestToken.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FDEAD92625C8269B0075F122 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1181,6 +1417,31 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FD838810268F2FDB00286A87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD83887F2690480300286A87 /* ViewAccessibilityIdentifier.swift in Sources */,
+				FD8388692690445200286A87 /* LoginViewUITests.swift in Sources */,
+				FD838817268F2FDB00286A87 /* CafeisticUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD8388552690398700286A87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD8388CE26905FF000286A87 /* LoginInteractorTest.swift in Sources */,
+				FD83889726905BA700286A87 /* LoginRouterTest.swift in Sources */,
+				FD0D4355269EF891002FC500 /* LoginPresenterTest.swift in Sources */,
+				FD83885C2690398700286A87 /* CafeisticTests.swift in Sources */,
+				FD8389152690735600286A87 /* JsonFactory.swift in Sources */,
+				FDB1826326A00E7C0096E38E /* MockNetworkApiService.swift in Sources */,
+				FD83890D2690730800286A87 /* JSONUtil.swift in Sources */,
+				FDB1826226A00E7C0096E38E /* MockSessionTrackerImpl.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FDEAD92425C8269B0075F122 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1204,6 +1465,7 @@
 				FD9118AD265B7508008F122C /* ClientCurrentOrderRouter.swift in Sources */,
 				FDF281ED2632D32200B1829A /* PrintUtil.swift in Sources */,
 				FD4593702636BD8000669AB4 /* LoginViewController.swift in Sources */,
+				FD9B980C268068CF0031131F /* ProfileInfoView.swift in Sources */,
 				FDEE44CF2660EC6D0080CC66 /* DefaultNavigationControllerType.swift in Sources */,
 				FDF281B72632CED300B1829A /* StartPresenter.swift in Sources */,
 				FD45936D2636BD8000669AB4 /* LoginContract.swift in Sources */,
@@ -1316,6 +1578,7 @@
 				FDA3C8B2267727410042715E /* KeyChainStorage.swift in Sources */,
 				FD4593A02637F3F000669AB4 /* SpinnerView.swift in Sources */,
 				FD77D37F2671EF9300AF8671 /* NetworkError.swift in Sources */,
+				FD8388712690464500286A87 /* ViewAccessibilityIdentifier.swift in Sources */,
 				FDB1AF51265F694F00419153 /* ClientItemOrderHistoryRouter.swift in Sources */,
 				FD91191B265D0223008F122C /* MainNavigationBarView.swift in Sources */,
 				FDCBAD24264A4B8B005B9608 /* CellType.swift in Sources */,
@@ -1325,6 +1588,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD83881A268F2FDB00286A87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDEAD92725C8269B0075F122 /* Cafeistic */;
+			targetProxy = FD838819268F2FDB00286A87 /* PBXContainerItemProxy */;
+		};
+		FD83885F2690398700286A87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDEAD92725C8269B0075F122 /* Cafeistic */;
+			targetProxy = FD83885E2690398700286A87 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FDEAD93625C8269E0075F122 /* LaunchScreen.storyboard */ = {
@@ -1338,6 +1614,88 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		FD83881B268F2FDB00286A87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RH4ADBYDUN;
+				INFOPLIST_FILE = CafeisticUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aies.CafeisticUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cafeistic;
+			};
+			name = Debug;
+		};
+		FD83881C268F2FDB00286A87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RH4ADBYDUN;
+				INFOPLIST_FILE = CafeisticUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aies.CafeisticUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cafeistic;
+			};
+			name = Release;
+		};
+		FD8388612690398700286A87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RH4ADBYDUN;
+				INFOPLIST_FILE = CafeisticTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aies.CafeisticTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cafeistic.app/Cafeistic";
+			};
+			name = Debug;
+		};
+		FD8388622690398700286A87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RH4ADBYDUN;
+				INFOPLIST_FILE = CafeisticTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aies.CafeisticTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cafeistic.app/Cafeistic";
+			};
+			name = Release;
+		};
 		FDEAD93A25C8269E0075F122 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1463,6 +1821,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RH4ADBYDUN;
 				INFOPLIST_FILE = Cafeistic/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1483,6 +1842,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RH4ADBYDUN;
 				INFOPLIST_FILE = Cafeistic/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1497,6 +1857,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FD83881D268F2FDB00286A87 /* Build configuration list for PBXNativeTarget "CafeisticUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD83881B268F2FDB00286A87 /* Debug */,
+				FD83881C268F2FDB00286A87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD8388602690398700286A87 /* Build configuration list for PBXNativeTarget "CafeisticTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD8388612690398700286A87 /* Debug */,
+				FD8388622690398700286A87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FDEAD92325C8269B0075F122 /* Build configuration list for PBXProject "Cafeistic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
