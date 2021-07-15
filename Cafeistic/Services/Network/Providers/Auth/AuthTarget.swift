@@ -23,7 +23,7 @@ extension AuthTarget: BaseApiProvider, AnyTargetConvertible {
     
     var method: Moya.Method {
         switch self {
-        case.login:
+        case .login:
             return .post
         }
     }

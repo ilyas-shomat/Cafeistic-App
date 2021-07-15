@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CD7B85AC59ABB498983A2B54 /* Pods_Cafeistic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7374E4838BCB145E057F8DF /* Pods_Cafeistic.framework */; };
+		FD0D4355269EF891002FC500 /* LoginPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0D4354269EF891002FC500 /* LoginPresenterTest.swift */; };
 		FD45935D2636BB1200669AB4 /* NetworkApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD45935C2636BB1200669AB4 /* NetworkApiService.swift */; };
 		FD45936D2636BD8000669AB4 /* LoginContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4593672636BD8000669AB4 /* LoginContract.swift */; };
 		FD45936E2636BD8000669AB4 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4593682636BD8000669AB4 /* LoginPresenter.swift */; };
@@ -57,10 +58,7 @@
 		FD8388712690464500286A87 /* ViewAccessibilityIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8388702690464500286A87 /* ViewAccessibilityIdentifier.swift */; };
 		FD83887F2690480300286A87 /* ViewAccessibilityIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8388702690464500286A87 /* ViewAccessibilityIdentifier.swift */; };
 		FD83889726905BA700286A87 /* LoginRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD83889626905BA700286A87 /* LoginRouterTest.swift */; };
-		FD83889F26905DD400286A87 /* LoginPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD83889E26905DD400286A87 /* LoginPresenterTest.swift */; };
 		FD8388CE26905FF000286A87 /* LoginInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8388CD26905FF000286A87 /* LoginInteractorTest.swift */; };
-		FD8388F4269070B200286A87 /* MockNetworkApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8388D72690662700286A87 /* MockNetworkApiService.swift */; };
-		FD8388FB2690718600286A87 /* MockSessionTrackerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8388DF269067C300286A87 /* MockSessionTrackerImpl.swift */; };
 		FD838903269072C100286A87 /* UnitTestToken.json in Resources */ = {isa = PBXBuildFile; fileRef = FD838902269072C100286A87 /* UnitTestToken.json */; };
 		FD83890D2690730800286A87 /* JSONUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD83890C2690730800286A87 /* JSONUtil.swift */; };
 		FD8389152690735600286A87 /* JsonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8389142690735600286A87 /* JsonFactory.swift */; };
@@ -114,6 +112,8 @@
 		FDACDF6D263AA00200689B51 /* CollectionViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF6C263AA00200689B51 /* CollectionViewProvider.swift */; };
 		FDACDF71263AA01700689B51 /* TableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF70263AA01700689B51 /* TableViewProvider.swift */; };
 		FDACDF76263AA0EA00689B51 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF75263AA0EA00689B51 /* BaseNavigationController.swift */; };
+		FDB1826226A00E7C0096E38E /* MockSessionTrackerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB1826026A00E7C0096E38E /* MockSessionTrackerImpl.swift */; };
+		FDB1826326A00E7C0096E38E /* MockNetworkApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB1826126A00E7C0096E38E /* MockNetworkApiService.swift */; };
 		FDB1AF4F265F694F00419153 /* ClientItemOrderHistoryContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB1AF49265F694F00419153 /* ClientItemOrderHistoryContract.swift */; };
 		FDB1AF50265F694F00419153 /* ClientItemOrderHistoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB1AF4A265F694F00419153 /* ClientItemOrderHistoryPresenter.swift */; };
 		FDB1AF51265F694F00419153 /* ClientItemOrderHistoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB1AF4B265F694F00419153 /* ClientItemOrderHistoryRouter.swift */; };
@@ -183,6 +183,7 @@
 		5D79D316F8E6F0061A9F53EE /* Pods-Cafeistic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cafeistic.debug.xcconfig"; path = "Target Support Files/Pods-Cafeistic/Pods-Cafeistic.debug.xcconfig"; sourceTree = "<group>"; };
 		AFE2A4F6D2445A8B438413CF /* Pods-Cafeistic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cafeistic.release.xcconfig"; path = "Target Support Files/Pods-Cafeistic/Pods-Cafeistic.release.xcconfig"; sourceTree = "<group>"; };
 		B7374E4838BCB145E057F8DF /* Pods_Cafeistic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cafeistic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD0D4354269EF891002FC500 /* LoginPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterTest.swift; sourceTree = "<group>"; };
 		FD45935C2636BB1200669AB4 /* NetworkApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkApiService.swift; sourceTree = "<group>"; };
 		FD4593672636BD8000669AB4 /* LoginContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContract.swift; sourceTree = "<group>"; };
 		FD4593682636BD8000669AB4 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
@@ -235,10 +236,7 @@
 		FD8388682690445200286A87 /* LoginViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewUITests.swift; sourceTree = "<group>"; };
 		FD8388702690464500286A87 /* ViewAccessibilityIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAccessibilityIdentifier.swift; sourceTree = "<group>"; };
 		FD83889626905BA700286A87 /* LoginRouterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouterTest.swift; sourceTree = "<group>"; };
-		FD83889E26905DD400286A87 /* LoginPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterTest.swift; sourceTree = "<group>"; };
 		FD8388CD26905FF000286A87 /* LoginInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorTest.swift; sourceTree = "<group>"; };
-		FD8388D72690662700286A87 /* MockNetworkApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkApiService.swift; sourceTree = "<group>"; };
-		FD8388DF269067C300286A87 /* MockSessionTrackerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSessionTrackerImpl.swift; sourceTree = "<group>"; };
 		FD838902269072C100286A87 /* UnitTestToken.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UnitTestToken.json; sourceTree = "<group>"; };
 		FD83890C2690730800286A87 /* JSONUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONUtil.swift; sourceTree = "<group>"; };
 		FD8389142690735600286A87 /* JsonFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonFactory.swift; sourceTree = "<group>"; };
@@ -292,6 +290,8 @@
 		FDACDF6C263AA00200689B51 /* CollectionViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewProvider.swift; sourceTree = "<group>"; };
 		FDACDF70263AA01700689B51 /* TableViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewProvider.swift; sourceTree = "<group>"; };
 		FDACDF75263AA0EA00689B51 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		FDB1826026A00E7C0096E38E /* MockSessionTrackerImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockSessionTrackerImpl.swift; sourceTree = "<group>"; };
+		FDB1826126A00E7C0096E38E /* MockNetworkApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockNetworkApiService.swift; sourceTree = "<group>"; };
 		FDB1AF49265F694F00419153 /* ClientItemOrderHistoryContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientItemOrderHistoryContract.swift; sourceTree = "<group>"; };
 		FDB1AF4A265F694F00419153 /* ClientItemOrderHistoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientItemOrderHistoryPresenter.swift; sourceTree = "<group>"; };
 		FDB1AF4B265F694F00419153 /* ClientItemOrderHistoryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientItemOrderHistoryRouter.swift; sourceTree = "<group>"; };
@@ -735,26 +735,17 @@
 			isa = PBXGroup;
 			children = (
 				FD83889626905BA700286A87 /* LoginRouterTest.swift */,
-				FD83889E26905DD400286A87 /* LoginPresenterTest.swift */,
 				FD8388CD26905FF000286A87 /* LoginInteractorTest.swift */,
+				FD0D4354269EF891002FC500 /* LoginPresenterTest.swift */,
 			);
 			path = Login;
-			sourceTree = "<group>";
-		};
-		FD8388F026906AF200286A87 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				FD8388D72690662700286A87 /* MockNetworkApiService.swift */,
-				FD8388DF269067C300286A87 /* MockSessionTrackerImpl.swift */,
-			);
-			path = Service;
 			sourceTree = "<group>";
 		};
 		FD8388F32690709B00286A87 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
+				FDB1825F26A00E5C0096E38E /* Service */,
 				FD838907269072D700286A87 /* Jsons */,
-				FD8388F026906AF200286A87 /* Service */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -893,6 +884,15 @@
 				FDACDF6C263AA00200689B51 /* CollectionViewProvider.swift */,
 			);
 			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		FDB1825F26A00E5C0096E38E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FDB1826126A00E7C0096E38E /* MockNetworkApiService.swift */,
+				FDB1826026A00E7C0096E38E /* MockSessionTrackerImpl.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		FDB1AF48265F692800419153 /* ItemOrderHistory */ = {
@@ -1431,14 +1431,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD8388F4269070B200286A87 /* MockNetworkApiService.swift in Sources */,
 				FD8388CE26905FF000286A87 /* LoginInteractorTest.swift in Sources */,
 				FD83889726905BA700286A87 /* LoginRouterTest.swift in Sources */,
-				FD8388FB2690718600286A87 /* MockSessionTrackerImpl.swift in Sources */,
-				FD83889F26905DD400286A87 /* LoginPresenterTest.swift in Sources */,
+				FD0D4355269EF891002FC500 /* LoginPresenterTest.swift in Sources */,
 				FD83885C2690398700286A87 /* CafeisticTests.swift in Sources */,
 				FD8389152690735600286A87 /* JsonFactory.swift in Sources */,
+				FDB1826326A00E7C0096E38E /* MockNetworkApiService.swift in Sources */,
 				FD83890D2690730800286A87 /* JSONUtil.swift in Sources */,
+				FDB1826226A00E7C0096E38E /* MockSessionTrackerImpl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
