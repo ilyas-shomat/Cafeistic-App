@@ -12,34 +12,40 @@ class ProfileViewController: DefaultViewController {
     
     private lazy var profileImageView: UIImageView = {
         let imageView = UIImageView()
+        imageView.backgroundColor = .black
+        imageView.roundCorners(corners: .all, radius: 60)
         return imageView
     }()
     
-    private lazy var usernameLabel: UILabel = {
+    private lazy var userFullNameLabel: UILabel = {
         let label = UILabel()
+        label.text = "username"
+        label.textAlignment = .center
         return label
     }()
     
     private lazy var editDataButton: UIButton = {
         let button = UIButton()
+        button.setTitle("editButton", for: .normal)
+        button.setTitleColor(.black, for: .normal)
         return button
     }()
     
     private lazy var usernameView: UIView = {
         let view = UIView()
-        view.backgroundColor = .black
+        view.backgroundColor = .green
         return view
     }()
     
     private lazy var phoneNumberView: UIView = {
         let view = UIView()
-        view.backgroundColor = .black
+        view.backgroundColor = .green
         return view
     }()
     
     private lazy var emailView: UIView = {
         let view = UIView()
-        view.backgroundColor = .black
+        view.backgroundColor = .green
         return view
     }()
     
@@ -76,10 +82,54 @@ extension ProfileViewController: SetupBaseViewController {
     }
     
     func configureSubViews() {
-        
+        view.addSubviews([profileImageView,
+                          userFullNameLabel,
+                          editDataButton,
+                          usernameView,
+                          phoneNumberView,
+                          emailView,
+                          changePasswordButton
+        ])
     }
     
     func configureConstraints() {
+        profileImageView.snp.makeConstraints {
+            $0.top.equalToSuperview().inset(100)
+            $0.width.height.equalTo(150)
+            $0.centerX.equalToSuperview()
+        }
+        userFullNameLabel.snp.makeConstraints {
+            $0.top.equalTo(profileImageView.snp.bottom).offset(10)
+            $0.leading.trailing.equalToSuperview().inset(20)
+//            $0.centerX.equalToSuperview()
+        }
+        editDataButton.snp.makeConstraints {
+            $0.top.equalTo(userFullNameLabel.snp.bottom).offset(10)
+            $0.width.equalTo(180)
+            $0.height.equalTo(30)
+            $0.centerX.equalToSuperview()
+        }
+        usernameView.snp.makeConstraints {
+            $0.top.equalTo(editDataButton.snp.bottom).offset(10)
+            $0.leading.trailing.equalToSuperview().inset(20)
+            $0.height.equalTo(50)
+        }
+        phoneNumberView.snp.makeConstraints {
+            $0.top.equalTo(usernameView.snp.bottom).offset(10)
+            $0.leading.trailing.equalToSuperview().inset(20)
+            $0.height.equalTo(50)
+        }
+        emailView.snp.makeConstraints {
+            $0.top.equalTo(phoneNumberView.snp.bottom).offset(10)
+            $0.leading.trailing.equalToSuperview().inset(20)
+            $0.height.equalTo(50)
+        }
+        changePasswordButton.snp.makeConstraints {
+            $0.top.equalTo(emailView.snp.bottom).offset(10)
+            $0.leading.trailing.equalToSuperview().inset(20)
+            $0.height.equalTo(50)
+        }
+        
         
     }
     

@@ -19,7 +19,7 @@ class AppSetup {
     var networkApiService: Networkable {
         let provider = MoyaProvider<AnyTarget>(plugins: [NetworkLoggerPlugin()])
         
-        //MARK: - Uncomment it if you want to hide Moya Logger
+        // MARK: - Uncomment this if you want to hide Moya Logger
 //        let provider = MoyaProvider<AnyTarget>()
         
         return NetworkApiService(provider: provider)

@@ -385,18 +385,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FD4593592636AD9100669AB4 /* CustomViews */ = {
+		FD41219A26DF32E200FD1D24 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				FD911926265D22C9008F122C /* ScenesCustomViews */,
-				FDB1AF63265F746600419153 /* CollectionViewCells */,
-				FD911919265D01F9008F122C /* MainNavigationBarView */,
-				FDCBAD21264A4A0A005B9608 /* TableViewCells */,
 				FD6B88C0263C0DCC0026D3E0 /* MainSwitchView */,
 				FDACDF1626391EC000689B51 /* DefaultAlertView */,
 				FD45939E2637F3D300669AB4 /* ActivityView */,
 				FD45938E2637F1B000669AB4 /* MainButton */,
 				FD4593782636C09600669AB4 /* MainTextField */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FD4593592636AD9100669AB4 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				FD41219A26DF32E200FD1D24 /* Common */,
+				FD911926265D22C9008F122C /* ScenesCustomViews */,
+				FDB1AF63265F746600419153 /* CollectionViewCells */,
+				FD911919265D01F9008F122C /* MainNavigationBarView */,
+				FDCBAD21264A4A0A005B9608 /* TableViewCells */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -1818,6 +1826,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RH4ADBYDUN;
 				INFOPLIST_FILE = Cafeistic/SupportingFiles/Info.plist;
@@ -1826,8 +1835,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ilyas.Cafeistic;
+				PRODUCT_BUNDLE_IDENTIFIER = cafeistic.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1839,6 +1849,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RH4ADBYDUN;
 				INFOPLIST_FILE = Cafeistic/SupportingFiles/Info.plist;
@@ -1847,8 +1858,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ilyas.Cafeistic;
+				PRODUCT_BUNDLE_IDENTIFIER = cafeistic.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
