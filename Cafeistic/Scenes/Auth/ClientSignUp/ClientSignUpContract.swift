@@ -21,13 +21,20 @@ protocol ViewToPresenterClientSignUpProtocol {
     var router: PresenterToRouterClientSignUpProtocol? { get set }
     
     func load()
-    func handleSignUpTap()
+    func handleSignUpTap(
+        fullName: String,
+        username: String,
+        password: String,
+        email: String
+    )
 }
 
 // MARK: - Interactor Input/Presenter Output (Presenter -> Interactor)
 protocol PresenterToInteractorClientSignUpProtocol {
     
     var presenter: InteractorToPresenterClientSignUpProtocol? { get set }
+    
+    func signUp(userSignUpEntity: UserSignUpEntity)
 }
 
 // MARK: - Interactor Output/Presenter Input (Interactor -> Presenter)

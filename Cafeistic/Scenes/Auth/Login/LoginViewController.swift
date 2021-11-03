@@ -164,10 +164,11 @@ extension LoginViewController: SetupBaseViewController {
     }
     
     @objc private func tapSignUpButton() {
-        showDefaultAlert(message: StringConstant.Scenes.Login.selectAccountType,
-                         topButtonTitle: StringConstant.Scenes.Login.guest,
-                         bottomButtonTitle: StringConstant.Scenes.Login.establishment)
-//        presenter?.handleSignUpTap()
+        showDefaultAlert(
+            message: StringConstant.Scenes.Login.selectAccountType,
+            topButtonTitle: StringConstant.Scenes.Login.guest,
+            bottomButtonTitle: StringConstant.Scenes.Login.establishment
+        )
     }
 }
 

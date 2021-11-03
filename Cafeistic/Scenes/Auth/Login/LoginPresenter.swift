@@ -22,9 +22,11 @@ class LoginPresenter: ViewToPresenterLoginProtocol {
     }
     
     func handleSignInTap(username: String, password: String) {
-//        router?.showMenu(on: view!)
         checkEnteringUserData(username: username, password: password)
-        interactor?.loginWithData(loginEntity: loginEntity ?? LoginEntity())
+        guard let loginEntity = loginEntity else {
+            return
+        }
+        interactor?.loginWithData(loginEntity: loginEntity)
     }
     
     func handleForgetPasswordTap() {

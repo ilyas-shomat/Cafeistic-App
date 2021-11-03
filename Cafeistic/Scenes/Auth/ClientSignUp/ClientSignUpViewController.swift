@@ -53,6 +53,11 @@ class ClientSignUpViewController: DefaultViewController {
         let button = MainButton(style: .rounded)
         button.setTitle(StringConstant.Scenes.ClienSignUp.signUp, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(
+            self,
+            action: #selector(tapSignUpButton),
+            for: .touchUpInside
+        )
         return button
     }()
     
@@ -62,7 +67,6 @@ class ClientSignUpViewController: DefaultViewController {
         super.viewDidLoad()
         presenter?.load()
         setupViews()
-        setupActions()
     }
     
 }
@@ -128,12 +132,13 @@ extension ClientSignUpViewController: SetupBaseViewController {
 
     }
     
-    func setupActions() {
-        signUpButton.addTarget(self, action: #selector(tapSignUpButton), for: .touchUpInside)
-    }
-    
     @objc private func tapSignUpButton() {
-        presenter?.handleSignUpTap()
+        presenter?.handleSignUpTap(
+            fullName: fullNameTextField.text ?? "",
+            username: loginTextField.text ?? "",
+            password: passwordTextField.text ?? "",
+            email: emailTextField.text ?? ""
+        )
     }
 }
 

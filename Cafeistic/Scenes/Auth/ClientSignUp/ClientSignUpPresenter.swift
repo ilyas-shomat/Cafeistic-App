@@ -10,7 +10,7 @@ import Foundation
 
 // MARK: - (View -> Presenter)
 class ClientSignUpPresenter: ViewToPresenterClientSignUpProtocol {
-
+    
     var view: PresenterToViewClientSignUpProtocol?
     var interactor: PresenterToInteractorClientSignUpProtocol?
     var router: PresenterToRouterClientSignUpProtocol?
@@ -19,8 +19,14 @@ class ClientSignUpPresenter: ViewToPresenterClientSignUpProtocol {
         
     }
     
-    func handleSignUpTap() {
-        
+    func handleSignUpTap(
+        fullName: String,
+        username: String,
+        password: String,
+        email: String
+    ) {
+//        var
+//        interactor?.signUp(userSignUpEntity: <#T##UserSignUpEntity#>)
     }
 }
 

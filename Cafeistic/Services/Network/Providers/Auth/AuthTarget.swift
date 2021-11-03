@@ -9,7 +9,8 @@ import Foundation
 import Moya
 
 enum AuthTarget {
-    case login(loginEntityIn: LoginEntityIn)
+    case login(loginEntityIn: LoginEntityRequest)
+    
 }
 
 extension AuthTarget: BaseApiProvider, AnyTargetConvertible {

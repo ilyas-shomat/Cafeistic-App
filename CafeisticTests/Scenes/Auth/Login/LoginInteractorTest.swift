@@ -32,14 +32,14 @@ class LoginInteractorTest: XCTestCase {
     }    
 
     func testPostWithAuthData() throws {
-        sut?.postWithAuthData(loginEntityIn: LoginEntityIn(username: "login", password: "password"))
+        sut?.postWithAuthData(loginEntityRequest: LoginEntityRequest(username: "login", password: "password"))
 
         XCTAssertTrue(networkApiService.isCalledLoad, "Not started networkApiService.load()")
     }
     
     func testGetSuccessResponse() throws {
         networkApiService.isFail = true
-        sut?.postWithAuthData(loginEntityIn: LoginEntityIn(username: "login", password: "password"))
+        sut?.postWithAuthData(loginEntityRequest: LoginEntityRequest(username: "login", password: "password"))
         XCTAssert(presenter?.isFail ?? false)
     }
     
