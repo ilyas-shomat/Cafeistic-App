@@ -91,11 +91,13 @@ final class MaintextField: UITextField {
     
     @objc private func textSecureIconTapped() {
         self.isSecureTextEntry.toggle()
-        if textSecureIcon.image == Assets.visibilityOffIcon.image {
+        if !isSecureTextEntry {
             textSecureIcon.image = Assets.visibilityOnIcon.image
+            textSecureIcon.setImageColor(color: .appOrange)
         }
         else {
             textSecureIcon.image = Assets.visibilityOffIcon.image
+            textSecureIcon.setImageColor(color: .appOrange)
         }
     }
 }
