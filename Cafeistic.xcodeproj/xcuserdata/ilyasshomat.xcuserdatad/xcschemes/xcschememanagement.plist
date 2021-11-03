@@ -6,12 +6,38 @@
 	<dict>
 		<key>Cafeistic.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
+		<key>CafeisticTests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>7</integer>
+		</dict>
+		<key>CafeisticUITests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>8</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>FD838813268F2FDB00286A87</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FD8388582690398700286A87</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>FDEAD92725C8269B0075F122</key>
 		<dict>
 			<key>primary</key>

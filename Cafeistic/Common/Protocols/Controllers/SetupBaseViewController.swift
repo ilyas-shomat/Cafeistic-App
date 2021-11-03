@@ -11,5 +11,4 @@ protocol SetupBaseViewController: class {
     func setupViews()
     func configureSubViews()
     func configureConstraints()
-    func setupActions()
 }

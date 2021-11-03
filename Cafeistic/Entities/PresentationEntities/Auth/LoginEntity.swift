@@ -8,6 +8,6 @@
 import Foundation
 
 struct LoginEntity {
-    var username: String?
-    var password: String?
+    var username: String
+    var password: String
 }
