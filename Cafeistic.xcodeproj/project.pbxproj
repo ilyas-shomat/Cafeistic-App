@@ -135,7 +135,7 @@
 		FDCBAD30264A58F6005B9608 /* LabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCBAD2F264A58F6005B9608 /* LabelCell.swift */; };
 		FDCD506D2732DCA400E0A34F /* NetworkLoginEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCD506C2732DCA400E0A34F /* NetworkLoginEntity.swift */; };
 		FDCD506F2732DD9200E0A34F /* NetworkUserSignUpEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCD506E2732DD9200E0A34F /* NetworkUserSignUpEntity.swift */; };
-		FDCD50712732DFD100E0A34F /* UserSignUpEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCD50702732DFD100E0A34F /* UserSignUpEntity.swift */; };
+		FDCD50712732DFD100E0A34F /* SignUpEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCD50702732DFD100E0A34F /* SignUpEntity.swift */; };
 		FDE2CEC626426BCA00FE1EA7 /* UIView+Corners.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE2CEC526426BCA00FE1EA7 /* UIView+Corners.swift */; };
 		FDEA5C7C265245DD00BB08A1 /* TextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEA5C7B265245DD00BB08A1 /* TextFieldCell.swift */; };
 		FDEA5CCB2652963900BB08A1 /* UIButton+SetImageTintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEA5CCA2652963800BB08A1 /* UIButton+SetImageTintColor.swift */; };
@@ -315,7 +315,7 @@
 		FDCBAD2F264A58F6005B9608 /* LabelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelCell.swift; sourceTree = "<group>"; };
 		FDCD506C2732DCA400E0A34F /* NetworkLoginEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLoginEntity.swift; sourceTree = "<group>"; };
 		FDCD506E2732DD9200E0A34F /* NetworkUserSignUpEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUserSignUpEntity.swift; sourceTree = "<group>"; };
-		FDCD50702732DFD100E0A34F /* UserSignUpEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSignUpEntity.swift; sourceTree = "<group>"; };
+		FDCD50702732DFD100E0A34F /* SignUpEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEntity.swift; sourceTree = "<group>"; };
 		FDE2CEC526426BCA00FE1EA7 /* UIView+Corners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Corners.swift"; sourceTree = "<group>"; };
 		FDEA5C7B265245DD00BB08A1 /* TextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldCell.swift; sourceTree = "<group>"; };
 		FDEA5CCA2652963800BB08A1 /* UIButton+SetImageTintColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+SetImageTintColor.swift"; sourceTree = "<group>"; };
@@ -838,7 +838,7 @@
 			isa = PBXGroup;
 			children = (
 				FDA3C8C32678BA060042715E /* LoginEntity.swift */,
-				FDCD50702732DFD100E0A34F /* UserSignUpEntity.swift */,
+				FDCD50702732DFD100E0A34F /* SignUpEntity.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -1578,7 +1578,7 @@
 				FDB1AF50265F694F00419153 /* ClientItemOrderHistoryPresenter.swift in Sources */,
 				FD6B88A7263C03EC0026D3E0 /* EstablishmentSignUpPresenter.swift in Sources */,
 				FD9BB1C626410C4800835B98 /* CategoryMenuCellModel.swift in Sources */,
-				FDCD50712732DFD100E0A34F /* UserSignUpEntity.swift in Sources */,
+				FDCD50712732DFD100E0A34F /* SignUpEntity.swift in Sources */,
 				FD6B88A6263C03EC0026D3E0 /* EstablishmentSignUpContract.swift in Sources */,
 				FDACDF62263A8BCA00689B51 /* ForgetPasswordInteractor.swift in Sources */,
 				FDBDEADF265E1D2500B03B9E /* ClientOrderHistorySceneBuilder.swift in Sources */,
