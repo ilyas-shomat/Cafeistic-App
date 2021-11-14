@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct UserSignUpEntityRequest: Codable {
+struct SignUpEntityRequest: Codable {
     var fullName: String
     var username: String
     var password: String

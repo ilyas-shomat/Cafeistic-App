@@ -34,7 +34,7 @@ protocol PresenterToInteractorClientSignUpProtocol {
     
     var presenter: InteractorToPresenterClientSignUpProtocol? { get set }
     
-    func signUp(userSignUpEntity: UserSignUpEntity)
+    func signUp(userSignUpEntity: SignUpEntity)
 }
 
 // MARK: - Interactor Output/Presenter Input (Interactor -> Presenter)
