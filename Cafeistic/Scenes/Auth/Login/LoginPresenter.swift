@@ -17,9 +17,7 @@ class LoginPresenter: ViewToPresenterLoginProtocol {
     
     var loginEntity: LoginEntity?
     
-    func load() {
-        
-    }
+    func load() {}
     
     func handleSignInTap(username: String, password: String) {
         checkEnteringUserData(username: username, password: password)

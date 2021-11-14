@@ -11,7 +11,6 @@ import UIKit
 
 // MARK: - (Presenter -> Router)
 class LoginRouter: PresenterToRouterLoginProtocol {
-    
     func showForgetPasswordScene(on view: PresenterToViewLoginProtocol) {
         let viewController = view as? LoginViewController
         viewController?.navigationController?.pushViewController(ForgetPasswordScene.initiate(), animated: true)
@@ -19,12 +18,12 @@ class LoginRouter: PresenterToRouterLoginProtocol {
     
     func showClientSignUp(on view: PresenterToViewLoginProtocol) {
         let viewController = view as? LoginViewController
-        viewController?.navigationController?.pushViewController(ClientSignUpScene.initiate(), animated: true)
+        viewController?.navigationController?.pushViewController(ClientSignUpScene.instance, animated: true)
     }
     
     func showEstablishmentSignUp(on view: PresenterToViewLoginProtocol) {
         let viewController = view as? LoginViewController
-        viewController?.navigationController?.pushViewController(EstablishmentSignUpScene.initiate(), animated: true)
+        viewController?.navigationController?.pushViewController(EstablishmentSignUpScene.instance, animated: true)
     }
     
     //MARK: - Temp Code

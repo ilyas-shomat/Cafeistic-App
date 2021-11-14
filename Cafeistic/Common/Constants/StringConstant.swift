@@ -19,7 +19,7 @@ struct StringConstant {
             static let notSignUpYet = "Еще не зарегистрированы?"
             static let signUp = "Зарегистрироваться"
             static let selectAccountType = "Выберите тип аккаунта"
-            static let guest = "Гость"
+            static let guest = "Пользователь"
             static let establishment = "Заведения"
             static let error = "Ошибка"
             static let message = "Некоторые данные не введены"

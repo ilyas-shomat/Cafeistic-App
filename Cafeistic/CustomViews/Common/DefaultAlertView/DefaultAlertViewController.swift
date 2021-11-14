@@ -15,8 +15,6 @@ protocol DefaultAlertViewControllerActionsHandle {
 }
 
 final class DefaultAlertViewController: UIViewController, SetupBaseViewController {
-
-    
     
     private lazy var twoButtonAlertView: TwoButtonAlertView = {
         let view = TwoButtonAlertView()

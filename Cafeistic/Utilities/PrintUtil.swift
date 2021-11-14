@@ -14,5 +14,7 @@ func consolePrint(_ items: Any..., separator: String = " ", terminator: String =
 }
 
 func consolePrint(_ item: Any) {
+    #if DEBUG
     debugPrint("///", item)
+    #endif
 }

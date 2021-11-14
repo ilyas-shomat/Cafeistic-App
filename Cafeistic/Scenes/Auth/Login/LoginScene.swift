@@ -1,5 +1,5 @@
 //
-//  LoginSceneBuilder.swift
+//  LoginScene.swift
 //  Cafeistic
 //
 //  Created by Ilyas Shomat on 26.04.2021.
@@ -9,8 +9,8 @@
 import UIKit
 
 class LoginScene {
-    
-    static func initiate() -> UIViewController {
+
+    static var instance: UIViewController {
         let viewController = LoginViewController()
         let presenter: ViewToPresenterLoginProtocol & InteractorToPresenterLoginProtocol = LoginPresenter()
         
