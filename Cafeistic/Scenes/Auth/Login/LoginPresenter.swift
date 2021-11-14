@@ -44,8 +44,8 @@ class LoginPresenter: ViewToPresenterLoginProtocol {
     }
     
     private func checkEnteringUserData(username: String, password: String) {
-        if username == "" || password == "" {
-            view?.showErrorAlert(message: .usernameOrPasswordEmpty)
+        if username.isEmpty || password.isEmpty {
+            view?.showErrorAlert(message: .someEmptyFieldsExist)
         }
         else {
             loginEntity = LoginEntity(username: username, password: password)
@@ -53,10 +53,8 @@ class LoginPresenter: ViewToPresenterLoginProtocol {
     }
 }
 
-
 // MARK: - (Interactor -> Presenter)
 extension LoginPresenter: InteractorToPresenterLoginProtocol {
-    
     func successAuthorized() {
         router?.showMenu(on: view!)
     }

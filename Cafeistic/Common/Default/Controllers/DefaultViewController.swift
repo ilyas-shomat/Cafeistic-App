@@ -69,3 +69,13 @@ extension DefaultViewController {
         self.present(alert, animated: true, completion: nil)
     }
 }
+
+extension DefaultViewController: ErrorAlertProtocol {
+    func showErrorAlert(message: AlertMessageConstant) {
+        showDefaultAlert(
+            title: message.title,
+            message: message.message,
+            buttonTitle: message.buttonTitle
+        )
+    }
+}

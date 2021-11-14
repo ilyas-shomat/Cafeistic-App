@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CD7B85AC59ABB498983A2B54 /* Pods_Cafeistic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7374E4838BCB145E057F8DF /* Pods_Cafeistic.framework */; };
 		FD0D4355269EF891002FC500 /* LoginPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0D4354269EF891002FC500 /* LoginPresenterTest.swift */; };
+		FD12BB5E27413A0D005B4289 /* ErrorAlertProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD12BB5D27413A0D005B4289 /* ErrorAlertProtocol.swift */; };
 		FD45935D2636BB1200669AB4 /* NetworkApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD45935C2636BB1200669AB4 /* NetworkApiService.swift */; };
 		FD45936D2636BD8000669AB4 /* LoginContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4593672636BD8000669AB4 /* LoginContract.swift */; };
 		FD45936E2636BD8000669AB4 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4593682636BD8000669AB4 /* LoginPresenter.swift */; };
@@ -134,7 +135,7 @@
 		FDCBAD2B264A587D005B9608 /* ButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCBAD2A264A587D005B9608 /* ButtonCell.swift */; };
 		FDCBAD30264A58F6005B9608 /* LabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCBAD2F264A58F6005B9608 /* LabelCell.swift */; };
 		FDCD506D2732DCA400E0A34F /* NetworkLoginEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCD506C2732DCA400E0A34F /* NetworkLoginEntity.swift */; };
-		FDCD506F2732DD9200E0A34F /* NetworkUserSignUpEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCD506E2732DD9200E0A34F /* NetworkUserSignUpEntity.swift */; };
+		FDCD506F2732DD9200E0A34F /* NetworkSignUpEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCD506E2732DD9200E0A34F /* NetworkSignUpEntity.swift */; };
 		FDCD50712732DFD100E0A34F /* SignUpEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCD50702732DFD100E0A34F /* SignUpEntity.swift */; };
 		FDE2CEC626426BCA00FE1EA7 /* UIView+Corners.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE2CEC526426BCA00FE1EA7 /* UIView+Corners.swift */; };
 		FDEA5C7C265245DD00BB08A1 /* TextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEA5C7B265245DD00BB08A1 /* TextFieldCell.swift */; };
@@ -186,6 +187,7 @@
 		AFE2A4F6D2445A8B438413CF /* Pods-Cafeistic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cafeistic.release.xcconfig"; path = "Target Support Files/Pods-Cafeistic/Pods-Cafeistic.release.xcconfig"; sourceTree = "<group>"; };
 		B7374E4838BCB145E057F8DF /* Pods_Cafeistic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cafeistic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD0D4354269EF891002FC500 /* LoginPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterTest.swift; sourceTree = "<group>"; };
+		FD12BB5D27413A0D005B4289 /* ErrorAlertProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorAlertProtocol.swift; sourceTree = "<group>"; };
 		FD45935C2636BB1200669AB4 /* NetworkApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkApiService.swift; sourceTree = "<group>"; };
 		FD4593672636BD8000669AB4 /* LoginContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContract.swift; sourceTree = "<group>"; };
 		FD4593682636BD8000669AB4 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
@@ -314,7 +316,7 @@
 		FDCBAD2A264A587D005B9608 /* ButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCell.swift; sourceTree = "<group>"; };
 		FDCBAD2F264A58F6005B9608 /* LabelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelCell.swift; sourceTree = "<group>"; };
 		FDCD506C2732DCA400E0A34F /* NetworkLoginEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLoginEntity.swift; sourceTree = "<group>"; };
-		FDCD506E2732DD9200E0A34F /* NetworkUserSignUpEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUserSignUpEntity.swift; sourceTree = "<group>"; };
+		FDCD506E2732DD9200E0A34F /* NetworkSignUpEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSignUpEntity.swift; sourceTree = "<group>"; };
 		FDCD50702732DFD100E0A34F /* SignUpEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEntity.swift; sourceTree = "<group>"; };
 		FDE2CEC526426BCA00FE1EA7 /* UIView+Corners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Corners.swift"; sourceTree = "<group>"; };
 		FDEA5C7B265245DD00BB08A1 /* TextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldCell.swift; sourceTree = "<group>"; };
@@ -387,6 +389,14 @@
 				B7374E4838BCB145E057F8DF /* Pods_Cafeistic.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD12BB5A274136EC005B4289 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FD9BB1A62641029300835B98 /* MenuType.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		FD41219A26DF32E200FD1D24 /* Common */ = {
@@ -498,6 +508,7 @@
 			children = (
 				FD4593972637F2BA00669AB4 /* IndicatableView.swift */,
 				FD45939B2637F2D000669AB4 /* IndicatableView+UIButton.swift */,
+				FD12BB5D27413A0D005B4289 /* ErrorAlertProtocol.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -599,7 +610,7 @@
 		FD6B889E263C00E90026D3E0 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
-				FD9BB1A62641029300835B98 /* MenuType.swift */,
+				FD12BB5A274136EC005B4289 /* Common */,
 				FD9BB1A92641034D00835B98 /* MenuContract.swift */,
 				FD9BB1AA2641034D00835B98 /* MenuPresenter.swift */,
 				FD9BB1AB2641034D00835B98 /* MenuRouter.swift */,
@@ -613,7 +624,7 @@
 		FD6B889F263C03CD0026D3E0 /* EstablishmentSignUp */ = {
 			isa = PBXGroup;
 			children = (
-				FD6B88BB263C06440026D3E0 /* Types */,
+				FD6B88BB263C06440026D3E0 /* Common */,
 				FD6B88A0263C03EB0026D3E0 /* EstablishmentSignUpContract.swift */,
 				FD6B88A1263C03EB0026D3E0 /* EstablishmentSignUpPresenter.swift */,
 				FD6B88A2263C03EB0026D3E0 /* EstablishmentSignUpRouter.swift */,
@@ -624,12 +635,12 @@
 			path = EstablishmentSignUp;
 			sourceTree = "<group>";
 		};
-		FD6B88BB263C06440026D3E0 /* Types */ = {
+		FD6B88BB263C06440026D3E0 /* Common */ = {
 			isa = PBXGroup;
 			children = (
 				FD6B88BC263C06620026D3E0 /* SignUpType.swift */,
 			);
-			path = Types;
+			path = Common;
 			sourceTree = "<group>";
 		};
 		FD6B88C0263C0DCC0026D3E0 /* MainSwitchView */ = {
@@ -1030,7 +1041,7 @@
 			isa = PBXGroup;
 			children = (
 				FDCD506C2732DCA400E0A34F /* NetworkLoginEntity.swift */,
-				FDCD506E2732DD9200E0A34F /* NetworkUserSignUpEntity.swift */,
+				FDCD506E2732DD9200E0A34F /* NetworkSignUpEntity.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -1535,7 +1546,7 @@
 				FD9118AE265B7508008F122C /* ClientCurrentOrderViewController.swift in Sources */,
 				FDB1AF52265F694F00419153 /* ClientItemOrderHistoryViewController.swift in Sources */,
 				FDA3C8BB26776EFA0042715E /* KeyChainKey.swift in Sources */,
-				FDCD506F2732DD9200E0A34F /* NetworkUserSignUpEntity.swift in Sources */,
+				FDCD506F2732DD9200E0A34F /* NetworkSignUpEntity.swift in Sources */,
 				FDACDF61263A8BCA00689B51 /* ForgetPasswordViewController.swift in Sources */,
 				FDEE44CC2660E5680080CC66 /* ProfileSceneBuilder.swift in Sources */,
 				FD6B88AB263C03EC0026D3E0 /* EstablishmentSignUpScene.swift in Sources */,
@@ -1558,6 +1569,7 @@
 				FDACDF71263AA01700689B51 /* TableViewProvider.swift in Sources */,
 				FD9BB1B42641034D00835B98 /* MenuSceneBuilder.swift in Sources */,
 				FD6B8894263BCBCB0026D3E0 /* ClientSignUpContract.swift in Sources */,
+				FD12BB5E27413A0D005B4289 /* ErrorAlertProtocol.swift in Sources */,
 				FDEE44C72660E5680080CC66 /* ProfileContract.swift in Sources */,
 				FDCD506D2732DCA400E0A34F /* NetworkLoginEntity.swift in Sources */,
 				FD6B8898263BCBCB0026D3E0 /* ClientSignUpInteractor.swift in Sources */,

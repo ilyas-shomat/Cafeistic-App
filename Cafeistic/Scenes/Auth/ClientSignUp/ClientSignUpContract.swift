@@ -9,7 +9,7 @@
 import Foundation
 
 // MARK: - View Input (Presenter -> View)
-protocol PresenterToViewClientSignUpProtocol {
+protocol PresenterToViewClientSignUpProtocol: ErrorAlertProtocol {
    
 }
 
@@ -25,6 +25,7 @@ protocol ViewToPresenterClientSignUpProtocol {
         fullName: String,
         username: String,
         password: String,
+        repeatedPassword: String,
         email: String
     )
 }

@@ -15,6 +15,8 @@ class ClientSignUpPresenter: ViewToPresenterClientSignUpProtocol {
     var interactor: PresenterToInteractorClientSignUpProtocol?
     var router: PresenterToRouterClientSignUpProtocol?
     
+    var signUpEntity: SignUpEntity? 
+    
     func load() {
         
     }
@@ -23,10 +25,42 @@ class ClientSignUpPresenter: ViewToPresenterClientSignUpProtocol {
         fullName: String,
         username: String,
         password: String,
+        repeatedPassword: String,
         email: String
     ) {
+        checkEnteringUserData(
+            fullName: fullName,
+            username: username,
+            password: password,
+            repeatedPassword: repeatedPassword,
+            email: email
+        )
 //        var
 //        interactor?.signUp(userSignUpEntity: <#T##UserSignUpEntity#>)
+    }
+    
+    private func checkEnteringUserData(
+        fullName: String,
+        username: String,
+        password: String,
+        repeatedPassword: String,
+        email: String
+    ) {
+        if fullName.isEmpty || username.isEmpty ||
+            password.isEmpty || repeatedPassword.isEmpty || email.isEmpty {
+            view?.showErrorAlert(message: .someEmptyFieldsExist)
+            return
+        }
+        if password != repeatedPassword {
+            view?.showErrorAlert(message: .passwordsNotEqual)
+            return
+        }
+        signUpEntity = SignUpEntity(
+            fullName: fullName,
+            username: username,
+            password: password,
+            email: email
+        )
     }
 }
 

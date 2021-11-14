@@ -31,7 +31,7 @@ class ClientSignUpViewController: DefaultViewController {
     }()
     
     private lazy var emailTextField: MaintextField = {
-        let textField = MaintextField(style: .regular)
+        let textField = MaintextField(style: .email)
         textField.placeholder = StringConstant.Scenes.ClienSignUp.email
         return textField
     }()
@@ -68,7 +68,6 @@ class ClientSignUpViewController: DefaultViewController {
         presenter?.load()
         setupViews()
     }
-    
 }
 
 extension ClientSignUpViewController: SetupBaseViewController {
@@ -78,13 +77,15 @@ extension ClientSignUpViewController: SetupBaseViewController {
     }
     
     func configureSubViews() {
-        view.addSubviews(signUpLabel,
-                         fullNameTextField,
-                         loginTextField,
-                         emailTextField,
-                         passwordTextField,
-                         repeatedPasswordTextField,
-                         signUpButton)
+        view.addSubviews(
+            signUpLabel,
+            fullNameTextField,
+            loginTextField,
+            emailTextField,
+            passwordTextField,
+            repeatedPasswordTextField,
+            signUpButton
+        )
     }
     
     func configureConstraints() {
@@ -129,7 +130,6 @@ extension ClientSignUpViewController: SetupBaseViewController {
             $0.width.equalTo(fullNameTextField)
             $0.height.equalTo(45)
         }
-
     }
     
     @objc private func tapSignUpButton() {
@@ -137,12 +137,13 @@ extension ClientSignUpViewController: SetupBaseViewController {
             fullName: fullNameTextField.text ?? "",
             username: loginTextField.text ?? "",
             password: passwordTextField.text ?? "",
+            repeatedPassword: repeatedPasswordTextField.text ?? "",
             email: emailTextField.text ?? ""
         )
     }
 }
 
 // MARK: - (Presenter -> View)
-extension ClientSignUpViewController: PresenterToViewClientSignUpProtocol{
+extension ClientSignUpViewController: PresenterToViewClientSignUpProtocol {
 
 }
