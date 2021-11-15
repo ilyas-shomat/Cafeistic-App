@@ -21,15 +21,15 @@ class LoginInteractor: PresenterToInteractorLoginProtocol {
     }
     
     func loginWithData(loginEntity: LoginEntity) {
-        let loginEntityIn = LoginEntityRequest(
+        let loginEntityRequest = LoginEntityRequest(
             username: loginEntity.username,
             password: loginEntity.password
         )
-        postWithAuthData(loginEntityRequest: loginEntityIn)
+        postWithAuthData(loginEntityRequest: loginEntityRequest)
     }
     
     func postWithAuthData(loginEntityRequest: LoginEntityRequest) {
-        let target = AuthTarget.login(loginEntityIn: loginEntityRequest)
+        let target = AuthTarget.login(loginEntityRequest: loginEntityRequest)
         networkApiService.load(target: target, jsonType: LoginEntityResponse.self) { (result) in
             switch result {
             case .success(let data):

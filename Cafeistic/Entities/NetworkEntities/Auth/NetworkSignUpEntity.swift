@@ -23,3 +23,26 @@ struct SignUpEntityRequest: Codable {
     }
 }
 
+struct SignUpEntityResponse: ApiResponseData, Codable {
+    var status: String?
+    var desc: String?
+    var data: SignUpDataEntityResponse?
+    var errorMessage: [String]?
+    
+    enum CodingKeys: String, CodingKey {
+        case status
+        case desc
+        case data
+        case errorMessage = "username"
+    }
+}
+
+struct SignUpDataEntityResponse: Codable {
+    var fullName: String
+    var token: String
+    
+    enum CodingKeys: String, CodingKey {
+        case fullName = "full_name"
+        case token
+    }
+}

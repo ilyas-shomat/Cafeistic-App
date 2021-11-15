@@ -85,6 +85,7 @@ struct StringConstant {
             static let unknowedError = "Неизвестная ошибка"
             static let networkFail = "Проверьте интернет соединение"
             static let notAuthorized = "Пользователь не авторизован"
+            static let notDecodable = "Данные не сериализуются (ошибка в Codable)"
         }
         
         struct AlertMessage {

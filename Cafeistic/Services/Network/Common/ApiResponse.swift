@@ -7,6 +7,11 @@
 
 import Foundation
 
+protocol ApiResponseData {
+    var status: String? { get }
+    var desc: String? { get }
+}
+
 enum ApiResponse<Value> {
     case success(Value?)
     case failure(NetworkError?)

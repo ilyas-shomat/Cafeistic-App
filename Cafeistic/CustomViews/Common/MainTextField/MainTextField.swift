@@ -79,6 +79,7 @@ final class MaintextField: UITextField {
             keyboardType = .asciiCapable
         case .email:
             keyboardType = .emailAddress
+            textSecureIcon.isHidden = true
         }
     }
     

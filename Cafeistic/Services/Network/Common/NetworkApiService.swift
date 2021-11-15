@@ -31,7 +31,7 @@ final class NetworkApiService: Networkable {
                         onComplete(.success(data))
                     }
                     catch {
-                        onComplete(.failure(.unknowedError))
+                        onComplete(.failure(.notDecodable))
                     }
                 case 401:
                     onComplete(.failure(.notAuthorized))

@@ -17,9 +17,7 @@ class ClientSignUpPresenter: ViewToPresenterClientSignUpProtocol {
     
     var signUpEntity: SignUpEntity? 
     
-    func load() {
-        
-    }
+    func load() {}
     
     func handleSignUpTap(
         fullName: String,
@@ -35,8 +33,10 @@ class ClientSignUpPresenter: ViewToPresenterClientSignUpProtocol {
             repeatedPassword: repeatedPassword,
             email: email
         )
-//        var
-//        interactor?.signUp(userSignUpEntity: <#T##UserSignUpEntity#>)
+        guard let signUpEntity = signUpEntity else {
+            return
+        }
+        interactor?.signUp(signUpEntity: signUpEntity)
     }
     
     private func checkEnteringUserData(

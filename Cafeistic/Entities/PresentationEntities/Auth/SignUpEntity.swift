@@ -8,8 +8,8 @@
 import Foundation
 
 struct SignUpEntity {
-    var fullName: String?
-    var username: String?
-    var password: String?
-    var email: String?
+    var fullName: String
+    var username: String
+    var password: String
+    var email: String
 }

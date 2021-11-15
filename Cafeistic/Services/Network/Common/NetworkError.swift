@@ -13,6 +13,7 @@ enum NetworkError: Error {
     case unknowedError
     case netwotkFail
     case notAuthorized
+    case notDecodable
     
     var message: String {
         switch self {
@@ -26,6 +27,8 @@ enum NetworkError: Error {
             return StringConstant.Services.ErrorMessage.networkFail
         case .notAuthorized:
             return StringConstant.Services.ErrorMessage.notAuthorized
+        case .notDecodable:
+            return StringConstant.Services.ErrorMessage.notDecodable
         }
     }
 }
