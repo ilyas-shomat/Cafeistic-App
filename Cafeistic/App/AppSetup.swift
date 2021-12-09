@@ -22,7 +22,7 @@ class AppSetup {
         // MARK: - Uncomment this if you want to hide Moya Logger
 //        let provider = MoyaProvider<AnyTarget>()
         
-        return NetworkApiService(provider: provider)
+        return NetworkService(provider: provider)
     }
     
     var sessionTracker: SessionTracker {

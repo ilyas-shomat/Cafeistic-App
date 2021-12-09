@@ -16,6 +16,7 @@ struct ApiConstants {
         
         struct Auth {
             static let login: String = "/account/login"
+            static let userSignUp: String = "/account/create_user"
         }
     }
 }

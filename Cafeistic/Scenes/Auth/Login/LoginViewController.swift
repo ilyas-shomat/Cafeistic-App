@@ -36,6 +36,7 @@ class LoginViewController: DefaultViewController {
         let button = MainButton(style: .rounded)
         button.setTitle(StringConstant.Scenes.Login.signIn, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(tapSignInButton), for: .touchUpInside)
         return button
     }()
     
@@ -43,6 +44,7 @@ class LoginViewController: DefaultViewController {
         let button = MainButton(style: .clear)
         button.setTitle(StringConstant.Scenes.Login.forgetPassword, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(tapForgetPasswordButton), for: .touchUpInside)
         return button
     }()
     
@@ -57,6 +59,7 @@ class LoginViewController: DefaultViewController {
         let button = MainButton(style: .clear)
         button.setTitle(StringConstant.Scenes.Login.signUp, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(tapSignUpButton), for: .touchUpInside)
         return button
     }()
     
@@ -66,9 +69,6 @@ class LoginViewController: DefaultViewController {
         super.viewDidLoad()
         presenter?.load()
         setupViews()
-        setupActions()
-        
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -84,7 +84,6 @@ class LoginViewController: DefaultViewController {
 }
 
 extension LoginViewController: SetupBaseViewController {
-    
     func setupViews() {
         handleTopAlertButtonTap = {
             self.presenter?.handleAlertTopButtonTap()
@@ -97,13 +96,15 @@ extension LoginViewController: SetupBaseViewController {
     }
     
     func configureSubViews() {
-        view.addSubviews(logoImageView,
-                         loginTextField,
-                         passwordTextField,
-                         signInButton,
-                         forgetPasswordButton,
-                         signUpButton,
-                         notSignUpYetLabel)
+        view.addSubviews(
+            logoImageView,
+            loginTextField,
+            passwordTextField,
+            signInButton,
+            forgetPasswordButton,
+            signUpButton,
+            notSignUpYetLabel
+        )
     }
     
     func configureConstraints() {
@@ -149,14 +150,11 @@ extension LoginViewController: SetupBaseViewController {
         }
     }
     
-    func setupActions() {
-        signInButton.addTarget(self, action: #selector(tapSignInButton), for: .touchUpInside)
-        forgetPasswordButton.addTarget(self, action: #selector(tapForgetPasswordButton), for: .touchUpInside)
-        signUpButton.addTarget(self, action: #selector(tapSignUpButton), for: .touchUpInside)
-    }
-    
     @objc private func tapSignInButton() {
-        presenter?.handleSignInTap(username: loginTextField.text ?? "", password: passwordTextField.text ?? "")
+        presenter?.handleSignInTap(
+            username: loginTextField.text ?? "",
+            password: passwordTextField.text ?? ""
+        )
     }
     
     @objc private func tapForgetPasswordButton() {
@@ -174,10 +172,5 @@ extension LoginViewController: SetupBaseViewController {
 
 // MARK: - (Presenter -> View)
 extension LoginViewController: PresenterToViewLoginProtocol {
-    
-    func showErrorAlert(message: AlertMessageConstant) {
-        showDefaultAlert(title: message.title,
-                         message: message.message,
-                         buttonTitle: message.buttonTitle)
-    }
+
 }

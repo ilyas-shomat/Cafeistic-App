@@ -12,25 +12,25 @@ import Foundation
 class LoginInteractor: PresenterToInteractorLoginProtocol {
 
     var presenter: InteractorToPresenterLoginProtocol?
-    var networkApiService: Networkable
+    var networkService: Networkable
     var sessionTracker: SessionTracker
     
-    init(networkApiService: Networkable, sessionTracker: SessionTracker) {
-        self.networkApiService = networkApiService
+    init(networkService: Networkable, sessionTracker: SessionTracker) {
+        self.networkService = networkService
         self.sessionTracker = sessionTracker
     }
     
     func loginWithData(loginEntity: LoginEntity) {
-        let loginEntityIn = LoginEntityRequest(
+        let loginEntityRequest = LoginEntityRequest(
             username: loginEntity.username,
             password: loginEntity.password
         )
-        postWithAuthData(loginEntityRequest: loginEntityIn)
+        postWithAuthData(loginEntityRequest: loginEntityRequest)
     }
     
     func postWithAuthData(loginEntityRequest: LoginEntityRequest) {
-        let target = AuthTarget.login(loginEntityIn: loginEntityRequest)
-        networkApiService.load(target: target, jsonType: LoginEntityResponse.self) { (result) in
+        let target = AuthTarget.login(loginEntityRequest: loginEntityRequest)
+        networkService.load(target: target, jsonType: LoginEntityResponse.self) { (result) in
             switch result {
             case .success(let data):
                 guard let token = data?.token else {

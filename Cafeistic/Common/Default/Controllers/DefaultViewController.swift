@@ -43,8 +43,11 @@ extension DefaultViewController: DefaultAlertViewControllerActionsHandle {
 }
 
 extension DefaultViewController {
-    
-    func showDefaultAlert(message: String, topButtonTitle: String, bottomButtonTitle: String) {
+    func showDefaultAlert(
+        message: String,
+        topButtonTitle: String,
+        bottomButtonTitle: String
+    ) {
         let alertViewController = DefaultAlertViewController()
         alertViewController.message = message
         alertViewController.topButtonTitle = topButtonTitle
@@ -55,11 +58,24 @@ extension DefaultViewController {
         present(alertViewController, animated: true)
     }
     
-    
     //MARK: - Later need to change it to DefaultAlertViewController()
-    func showDefaultAlert(title: String, message: String, buttonTitle: String) {
+    func showDefaultAlert(
+        title: String,
+        message: String,
+        buttonTitle: String
+    ) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: buttonTitle, style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)
+    }
+}
+
+extension DefaultViewController: ErrorAlertProtocol {
+    func showErrorAlert(message: AlertMessageConstant) {
+        showDefaultAlert(
+            title: message.title,
+            message: message.message,
+            buttonTitle: message.buttonTitle
+        )
     }
 }

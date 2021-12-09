@@ -9,18 +9,11 @@ import Foundation
 import UIKit
 
 final class MaintextField: UITextField {
-    
     var style: MainTextFieldStyle {
         didSet {
             configure(style)
         }
     }
-    
-//    var visibilityOffIcon: UIImage? = Assets.visibilityOffIcon.image {
-//        didSet {
-//            textSecureIcon.image
-//        }
-//    }
     
     private lazy var containerViewForIcon: UIView = {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: 32, height: 40))
@@ -86,6 +79,7 @@ final class MaintextField: UITextField {
             keyboardType = .asciiCapable
         case .email:
             keyboardType = .emailAddress
+            textSecureIcon.isHidden = true
         }
     }
     

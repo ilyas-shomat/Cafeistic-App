@@ -9,7 +9,7 @@
 import Foundation
 
 // MARK: - View Input (Presenter -> View)
-protocol PresenterToViewClientSignUpProtocol {
+protocol PresenterToViewClientSignUpProtocol: ErrorAlertProtocol {
    
 }
 
@@ -25,6 +25,7 @@ protocol ViewToPresenterClientSignUpProtocol {
         fullName: String,
         username: String,
         password: String,
+        repeatedPassword: String,
         email: String
     )
 }
@@ -34,7 +35,7 @@ protocol PresenterToInteractorClientSignUpProtocol {
     
     var presenter: InteractorToPresenterClientSignUpProtocol? { get set }
     
-    func signUp(userSignUpEntity: SignUpEntity)
+    func signUp(signUpEntity: SignUpEntity)
 }
 
 // MARK: - Interactor Output/Presenter Input (Interactor -> Presenter)

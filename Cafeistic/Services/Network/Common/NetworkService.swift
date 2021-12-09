@@ -12,7 +12,7 @@ protocol Networkable {
     func load<T: Codable>(target: AnyTargetConvertible, jsonType: T.Type, onComplete: @escaping (ApiResponse<T>) -> ())
 }
 
-final class NetworkApiService: Networkable {
+final class NetworkService: Networkable {
     
     private let provider: MoyaProvider<AnyTarget>
     
@@ -31,7 +31,7 @@ final class NetworkApiService: Networkable {
                         onComplete(.success(data))
                     }
                     catch {
-                        onComplete(.failure(.unknowedError))
+                        onComplete(.failure(.notDecodable))
                     }
                 case 401:
                     onComplete(.failure(.notAuthorized))

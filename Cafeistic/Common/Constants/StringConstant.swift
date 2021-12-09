@@ -8,9 +8,7 @@
 import Foundation
 
 struct StringConstant {
-    
     struct Scenes {
-        
         struct Login {
             static let login = "Логин"
             static let password = "Пароль"
@@ -19,11 +17,8 @@ struct StringConstant {
             static let notSignUpYet = "Еще не зарегистрированы?"
             static let signUp = "Зарегистрироваться"
             static let selectAccountType = "Выберите тип аккаунта"
-            static let guest = "Гость"
+            static let guest = "Пользователь"
             static let establishment = "Заведения"
-            static let error = "Ошибка"
-            static let message = "Некоторые данные не введены"
-            static let ok = "ОК"
         }
         
         struct ForgetPassword {
@@ -90,11 +85,14 @@ struct StringConstant {
             static let unknowedError = "Неизвестная ошибка"
             static let networkFail = "Проверьте интернет соединение"
             static let notAuthorized = "Пользователь не авторизован"
+            static let notDecodable = "Данные не сериализуются (ошибка в Codable)"
         }
         
         struct AlertMessage {
             static let error = "Ошибка"
             static let ok = "ОК"
+            static let passwordsNotEqual = "Пароли не совпадают"
+            static let someEmptyFieldsExist = "Некоторые данные не введены"
         }
     }
 }

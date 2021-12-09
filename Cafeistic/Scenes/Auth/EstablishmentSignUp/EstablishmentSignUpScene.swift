@@ -1,5 +1,5 @@
 //
-//  EstablishmentSignUpSceneBuilder.swift
+//  EstablishmentSignUpScene.swift
 //  Cafeistic
 //
 //  Created by Ilyas Shomat on 30.04.2021.
@@ -10,7 +10,7 @@ import UIKit
 
 class EstablishmentSignUpScene {
     
-    static func initiate() -> UIViewController {
+    static var instance: UIViewController {
         let viewController = EstablishmentSignUpViewController()
         
         let presenter: ViewToPresenterEstablishmentSignUpProtocol & InteractorToPresenterEstablishmentSignUpProtocol = EstablishmentSignUpPresenter()

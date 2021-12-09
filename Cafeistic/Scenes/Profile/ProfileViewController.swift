@@ -12,7 +12,8 @@ class ProfileViewController: DefaultViewController {
     
     private lazy var profileImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.backgroundColor = .black
+//        imageView.backgroundColor = .black
+        imageView.image = UIImage(named: "tempImage")
         imageView.roundCorners(corners: .all, radius: 60)
         return imageView
     }()
@@ -26,14 +27,19 @@ class ProfileViewController: DefaultViewController {
     
     private lazy var editDataButton: UIButton = {
         let button = UIButton()
-        button.setTitle("editButton", for: .normal)
-        button.setTitleColor(.black, for: .normal)
+        button.setTitle(StringConstant.Scenes.Profile.editUserInfo, for: .normal)
+        button.setTitleColor(.lightGray, for: .normal)
         return button
     }()
     
-    private lazy var usernameView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .green
+//    private lazy var usernameView: UIView = {
+//        let view = UIView()
+//        view.backgroundColor = .green
+//        return view
+//    }()
+    
+    private lazy var usernameView: MainLabeledView = {
+        let view = MainLabeledView(iconImageName: "", labelText: "ШОмат Ілияс")
         return view
     }()
     
