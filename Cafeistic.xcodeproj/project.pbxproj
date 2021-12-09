@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		CD7B85AC59ABB498983A2B54 /* Pods_Cafeistic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7374E4838BCB145E057F8DF /* Pods_Cafeistic.framework */; };
+		FD03E64327529290001421DD /* MainLabeledView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD03E64227529290001421DD /* MainLabeledView.swift */; };
+		FD03E645275292BA001421DD /* MainLabeledViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD03E644275292B9001421DD /* MainLabeledViewStyle.swift */; };
 		FD0D4355269EF891002FC500 /* LoginPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0D4354269EF891002FC500 /* LoginPresenterTest.swift */; };
 		FD12BB5E27413A0D005B4289 /* ErrorAlertProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD12BB5D27413A0D005B4289 /* ErrorAlertProtocol.swift */; };
-		FD45935D2636BB1200669AB4 /* NetworkApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD45935C2636BB1200669AB4 /* NetworkApiService.swift */; };
+		FD45935D2636BB1200669AB4 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD45935C2636BB1200669AB4 /* NetworkService.swift */; };
 		FD45936D2636BD8000669AB4 /* LoginContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4593672636BD8000669AB4 /* LoginContract.swift */; };
 		FD45936E2636BD8000669AB4 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4593682636BD8000669AB4 /* LoginPresenter.swift */; };
 		FD45936F2636BD8000669AB4 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4593692636BD8000669AB4 /* LoginRouter.swift */; };
@@ -186,9 +188,11 @@
 		5D79D316F8E6F0061A9F53EE /* Pods-Cafeistic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cafeistic.debug.xcconfig"; path = "Target Support Files/Pods-Cafeistic/Pods-Cafeistic.debug.xcconfig"; sourceTree = "<group>"; };
 		AFE2A4F6D2445A8B438413CF /* Pods-Cafeistic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cafeistic.release.xcconfig"; path = "Target Support Files/Pods-Cafeistic/Pods-Cafeistic.release.xcconfig"; sourceTree = "<group>"; };
 		B7374E4838BCB145E057F8DF /* Pods_Cafeistic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cafeistic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD03E64227529290001421DD /* MainLabeledView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLabeledView.swift; sourceTree = "<group>"; };
+		FD03E644275292B9001421DD /* MainLabeledViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLabeledViewStyle.swift; sourceTree = "<group>"; };
 		FD0D4354269EF891002FC500 /* LoginPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterTest.swift; sourceTree = "<group>"; };
 		FD12BB5D27413A0D005B4289 /* ErrorAlertProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorAlertProtocol.swift; sourceTree = "<group>"; };
-		FD45935C2636BB1200669AB4 /* NetworkApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkApiService.swift; sourceTree = "<group>"; };
+		FD45935C2636BB1200669AB4 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		FD4593672636BD8000669AB4 /* LoginContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContract.swift; sourceTree = "<group>"; };
 		FD4593682636BD8000669AB4 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		FD4593692636BD8000669AB4 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
@@ -391,6 +395,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FD03E64127529273001421DD /* MainLabeledView */ = {
+			isa = PBXGroup;
+			children = (
+				FD03E64227529290001421DD /* MainLabeledView.swift */,
+				FD03E644275292B9001421DD /* MainLabeledViewStyle.swift */,
+			);
+			path = MainLabeledView;
+			sourceTree = "<group>";
+		};
 		FD12BB5A274136EC005B4289 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -402,6 +415,7 @@
 		FD41219A26DF32E200FD1D24 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				FD03E64127529273001421DD /* MainLabeledView */,
 				FD6B88C0263C0DCC0026D3E0 /* MainSwitchView */,
 				FDACDF1626391EC000689B51 /* DefaultAlertView */,
 				FD45939E2637F3D300669AB4 /* ActivityView */,
@@ -426,7 +440,7 @@
 		FD45935A2636BAB400669AB4 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				FD45935C2636BB1200669AB4 /* NetworkApiService.swift */,
+				FD45935C2636BB1200669AB4 /* NetworkService.swift */,
 				FD79682126650606007C4C4A /* ApiConstants.swift */,
 				FD77D37E2671EF9300AF8671 /* NetworkError.swift */,
 				FD77D3812671F02F00AF8671 /* ApiResponse.swift */,
@@ -1556,6 +1570,7 @@
 				FDEE44C82660E5680080CC66 /* ProfilePresenter.swift in Sources */,
 				FDB1AF53265F694F00419153 /* ClientItemOrderHistoryInteractor.swift in Sources */,
 				FD9118B8265B974A008F122C /* ClientCurrentOrderMealCellModel.swift in Sources */,
+				FD03E645275292BA001421DD /* MainLabeledViewStyle.swift in Sources */,
 				FD4593A42637F9EA00669AB4 /* SpinnerIndicator.swift in Sources */,
 				FDCBAD28264A4DFF005B9608 /* UITableViewExtension.swift in Sources */,
 				FDACDF6D263AA00200689B51 /* CollectionViewProvider.swift in Sources */,
@@ -1579,11 +1594,12 @@
 				FDEA5CCB2652963900BB08A1 /* UIButton+SetImageTintColor.swift in Sources */,
 				FD9118AC265B7508008F122C /* ClientCurrentOrderPresenter.swift in Sources */,
 				FDA3C8AF2677272F0042715E /* UserDefaultsStorage.swift in Sources */,
+				FD03E64327529290001421DD /* MainLabeledView.swift in Sources */,
 				FDEE44CB2660E5680080CC66 /* ProfileInteractor.swift in Sources */,
 				FDB1AF54265F694F00419153 /* ClientItemOrderHistorySceneBuilder.swift in Sources */,
 				FDCBAD30264A58F6005B9608 /* LabelCell.swift in Sources */,
 				FD6B8895263BCBCB0026D3E0 /* ClientSignUpPresenter.swift in Sources */,
-				FD45935D2636BB1200669AB4 /* NetworkApiService.swift in Sources */,
+				FD45935D2636BB1200669AB4 /* NetworkService.swift in Sources */,
 				FDF281FA2632D43800B1829A /* UITableViewCell+UI.swift in Sources */,
 				FD4B1BD4262FFE5E005E9BF9 /* AppSetup.swift in Sources */,
 				FD4593722636BD8000669AB4 /* LoginScene.swift in Sources */,

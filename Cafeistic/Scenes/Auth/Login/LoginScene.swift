@@ -20,7 +20,7 @@ class LoginScene {
         viewController.presenter = presenter
         viewController.presenter?.router = LoginRouter()
         viewController.presenter?.view = viewController
-        viewController.presenter?.interactor = LoginInteractor(networkApiService: networkApiSerive, sessionTracker: sessionTracker)
+        viewController.presenter?.interactor = LoginInteractor(networkService: networkApiSerive, sessionTracker: sessionTracker)
         viewController.presenter?.interactor?.presenter = presenter
         
         return viewController
