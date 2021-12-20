@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Combine
 
 // MARK: - (Presenter -> Interactor)
 class LoginInteractor: PresenterToInteractorLoginProtocol {
@@ -14,10 +15,36 @@ class LoginInteractor: PresenterToInteractorLoginProtocol {
     var presenter: InteractorToPresenterLoginProtocol?
     var networkService: Networkable
     var sessionTracker: SessionTracker
+    var cancellable = Set<AnyCancellable>()
     
     init(networkService: Networkable, sessionTracker: SessionTracker) {
         self.networkService = networkService
         self.sessionTracker = sessionTracker
+        
+        bindWithServices()
+    }
+    
+    private func bindWithServices() {
+        networkService.publisher
+            .receive(on: DispatchQueue.main)
+            .sink (
+                receiveCompletion: { completion in
+                    guard case let .failure(error) = completion else { return }
+                    self.presenter?.errorAuthorized(error: error.message)
+                },
+                receiveValue: { data in
+                    guard
+                        let data = data as? LoginEntityResponse,
+                        let token = data.token
+                    else {
+                        return
+                    }
+                    
+                    self.sessionTracker.updateToken(token: token)
+                    self.presenter?.successAuthorized()
+                }
+            )
+            .store(in: &cancellable)
     }
     
     func loginWithData(loginEntity: LoginEntity) {
@@ -25,7 +52,8 @@ class LoginInteractor: PresenterToInteractorLoginProtocol {
             username: loginEntity.username,
             password: loginEntity.password
         )
-        postWithAuthData(loginEntityRequest: loginEntityRequest)
+        postWithAuthDataAsync(loginEntityRequest: loginEntityRequest)
+//        postWithAuthData(loginEntityRequest: loginEntityRequest)
     }
     
     func postWithAuthData(loginEntityRequest: LoginEntityRequest) {
@@ -42,5 +70,10 @@ class LoginInteractor: PresenterToInteractorLoginProtocol {
                 self.presenter?.errorAuthorized(error: error?.message ?? "")
             }
         }
+    }
+    
+    func postWithAuthDataAsync(loginEntityRequest: LoginEntityRequest) {
+        let target = AuthTarget.login(loginEntityRequest: loginEntityRequest)
+        networkService.loadAsync(target: target, jsonType: LoginEntityResponse.self)
     }
 }

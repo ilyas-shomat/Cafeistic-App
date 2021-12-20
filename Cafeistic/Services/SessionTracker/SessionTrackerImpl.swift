@@ -44,6 +44,4 @@ extension SessionTrackerImpl: SessionTracker {
         AuthenticationStore.shared.removeToken()
         // here you may navigate to root ViewController
     }
-    
-    
 }
