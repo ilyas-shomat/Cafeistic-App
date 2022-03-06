@@ -7,8 +7,7 @@
 
 import Foundation
 
-internal enum KeyChainKey: String {
-    
+internal enum KeychainKey: String {
     case domain = "Cafeistic.KeyChainKey.Domain"
     case token = "Cafeistic.KeyChainKey.Token"
 }

@@ -14,6 +14,7 @@ enum NetworkError: Error {
     case netwotkFail
     case notAuthorized
     case notDecodable
+    case badRequest
     
     var message: String {
         switch self {
@@ -29,6 +30,8 @@ enum NetworkError: Error {
             return StringConstant.Services.ErrorMessage.notAuthorized
         case .notDecodable:
             return StringConstant.Services.ErrorMessage.notDecodable
+        case .badRequest:
+            return StringConstant.Services.ErrorMessage.requestDataIsNotValid
         }
     }
 }

@@ -79,13 +79,13 @@ struct StringConstant {
     }
     
     struct Services {
-        
         struct ErrorMessage {
             static let notFount = "Страница не найдена"
             static let unknowedError = "Неизвестная ошибка"
             static let networkFail = "Проверьте интернет соединение"
             static let notAuthorized = "Пользователь не авторизован"
             static let notDecodable = "Данные не сериализуются (ошибка в Codable)"
+            static let requestDataIsNotValid = "Отправленные данные не валидные"
         }
         
         struct AlertMessage {
@@ -93,6 +93,7 @@ struct StringConstant {
             static let ok = "ОК"
             static let passwordsNotEqual = "Пароли не совпадают"
             static let someEmptyFieldsExist = "Некоторые данные не введены"
+            static let someFieldsFilledWrong = "Некоторые данные введены не правильно"
         }
     }
 }

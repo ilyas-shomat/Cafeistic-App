@@ -13,7 +13,7 @@
 		FD0D4355269EF891002FC500 /* LoginPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0D4354269EF891002FC500 /* LoginPresenterTest.swift */; };
 		FD12BB5E27413A0D005B4289 /* ErrorAlertProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD12BB5D27413A0D005B4289 /* ErrorAlertProtocol.swift */; };
 		FD45935D2636BB1200669AB4 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD45935C2636BB1200669AB4 /* NetworkService.swift */; };
-		FD45936D2636BD8000669AB4 /* LoginContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4593672636BD8000669AB4 /* LoginContract.swift */; };
+		FD45936D2636BD8000669AB4 /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4593672636BD8000669AB4 /* LoginProtocols.swift */; };
 		FD45936E2636BD8000669AB4 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4593682636BD8000669AB4 /* LoginPresenter.swift */; };
 		FD45936F2636BD8000669AB4 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4593692636BD8000669AB4 /* LoginRouter.swift */; };
 		FD4593702636BD8000669AB4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD45936A2636BD8000669AB4 /* LoginViewController.swift */; };
@@ -98,7 +98,7 @@
 		FDA3C8AF2677272F0042715E /* UserDefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA3C8AE2677272F0042715E /* UserDefaultsStorage.swift */; };
 		FDA3C8B2267727410042715E /* KeyChainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA3C8B1267727410042715E /* KeyChainStorage.swift */; };
 		FDA3C8B626772D820042715E /* StorageKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA3C8B526772D820042715E /* StorageKey.swift */; };
-		FDA3C8BB26776EFA0042715E /* KeyChainKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA3C8BA26776EFA0042715E /* KeyChainKey.swift */; };
+		FDA3C8BB26776EFA0042715E /* KeychainKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA3C8BA26776EFA0042715E /* KeychainKey.swift */; };
 		FDA3C8BF2677774D0042715E /* AuthenticationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA3C8BE2677774D0042715E /* AuthenticationStore.swift */; };
 		FDA3C8C42678BA060042715E /* LoginEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA3C8C32678BA060042715E /* LoginEntity.swift */; };
 		FDA3C8C92678BBA40042715E /* AlertMessageConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA3C8C82678BBA40042715E /* AlertMessageConstant.swift */; };
@@ -193,7 +193,7 @@
 		FD0D4354269EF891002FC500 /* LoginPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterTest.swift; sourceTree = "<group>"; };
 		FD12BB5D27413A0D005B4289 /* ErrorAlertProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorAlertProtocol.swift; sourceTree = "<group>"; };
 		FD45935C2636BB1200669AB4 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		FD4593672636BD8000669AB4 /* LoginContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContract.swift; sourceTree = "<group>"; };
+		FD4593672636BD8000669AB4 /* LoginProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
 		FD4593682636BD8000669AB4 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		FD4593692636BD8000669AB4 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		FD45936A2636BD8000669AB4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -281,7 +281,7 @@
 		FDA3C8AE2677272F0042715E /* UserDefaultsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserDefaultsStorage.swift; path = Cafeistic/Services/Storage/UserDefaultsStorage.swift; sourceTree = SOURCE_ROOT; };
 		FDA3C8B1267727410042715E /* KeyChainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = KeyChainStorage.swift; path = Cafeistic/Services/Storage/KeyChainStorage.swift; sourceTree = SOURCE_ROOT; };
 		FDA3C8B526772D820042715E /* StorageKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageKey.swift; sourceTree = "<group>"; };
-		FDA3C8BA26776EFA0042715E /* KeyChainKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainKey.swift; sourceTree = "<group>"; };
+		FDA3C8BA26776EFA0042715E /* KeychainKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainKey.swift; sourceTree = "<group>"; };
 		FDA3C8BE2677774D0042715E /* AuthenticationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationStore.swift; sourceTree = "<group>"; };
 		FDA3C8C32678BA060042715E /* LoginEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEntity.swift; sourceTree = "<group>"; };
 		FDA3C8C82678BBA40042715E /* AlertMessageConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertMessageConstant.swift; sourceTree = "<group>"; };
@@ -471,7 +471,7 @@
 		FD4593662636BD6E00669AB4 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				FD4593672636BD8000669AB4 /* LoginContract.swift */,
+				FD4593672636BD8000669AB4 /* LoginProtocols.swift */,
 				FD4593682636BD8000669AB4 /* LoginPresenter.swift */,
 				FD4593692636BD8000669AB4 /* LoginRouter.swift */,
 				FD45936A2636BD8000669AB4 /* LoginViewController.swift */,
@@ -1171,7 +1171,7 @@
 				FD4593802636CA3100669AB4 /* Assets.swift */,
 				FD4593862636D77B00669AB4 /* StringConstant.swift */,
 				FDA3C8B526772D820042715E /* StorageKey.swift */,
-				FDA3C8BA26776EFA0042715E /* KeyChainKey.swift */,
+				FDA3C8BA26776EFA0042715E /* KeychainKey.swift */,
 				FDA3C8C82678BBA40042715E /* AlertMessageConstant.swift */,
 				FD8388702690464500286A87 /* ViewAccessibilityIdentifier.swift */,
 			);
@@ -1506,7 +1506,7 @@
 				FD9B980C268068CF0031131F /* ProfileInfoView.swift in Sources */,
 				FDEE44CF2660EC6D0080CC66 /* DefaultNavigationControllerType.swift in Sources */,
 				FDF281B72632CED300B1829A /* StartPresenter.swift in Sources */,
-				FD45936D2636BD8000669AB4 /* LoginContract.swift in Sources */,
+				FD45936D2636BD8000669AB4 /* LoginProtocols.swift in Sources */,
 				FDACDF5F263A8BCA00689B51 /* ForgetPasswordPresenter.swift in Sources */,
 				FDACDF5E263A8BCA00689B51 /* ForgetPasswordContract.swift in Sources */,
 				FDBDEADC265E1D2500B03B9E /* ClientOrderHistoryRouter.swift in Sources */,
@@ -1559,7 +1559,7 @@
 				FD4593752636BDEE00669AB4 /* SetupBaseViewController.swift in Sources */,
 				FD9118AE265B7508008F122C /* ClientCurrentOrderViewController.swift in Sources */,
 				FDB1AF52265F694F00419153 /* ClientItemOrderHistoryViewController.swift in Sources */,
-				FDA3C8BB26776EFA0042715E /* KeyChainKey.swift in Sources */,
+				FDA3C8BB26776EFA0042715E /* KeychainKey.swift in Sources */,
 				FDCD506F2732DD9200E0A34F /* NetworkSignUpEntity.swift in Sources */,
 				FDACDF61263A8BCA00689B51 /* ForgetPasswordViewController.swift in Sources */,
 				FDEE44CC2660E5680080CC66 /* ProfileSceneBuilder.swift in Sources */,

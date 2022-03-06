@@ -44,6 +44,8 @@ final class NetworkService: Networkable {
                     onComplete(.failure(.notAuthorized))
                 case 404:
                     onComplete(.failure(.apiEndPointNotFound))
+                case 400:
+                    onComplete(.failure(.badRequest))
                 default:
                     onComplete(.failure(.unknowedError))
                 }

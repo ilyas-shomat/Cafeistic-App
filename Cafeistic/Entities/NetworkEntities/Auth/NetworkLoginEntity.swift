@@ -14,4 +14,10 @@ struct LoginEntityRequest: Codable {
 
 struct LoginEntityResponse: Codable {
     var token: String?
+    var error: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case token
+        case error = "non_field_errors"
+    }
 }

@@ -8,7 +8,6 @@
 import Foundation
 
 internal enum StorageKey: String {
-    
     case login = "Cafeistic.StorageKey.Login"
     case launchedBefore = "Cafeistic.StorageKey.LaunchedBefore"
 }

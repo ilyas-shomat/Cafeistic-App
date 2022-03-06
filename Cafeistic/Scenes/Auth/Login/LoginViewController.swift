@@ -80,7 +80,6 @@ class LoginViewController: DefaultViewController {
        super.viewWillDisappear(animated)
        self.navigationController?.setNavigationBarHidden(false, animated:true)
    }
-    
 }
 
 extension LoginViewController: SetupBaseViewController {
