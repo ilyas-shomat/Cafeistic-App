@@ -7,17 +7,16 @@
 //
 
 import UIKit
+import LiteNet
 
 class ClientSignUpScene {
-
     static var instance: UIViewController {
         let viewController = ClientSignUpViewController()
         
         let presenter: ViewToPresenterClientSignUpProtocol & InteractorToPresenterClientSignUpProtocol = ClientSignUpPresenter()
         
-        let networkApiSerive = serloc.getService(Networkable.self)
+        let networkApiSerive = AppInitializer.serloc.getService(LiteNetProtocol.self)
 
-        
         viewController.presenter = presenter
         viewController.presenter?.router = ClientSignUpRouter()
         viewController.presenter?.view = viewController

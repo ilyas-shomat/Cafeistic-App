@@ -16,7 +16,7 @@ class StartRouter: PresenterToRouterStartProtocol {
         let viewController = view as? StartViewController
         let navigationController = viewController?.navigationController
         
-        navigationController?.setViewControllers([LoginScene.instance], animated: false)
+//        navigationController?.setViewControllers([LoginScene.instance], animated: false)
     }
     
     func showClientMainTab(on view: PresenterToViewStartProtocol) {

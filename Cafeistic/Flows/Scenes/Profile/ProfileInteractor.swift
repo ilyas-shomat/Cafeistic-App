@@ -7,15 +7,17 @@
 //
 
 import Foundation
+//import Light
+import LiteNet
 
 // MARK: - (Presenter -> Interactor)
 class ProfileInteractor: PresenterToInteractorProfileProtocol {
 
     var presenter: InteractorToPresenterProfileProtocol?
-    var networkApiService: Networkable
+    var networkApiService: LiteNetProtocol
     var sessionTracker: SessionTracker
     
-    init(networkApiService: Networkable, sessionTracker: SessionTracker) {
+    init(networkApiService: LiteNetProtocol, sessionTracker: SessionTracker) {
         self.networkApiService = networkApiService
         self.sessionTracker = sessionTracker
     }

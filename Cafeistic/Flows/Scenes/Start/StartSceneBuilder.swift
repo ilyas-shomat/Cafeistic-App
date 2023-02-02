@@ -13,7 +13,7 @@ class StartScene {
         let viewController = StartViewController()
         let presenter: ViewToPresenterStartProtocol & InteractorToPresenterStartProtocol = StartPresenter()
         
-        let sessionTracker = serloc.getService(SessionTracker.self)
+        let sessionTracker = AppInitializer.serloc.getService(SessionTracker.self)
         
         viewController.presenter = presenter
         viewController.presenter?.router = StartRouter()

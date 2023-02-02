@@ -6,14 +6,16 @@
 //
 
 import Foundation
-import Moya
+//import Light
+import Alamofire
+import LiteNet
 
 enum AuthTarget {
     case login(loginEntityRequest: LoginEntityRequest)
     case clientSignUp(signUpEntityRequest: SignUpEntityRequest)
 }
 
-extension AuthTarget: BaseApiProvider, AnyTargetConvertible {
+extension AuthTarget: BaseApiTarget, AnyTargetConvertible {
     var path: String {
         switch self {
         case .login:
@@ -23,21 +25,25 @@ extension AuthTarget: BaseApiProvider, AnyTargetConvertible {
         }
     }
     
-    var method: Moya.Method {
+    var method: Alamofire.HTTPMethod {
         switch self {
-        case .login:
-            return .post
-        case .clientSignUp:
-            return .post
+        case .login: return .post
+        case .clientSignUp: return .post
         }
     }
     
-    var task: Task {
+    var task: RequestTask {
         switch self {
         case .login(let loginEntityRequest):
-            return .requestJSONEncodable(loginEntityRequest)
+            return .requestEncodableBody(loginEntityRequest)
         case .clientSignUp(let signUpEntityRequest):
-            return .requestJSONEncodable(signUpEntityRequest)
+            return .requestEncodableBody(signUpEntityRequest)
         }
+    }
+}
+
+extension BaseApiTarget {
+    var headers: [String : String]? {
+        return [:]
     }
 }
