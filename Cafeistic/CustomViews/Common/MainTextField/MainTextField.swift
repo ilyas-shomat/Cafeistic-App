@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-final class MaintextField: UITextField {
+final class AppTextField: UITextField {
     var style: MainTextFieldStyle {
         didSet {
             configure(style)
@@ -63,12 +63,12 @@ final class MaintextField: UITextField {
         switch style {
         case .login:
             isSecureTextEntry = false
-            placeholder = StringConstant.Scenes.Login.login
+            placeholder = StringConstant.Scenes.SignIn.login
             textSecureIcon.isHidden = true
             keyboardType = .asciiCapable
         case .password:
             isSecureTextEntry = true
-            placeholder = StringConstant.Scenes.Login.password
+            placeholder = StringConstant.Scenes.SignIn.password
             textSecureIcon.isHidden = false
             keyboardType = .asciiCapable
             containerViewForIcon.isUserInteractionEnabled = true
@@ -96,6 +96,6 @@ final class MaintextField: UITextField {
     }
 }
 
-extension MaintextField: UITextFieldDelegate {
+extension AppTextField: UITextFieldDelegate {
     
 }

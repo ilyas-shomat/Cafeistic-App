@@ -9,25 +9,25 @@ import Foundation
 import KeychainAccess
 
 protocol KeyChainStorage {
-    func set(_ value: String, for Key: KeyChainKey)
-    func get(for key: KeyChainKey) -> String?
-    func remove(for key: KeyChainKey)
+    func set(_ value: String, for Key: KeychainKey)
+    func get(for key: KeychainKey) -> String?
+    func remove(for key: KeychainKey)
     func clear()
 }
 
 struct KeyChainStorageImpl: KeyChainStorage {
     
-    private let keychain = Keychain(service: KeyChainKey.domain.rawValue)
+    private let keychain = Keychain(service: KeychainKey.domain.rawValue)
     
-    func set(_ value: String, for key: KeyChainKey) {
+    func set(_ value: String, for key: KeychainKey) {
         keychain[key.rawValue] = value
     }
     
-    func get(for key: KeyChainKey) -> String? {
+    func get(for key: KeychainKey) -> String? {
         return keychain[key.rawValue]
     }
     
-    func remove(for key: KeyChainKey) {
+    func remove(for key: KeychainKey) {
         keychain[key.rawValue] = nil
     }
     

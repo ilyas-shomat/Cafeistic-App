@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ClientSignUpViewController: DefaultViewController {
+class ClientSignUpViewController: UIViewController {
     
     private lazy var signUpLabel: UILabel = {
         let label = UILabel()
@@ -18,39 +18,39 @@ class ClientSignUpViewController: DefaultViewController {
         return label
     }()
     
-    private lazy var fullNameTextField: MaintextField = {
-        let textField = MaintextField(style: .regular)
+    private lazy var fullNameTextField: AppTextField = {
+        let textField = AppTextField(style: .regular)
         textField.placeholder = StringConstant.Scenes.ClienSignUp.fullName
         return textField
     }()
     
-    private lazy var loginTextField: MaintextField = {
-        let textField = MaintextField(style: .login)
+    private lazy var loginTextField: AppTextField = {
+        let textField = AppTextField(style: .login)
         textField.translatesAutoresizingMaskIntoConstraints = false
         return textField
     }()
     
-    private lazy var emailTextField: MaintextField = {
-        let textField = MaintextField(style: .email)
+    private lazy var emailTextField: AppTextField = {
+        let textField = AppTextField(style: .email)
         textField.placeholder = StringConstant.Scenes.ClienSignUp.email
         return textField
     }()
     
-    private lazy var passwordTextField: MaintextField = {
-        let textField = MaintextField(style: .password)
+    private lazy var passwordTextField: AppTextField = {
+        let textField = AppTextField(style: .password)
         textField.translatesAutoresizingMaskIntoConstraints = false
         return textField
     }()
     
-    private lazy var repeatedPasswordTextField: MaintextField = {
-        let textField = MaintextField(style: .password)
+    private lazy var repeatedPasswordTextField: AppTextField = {
+        let textField = AppTextField(style: .password)
         textField.placeholder = StringConstant.Scenes.ClienSignUp.repeatPassword
         textField.translatesAutoresizingMaskIntoConstraints = false
         return textField
     }()
     
-    private lazy var signUpButton: MainButton = {
-        let button = MainButton(style: .rounded)
+    private lazy var signUpButton: AppButton = {
+        let button = AppButton(style: .rounded)
         button.setTitle(StringConstant.Scenes.ClienSignUp.signUp, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(
@@ -144,6 +144,6 @@ extension ClientSignUpViewController: SetupBaseViewController {
 }
 
 // MARK: - (Presenter -> View)
-extension ClientSignUpViewController: PresenterToViewClientSignUpProtocol {
-
-}
+//extension ClientSignUpViewController: PresenterToViewClientSignUpProtocol {
+//
+//}

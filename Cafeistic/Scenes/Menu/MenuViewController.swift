@@ -9,7 +9,7 @@
 import UIKit
 import SnapKit
 
-class MenuViewController: DefaultViewController {
+class MenuViewController: UIViewController {
     
     private lazy var categoryCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()

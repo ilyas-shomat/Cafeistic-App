@@ -17,15 +17,15 @@ final class TwoButtonAlertView: UIView {
         return label
     }()
     
-    private lazy var topButton: MainButton = {
-        let button = MainButton(style: .rounded)
+    private lazy var topButton: AppButton = {
+        let button = AppButton(style: .rounded)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(tapTopButton), for: .touchUpInside)
         return button
     }()
     
-    private lazy var bottomButton: MainButton = {
-        let button = MainButton(style: .clear)
+    private lazy var bottomButton: AppButton = {
+        let button = AppButton(style: .clear)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(tapBottomButton), for: .touchUpInside)
         return button

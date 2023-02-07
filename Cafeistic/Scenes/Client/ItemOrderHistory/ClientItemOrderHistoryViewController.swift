@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ClientItemOrderHistoryViewController: DefaultViewController {
+class ClientItemOrderHistoryViewController: UIViewController {
     
     private lazy var tableView: UITableView = {
         let tableView = UITableView()

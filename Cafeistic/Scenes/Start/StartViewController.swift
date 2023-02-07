@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StartViewController: DefaultViewController {
+class StartViewController: UIViewController {
     
     var presenter: ViewToPresenterStartProtocol?
     

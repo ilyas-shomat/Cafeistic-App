@@ -7,6 +7,8 @@
 //
 
 import UIKit
+//import Light
+import LiteNet
 
 class ProfileScene {
     
@@ -15,8 +17,8 @@ class ProfileScene {
         
         let presenter: ViewToPresenterProfileProtocol & InteractorToPresenterProfileProtocol = ProfilePresenter()
         
-        let networkApiSerive = serloc.getService(Networkable.self)
-        let sessionTracker = serloc.getService(SessionTracker.self)
+        let networkApiSerive = AppInitializer.serloc.getService(LiteNetProtocol.self)
+        let sessionTracker = AppInitializer.serloc.getService(SessionTracker.self)
         
         viewController.presenter = presenter
         viewController.presenter?.router = ProfileRouter()

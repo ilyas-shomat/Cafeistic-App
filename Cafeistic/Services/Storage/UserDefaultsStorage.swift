@@ -7,26 +7,38 @@
 
 import Foundation
 
-struct UserDefaultsStorage: StorageProtocol {
-    
+protocol UserDefaultsStorageProtocol {
+    func integer(for key: UserDefaultsKey) -> Int
+    func bool(for key: UserDefaultsKey) -> Bool
+    func string(for key: UserDefaultsKey) -> String
+    func object<T: Codable>(type: T.Type, for key: UserDefaultsKey) -> T?
+    func object<T>(type: T.Type, for key: UserDefaultsKey) -> T?
+    func set(_ value: Bool, for key: UserDefaultsKey)
+    func set(_ value: Int, for key: UserDefaultsKey)
+    func set(_ value: String, for key: UserDefaultsKey)
+    func set<T: Codable>(_ value: T?, for key: UserDefaultsKey)
+    func set<T>(_ value: T?, for key: UserDefaultsKey)
+}
+
+struct UserDefaultsStorage: UserDefaultsStorageProtocol {
     private let userDefaults = UserDefaults.standard
     
-    func integer(for key: StorageKey) -> Int {
+    func integer(for key: UserDefaultsKey) -> Int {
         return userDefaults.integer(forKey: key.rawValue)
     }
     
-    func bool(for key: StorageKey) -> Bool {
+    func bool(for key: UserDefaultsKey) -> Bool {
         return userDefaults.bool(forKey: key.rawValue)
     }
     
-    func string(for key: StorageKey) -> String {
+    func string(for key: UserDefaultsKey) -> String {
         guard let string = userDefaults.string(forKey: key.rawValue) else {
             return  ""
         }
         return string
     }
     
-    func object<T>(type: T.Type, for key: StorageKey) -> T? where T : Decodable, T : Encodable {
+    func object<T>(type: T.Type, for key: UserDefaultsKey) -> T? where T : Decodable, T : Encodable {
         guard let data = userDefaults.data(forKey: key.rawValue) else {
             return nil
         }
@@ -34,26 +46,26 @@ struct UserDefaultsStorage: StorageProtocol {
         return decodedData
     }
     
-    func object<T>(type: T.Type, for key: StorageKey) -> T? {
+    func object<T>(type: T.Type, for key: UserDefaultsKey) -> T? {
         guard let data = userDefaults.data(forKey: key.rawValue) as? T else {
             return nil
         }
         return data
     }
     
-    func set(_ value: Bool, for key: StorageKey) {
+    func set(_ value: Bool, for key: UserDefaultsKey) {
         userDefaults.setValue(value, forKey: key.rawValue)
     }
     
-    func set(_ value: Int, for key: StorageKey) {
+    func set(_ value: Int, for key: UserDefaultsKey) {
         userDefaults.setValue(value, forKey: key.rawValue)
     }
     
-    func set(_ value: String, for key: StorageKey) {
+    func set(_ value: String, for key: UserDefaultsKey) {
         userDefaults.setValue(value, forKey: key.rawValue)
     }
     
-    func set<T>(_ value: T?, for key: StorageKey) where T : Decodable, T : Encodable {
+    func set<T>(_ value: T?, for key: UserDefaultsKey) where T : Decodable, T : Encodable {
         do {
             let encodedData = try JSONEncoder().encode(value)
             userDefaults.setValue(encodedData, forKey: key.rawValue)
@@ -63,7 +75,8 @@ struct UserDefaultsStorage: StorageProtocol {
         }
     }
     
-    func set<T>(_ value: T?, for key: StorageKey) {
+    func set<T>(_ value: T?, for key: UserDefaultsKey) {
         userDefaults.setValue(value, forKey: key.rawValue)
     }
 }
+

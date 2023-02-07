@@ -12,8 +12,8 @@ import UIKit
 // MARK: - (Presenter -> Router)
 class ClientOrderHistoryRouter: PresenterToRouterClientOrderHistoryProtocol {
     func showClientItemOrderHistory(on view: PresenterToViewClientOrderHistoryProtocol) {
-        let viewController = view as? ClientOrderHistoryViewController
-        viewController?.navigationController?.pushViewController(ClientItemOrderHistoryScene.initiate(), animated: true)
+//        let viewController = view as? ClientOrderHistoryViewController
+//        viewController?.navigationController?.pushViewController(ClientItemOrderHistoryScene.initiate(), animated: true)
     }
     
 }

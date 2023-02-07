@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProfileViewController: DefaultViewController {
+class ProfileViewController: UIViewController {
     
     private lazy var profileImageView: UIImageView = {
         let imageView = UIImageView()
@@ -55,8 +55,8 @@ class ProfileViewController: DefaultViewController {
         return view
     }()
     
-    private lazy var changePasswordButton: MainButton = {
-        let button = MainButton(style: .squared)
+    private lazy var changePasswordButton: AppButton = {
+        let button = AppButton(style: .squared)
         return button
     }()
     

@@ -11,7 +11,7 @@ import SnapKit
 
 
 
-class EstablishmentSignUpViewController: DefaultViewController {
+class EstablishmentSignUpViewController: UIViewController {
     
     private var staffRows: [TableViewCellType] = [
         .label(title: StringConstant.Scenes.EstablishmentSignUp.staffSignUp,

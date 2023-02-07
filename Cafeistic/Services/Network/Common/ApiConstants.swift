@@ -8,9 +8,8 @@
 import Foundation
 
 struct ApiConstants {
-    
-    static let releaseUrl = URL(string: "")!
-    static let debugUrl = URL(string: "https://cafeistic.herokuapp.com/api/v1")!
+    static let releaseUrl: String = ""
+    static let debugUrl: String = "http://127.0.0.1:8000/api/v1"
     
     struct EndPoints {
         

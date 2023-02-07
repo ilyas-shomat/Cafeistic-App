@@ -16,15 +16,15 @@ class StartRouter: PresenterToRouterStartProtocol {
         let viewController = view as? StartViewController
         let navigationController = viewController?.navigationController
         
-        navigationController?.setViewControllers([LoginScene.instance], animated: false)
+//        navigationController?.setViewControllers([LoginScene.instance], animated: false)
     }
     
     func showClientMainTab(on view: PresenterToViewStartProtocol) {
-        let viewController = view as? StartViewController
-        let openingTabBarController = MainTabBarController(type: .client)
-        openingTabBarController.modalPresentationStyle = .overFullScreen
-        
-        viewController?.present(openingTabBarController, animated: false)
+//        let viewController = view as? StartViewController
+//        let openingTabBarController = MainTabBarController(type: .client)
+//        openingTabBarController.modalPresentationStyle = .overFullScreen
+//
+//        viewController?.present(openingTabBarController, animated: false)
     }
     
 }

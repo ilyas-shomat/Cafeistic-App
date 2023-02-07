@@ -31,8 +31,8 @@ final class CurrentOrderAcceptView: UIView {
         return label
     }()
     
-    private lazy var acceptButton: MainButton = {
-        let button = MainButton(style: .rounded)
+    private lazy var acceptButton: AppButton = {
+        let button = AppButton(style: .rounded)
         button.setTitle(StringConstant.Scenes.ClientCurrentOrder.acceptReceiving, for: .normal)
         return button
     }()

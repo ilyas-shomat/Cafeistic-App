@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ForgetPasswordViewController: DefaultViewController {
+class ForgetPasswordViewController: UIViewController {
     
     private lazy var logoImageView: UIImageView = {
         let imageView = UIImageView()
@@ -17,15 +17,15 @@ class ForgetPasswordViewController: DefaultViewController {
         return imageView
     }()
     
-    private lazy var emailTextField: MaintextField = {
-        let textField = MaintextField(style: .regular)
+    private lazy var emailTextField: AppTextField = {
+        let textField = AppTextField(style: .regular)
         textField.placeholder = StringConstant.Scenes.ForgetPassword.enterEmail
         textField.translatesAutoresizingMaskIntoConstraints = false
         return textField
     }()
     
-    private lazy var sendButton: MainButton = {
-        let button = MainButton(style: .rounded)
+    private lazy var sendButton: AppButton = {
+        let button = AppButton(style: .rounded)
         button.setTitle(StringConstant.Scenes.ForgetPassword.send, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
