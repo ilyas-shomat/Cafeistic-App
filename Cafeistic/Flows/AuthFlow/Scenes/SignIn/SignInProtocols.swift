@@ -8,13 +8,13 @@
 import Foundation
 
 protocol SignInSceneDelegate {
-    func reactionFromInteractor()
+    func tokenLoaded()
 }
 
 protocol SingInInteractorDelegate {
     var scene: SignInSceneDelegate? { get set }
     
-    func sendUserData(entity: SignInEntity)
+    func authorize(entity: SignInEntity)
 }
 
 protocol SignInCoordinatorDelegate {}

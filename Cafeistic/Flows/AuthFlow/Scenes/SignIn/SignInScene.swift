@@ -37,7 +37,7 @@ final class SignInScene: Scene {
             return
         }
         
-        interactor?.sendUserData(entity: .init(username: login, password: password))
+        interactor?.authorize(entity: .init(username: login, password: password))
     }
     
     private func handleSignUpButtonTap() {
@@ -62,8 +62,8 @@ final class SignInScene: Scene {
 }
 
 extension SignInScene: SignInSceneDelegate {
-    func reactionFromInteractor() {
-        consolePrint("reactionFromInteractor")
+    func tokenLoaded() {
+        
     }
 }
 
