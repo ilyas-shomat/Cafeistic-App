@@ -16,6 +16,12 @@ final class SignInInteractor: SingInInteractorDelegate {
     private var cancellables: Set<AnyCancellable>
     private var authenticationStore: AuthenticationStoreProtocol?
     
+    var networkError: Error? {
+        didSet {
+            print("failure", networkError)
+        }
+    }
+    
     init(
         networkService: LiteNetProtocol,
         cancellables: Set<AnyCancellable>,
@@ -34,9 +40,9 @@ final class SignInInteractor: SingInInteractorDelegate {
             jsonType: SignInResponseEntity.self
         )
         .sink(
-            receiveCompletion: { completion in
+            receiveCompletion: { [weak self] completion in
                 if case .failure(let error) = completion {
-                    print("failure", error)
+                    self?.networkError = error
                 }
             },
             receiveValue: { [weak self] result in

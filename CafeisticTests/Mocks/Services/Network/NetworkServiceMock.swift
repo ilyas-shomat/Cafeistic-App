@@ -10,6 +10,7 @@ import LiteNet
 import Combine
 
 final class NetworkServiceMock: LiteNetProtocol {
+    var isError: Bool = false
     var responseEntity: Codable?
     
     func load(target: AnyTargetConvertible, onComplete: @escaping JsonEmptyCompletion) {
@@ -30,11 +31,18 @@ final class NetworkServiceMock: LiteNetProtocol {
     
     func loadSubject<T>(target: AnyTargetConvertible, jsonType: T.Type) -> PassthroughSubject<T, ServiceError> where T : Decodable, T : Encodable {
         let subject = PassthroughSubject<T, ServiceError>()
-                
-        DispatchQueue.main.async { [weak self] in
-            subject.send(self?.responseEntity as! T)
-        }
         
+        if isError {
+            DispatchQueue.main.async {
+                subject.send(completion: .failure(.unknown))
+            }
+        }
+        else {
+            DispatchQueue.main.async { [weak self] in
+                subject.send(self?.responseEntity as! T)
+            }
+        }
+            
         return subject
     }
     
