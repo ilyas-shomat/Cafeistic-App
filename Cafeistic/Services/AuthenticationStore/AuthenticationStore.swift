@@ -7,7 +7,11 @@
 
 import Foundation
 
-struct AuthenticationStore {
+protocol AuthenticationStoreProtocol {
+    func store(token: String)
+}
+
+struct AuthenticationStore: AuthenticationStoreProtocol {
     
     static let shared = AuthenticationStore()
     

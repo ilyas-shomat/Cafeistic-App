@@ -14,16 +14,19 @@ final class SignInInteractor: SingInInteractorDelegate {
     
     private let networkService: LiteNetProtocol
     private var cancellables: Set<AnyCancellable>
+    private var authenticationStore: AuthenticationStoreProtocol?
     
     init(
         networkService: LiteNetProtocol,
-        cancellables: Set<AnyCancellable>
+        cancellables: Set<AnyCancellable>,
+        authenticationStore: AuthenticationStoreProtocol? = nil
     ) {
         self.networkService = networkService
         self.cancellables = cancellables
+        self.authenticationStore = authenticationStore
     }
     
-    func sendUserData(entity: SignInEntity) {
+    func authorize(entity: SignInEntity) {
         let target = AuthTarget.signIn(loginEntityRequest: entity.getServiceEntity())
         
         networkService.loadSubject(
@@ -36,12 +39,17 @@ final class SignInInteractor: SingInInteractorDelegate {
                     print("failure", error)
                 }
             },
-            receiveValue: { result in
+            receiveValue: { [weak self] result in
                 if let token = result.token {
-                    print("token", token)
+                    self?.saveToken(token)
+                    self?.scene?.tokenLoaded()
                 }
             }
         )
         .store(in: &cancellables)
+    }
+    
+    private func saveToken(_ token: String) {
+        authenticationStore?.store(token: token)
     }
 }
