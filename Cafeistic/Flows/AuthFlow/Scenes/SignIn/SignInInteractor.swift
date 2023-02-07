@@ -18,12 +18,12 @@ final class SignInInteractor: SingInInteractorDelegate {
     
     init(
         networkService: LiteNetProtocol,
-        cancellables: Set<AnyCancellable>
+        cancellables: Set<AnyCancellable>,
+        authenticationStore: AuthenticationStoreProtocol? = nil
     ) {
         self.networkService = networkService
         self.cancellables = cancellables
-        
-        authenticationStore = AuthenticationStore.shared
+        self.authenticationStore = authenticationStore
     }
     
     func authorize(entity: SignInEntity) {

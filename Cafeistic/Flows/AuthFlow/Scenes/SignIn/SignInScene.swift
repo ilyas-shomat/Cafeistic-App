@@ -74,7 +74,8 @@ extension SignInScene {
         let scene = SignInScene()
         var interactor: SingInInteractorDelegate = SignInInteractor(
             networkService: networkService,
-            cancellables: scene.cancellables
+            cancellables: scene.cancellables,
+            authenticationStore: AuthenticationStore.shared
         )
         
         interactor.scene = scene
