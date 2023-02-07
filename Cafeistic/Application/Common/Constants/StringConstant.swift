@@ -9,7 +9,7 @@ import Foundation
 
 struct StringConstant {
     struct Scenes {
-        struct Login {
+        struct SignIn {
             static let login = "Логин"
             static let password = "Пароль"
             static let signIn = "Войти"
@@ -29,11 +29,11 @@ struct StringConstant {
         struct ClienSignUp {
             static let accountSignUp = "Регистрация пользователя"
             static let fullName = "Полное имя"
-            static let login = Login.login
+            static let login = SignIn.login
             static let email = "Почта"
-            static let password = Login.password
+            static let password = SignIn.password
             static let repeatPassword = "Повторите пароль"
-            static let signUp = Login.signUp
+            static let signUp = SignIn.signUp
         }
         
         struct EstablishmentSignUp {
@@ -43,12 +43,12 @@ struct StringConstant {
             static let establishmentSignUp = "Регистрация заведения"
             static let ownerSignUp = "Регистрация владельца"
             static let fullName = ClienSignUp.fullName
-            static let login = Login.login
+            static let login = SignIn.login
             static let establismentId = "ID номер заведения"
             static let email = ClienSignUp.email
-            static let password = Login.password
+            static let password = SignIn.password
             static let repeatPassword = ClienSignUp.repeatPassword
-            static let signUp = Login.signUp
+            static let signUp = SignIn.signUp
             static let next = "Дальше"
             static let establishmentName = "Название заведения"
             static let establismentCity = "Город заведения"

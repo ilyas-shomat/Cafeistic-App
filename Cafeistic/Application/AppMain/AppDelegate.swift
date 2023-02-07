@@ -18,13 +18,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         setupRootScene()
         
+        IQKeyboardManager.shared.enable = true
+        
         return true
     }
 
     private func setupRootScene() {
         guard let window = window else { return }
-        AppInitializer.shared.setupAppCoordinator(window: window)
         AppInitializer.shared.setupSerivces()
+        AppInitializer.shared.setupAppCoordinator(window: window)
     }
 }
 

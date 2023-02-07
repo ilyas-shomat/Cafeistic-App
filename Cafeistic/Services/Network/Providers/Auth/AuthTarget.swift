@@ -11,14 +11,14 @@ import Alamofire
 import LiteNet
 
 enum AuthTarget {
-    case login(loginEntityRequest: LoginEntityRequest)
+    case signIn(loginEntityRequest: SignInRequestEntity)
     case clientSignUp(signUpEntityRequest: SignUpEntityRequest)
 }
 
 extension AuthTarget: BaseApiTarget, AnyTargetConvertible {
     var path: String {
         switch self {
-        case .login:
+        case .signIn:
             return ApiConstants.EndPoints.Auth.login
         case .clientSignUp:
             return ApiConstants.EndPoints.Auth.userSignUp
@@ -27,14 +27,14 @@ extension AuthTarget: BaseApiTarget, AnyTargetConvertible {
     
     var method: Alamofire.HTTPMethod {
         switch self {
-        case .login: return .post
+        case .signIn: return .post
         case .clientSignUp: return .post
         }
     }
     
     var task: RequestTask {
         switch self {
-        case .login(let loginEntityRequest):
+        case .signIn(let loginEntityRequest):
             return .requestEncodableBody(loginEntityRequest)
         case .clientSignUp(let signUpEntityRequest):
             return .requestEncodableBody(signUpEntityRequest)

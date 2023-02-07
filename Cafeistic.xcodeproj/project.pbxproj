@@ -23,7 +23,7 @@
 		FD4593842636D5D200669AB4 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4593832636D5D200669AB4 /* ColorPalette.swift */; };
 		FD4593872636D77B00669AB4 /* StringConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4593862636D77B00669AB4 /* StringConstant.swift */; };
 		FD45938B2636E19F00669AB4 /* UIView+AddSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD45938A2636E19F00669AB4 /* UIView+AddSubviews.swift */; };
-		FD4593902637F1BD00669AB4 /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD45938F2637F1BD00669AB4 /* MainButton.swift */; };
+		FD4593902637F1BD00669AB4 /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD45938F2637F1BD00669AB4 /* AppButton.swift */; };
 		FD4593932637F1F300669AB4 /* MainButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4593922637F1F300669AB4 /* MainButtonStyle.swift */; };
 		FD4593982637F2BA00669AB4 /* IndicatableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4593972637F2BA00669AB4 /* IndicatableView.swift */; };
 		FD45939C2637F2D000669AB4 /* IndicatableView+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD45939B2637F2D000669AB4 /* IndicatableView+UIButton.swift */; };
@@ -32,6 +32,19 @@
 		FD4B1BD4262FFE5E005E9BF9 /* AppInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4B1BD3262FFE5E005E9BF9 /* AppInitializer.swift */; };
 		FD6117992643AE7E00794EB5 /* MainSwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6117982643AE7E00794EB5 /* MainSwitchView.swift */; };
 		FD6810EF298BB3AB00D1ADF5 /* LiteNet in Frameworks */ = {isa = PBXBuildFile; productRef = FD6810EE298BB3AB00D1ADF5 /* LiteNet */; };
+		FD6810F2298BB69100D1ADF5 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FD6810F1298BB69100D1ADF5 /* SnapKit */; };
+		FD6810F5298BB6C100D1ADF5 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = FD6810F4298BB6C100D1ADF5 /* KeychainAccess */; };
+		FD6810F8298BB6F400D1ADF5 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FD6810F7298BB6F400D1ADF5 /* Kingfisher */; };
+		FD68113C298BC2CC00D1ADF5 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD68113B298BC2CC00D1ADF5 /* SignInView.swift */; };
+		FD68113E298BC2D800D1ADF5 /* SignInScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD68113D298BC2D800D1ADF5 /* SignInScene.swift */; };
+		FD681140298BC2ED00D1ADF5 /* SignInInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD68113F298BC2ED00D1ADF5 /* SignInInteractor.swift */; };
+		FD681142298BC2FB00D1ADF5 /* SignInProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD681141298BC2FB00D1ADF5 /* SignInProtocols.swift */; };
+		FD681145298BC39500D1ADF5 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD681144298BC39500D1ADF5 /* Scene.swift */; };
+		FD681148298BCD3500D1ADF5 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD681147298BCD3500D1ADF5 /* AuthCoordinator.swift */; };
+		FD68114B2990F0DD00D1ADF5 /* EntityFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD68114A2990F0DD00D1ADF5 /* EntityFormatter.swift */; };
+		FD68114E2990F10400D1ADF5 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD68114D2990F10400D1ADF5 /* ArrayExtensions.swift */; };
+		FD6811502990F35900D1ADF5 /* EntityDefaultValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD68114F2990F35900D1ADF5 /* EntityDefaultValues.swift */; };
+		FD6811532992349300D1ADF5 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FD6811522992349300D1ADF5 /* IQKeyboardManagerSwift */; };
 		FD6B8894263BCBCB0026D3E0 /* ClientSignUpContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B888E263BCBCB0026D3E0 /* ClientSignUpContract.swift */; };
 		FD6B8895263BCBCB0026D3E0 /* ClientSignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B888F263BCBCB0026D3E0 /* ClientSignUpPresenter.swift */; };
 		FD6B8896263BCBCB0026D3E0 /* ClientSignUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B8890263BCBCB0026D3E0 /* ClientSignUpRouter.swift */; };
@@ -46,7 +59,6 @@
 		FD6B88AB263C03EC0026D3E0 /* EstablishmentSignUpScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B88A5263C03EB0026D3E0 /* EstablishmentSignUpScene.swift */; };
 		FD6B88BD263C06620026D3E0 /* SignUpType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B88BC263C06620026D3E0 /* SignUpType.swift */; };
 		FD6CE0D22654D67D00541521 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CE0D12654D67D00541521 /* Category.swift */; };
-		FD6CE0FD2655168900541521 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CE0FC2655168900541521 /* MainTabBarController.swift */; };
 		FD6CE100265516F500541521 /* TabBarControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CE0FF265516F500541521 /* TabBarControllerType.swift */; };
 		FD77D37B2671DFD400AF8671 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD77D37A2671DFD400AF8671 /* ServiceLocator.swift */; };
 		FD77D3822671F02F00AF8671 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD77D3812671F02F00AF8671 /* ApiResponse.swift */; };
@@ -93,7 +105,7 @@
 		FDA3C8B626772D820042715E /* UserDefaultsKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA3C8B526772D820042715E /* UserDefaultsKey.swift */; };
 		FDA3C8BB26776EFA0042715E /* KeychainKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA3C8BA26776EFA0042715E /* KeychainKey.swift */; };
 		FDA3C8BF2677774D0042715E /* AuthenticationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA3C8BE2677774D0042715E /* AuthenticationStore.swift */; };
-		FDA3C8C42678BA060042715E /* LoginEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA3C8C32678BA060042715E /* LoginEntity.swift */; };
+		FDA3C8C42678BA060042715E /* SignInEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA3C8C32678BA060042715E /* SignInEntity.swift */; };
 		FDA3C8C92678BBA40042715E /* AlertMessageConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA3C8C82678BBA40042715E /* AlertMessageConstant.swift */; };
 		FDACDF1826391F6300689B51 /* DefaultAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF1726391F6300689B51 /* DefaultAlertViewController.swift */; };
 		FDACDF1D26391F7C00689B51 /* TwoButtonAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF1C26391F7C00689B51 /* TwoButtonAlertView.swift */; };
@@ -106,7 +118,6 @@
 		FDACDF63263A8BCA00689B51 /* ForgetPasswordSceneBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF5D263A8BCA00689B51 /* ForgetPasswordSceneBuilder.swift */; };
 		FDACDF6D263AA00200689B51 /* CollectionViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF6C263AA00200689B51 /* CollectionViewProvider.swift */; };
 		FDACDF71263AA01700689B51 /* TableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF70263AA01700689B51 /* TableViewProvider.swift */; };
-		FDACDF76263AA0EA00689B51 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDACDF75263AA0EA00689B51 /* BaseNavigationController.swift */; };
 		FDB1826226A00E7C0096E38E /* MockSessionTrackerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB1826026A00E7C0096E38E /* MockSessionTrackerImpl.swift */; };
 		FDB1826326A00E7C0096E38E /* MockNetworkApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB1826126A00E7C0096E38E /* MockNetworkApiService.swift */; };
 		FDB1AF4F265F694F00419153 /* ClientItemOrderHistoryContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB1AF49265F694F00419153 /* ClientItemOrderHistoryContract.swift */; };
@@ -129,7 +140,7 @@
 		FDCBAD28264A4DFF005B9608 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCBAD27264A4DFF005B9608 /* UITableViewExtension.swift */; };
 		FDCBAD2B264A587D005B9608 /* ButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCBAD2A264A587D005B9608 /* ButtonCell.swift */; };
 		FDCBAD30264A58F6005B9608 /* LabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCBAD2F264A58F6005B9608 /* LabelCell.swift */; };
-		FDCD506D2732DCA400E0A34F /* NetworkLoginEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCD506C2732DCA400E0A34F /* NetworkLoginEntity.swift */; };
+		FDCD506D2732DCA400E0A34F /* SignInSerivceEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCD506C2732DCA400E0A34F /* SignInSerivceEntity.swift */; };
 		FDCD506F2732DD9200E0A34F /* NetworkSignUpEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCD506E2732DD9200E0A34F /* NetworkSignUpEntity.swift */; };
 		FDCD50712732DFD100E0A34F /* SignUpEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCD50702732DFD100E0A34F /* SignUpEntity.swift */; };
 		FDE2CEC626426BCA00FE1EA7 /* UIView+Corners.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE2CEC526426BCA00FE1EA7 /* UIView+Corners.swift */; };
@@ -152,7 +163,6 @@
 		FDF281B92632CED300B1829A /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF281B32632CED300B1829A /* StartViewController.swift */; };
 		FDF281BA2632CED300B1829A /* StartContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF281B42632CED300B1829A /* StartContract.swift */; };
 		FDF281BB2632CED300B1829A /* StartInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF281B52632CED300B1829A /* StartInteractor.swift */; };
-		FDF281C12632CFEE00B1829A /* DefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF281C02632CFEE00B1829A /* DefaultViewController.swift */; };
 		FDF281ED2632D32200B1829A /* PrintUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF281EC2632D32200B1829A /* PrintUtil.swift */; };
 		FDF281F42632D3AA00B1829A /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF281F32632D3AA00B1829A /* UIColor+Hex.swift */; };
 		FDF281FA2632D43800B1829A /* UITableViewCell+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF281F92632D43800B1829A /* UITableViewCell+UI.swift */; };
@@ -195,7 +205,7 @@
 		FD4593832636D5D200669AB4 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 		FD4593862636D77B00669AB4 /* StringConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstant.swift; sourceTree = "<group>"; };
 		FD45938A2636E19F00669AB4 /* UIView+AddSubviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AddSubviews.swift"; sourceTree = "<group>"; };
-		FD45938F2637F1BD00669AB4 /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
+		FD45938F2637F1BD00669AB4 /* AppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
 		FD4593922637F1F300669AB4 /* MainButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButtonStyle.swift; sourceTree = "<group>"; };
 		FD4593972637F2BA00669AB4 /* IndicatableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatableView.swift; sourceTree = "<group>"; };
 		FD45939B2637F2D000669AB4 /* IndicatableView+UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IndicatableView+UIButton.swift"; sourceTree = "<group>"; };
@@ -203,6 +213,15 @@
 		FD4593A32637F9EA00669AB4 /* SpinnerIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerIndicator.swift; sourceTree = "<group>"; };
 		FD4B1BD3262FFE5E005E9BF9 /* AppInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInitializer.swift; sourceTree = "<group>"; };
 		FD6117982643AE7E00794EB5 /* MainSwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSwitchView.swift; sourceTree = "<group>"; };
+		FD68113B298BC2CC00D1ADF5 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		FD68113D298BC2D800D1ADF5 /* SignInScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScene.swift; sourceTree = "<group>"; };
+		FD68113F298BC2ED00D1ADF5 /* SignInInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInInteractor.swift; sourceTree = "<group>"; };
+		FD681141298BC2FB00D1ADF5 /* SignInProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInProtocols.swift; sourceTree = "<group>"; };
+		FD681144298BC39500D1ADF5 /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		FD681147298BCD3500D1ADF5 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
+		FD68114A2990F0DD00D1ADF5 /* EntityFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityFormatter.swift; sourceTree = "<group>"; };
+		FD68114D2990F10400D1ADF5 /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
+		FD68114F2990F35900D1ADF5 /* EntityDefaultValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityDefaultValues.swift; sourceTree = "<group>"; };
 		FD6B888E263BCBCB0026D3E0 /* ClientSignUpContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientSignUpContract.swift; sourceTree = "<group>"; };
 		FD6B888F263BCBCB0026D3E0 /* ClientSignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientSignUpPresenter.swift; sourceTree = "<group>"; };
 		FD6B8890263BCBCB0026D3E0 /* ClientSignUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientSignUpRouter.swift; sourceTree = "<group>"; };
@@ -217,7 +236,6 @@
 		FD6B88A5263C03EB0026D3E0 /* EstablishmentSignUpScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentSignUpScene.swift; sourceTree = "<group>"; };
 		FD6B88BC263C06620026D3E0 /* SignUpType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpType.swift; sourceTree = "<group>"; };
 		FD6CE0D12654D67D00541521 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
-		FD6CE0FC2655168900541521 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		FD6CE0FF265516F500541521 /* TabBarControllerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarControllerType.swift; sourceTree = "<group>"; };
 		FD77D37A2671DFD400AF8671 /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
 		FD77D3812671F02F00AF8671 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
@@ -267,7 +285,7 @@
 		FDA3C8B526772D820042715E /* UserDefaultsKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKey.swift; sourceTree = "<group>"; };
 		FDA3C8BA26776EFA0042715E /* KeychainKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainKey.swift; sourceTree = "<group>"; };
 		FDA3C8BE2677774D0042715E /* AuthenticationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationStore.swift; sourceTree = "<group>"; };
-		FDA3C8C32678BA060042715E /* LoginEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEntity.swift; sourceTree = "<group>"; };
+		FDA3C8C32678BA060042715E /* SignInEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInEntity.swift; sourceTree = "<group>"; };
 		FDA3C8C82678BBA40042715E /* AlertMessageConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertMessageConstant.swift; sourceTree = "<group>"; };
 		FDACDF1726391F6300689B51 /* DefaultAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAlertViewController.swift; sourceTree = "<group>"; };
 		FDACDF1C26391F7C00689B51 /* TwoButtonAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoButtonAlertView.swift; sourceTree = "<group>"; };
@@ -280,7 +298,6 @@
 		FDACDF5D263A8BCA00689B51 /* ForgetPasswordSceneBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordSceneBuilder.swift; sourceTree = "<group>"; };
 		FDACDF6C263AA00200689B51 /* CollectionViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewProvider.swift; sourceTree = "<group>"; };
 		FDACDF70263AA01700689B51 /* TableViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewProvider.swift; sourceTree = "<group>"; };
-		FDACDF75263AA0EA00689B51 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		FDB1826026A00E7C0096E38E /* MockSessionTrackerImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockSessionTrackerImpl.swift; sourceTree = "<group>"; };
 		FDB1826126A00E7C0096E38E /* MockNetworkApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockNetworkApiService.swift; sourceTree = "<group>"; };
 		FDB1AF49265F694F00419153 /* ClientItemOrderHistoryContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientItemOrderHistoryContract.swift; sourceTree = "<group>"; };
@@ -303,7 +320,7 @@
 		FDCBAD27264A4DFF005B9608 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		FDCBAD2A264A587D005B9608 /* ButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCell.swift; sourceTree = "<group>"; };
 		FDCBAD2F264A58F6005B9608 /* LabelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelCell.swift; sourceTree = "<group>"; };
-		FDCD506C2732DCA400E0A34F /* NetworkLoginEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLoginEntity.swift; sourceTree = "<group>"; };
+		FDCD506C2732DCA400E0A34F /* SignInSerivceEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInSerivceEntity.swift; sourceTree = "<group>"; };
 		FDCD506E2732DD9200E0A34F /* NetworkSignUpEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSignUpEntity.swift; sourceTree = "<group>"; };
 		FDCD50702732DFD100E0A34F /* SignUpEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEntity.swift; sourceTree = "<group>"; };
 		FDE2CEC526426BCA00FE1EA7 /* UIView+Corners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Corners.swift"; sourceTree = "<group>"; };
@@ -328,7 +345,6 @@
 		FDF281B32632CED300B1829A /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		FDF281B42632CED300B1829A /* StartContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartContract.swift; sourceTree = "<group>"; };
 		FDF281B52632CED300B1829A /* StartInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartInteractor.swift; sourceTree = "<group>"; };
-		FDF281C02632CFEE00B1829A /* DefaultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultViewController.swift; sourceTree = "<group>"; };
 		FDF281EC2632D32200B1829A /* PrintUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintUtil.swift; sourceTree = "<group>"; };
 		FDF281F32632D3AA00B1829A /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		FDF281F92632D43800B1829A /* UITableViewCell+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+UI.swift"; sourceTree = "<group>"; };
@@ -354,8 +370,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD6810F5298BB6C100D1ADF5 /* KeychainAccess in Frameworks */,
+				FD6810F2298BB69100D1ADF5 /* SnapKit in Frameworks */,
 				FD6810EF298BB3AB00D1ADF5 /* LiteNet in Frameworks */,
 				CD7B85AC59ABB498983A2B54 /* Pods_Cafeistic.framework in Frameworks */,
+				FD6810F8298BB6F400D1ADF5 /* Kingfisher in Frameworks */,
+				FD6811532992349300D1ADF5 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,7 +412,6 @@
 			isa = PBXGroup;
 			children = (
 				FD0376BD28AE503400A62808 /* AuthFlow */,
-				FD4B1BBC262FFA3B005E9BF9 /* Scenes */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -427,6 +446,7 @@
 		FD0376BD28AE503400A62808 /* AuthFlow */ = {
 			isa = PBXGroup;
 			children = (
+				FD681146298BCD2200D1ADF5 /* Coordinator */,
 				FD0376BE28AE504B00A62808 /* Scenes */,
 			);
 			path = AuthFlow;
@@ -435,16 +455,9 @@
 		FD0376BE28AE504B00A62808 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				FD0376BF28AE505600A62808 /* Login */,
+				FD68113A298BC21A00D1ADF5 /* SignIn */,
 			);
 			path = Scenes;
-			sourceTree = "<group>";
-		};
-		FD0376BF28AE505600A62808 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Login;
 			sourceTree = "<group>";
 		};
 		FD03E64127529273001421DD /* MainLabeledView */ = {
@@ -539,7 +552,7 @@
 			isa = PBXGroup;
 			children = (
 				FD4593922637F1F300669AB4 /* MainButtonStyle.swift */,
-				FD45938F2637F1BD00669AB4 /* MainButton.swift */,
+				FD45938F2637F1BD00669AB4 /* AppButton.swift */,
 			);
 			path = MainButton;
 			sourceTree = "<group>";
@@ -585,10 +598,10 @@
 		FD4B1BBA262FE876005E9BF9 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				FD681143298BC38400D1ADF5 /* UI */,
 				FDBBB6BD2653E54F007D8D88 /* Enums */,
 				FDF281CA2632D0FF00B1829A /* Constants */,
 				FDF281C92632D0E600B1829A /* Protocols */,
-				FDF281BE2632CFBF00B1829A /* Default */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -612,6 +625,50 @@
 				FDF281B02632CEBF00B1829A /* Start */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		FD68113A298BC21A00D1ADF5 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				FD68113B298BC2CC00D1ADF5 /* SignInView.swift */,
+				FD68113D298BC2D800D1ADF5 /* SignInScene.swift */,
+				FD68113F298BC2ED00D1ADF5 /* SignInInteractor.swift */,
+				FD681141298BC2FB00D1ADF5 /* SignInProtocols.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		FD681143298BC38400D1ADF5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FD681144298BC39500D1ADF5 /* Scene.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		FD681146298BCD2200D1ADF5 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				FD681147298BCD3500D1ADF5 /* AuthCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		FD6811492990F0A600D1ADF5 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				FD68114A2990F0DD00D1ADF5 /* EntityFormatter.swift */,
+				FD68114F2990F35900D1ADF5 /* EntityDefaultValues.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		FD68114C2990F0FB00D1ADF5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FD68114D2990F10400D1ADF5 /* ArrayExtensions.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		FD6B888D263BCBAD0026D3E0 /* ClientSignUp */ = {
@@ -889,7 +946,7 @@
 		FDA3C8C22678B9EC0042715E /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				FDA3C8C32678BA060042715E /* LoginEntity.swift */,
+				FDA3C8C32678BA060042715E /* SignInEntity.swift */,
 				FDCD50702732DFD100E0A34F /* SignUpEntity.swift */,
 			);
 			path = Auth;
@@ -1081,7 +1138,7 @@
 		FDCD506B2732DC8E00E0A34F /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				FDCD506C2732DCA400E0A34F /* NetworkLoginEntity.swift */,
+				FDCD506C2732DCA400E0A34F /* SignInSerivceEntity.swift */,
 				FDCD506E2732DD9200E0A34F /* NetworkSignUpEntity.swift */,
 			);
 			path = Auth;
@@ -1139,6 +1196,7 @@
 				FD4B1BB8262FE861005E9BF9 /* Application */,
 				FD0376B028AE4CE800A62808 /* Coordinator */,
 				FD0376B128AE4CF600A62808 /* Flows */,
+				FD4B1BBC262FFA3B005E9BF9 /* Scenes */,
 				FD4593592636AD9100669AB4 /* CustomViews */,
 				FDF281E72632D24800B1829A /* Services */,
 				FDF281FD2632D57000B1829A /* Entities */,
@@ -1161,27 +1219,10 @@
 			path = Start;
 			sourceTree = "<group>";
 		};
-		FDF281BE2632CFBF00B1829A /* Default */ = {
-			isa = PBXGroup;
-			children = (
-				FDF281BF2632CFD600B1829A /* Controllers */,
-			);
-			path = Default;
-			sourceTree = "<group>";
-		};
-		FDF281BF2632CFD600B1829A /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				FDF281C02632CFEE00B1829A /* DefaultViewController.swift */,
-				FDACDF75263AA0EA00689B51 /* BaseNavigationController.swift */,
-				FD6CE0FC2655168900541521 /* MainTabBarController.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
 		FDF281C92632D0E600B1829A /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				FD6811492990F0A600D1ADF5 /* Entities */,
 				FDACDF6B263A9FDE00689B51 /* CollectionView */,
 				FDACDF6A263A9FD600689B51 /* TableView */,
 				FD4593962637F2A700669AB4 /* View */,
@@ -1269,6 +1310,7 @@
 		FDF281F22632D38D00B1829A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				FD68114C2990F0FB00D1ADF5 /* Common */,
 				FDEA5CD22652974E00BB08A1 /* UIImage */,
 				FDEA5CCE2652969700BB08A1 /* UIImageView */,
 				FDEA5CC92652961700BB08A1 /* UIButton */,
@@ -1355,7 +1397,6 @@
 				FDEAD92425C8269B0075F122 /* Sources */,
 				FDEAD92525C8269B0075F122 /* Frameworks */,
 				FDEAD92625C8269B0075F122 /* Resources */,
-				257F58EA684E7A0EB2618AB1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1364,6 +1405,10 @@
 			name = Cafeistic;
 			packageProductDependencies = (
 				FD6810EE298BB3AB00D1ADF5 /* LiteNet */,
+				FD6810F1298BB69100D1ADF5 /* SnapKit */,
+				FD6810F4298BB6C100D1ADF5 /* KeychainAccess */,
+				FD6810F7298BB6F400D1ADF5 /* Kingfisher */,
+				FD6811522992349300D1ADF5 /* IQKeyboardManagerSwift */,
 			);
 			productName = Cafeistic;
 			productReference = FDEAD92825C8269B0075F122 /* Cafeistic.app */;
@@ -1402,6 +1447,10 @@
 			mainGroup = FDEAD91F25C8269A0075F122;
 			packageReferences = (
 				FD6810ED298BB3AB00D1ADF5 /* XCRemoteSwiftPackageReference "LiteNet" */,
+				FD6810F0298BB69100D1ADF5 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				FD6810F3298BB6C100D1ADF5 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				FD6810F6298BB6F400D1ADF5 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				FD6811512992349300D1ADF5 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			productRefGroup = FDEAD92925C8269B0075F122 /* Products */;
 			projectDirPath = "";
@@ -1464,23 +1513,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		257F58EA684E7A0EB2618AB1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Cafeistic/Pods-Cafeistic-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Cafeistic/Pods-Cafeistic-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cafeistic/Pods-Cafeistic-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1519,13 +1551,13 @@
 				FDEA5C7C265245DD00BB08A1 /* TextFieldCell.swift in Sources */,
 				FDB1AF4F265F694F00419153 /* ClientItemOrderHistoryContract.swift in Sources */,
 				FDBBB6BF2653E573007D8D88 /* TableViewTextFieldCellType.swift in Sources */,
+				FD681140298BC2ED00D1ADF5 /* SignInInteractor.swift in Sources */,
 				FD9BB1AF2641034D00835B98 /* MenuContract.swift in Sources */,
 				FDBDEADE265E1D2500B03B9E /* ClientOrderHistoryInteractor.swift in Sources */,
 				FD4593872636D77B00669AB4 /* StringConstant.swift in Sources */,
 				FD9BB1BE2641098300835B98 /* UIView+Identifier.swift in Sources */,
-				FD4593902637F1BD00669AB4 /* MainButton.swift in Sources */,
+				FD4593902637F1BD00669AB4 /* AppButton.swift in Sources */,
 				FDF281B82632CED300B1829A /* StartRouter.swift in Sources */,
-				FDACDF76263AA0EA00689B51 /* BaseNavigationController.swift in Sources */,
 				FD0376B728AE4DB500A62808 /* Presentable.swift in Sources */,
 				FDF281BB2632CED300B1829A /* StartInteractor.swift in Sources */,
 				FDEAD92C25C8269B0075F122 /* AppDelegate.swift in Sources */,
@@ -1558,7 +1590,7 @@
 				FD4593842636D5D200669AB4 /* ColorPalette.swift in Sources */,
 				FDACDF60263A8BCA00689B51 /* ForgetPasswordRouter.swift in Sources */,
 				FD6B8897263BCBCB0026D3E0 /* ClientSignUpViewController.swift in Sources */,
-				FDA3C8C42678BA060042715E /* LoginEntity.swift in Sources */,
+				FDA3C8C42678BA060042715E /* SignInEntity.swift in Sources */,
 				FDBDEADD265E1D2500B03B9E /* ClientOrderHistoryViewController.swift in Sources */,
 				FDF281BA2632CED300B1829A /* StartContract.swift in Sources */,
 				FDEE44CA2660E5680080CC66 /* ProfileViewController.swift in Sources */,
@@ -1572,12 +1604,11 @@
 				FD6B88A9263C03EC0026D3E0 /* EstablishmentSignUpViewController.swift in Sources */,
 				FD6B88BD263C06620026D3E0 /* SignUpType.swift in Sources */,
 				FD45937E2636C0DB00669AB4 /* MainTextField.swift in Sources */,
-				FDF281C12632CFEE00B1829A /* DefaultViewController.swift in Sources */,
 				FDEE44C92660E5680080CC66 /* ProfileRouter.swift in Sources */,
-				FD6CE0FD2655168900541521 /* MainTabBarController.swift in Sources */,
 				FDBDEADA265E1D2500B03B9E /* ClientOrderHistoryContract.swift in Sources */,
 				FD911928265D22FE008F122C /* CurrentOrderAcceptView.swift in Sources */,
 				FDCBAD2B264A587D005B9608 /* ButtonCell.swift in Sources */,
+				FD68114B2990F0DD00D1ADF5 /* EntityFormatter.swift in Sources */,
 				FDACDF22263930CA00689B51 /* UIViewController+Alert.swift in Sources */,
 				FD9BB1C226410C3500835B98 /* CategoryMenuCell.swift in Sources */,
 				FD4593752636BDEE00669AB4 /* SetupBaseViewController.swift in Sources */,
@@ -1589,6 +1620,7 @@
 				FDACDF61263A8BCA00689B51 /* ForgetPasswordViewController.swift in Sources */,
 				FDEE44CC2660E5680080CC66 /* ProfileSceneBuilder.swift in Sources */,
 				FD6B88AB263C03EC0026D3E0 /* EstablishmentSignUpScene.swift in Sources */,
+				FD68114E2990F10400D1ADF5 /* ArrayExtensions.swift in Sources */,
 				FD6B8899263BCBCB0026D3E0 /* ClientSignUpScene.swift in Sources */,
 				FDBDEADB265E1D2500B03B9E /* ClientOrderHistoryPresenter.swift in Sources */,
 				FD9BB1C926410C5D00835B98 /* MealMenuCell.swift in Sources */,
@@ -1609,9 +1641,11 @@
 				FD6B8894263BCBCB0026D3E0 /* ClientSignUpContract.swift in Sources */,
 				FD12BB5E27413A0D005B4289 /* ErrorAlertProtocol.swift in Sources */,
 				FDEE44C72660E5680080CC66 /* ProfileContract.swift in Sources */,
-				FDCD506D2732DCA400E0A34F /* NetworkLoginEntity.swift in Sources */,
+				FDCD506D2732DCA400E0A34F /* SignInSerivceEntity.swift in Sources */,
 				FD6B8898263BCBCB0026D3E0 /* ClientSignUpInteractor.swift in Sources */,
+				FD6811502990F35900D1ADF5 /* EntityDefaultValues.swift in Sources */,
 				FD79682226650606007C4C4A /* ApiConstants.swift in Sources */,
+				FD68113C298BC2CC00D1ADF5 /* SignInView.swift in Sources */,
 				FD4593932637F1F300669AB4 /* MainButtonStyle.swift in Sources */,
 				FDA3C8A626770C890042715E /* SessionTracker.swift in Sources */,
 				FDEA5CCB2652963900BB08A1 /* UIButton+SetImageTintColor.swift in Sources */,
@@ -1626,6 +1660,7 @@
 				FD4B1BD4262FFE5E005E9BF9 /* AppInitializer.swift in Sources */,
 				FDB1AF50265F694F00419153 /* ClientItemOrderHistoryPresenter.swift in Sources */,
 				FD6B88A7263C03EC0026D3E0 /* EstablishmentSignUpPresenter.swift in Sources */,
+				FD68113E298BC2D800D1ADF5 /* SignInScene.swift in Sources */,
 				FD9BB1C626410C4800835B98 /* CategoryMenuCellModel.swift in Sources */,
 				FDCD50712732DFD100E0A34F /* SignUpEntity.swift in Sources */,
 				FD6B88A6263C03EC0026D3E0 /* EstablishmentSignUpContract.swift in Sources */,
@@ -1636,11 +1671,14 @@
 				FD45937A2636C0BC00669AB4 /* MainTextFieldStyle.swift in Sources */,
 				FDF281B92632CED300B1829A /* StartViewController.swift in Sources */,
 				FD91191E265D0774008F122C /* ViewRoundingCorners.swift in Sources */,
+				FD681145298BC39500D1ADF5 /* Scene.swift in Sources */,
 				FD6CE100265516F500541521 /* TabBarControllerType.swift in Sources */,
 				FDE2CEC626426BCA00FE1EA7 /* UIView+Corners.swift in Sources */,
 				FDA3C8B2267727410042715E /* KeyChainStorage.swift in Sources */,
+				FD681148298BCD3500D1ADF5 /* AuthCoordinator.swift in Sources */,
 				FD0376AF28AE4C7E00A62808 /* AppCoordinator.swift in Sources */,
 				FD4593A02637F3F000669AB4 /* SpinnerView.swift in Sources */,
+				FD681142298BC2FB00D1ADF5 /* SignInProtocols.swift in Sources */,
 				FD8388712690464500286A87 /* ViewAccessibilityIdentifier.swift in Sources */,
 				FDB1AF51265F694F00419153 /* ClientItemOrderHistoryRouter.swift in Sources */,
 				FD91191B265D0223008F122C /* MainNavigationBarView.swift in Sources */,
@@ -1883,13 +1921,17 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TB95NDULFV;
 				INFOPLIST_FILE = Cafeistic/SupportingFiles/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Cafeisctic;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = cafeistic.app.new;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1906,13 +1948,17 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TB95NDULFV;
 				INFOPLIST_FILE = Cafeistic/SupportingFiles/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Cafeisctic;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = cafeistic.app.new;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1971,6 +2017,38 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		FD6810F0298BB69100D1ADF5 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+		FD6810F3298BB6C100D1ADF5 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 4.2.2;
+			};
+		};
+		FD6810F6298BB6F400D1ADF5 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 7.5.0;
+			};
+		};
+		FD6811512992349300D1ADF5 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 6.5.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1978,6 +2056,26 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FD6810ED298BB3AB00D1ADF5 /* XCRemoteSwiftPackageReference "LiteNet" */;
 			productName = LiteNet;
+		};
+		FD6810F1298BB69100D1ADF5 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD6810F0298BB69100D1ADF5 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		FD6810F4298BB6C100D1ADF5 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD6810F3298BB6C100D1ADF5 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+		FD6810F7298BB6F400D1ADF5 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD6810F6298BB6F400D1ADF5 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		FD6811522992349300D1ADF5 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD6811512992349300D1ADF5 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

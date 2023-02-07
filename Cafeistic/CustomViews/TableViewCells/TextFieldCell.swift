@@ -49,8 +49,8 @@ final class TableViewTextFieldCell: UITableViewCell {
     
     var delegate: TableViewTextFieldCellDelegate?
 
-    private lazy var textField: MaintextField = {
-        let textField = MaintextField(style: .regular)
+    private lazy var textField: AppTextField = {
+        let textField = AppTextField(style: .regular)
         textField.backgroundColor = .white
         textField.addTarget(self, action: #selector(didChageText), for: .editingChanged)
         return textField

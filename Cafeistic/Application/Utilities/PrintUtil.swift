@@ -18,3 +18,7 @@ func consolePrint(_ item: Any) {
     debugPrint("///", item)
     #endif
 }
+
+func print(_ items: Any..., separator: String = " ", terminator: String = "\n") {
+    consolePrint(items, separator: separator, terminator: terminator)
+}

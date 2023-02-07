@@ -5,8 +5,8 @@
 //  Created by Ilyas Shomat on 21.04.2021.
 //
 
-import Foundation
 import UIKit
+import Foundation
 import LiteNet
 
 class AppInitializer {
@@ -24,6 +24,7 @@ class AppInitializer {
     
     var networkService: LiteNetProtocol {
         var isDebug = false
+        
         #if DEBUG
         isDebug = true
         #endif
@@ -44,7 +45,8 @@ class AppInitializer {
     }
 
     func setupAppCoordinator(window: UIWindow) {
-        window.rootViewController = appCoordinator.toPresentable()
+//        window.rootViewController = appCoordinator.toPresentable()
+        window.rootViewController = SignInScene.initiate()
         window.makeKeyAndVisible()
     }
         

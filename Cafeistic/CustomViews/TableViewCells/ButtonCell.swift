@@ -29,8 +29,8 @@ final class TableViewButtonCell: UITableViewCell {
     
     var delegate: TableViewButtonCellDelegate?
     
-    private lazy var button: MainButton = {
-        let button = MainButton(style: .rounded)
+    private lazy var button: AppButton = {
+        let button = AppButton(style: .rounded)
         button.addTarget(self, action: #selector(tapButton), for: .touchUpInside)
         return button
     }()

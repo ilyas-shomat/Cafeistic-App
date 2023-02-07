@@ -49,6 +49,7 @@ class AppCoordinator: Coordinator {
 
 extension AppCoordinator: AppCoordinatorDelegate {
     func setAuthFlow() {
+        
     }
     
     func setMainClientFlow() {
