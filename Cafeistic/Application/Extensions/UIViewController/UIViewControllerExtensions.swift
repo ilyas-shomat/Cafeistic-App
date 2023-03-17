@@ -8,7 +8,8 @@
 import Foundation
 import UIKit
 
-extension UIViewController {
-    
-
+extension UIViewController: Presentable {
+    var toPresentable: UIViewController {
+        return self
+    }
 }

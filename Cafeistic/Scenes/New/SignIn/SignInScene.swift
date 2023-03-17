@@ -23,7 +23,7 @@ final class SignInScene: Scene {
         super.viewDidLoad()
     }
     
-    private func handleViewActions(action: SignInViewActions) {
+    func handleViewActions(action: SignInViewActions) {
         switch action {
         case .signInButtonTapped(let login, let password):
             handleSignInButtonTap(login: login, password: password)
@@ -32,7 +32,7 @@ final class SignInScene: Scene {
         }
     }
     
-    private func handleSignInButtonTap(login: String, password: String) {
+    func handleSignInButtonTap(login: String, password: String) {
         guard checkLoginAndPassword(login: login, password: password) else {
             return
         }
@@ -40,15 +40,15 @@ final class SignInScene: Scene {
         interactor?.authorize(entity: .init(username: login, password: password))
     }
     
-    private func handleSignUpButtonTap() {
+    func handleSignUpButtonTap() {
         
     }
     
-    private func handleForgetPasswordTap() {
+    func handleForgetPasswordTap() {
         
     }
     
-    private func checkLoginAndPassword(login: String, password: String) -> Bool {
+    func checkLoginAndPassword(login: String, password: String) -> Bool {
         if login.isEmpty || password.isEmpty {
             showAlert(
                 title: StringConstant.Services.AlertMessage.error,

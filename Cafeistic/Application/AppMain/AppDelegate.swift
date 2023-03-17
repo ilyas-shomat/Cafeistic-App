@@ -17,17 +17,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
-        setupRootScene()
+        setupAppInitializer()
         
         IQKeyboardManager.shared.enable = true
         
         return true
     }
 
-    private func setupRootScene() {
-        guard let window = window else { return }
+    private func setupAppInitializer() {
         AppInitializer.shared.setupSerivces()
-        AppInitializer.shared.setupAppCoordinator(window: window)
+        AppInitializer.shared.setupAppCoordinator()
     }
 }
 

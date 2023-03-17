@@ -53,6 +53,7 @@ final class SignInInteractorSpec: XCTestCase {
         waitForExpectations(timeout: 0.2)
     }
     
+//    MARK: - Test request got fail
     func testFailureRequest() throws {
         // Given
         let exp = expectation(description: "testSuccessRequest")

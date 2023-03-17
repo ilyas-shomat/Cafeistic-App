@@ -2,59 +2,67 @@
 //  AppCoordinator.swift
 //  Cafeistic
 //
-//  Created by Ilyas Shomat on 18.08.2022.
+//  Created by Ilyas Shomat on 13.03.2023.
 //
 
 import Foundation
-import UIKit
-import Combine
 
-protocol AppCoordinatorDelegate {
-    func setAuthFlow()
-    func setMainClientFlow()
-}
-
-class AppCoordinator: Coordinator {
-    override var root: Presentable {
-        return router.toPresentable()
+final class AppCoordinator: Coordinator {
+    init() {
+        super.init(completion: {})
+        bindDeeplinks()
     }
     
-    init(router: Router) {
-        super.init(router: router, navigationType: .newFlow)
-        bindDeeplink()
-        setRootFlow()
-    }
-    
-    private func setRootFlow() {
-        setAuthFlow()
-//        setMainFlow()
-    }
-    
-    private func bindDeeplink() {
+    private func bindDeeplinks() {
 //        deeplinkSubject
-//            .unwrap()
-//            .map(AppFlow.init(deeplink:))
-//            .unwrap()
 //            .receive(on: DispatchQueue.main)
-//            .sink { [weak self] deeplink in
-//                guard let self = self else { return }
-////               TODO: handle deeplink links
-//
-//                self.resetDeeplink()
+//            .sink{ [weak self] (coordinatable, navigationType) in
+//                switch coordinatable {
+//                case let coordinator as AuthCoordinator:
+//                    print("coordinator", coordinator)
+//                default: ()
+//                }
 //
 //            }
-//            .store(in: &disposeBag)
+//            .store(in: &cancellables)
     }
-}
-
-extension AppCoordinator: AppCoordinatorDelegate {
-    func setAuthFlow() {
+    
+    func run() {
+        runAuthCoordinator()
+    }
+    
+    private func runAuthCoordinator() {
+        var authCoordinator: AuthCoordinator?
         
+        authCoordinator = AuthCoordinator{ [weak self] in
+            if let wSelf = self, let coordinator = authCoordinator{
+                wSelf.removeChild(coordinator)
+                wSelf.runCustomerMainCoordinator()
+            }
+        }
+        
+        guard let authCoordinator else { return }
+        
+        addChild(authCoordinator)
+        authCoordinator.run()
     }
     
-    func setMainClientFlow() {
+    private func runCustomerMainCoordinator() {
+        var customerMainCoordinator: CustomerMainCoordinator?
+        
+        customerMainCoordinator = CustomerMainCoordinator { [weak self] in
+            if let wSelf = self, let coordinator = customerMainCoordinator{
+                wSelf.removeChild(coordinator)
+            }
+        }
+        
+        guard let customerMainCoordinator else { return }
+        
+        addChild(customerMainCoordinator)
+        customerMainCoordinator.run()
     }
     
-    func setMainRestaurantsFlow() {
+    private func runCafeMainCoordinator() {
+        
     }
 }

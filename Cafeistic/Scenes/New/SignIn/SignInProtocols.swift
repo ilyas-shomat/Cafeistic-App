@@ -17,4 +17,4 @@ protocol SingInInteractorDelegate {
     func authorize(entity: SignInEntity)
 }
 
-protocol SignInCoordinatorDelegate {}
+protocol SignInCoordinatorDelegate: CoordinatableDelagate {}
