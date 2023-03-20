@@ -28,7 +28,8 @@ final class AppCoordinator: Coordinator {
     }
     
     func run() {
-        runAuthCoordinator()
+//        runAuthCoordinator()
+        runCustomerMainCoordinator()
     }
     
     private func runAuthCoordinator() {
@@ -48,16 +49,16 @@ final class AppCoordinator: Coordinator {
     }
     
     private func runCustomerMainCoordinator() {
-        var customerMainCoordinator: CustomerMainCoordinator?
-        
-        customerMainCoordinator = CustomerMainCoordinator { [weak self] in
+        var customerMainCoordinator: MainCoordinator?
+
+        customerMainCoordinator = MainCoordinator { [weak self] in
             if let wSelf = self, let coordinator = customerMainCoordinator{
                 wSelf.removeChild(coordinator)
             }
         }
-        
+
         guard let customerMainCoordinator else { return }
-        
+
         addChild(customerMainCoordinator)
         customerMainCoordinator.run()
     }

@@ -9,15 +9,18 @@ import Foundation
 import UIKit
 
 final class Router: NSObject, UINavigationControllerDelegate {
-    var navigationScene: NavigationScene
+    var navigationScene: NavigationScene?
 
-    init(navigationScene: NavigationScene = .init()) {
+    init(navigationScene: NavigationScene? = .init()) {
+        
+//        print("/// navigationScene", navigationScene)
+        
         self.navigationScene = navigationScene
         super.init()
-        self.navigationScene.delegate = self
+        self.navigationScene?.delegate = self
     }
 }
 
 extension Router: Routable {
-    var toPresentable: UIViewController { navigationScene }
+    var toPresentable: UIViewController? { navigationScene }
 }

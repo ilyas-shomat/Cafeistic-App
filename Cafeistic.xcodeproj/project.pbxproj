@@ -57,6 +57,10 @@
 		FD77D3822671F02F00AF8671 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD77D3812671F02F00AF8671 /* ApiResponse.swift */; };
 		FD79682226650606007C4C4A /* ApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD79682126650606007C4C4A /* ApiConstants.swift */; };
 		FD796826266507C8007C4C4A /* AuthTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD796825266507C8007C4C4A /* AuthTarget.swift */; };
+		FD7BC3D529C850BE00599A37 /* TempFirstDetailScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BC3D429C850BE00599A37 /* TempFirstDetailScene.swift */; };
+		FD7BC3DA29C8673400599A37 /* TempSecondScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BC3D929C8673400599A37 /* TempSecondScene.swift */; };
+		FD7BC3DC29C867AA00599A37 /* TempSecondCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BC3DB29C867AA00599A37 /* TempSecondCoordinator.swift */; };
+		FD7BC3DE29C870AA00599A37 /* TempSecondDetailScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BC3DD29C870AA00599A37 /* TempSecondDetailScene.swift */; };
 		FD8388712690464500286A87 /* ViewAccessibilityIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8388702690464500286A87 /* ViewAccessibilityIdentifier.swift */; };
 		FD83887F2690480300286A87 /* ViewAccessibilityIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8388702690464500286A87 /* ViewAccessibilityIdentifier.swift */; };
 		FD9118AB265B7508008F122C /* ClientCurrentOrderContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9118A5265B7508008F122C /* ClientCurrentOrderContract.swift */; };
@@ -165,11 +169,11 @@
 		FDF73AFC29BF31A0004B9374 /* NavigationScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF73AFB29BF31A0004B9374 /* NavigationScene.swift */; };
 		FDF73B0029C07D21004B9374 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF73AFF29C07D21004B9374 /* AuthCoordinator.swift */; };
 		FDF73B0229C1C25A004B9374 /* CoordinatableDelagate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF73B0129C1C25A004B9374 /* CoordinatableDelagate.swift */; };
-		FDF73B0429C1C392004B9374 /* CustomerMainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF73B0329C1C392004B9374 /* CustomerMainCoordinator.swift */; };
-		FDF73B0629C1C3D6004B9374 /* CafeMainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF73B0529C1C3D6004B9374 /* CafeMainCoordinator.swift */; };
+		FDF73B0429C1C392004B9374 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF73B0329C1C392004B9374 /* MainCoordinator.swift */; };
 		FDF73B0B29C1C561004B9374 /* TempSignInScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF73B0A29C1C561004B9374 /* TempSignInScene.swift */; };
 		FDF73B0D29C1C89D004B9374 /* TempSignUpScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF73B0C29C1C89D004B9374 /* TempSignUpScene.swift */; };
 		FDF73B0F29C46A14004B9374 /* TempFirstScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF73B0E29C46A14004B9374 /* TempFirstScene.swift */; };
+		FDF73B1429C47240004B9374 /* TempFirstCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF73B1329C47240004B9374 /* TempFirstCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -235,6 +239,10 @@
 		FD77D3812671F02F00AF8671 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
 		FD79682126650606007C4C4A /* ApiConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConstants.swift; sourceTree = "<group>"; };
 		FD796825266507C8007C4C4A /* AuthTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTarget.swift; sourceTree = "<group>"; };
+		FD7BC3D429C850BE00599A37 /* TempFirstDetailScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempFirstDetailScene.swift; sourceTree = "<group>"; };
+		FD7BC3D929C8673400599A37 /* TempSecondScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempSecondScene.swift; sourceTree = "<group>"; };
+		FD7BC3DB29C867AA00599A37 /* TempSecondCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempSecondCoordinator.swift; sourceTree = "<group>"; };
+		FD7BC3DD29C870AA00599A37 /* TempSecondDetailScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempSecondDetailScene.swift; sourceTree = "<group>"; };
 		FD838814268F2FDB00286A87 /* CafeisticUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CafeisticUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD838818268F2FDB00286A87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD8388592690398700286A87 /* CafeisticTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CafeisticTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -348,11 +356,11 @@
 		FDF73AFB29BF31A0004B9374 /* NavigationScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationScene.swift; sourceTree = "<group>"; };
 		FDF73AFF29C07D21004B9374 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
 		FDF73B0129C1C25A004B9374 /* CoordinatableDelagate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatableDelagate.swift; sourceTree = "<group>"; };
-		FDF73B0329C1C392004B9374 /* CustomerMainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerMainCoordinator.swift; sourceTree = "<group>"; };
-		FDF73B0529C1C3D6004B9374 /* CafeMainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeMainCoordinator.swift; sourceTree = "<group>"; };
+		FDF73B0329C1C392004B9374 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		FDF73B0A29C1C561004B9374 /* TempSignInScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempSignInScene.swift; sourceTree = "<group>"; };
 		FDF73B0C29C1C89D004B9374 /* TempSignUpScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempSignUpScene.swift; sourceTree = "<group>"; };
 		FDF73B0E29C46A14004B9374 /* TempFirstScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempFirstScene.swift; sourceTree = "<group>"; };
+		FDF73B1329C47240004B9374 /* TempFirstCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempFirstCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -739,6 +747,33 @@
 				FD796825266507C8007C4C4A /* AuthTarget.swift */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		FD7BC3D629C866FE00599A37 /* Auht */ = {
+			isa = PBXGroup;
+			children = (
+				FDF73B0A29C1C561004B9374 /* TempSignInScene.swift */,
+				FDF73B0C29C1C89D004B9374 /* TempSignUpScene.swift */,
+			);
+			path = Auht;
+			sourceTree = "<group>";
+		};
+		FD7BC3D729C8670700599A37 /* First */ = {
+			isa = PBXGroup;
+			children = (
+				FDF73B0E29C46A14004B9374 /* TempFirstScene.swift */,
+				FD7BC3D429C850BE00599A37 /* TempFirstDetailScene.swift */,
+			);
+			path = First;
+			sourceTree = "<group>";
+		};
+		FD7BC3D829C8671400599A37 /* Second */ = {
+			isa = PBXGroup;
+			children = (
+				FD7BC3D929C8673400599A37 /* TempSecondScene.swift */,
+				FD7BC3DD29C870AA00599A37 /* TempSecondDetailScene.swift */,
+			);
+			path = Second;
 			sourceTree = "<group>";
 		};
 		FD838815268F2FDB00286A87 /* CafeisticUITests */ = {
@@ -1339,8 +1374,9 @@
 			isa = PBXGroup;
 			children = (
 				FDF73AFF29C07D21004B9374 /* AuthCoordinator.swift */,
-				FDF73B0329C1C392004B9374 /* CustomerMainCoordinator.swift */,
-				FDF73B0529C1C3D6004B9374 /* CafeMainCoordinator.swift */,
+				FDF73B0329C1C392004B9374 /* MainCoordinator.swift */,
+				FDF73B1329C47240004B9374 /* TempFirstCoordinator.swift */,
+				FD7BC3DB29C867AA00599A37 /* TempSecondCoordinator.swift */,
 			);
 			path = AuthFlow;
 			sourceTree = "<group>";
@@ -1348,9 +1384,9 @@
 		FDF73B0729C1C53C004B9374 /* Temp */ = {
 			isa = PBXGroup;
 			children = (
-				FDF73B0A29C1C561004B9374 /* TempSignInScene.swift */,
-				FDF73B0C29C1C89D004B9374 /* TempSignUpScene.swift */,
-				FDF73B0E29C46A14004B9374 /* TempFirstScene.swift */,
+				FD7BC3D829C8671400599A37 /* Second */,
+				FD7BC3D729C8670700599A37 /* First */,
+				FD7BC3D629C866FE00599A37 /* Auht */,
 			);
 			path = Temp;
 			sourceTree = "<group>";
@@ -1539,6 +1575,7 @@
 				FD9B980C268068CF0031131F /* ProfileInfoView.swift in Sources */,
 				FDEE44CF2660EC6D0080CC66 /* DefaultNavigationControllerType.swift in Sources */,
 				FDF281B72632CED300B1829A /* StartPresenter.swift in Sources */,
+				FD7BC3D529C850BE00599A37 /* TempFirstDetailScene.swift in Sources */,
 				FDACDF5F263A8BCA00689B51 /* ForgetPasswordPresenter.swift in Sources */,
 				FDACDF5E263A8BCA00689B51 /* ForgetPasswordContract.swift in Sources */,
 				FDBDEADC265E1D2500B03B9E /* ClientOrderHistoryRouter.swift in Sources */,
@@ -1558,6 +1595,7 @@
 				FDA3C8C92678BBA40042715E /* AlertMessageConstant.swift in Sources */,
 				FD796826266507C8007C4C4A /* AuthTarget.swift in Sources */,
 				FDF281F42632D3AA00B1829A /* UIColor+Hex.swift in Sources */,
+				FD7BC3DA29C8673400599A37 /* TempSecondScene.swift in Sources */,
 				FDA3C8B626772D820042715E /* UserDefaultsKey.swift in Sources */,
 				FD4593812636CA3100669AB4 /* Assets.swift in Sources */,
 				FD9118AF265B7508008F122C /* ClientCurrentOrderInteractor.swift in Sources */,
@@ -1567,10 +1605,11 @@
 				FDA3C8C42678BA060042715E /* SignInEntity.swift in Sources */,
 				FDBDEADD265E1D2500B03B9E /* ClientOrderHistoryViewController.swift in Sources */,
 				FDF281BA2632CED300B1829A /* StartContract.swift in Sources */,
-				FDF73B0429C1C392004B9374 /* CustomerMainCoordinator.swift in Sources */,
+				FDF73B0429C1C392004B9374 /* MainCoordinator.swift in Sources */,
 				FDEE44CA2660E5680080CC66 /* ProfileViewController.swift in Sources */,
 				FD9118B5265B9734008F122C /* ClientOrderMealCell.swift in Sources */,
 				FDACDF1D26391F7C00689B51 /* TwoButtonAlertView.swift in Sources */,
+				FDF73B1429C47240004B9374 /* TempFirstCoordinator.swift in Sources */,
 				FDACDF63263A8BCA00689B51 /* ForgetPasswordSceneBuilder.swift in Sources */,
 				FD9BB1B32641034D00835B98 /* MenuInteractor.swift in Sources */,
 				FDEA5CD42652976800BB08A1 /* UIImage+MaskWithColor.swift in Sources */,
@@ -1606,7 +1645,6 @@
 				FDF73AEB29BF14EC004B9374 /* Coordinatable.swift in Sources */,
 				FDB1AF53265F694F00419153 /* ClientItemOrderHistoryInteractor.swift in Sources */,
 				FD9118B8265B974A008F122C /* ClientCurrentOrderMealCellModel.swift in Sources */,
-				FDF73B0629C1C3D6004B9374 /* CafeMainCoordinator.swift in Sources */,
 				FD03E645275292BA001421DD /* MainLabeledViewStyle.swift in Sources */,
 				FD4593A42637F9EA00669AB4 /* SpinnerIndicator.swift in Sources */,
 				FDCBAD28264A4DFF005B9608 /* UITableViewExtension.swift in Sources */,
@@ -1626,6 +1664,7 @@
 				FD6B8898263BCBCB0026D3E0 /* ClientSignUpInteractor.swift in Sources */,
 				FD6811502990F35900D1ADF5 /* EntityDefaultValues.swift in Sources */,
 				FD79682226650606007C4C4A /* ApiConstants.swift in Sources */,
+				FD7BC3DE29C870AA00599A37 /* TempSecondDetailScene.swift in Sources */,
 				FD68113C298BC2CC00D1ADF5 /* SignInView.swift in Sources */,
 				FD4593932637F1F300669AB4 /* MainButtonStyle.swift in Sources */,
 				FDA3C8A626770C890042715E /* SessionTracker.swift in Sources */,
@@ -1662,6 +1701,7 @@
 				FDA3C8B2267727410042715E /* KeyChainStorage.swift in Sources */,
 				FD4593A02637F3F000669AB4 /* SpinnerView.swift in Sources */,
 				FDF73AF629BF187C004B9374 /* Coordinator.swift in Sources */,
+				FD7BC3DC29C867AA00599A37 /* TempSecondCoordinator.swift in Sources */,
 				FD681142298BC2FB00D1ADF5 /* SignInProtocols.swift in Sources */,
 				FD8388712690464500286A87 /* ViewAccessibilityIdentifier.swift in Sources */,
 				FDB1AF51265F694F00419153 /* ClientItemOrderHistoryRouter.swift in Sources */,

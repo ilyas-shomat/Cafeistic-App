@@ -40,12 +40,15 @@ protocol Coordinatable: AnyObject, Presentable {
     func runNewFlow()
     func proceedCurrentFlow()
     
+//
+    func setRouterWithRootScene()
+    
     func addChild(_ coordinator: Coordinatable)
     func removeChild(_ coordinator: Coordinatable)
 }
 
 extension Coordinatable {
-    var toPresentable: UIViewController {
+    var toPresentable: UIViewController? {
         switch coordinatingType {
         case .newFlow:
             return root.toPresentable
@@ -79,6 +82,10 @@ extension Coordinatable {
     
     func proceedCurrentFlow() {
         
+    }
+    
+    func setRouterWithRootScene() {
+        router.setRootPresentable(root)
     }
     
     func addChild(_ coordinator: Coordinatable) {

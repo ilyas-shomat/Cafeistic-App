@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 extension UIViewController: Presentable {
-    var toPresentable: UIViewController {
+    var toPresentable: UIViewController? {
         return self
     }
 }

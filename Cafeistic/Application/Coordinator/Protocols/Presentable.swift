@@ -9,5 +9,5 @@ import Foundation
 import UIKit
 
 protocol Presentable {
-    var toPresentable: UIViewController { get }
+    var toPresentable: UIViewController? { get }
 }
