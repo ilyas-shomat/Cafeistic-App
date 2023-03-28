@@ -8,19 +8,30 @@
 import Foundation
 import UIKit
 
-final class Router: NSObject, UINavigationControllerDelegate {
+final class Router: NSObject, Routable {
     var navigationScene: NavigationScene?
+    var completions: [UIViewController : CompletionHandler] = .init()
 
     init(navigationScene: NavigationScene? = .init()) {
-        
-//        print("/// navigationScene", navigationScene)
-        
-        self.navigationScene = navigationScene
         super.init()
+        self.navigationScene = navigationScene
         self.navigationScene?.delegate = self
+    }
+    
+    func saveSceneCompletion(scene: UIViewController, completion: @escaping () -> Void) {
+        completions[scene] = completion
     }
 }
 
-extension Router: Routable {
-    var toPresentable: UIViewController? { navigationScene }
+extension Router: UINavigationControllerDelegate {
+    func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
+        guard
+            let navigationScene = navigationScene,
+            let poppedScene = navigationScene.transitionCoordinator?.viewController(forKey: .from),
+            let completion = completions[poppedScene],
+            !navigationScene.viewControllers.contains(poppedScene) else { return }
+        
+        completions.removeValue(forKey: poppedScene)
+        completion()
+    }
 }

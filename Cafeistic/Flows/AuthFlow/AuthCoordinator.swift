@@ -23,7 +23,7 @@ final class AuthCoordinator: Coordinator {
     var flowCompletion: CompletionHandler?
 
     init(completion: @escaping CompletionHandler) {
-        super.init(completion: completion)
+        super.init()
         flowCompletion = completion
         bindDeeplinks()
     }

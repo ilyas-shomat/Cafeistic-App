@@ -17,7 +17,7 @@ class TempSecondScene: UIViewController {
         return button
     }()
     
-    var coordinatorDelegate: TempSecondCoordinatorDelegate?
+    var coordinatorDelegate: SecondCoordinatorDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()

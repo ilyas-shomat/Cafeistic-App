@@ -9,7 +9,7 @@ import Foundation
 
 final class AppCoordinator: Coordinator {
     init() {
-        super.init(completion: {})
+        super.init()
         bindDeeplinks()
     }
     

@@ -10,20 +10,25 @@ import UIKit
 
 protocol Routable: Presentable {
     var navigationScene: NavigationScene? { get set }
+    var completions: [UIViewController: CompletionHandler] { get set }
     
     func setRootPresentable(_ presentable: Presentable)
     func setRootScene(_ scene: Presentable?)
 
     func push(_ scene: Presentable?, animated: Bool, completion: CompletionHandler?)
-    func present(_ scene: Presentable?, animated: Bool, completion: CompletionHandler?)
+    func present(_ scene: Presentable?, presentationStyle: UIModalPresentationStyle?, animated: Bool, completion: CompletionHandler?)
     
     func popScene(animated: Bool)
     func dismissScene(animated: Bool, completion: CompletionHandler?)
     
 //    func popToRootScene(animated: Bool)
+    
+    func saveSceneCompletion(scene: UIViewController, completion: @escaping () -> Void)
 }
 
 extension Routable {
+    var toPresentable: UIViewController? { navigationScene }
+    
     func setRootPresentable(_ presentable: Presentable) {
         guard let navigationScene = navigationScene,
               let toPresentable = presentable.toPresentable
@@ -58,8 +63,13 @@ extension Routable {
         }
     }
     
-    func present(_ scene: Presentable?, animated: Bool = true, completion: CompletionHandler? = nil) {
+    func present(_ scene: Presentable?, presentationStyle: UIModalPresentationStyle? = nil, animated: Bool = true, completion: CompletionHandler? = nil) {
         guard let presentable = scene?.toPresentable else { return }
+        
+        if let presentationStyle = presentationStyle {
+            presentable.modalPresentationStyle = presentationStyle
+        }
+        
         navigationScene?.present(presentable, animated: animated, completion: completion)
     }
     
@@ -68,6 +78,10 @@ extension Routable {
               presentable !== NavigationScene.self
         else {
             return
+        }
+        
+        if let completion = completion {
+            saveSceneCompletion(scene: presentable, completion: completion)
         }
         
         navigationScene?.pushViewController(presentable, animated: true)
@@ -80,5 +94,4 @@ extension Routable {
     func dismissScene(animated: Bool, completion: CompletionHandler? = nil) {
         navigationScene?.dismiss(animated: animated)
     }
-    
 }

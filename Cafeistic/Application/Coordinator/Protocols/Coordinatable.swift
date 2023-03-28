@@ -11,11 +11,10 @@ import Combine
 
 enum CoordinatingType {
     case newFlow
-    case currentFlow
+    case currentFlow(NavigationType? = nil)
 }
 
 enum NavigationType {
-    case setRoot
     case present
     case push
 }
@@ -31,14 +30,14 @@ protocol Coordinatable: AnyObject, Presentable {
     var coordinatingType: CoordinatingType { get set }
     var childCoordinators: [Coordinatable] { get set }
     
-//    MARK: called when flow finish its task
-    var completion: CompletionHandler { get set }
+//    MARK: called when flow finishes its task
+    var completion: CompletionHandler? { get set }
     
 //    func bindDeeplinks()
     
     func run()
     func runNewFlow()
-    func proceedCurrentFlow()
+    func proceedCurrentFlow(navigationType: NavigationType)
     
 //
     func setRouterWithRootScene()
@@ -66,13 +65,15 @@ extension Coordinatable {
 //            .store(in: &cancellables)
 //    }
     
+    
 //    MARK need to implement for AppCoordinator
     func run() {
         switch coordinatingType {
         case .newFlow:
             runNewFlow()
-        case .currentFlow:
-            proceedCurrentFlow()
+        case .currentFlow(let navigationType):
+            guard let navigationType = navigationType else { return }
+            proceedCurrentFlow(navigationType: navigationType)
         }
     }
     
@@ -80,8 +81,13 @@ extension Coordinatable {
         router.setRootScene(root)
     }
     
-    func proceedCurrentFlow() {
-        
+    func proceedCurrentFlow(navigationType: NavigationType) {
+        switch navigationType {
+        case .push:
+            router.push(root, animated: true, completion: completion)
+        case .present:
+            ()
+        }
     }
     
     func setRouterWithRootScene() {

@@ -7,19 +7,19 @@
 
 import Foundation
 
-protocol TempFirstCoordinatorDelegate: CoordinatableDelagate {
+protocol FirstCoordinatorDelegate: CoordinatableDelagate {
     func navigateFromTempFirstSceneToTempFirstDetailScene()
     func navigateFromTempFirstSceneToItself()
     func popFromTempFristDetailSceneToTempFirstScene()
 }
 
-final class TempFirstCoordinator: Coordinator {
+final class FirstCoordinator: Coordinator {
     override var root: Presentable { getTempFirstScene() }
     
     var flowCompletion: CompletionHandler?
     
     init(coordinatingType: CoordinatingType, completion: @escaping CompletionHandler) {
-        super.init(coordinatingType: coordinatingType, completion: completion)
+        super.init(coordinatingType: coordinatingType)
         flowCompletion = completion
     }
     
@@ -36,7 +36,7 @@ final class TempFirstCoordinator: Coordinator {
     }
 }
 
-extension TempFirstCoordinator: TempFirstCoordinatorDelegate {
+extension FirstCoordinator: FirstCoordinatorDelegate {
     func navigateFromTempFirstSceneToTempFirstDetailScene() {
         router.push(getTempFirstDetailScene(), animated: true)
     }

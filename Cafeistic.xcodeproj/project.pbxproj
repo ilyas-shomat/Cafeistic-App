@@ -59,8 +59,10 @@
 		FD796826266507C8007C4C4A /* AuthTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD796825266507C8007C4C4A /* AuthTarget.swift */; };
 		FD7BC3D529C850BE00599A37 /* TempFirstDetailScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BC3D429C850BE00599A37 /* TempFirstDetailScene.swift */; };
 		FD7BC3DA29C8673400599A37 /* TempSecondScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BC3D929C8673400599A37 /* TempSecondScene.swift */; };
-		FD7BC3DC29C867AA00599A37 /* TempSecondCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BC3DB29C867AA00599A37 /* TempSecondCoordinator.swift */; };
+		FD7BC3DC29C867AA00599A37 /* SecondCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BC3DB29C867AA00599A37 /* SecondCoordinator.swift */; };
 		FD7BC3DE29C870AA00599A37 /* TempSecondDetailScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BC3DD29C870AA00599A37 /* TempSecondDetailScene.swift */; };
+		FD7BC3E129C873B900599A37 /* TempThirdScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BC3E029C873B900599A37 /* TempThirdScene.swift */; };
+		FD7BC3E329C873E800599A37 /* ThirdCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BC3E229C873E800599A37 /* ThirdCoordinator.swift */; };
 		FD8388712690464500286A87 /* ViewAccessibilityIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8388702690464500286A87 /* ViewAccessibilityIdentifier.swift */; };
 		FD83887F2690480300286A87 /* ViewAccessibilityIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8388702690464500286A87 /* ViewAccessibilityIdentifier.swift */; };
 		FD9118AB265B7508008F122C /* ClientCurrentOrderContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9118A5265B7508008F122C /* ClientCurrentOrderContract.swift */; };
@@ -135,6 +137,11 @@
 		FDCD506D2732DCA400E0A34F /* SignInSerivceEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCD506C2732DCA400E0A34F /* SignInSerivceEntity.swift */; };
 		FDCD506F2732DD9200E0A34F /* NetworkSignUpEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCD506E2732DD9200E0A34F /* NetworkSignUpEntity.swift */; };
 		FDCD50712732DFD100E0A34F /* SignUpEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCD50702732DFD100E0A34F /* SignUpEntity.swift */; };
+		FDD8BB0529D14E44005B395C /* ThirdChild1Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD8BB0429D14E44005B395C /* ThirdChild1Coordinator.swift */; };
+		FDD8BB0729D14E50005B395C /* ThirdChild2Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD8BB0629D14E50005B395C /* ThirdChild2Coordinator.swift */; };
+		FDD8BB0B29D14EC0005B395C /* ThirdChild1Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD8BB0A29D14EC0005B395C /* ThirdChild1Scene.swift */; };
+		FDD8BB0D29D14ED6005B395C /* ThirdChild2Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD8BB0C29D14ED6005B395C /* ThirdChild2Scene.swift */; };
+		FDD8BB1229D2C5C3005B395C /* ThirdChild1DetailScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD8BB1129D2C5C3005B395C /* ThirdChild1DetailScene.swift */; };
 		FDE2CEC626426BCA00FE1EA7 /* UIView+Corners.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE2CEC526426BCA00FE1EA7 /* UIView+Corners.swift */; };
 		FDEA5C7C265245DD00BB08A1 /* TextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEA5C7B265245DD00BB08A1 /* TextFieldCell.swift */; };
 		FDEA5CCB2652963900BB08A1 /* UIButton+SetImageTintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEA5CCA2652963800BB08A1 /* UIButton+SetImageTintColor.swift */; };
@@ -173,7 +180,7 @@
 		FDF73B0B29C1C561004B9374 /* TempSignInScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF73B0A29C1C561004B9374 /* TempSignInScene.swift */; };
 		FDF73B0D29C1C89D004B9374 /* TempSignUpScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF73B0C29C1C89D004B9374 /* TempSignUpScene.swift */; };
 		FDF73B0F29C46A14004B9374 /* TempFirstScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF73B0E29C46A14004B9374 /* TempFirstScene.swift */; };
-		FDF73B1429C47240004B9374 /* TempFirstCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF73B1329C47240004B9374 /* TempFirstCoordinator.swift */; };
+		FDF73B1429C47240004B9374 /* FirstCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF73B1329C47240004B9374 /* FirstCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -241,8 +248,10 @@
 		FD796825266507C8007C4C4A /* AuthTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTarget.swift; sourceTree = "<group>"; };
 		FD7BC3D429C850BE00599A37 /* TempFirstDetailScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempFirstDetailScene.swift; sourceTree = "<group>"; };
 		FD7BC3D929C8673400599A37 /* TempSecondScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempSecondScene.swift; sourceTree = "<group>"; };
-		FD7BC3DB29C867AA00599A37 /* TempSecondCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempSecondCoordinator.swift; sourceTree = "<group>"; };
+		FD7BC3DB29C867AA00599A37 /* SecondCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCoordinator.swift; sourceTree = "<group>"; };
 		FD7BC3DD29C870AA00599A37 /* TempSecondDetailScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempSecondDetailScene.swift; sourceTree = "<group>"; };
+		FD7BC3E029C873B900599A37 /* TempThirdScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempThirdScene.swift; sourceTree = "<group>"; };
+		FD7BC3E229C873E800599A37 /* ThirdCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdCoordinator.swift; sourceTree = "<group>"; };
 		FD838814268F2FDB00286A87 /* CafeisticUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CafeisticUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD838818268F2FDB00286A87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD8388592690398700286A87 /* CafeisticTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CafeisticTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -320,6 +329,11 @@
 		FDCD506C2732DCA400E0A34F /* SignInSerivceEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInSerivceEntity.swift; sourceTree = "<group>"; };
 		FDCD506E2732DD9200E0A34F /* NetworkSignUpEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSignUpEntity.swift; sourceTree = "<group>"; };
 		FDCD50702732DFD100E0A34F /* SignUpEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEntity.swift; sourceTree = "<group>"; };
+		FDD8BB0429D14E44005B395C /* ThirdChild1Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdChild1Coordinator.swift; sourceTree = "<group>"; };
+		FDD8BB0629D14E50005B395C /* ThirdChild2Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdChild2Coordinator.swift; sourceTree = "<group>"; };
+		FDD8BB0A29D14EC0005B395C /* ThirdChild1Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdChild1Scene.swift; sourceTree = "<group>"; };
+		FDD8BB0C29D14ED6005B395C /* ThirdChild2Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdChild2Scene.swift; sourceTree = "<group>"; };
+		FDD8BB1129D2C5C3005B395C /* ThirdChild1DetailScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdChild1DetailScene.swift; sourceTree = "<group>"; };
 		FDE2CEC526426BCA00FE1EA7 /* UIView+Corners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Corners.swift"; sourceTree = "<group>"; };
 		FDEA5C7B265245DD00BB08A1 /* TextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldCell.swift; sourceTree = "<group>"; };
 		FDEA5CCA2652963800BB08A1 /* UIButton+SetImageTintColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+SetImageTintColor.swift"; sourceTree = "<group>"; };
@@ -360,7 +374,7 @@
 		FDF73B0A29C1C561004B9374 /* TempSignInScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempSignInScene.swift; sourceTree = "<group>"; };
 		FDF73B0C29C1C89D004B9374 /* TempSignUpScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempSignUpScene.swift; sourceTree = "<group>"; };
 		FDF73B0E29C46A14004B9374 /* TempFirstScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempFirstScene.swift; sourceTree = "<group>"; };
-		FDF73B1329C47240004B9374 /* TempFirstCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempFirstCoordinator.swift; sourceTree = "<group>"; };
+		FDF73B1329C47240004B9374 /* FirstCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -413,7 +427,6 @@
 			children = (
 				FDEAD92B25C8269B0075F122 /* AppDelegate.swift */,
 				FD4B1BD3262FFE5E005E9BF9 /* AppInitializer.swift */,
-				FDF73AF729BF2F43004B9374 /* AppCoordinator.swift */,
 			);
 			path = AppMain;
 			sourceTree = "<group>";
@@ -749,13 +762,13 @@
 			path = Auth;
 			sourceTree = "<group>";
 		};
-		FD7BC3D629C866FE00599A37 /* Auht */ = {
+		FD7BC3D629C866FE00599A37 /* Auhth */ = {
 			isa = PBXGroup;
 			children = (
 				FDF73B0A29C1C561004B9374 /* TempSignInScene.swift */,
 				FDF73B0C29C1C89D004B9374 /* TempSignUpScene.swift */,
 			);
-			path = Auht;
+			path = Auhth;
 			sourceTree = "<group>";
 		};
 		FD7BC3D729C8670700599A37 /* First */ = {
@@ -774,6 +787,14 @@
 				FD7BC3DD29C870AA00599A37 /* TempSecondDetailScene.swift */,
 			);
 			path = Second;
+			sourceTree = "<group>";
+		};
+		FD7BC3DF29C873A100599A37 /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				FD7BC3E029C873B900599A37 /* TempThirdScene.swift */,
+			);
+			path = Third;
 			sourceTree = "<group>";
 		};
 		FD838815268F2FDB00286A87 /* CafeisticUITests */ = {
@@ -1115,6 +1136,23 @@
 			path = Auth;
 			sourceTree = "<group>";
 		};
+		FDD8BB0829D14E8E005B395C /* ThirdChild1 */ = {
+			isa = PBXGroup;
+			children = (
+				FDD8BB0A29D14EC0005B395C /* ThirdChild1Scene.swift */,
+				FDD8BB1129D2C5C3005B395C /* ThirdChild1DetailScene.swift */,
+			);
+			path = ThirdChild1;
+			sourceTree = "<group>";
+		};
+		FDD8BB0929D14E96005B395C /* ThirdChild2 */ = {
+			isa = PBXGroup;
+			children = (
+				FDD8BB0C29D14ED6005B395C /* ThirdChild2Scene.swift */,
+			);
+			path = ThirdChild2;
+			sourceTree = "<group>";
+		};
 		FDEA5CC92652961700BB08A1 /* UIButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -1373,10 +1411,14 @@
 		FDF73AFE29C07D0B004B9374 /* AuthFlow */ = {
 			isa = PBXGroup;
 			children = (
+				FDF73AF729BF2F43004B9374 /* AppCoordinator.swift */,
 				FDF73AFF29C07D21004B9374 /* AuthCoordinator.swift */,
 				FDF73B0329C1C392004B9374 /* MainCoordinator.swift */,
-				FDF73B1329C47240004B9374 /* TempFirstCoordinator.swift */,
-				FD7BC3DB29C867AA00599A37 /* TempSecondCoordinator.swift */,
+				FDF73B1329C47240004B9374 /* FirstCoordinator.swift */,
+				FD7BC3DB29C867AA00599A37 /* SecondCoordinator.swift */,
+				FD7BC3E229C873E800599A37 /* ThirdCoordinator.swift */,
+				FDD8BB0429D14E44005B395C /* ThirdChild1Coordinator.swift */,
+				FDD8BB0629D14E50005B395C /* ThirdChild2Coordinator.swift */,
 			);
 			path = AuthFlow;
 			sourceTree = "<group>";
@@ -1384,9 +1426,12 @@
 		FDF73B0729C1C53C004B9374 /* Temp */ = {
 			isa = PBXGroup;
 			children = (
+				FDD8BB0929D14E96005B395C /* ThirdChild2 */,
+				FDD8BB0829D14E8E005B395C /* ThirdChild1 */,
+				FD7BC3DF29C873A100599A37 /* Third */,
 				FD7BC3D829C8671400599A37 /* Second */,
 				FD7BC3D729C8670700599A37 /* First */,
-				FD7BC3D629C866FE00599A37 /* Auht */,
+				FD7BC3D629C866FE00599A37 /* Auhth */,
 			);
 			path = Temp;
 			sourceTree = "<group>";
@@ -1603,13 +1648,16 @@
 				FDACDF60263A8BCA00689B51 /* ForgetPasswordRouter.swift in Sources */,
 				FD6B8897263BCBCB0026D3E0 /* ClientSignUpViewController.swift in Sources */,
 				FDA3C8C42678BA060042715E /* SignInEntity.swift in Sources */,
+				FDD8BB0D29D14ED6005B395C /* ThirdChild2Scene.swift in Sources */,
 				FDBDEADD265E1D2500B03B9E /* ClientOrderHistoryViewController.swift in Sources */,
 				FDF281BA2632CED300B1829A /* StartContract.swift in Sources */,
 				FDF73B0429C1C392004B9374 /* MainCoordinator.swift in Sources */,
+				FDD8BB1229D2C5C3005B395C /* ThirdChild1DetailScene.swift in Sources */,
 				FDEE44CA2660E5680080CC66 /* ProfileViewController.swift in Sources */,
+				FD7BC3E129C873B900599A37 /* TempThirdScene.swift in Sources */,
 				FD9118B5265B9734008F122C /* ClientOrderMealCell.swift in Sources */,
 				FDACDF1D26391F7C00689B51 /* TwoButtonAlertView.swift in Sources */,
-				FDF73B1429C47240004B9374 /* TempFirstCoordinator.swift in Sources */,
+				FDF73B1429C47240004B9374 /* FirstCoordinator.swift in Sources */,
 				FDACDF63263A8BCA00689B51 /* ForgetPasswordSceneBuilder.swift in Sources */,
 				FD9BB1B32641034D00835B98 /* MenuInteractor.swift in Sources */,
 				FDEA5CD42652976800BB08A1 /* UIImage+MaskWithColor.swift in Sources */,
@@ -1638,6 +1686,7 @@
 				FD68114E2990F10400D1ADF5 /* ArrayExtensions.swift in Sources */,
 				FDF73AF029BF155C004B9374 /* Routable.swift in Sources */,
 				FD6B8899263BCBCB0026D3E0 /* ClientSignUpScene.swift in Sources */,
+				FDD8BB0729D14E50005B395C /* ThirdChild2Coordinator.swift in Sources */,
 				FDBDEADB265E1D2500B03B9E /* ClientOrderHistoryPresenter.swift in Sources */,
 				FD9BB1C926410C5D00835B98 /* MealMenuCell.swift in Sources */,
 				FDF73AFA29BF310E004B9374 /* Router.swift in Sources */,
@@ -1654,6 +1703,7 @@
 				FD9BB1B12641034D00835B98 /* MenuRouter.swift in Sources */,
 				FD9BB1B22641034D00835B98 /* MenuViewController.swift in Sources */,
 				FD77D3822671F02F00AF8671 /* ApiResponse.swift in Sources */,
+				FD7BC3E329C873E800599A37 /* ThirdCoordinator.swift in Sources */,
 				FDACDF71263AA01700689B51 /* TableViewProvider.swift in Sources */,
 				FDF73AED29BF14F9004B9374 /* Presentable.swift in Sources */,
 				FD9BB1B42641034D00835B98 /* MenuSceneBuilder.swift in Sources */,
@@ -1681,6 +1731,7 @@
 				FD6B8895263BCBCB0026D3E0 /* ClientSignUpPresenter.swift in Sources */,
 				FDF281FA2632D43800B1829A /* UITableViewCell+UI.swift in Sources */,
 				FD4B1BD4262FFE5E005E9BF9 /* AppInitializer.swift in Sources */,
+				FDD8BB0529D14E44005B395C /* ThirdChild1Coordinator.swift in Sources */,
 				FDB1AF50265F694F00419153 /* ClientItemOrderHistoryPresenter.swift in Sources */,
 				FD6B88A7263C03EC0026D3E0 /* EstablishmentSignUpPresenter.swift in Sources */,
 				FD68113E298BC2D800D1ADF5 /* SignInScene.swift in Sources */,
@@ -1696,12 +1747,13 @@
 				FD91191E265D0774008F122C /* ViewRoundingCorners.swift in Sources */,
 				FD681145298BC39500D1ADF5 /* Scene.swift in Sources */,
 				FD6CE100265516F500541521 /* TabBarControllerType.swift in Sources */,
+				FDD8BB0B29D14EC0005B395C /* ThirdChild1Scene.swift in Sources */,
 				FDF73B0B29C1C561004B9374 /* TempSignInScene.swift in Sources */,
 				FDE2CEC626426BCA00FE1EA7 /* UIView+Corners.swift in Sources */,
 				FDA3C8B2267727410042715E /* KeyChainStorage.swift in Sources */,
 				FD4593A02637F3F000669AB4 /* SpinnerView.swift in Sources */,
 				FDF73AF629BF187C004B9374 /* Coordinator.swift in Sources */,
-				FD7BC3DC29C867AA00599A37 /* TempSecondCoordinator.swift in Sources */,
+				FD7BC3DC29C867AA00599A37 /* SecondCoordinator.swift in Sources */,
 				FD681142298BC2FB00D1ADF5 /* SignInProtocols.swift in Sources */,
 				FD8388712690464500286A87 /* ViewAccessibilityIdentifier.swift in Sources */,
 				FDB1AF51265F694F00419153 /* ClientItemOrderHistoryRouter.swift in Sources */,

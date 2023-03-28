@@ -19,7 +19,7 @@ class Coordinator: Coordinatable {
     var childCoordinators: [Coordinatable] = []
     var router: Routable
     var coordinatingType: CoordinatingType
-    var completion: CompletionHandler
+    var completion: CompletionHandler?
     
     var root: Presentable {
         fatalError("Root must be overrided")
@@ -27,12 +27,10 @@ class Coordinator: Coordinatable {
     
     init(
         router: Routable = Router(),
-        coordinatingType: CoordinatingType = .newFlow,
-        completion: @escaping CompletionHandler
+        coordinatingType: CoordinatingType = .newFlow
     ) {
         self.router = router
         self.coordinatingType = coordinatingType
-        self.completion = completion
     }
     
     deinit {

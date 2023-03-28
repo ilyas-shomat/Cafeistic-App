@@ -13,9 +13,9 @@ protocol MainCoordinatorDelegate: CoordinatableDelagate {
 }
 
 final class MainCoordinator: Coordinator {
-    private lazy var tempFirstCoordinator: TempFirstCoordinator = {
-        let coordinator = TempFirstCoordinator(
-            coordinatingType: .currentFlow,
+    private lazy var tempFirstCoordinator: FirstCoordinator = {
+        let coordinator = FirstCoordinator(
+            coordinatingType: .currentFlow(),
             completion: {}
         )
         
@@ -30,15 +30,32 @@ final class MainCoordinator: Coordinator {
         return coordinator
     }()
     
-    private lazy var tempSecondCoordinator: TempSecondCoordinator = {
-        let coordinator = TempSecondCoordinator(
-            coordinatingType: .currentFlow,
+    private lazy var tempSecondCoordinator: SecondCoordinator = {
+        let coordinator = SecondCoordinator(
+            coordinatingType: .currentFlow(),
             completion: {}
         )
 
         coordinator.setRouterWithRootScene()
         coordinator.toPresentable?.tabBarItem = .init(
             title: "1 Scene",
+            image: nil,
+            tag: 0
+        )
+        
+        addChild(coordinator)
+        return coordinator
+    }()
+    
+    private lazy var tempThirdCoordinator: ThirdCoordinator = {
+        let coordinator = ThirdCoordinator(
+            coordinatingType: .currentFlow(),
+            completion: {}
+        )
+        
+        coordinator.setRouterWithRootScene()
+        coordinator.toPresentable?.tabBarItem = .init(
+            title: "2 Scene",
             image: nil,
             tag: 0
         )
@@ -60,7 +77,7 @@ final class MainCoordinator: Coordinator {
         router: Router = .init(navigationScene: nil),
         completion: @escaping CompletionHandler
     ) {
-        super.init(router: router, completion: completion)
+        super.init(router: router)
         flowCompletion = completion
         setupTabbarScene()
     }
@@ -72,7 +89,8 @@ final class MainCoordinator: Coordinator {
         
         var scenes: [UIViewController] = [
             tempFirstCoordinator,
-            tempSecondCoordinator
+            tempSecondCoordinator,
+            tempThirdCoordinator
         ]
         .map { coordinator -> UIViewController in
             let scene = coordinator.toPresentable
@@ -88,24 +106,19 @@ final class MainCoordinator: Coordinator {
         
         
 //        MARK: Temp code, need to remove later on
-        let tempColors: [UIColor] = [.blue, .orange, .yellow]
+        let scene = UIViewController()
+        let navigationScene = UINavigationController(rootViewController: scene)
         
-        for i in 0...1 {
-            let scene = UIViewController()
-            let navigationScene = UINavigationController(rootViewController: scene)
-            
-            scene.view.backgroundColor = tempColors[i]
-            navigationScene.tabBarItem = .init(
-                title: "\(i+2) Scene",
-                image: nil,
-                tag: i+1
-            )
-            
-            scenes.append(navigationScene)
-        }
+        scene.view.backgroundColor = .yellow
+        navigationScene.tabBarItem = .init(
+            title: "3 Scene",
+            image: nil,
+            tag: 3
+        )
+        
+        scenes.append(navigationScene)
                 
         tabBarScene.setViewControllers(scenes, animated: true)
-//        print("tabBarScene.viewControllers", tabBarScene.viewControllers)
     }
 }
 

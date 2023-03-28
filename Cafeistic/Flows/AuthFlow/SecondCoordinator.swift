@@ -8,18 +8,18 @@
 import Foundation
 
 
-protocol TempSecondCoordinatorDelegate: CoordinatableDelagate {
+protocol SecondCoordinatorDelegate: CoordinatableDelagate {
     func navigate_From_TempSecondScene_To_TempSecondDetailScene()
     func dismiss_From_TempSecondDetailScene_To_TempSecondScene()
 }
 
-final class TempSecondCoordinator: Coordinator {
+final class SecondCoordinator: Coordinator {
     override var root: Presentable { getTempSecondScene() }
     
     var flowCompletion: CompletionHandler?
     
     init(coordinatingType: CoordinatingType, completion: @escaping CompletionHandler) {
-        super.init(coordinatingType: coordinatingType, completion: completion)
+        super.init(coordinatingType: coordinatingType)
         flowCompletion = completion
     }
     
@@ -36,9 +36,10 @@ final class TempSecondCoordinator: Coordinator {
     }
 }
 
-extension TempSecondCoordinator: TempSecondCoordinatorDelegate {
+extension SecondCoordinator: SecondCoordinatorDelegate {
     func navigate_From_TempSecondScene_To_TempSecondDetailScene() {
         router.present(getTempSecondDetailScene(), animated: true)
+//        router.present(getTempSecondDetailScene(), presentationStyle: .overFullScreen, animated: true) // for FullScreen presentation
     }
     
     func dismiss_From_TempSecondDetailScene_To_TempSecondScene() {
