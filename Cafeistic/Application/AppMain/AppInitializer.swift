@@ -13,16 +13,9 @@ class AppInitializer {
     public static let shared: AppInitializer = .init()
     public static var serloc: ServiceLocator!
     
-    private lazy var appNavigationController: UINavigationController = {
-        let navigationController = UINavigationController()
-        navigationController.isNavigationBarHidden = true
-        return navigationController
-    }()
+    private lazy var appCoordinator: AppCoordinator = .init()
     
-    private lazy var router: Router = .init(navigationScene: appNavigationController)
-    private lazy var appCoordinator: AppCoordinator = .init(router: router)
-    
-    var networkService: LiteNetProtocol {
+    private var networkService: LiteNetProtocol {
         var isDebug = false
         
         #if DEBUG
@@ -39,15 +32,13 @@ class AppInitializer {
         return LiteNet(provider, constants: constants)
     }
     
-    var sessionTracker: SessionTracker {
+    private var sessionTracker: SessionTracker {
         let storage = UserDefaultsStorage()
         return SessionTracker(storage: storage, networkService: networkService)
     }
 
-    func setupAppCoordinator(window: UIWindow) {
-//        window.rootViewController = appCoordinator.toPresentable()
-        window.rootViewController = SignInScene.initiate()
-        window.makeKeyAndVisible()
+    func setupAppCoordinator() {
+        appCoordinator.run()
     }
         
     func setupSerivces() {

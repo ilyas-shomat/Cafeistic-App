@@ -52,4 +52,25 @@ final class SignInInteractorSpec: XCTestCase {
         
         waitForExpectations(timeout: 0.2)
     }
+    
+//    MARK: - Test request got fail
+    func testFailureRequest() throws {
+        // Given
+        let exp = expectation(description: "testSuccessRequest")
+        mockNetworkService.isError = true
+        
+        // When
+        sut.authorize(entity: .init(username: "", password: ""))
+        
+        // Then
+        DispatchQueue.main.async { [weak self] in
+            let error = self?.sut.networkError
+            
+            XCTAssertNotNil(error)
+            
+            exp.fulfill()
+        }
+        
+        waitForExpectations(timeout: 0.2)
+    }
 }
