@@ -1,5 +1,5 @@
 //
-//  TempSecondDetailScene.swift
+//  SecondDetailScene.swift
 //  Cafeistic
 //
 //  Created by Ilyas Shomat on 20.03.2023.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TempSecondDetailScene: UIViewController {
+class SecondDetailScene: UIViewController {
     private lazy var button2: UIButton = {
         let button = UIButton()
         button.frame = .init(x: 100, y: 400, width: 200, height: 50)
@@ -29,6 +29,6 @@ class TempSecondDetailScene: UIViewController {
         }
     
     @objc private func tapButton2() {
-        coordinatorDelegate?.dismiss_From_TempSecondDetailScene_To_TempSecondScene()
+        coordinatorDelegate?.dismissFrom_TempSecondDetailScene_To_TempSecondScene()
     }
 }

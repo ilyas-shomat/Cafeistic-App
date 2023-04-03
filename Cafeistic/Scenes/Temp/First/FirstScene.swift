@@ -1,5 +1,5 @@
 //
-//  TempFirstScene.swift
+//  FirstScene.swift
 //  Cafeistic
 //
 //  Created by Ilyas Shomat on 17.03.2023.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TempFirstScene: UIViewController {
+class FirstScene: UIViewController {
     private lazy var button: UIButton = {
         let button = UIButton()
         button.frame = .init(x: 20, y: 300, width: 350, height: 50)
@@ -24,13 +24,9 @@ class TempFirstScene: UIViewController {
 
         view.backgroundColor = .white
         view.addSubview(button)
-        
-//        title = "TempFirstScene"
-        
-//        print("/// ", nav)
     }
     
     @objc private func tapButton() {
-        coordinatorDelegate?.navigateFromTempFirstSceneToTempFirstDetailScene()
+        coordinatorDelegate?.navigateFrom_TempFirstScene_To_TempFirstDetailScene()
     }
 }

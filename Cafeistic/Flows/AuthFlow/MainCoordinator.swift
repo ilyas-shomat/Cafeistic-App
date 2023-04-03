@@ -8,15 +8,10 @@
 import Foundation
 import UIKit
 
-protocol MainCoordinatorDelegate: CoordinatableDelagate {
-
-}
-
 final class MainCoordinator: Coordinator {
     private lazy var tempFirstCoordinator: FirstCoordinator = {
         let coordinator = FirstCoordinator(
-            coordinatingType: .currentFlow(),
-            completion: {}
+            coordinatingType: .currentFlow()
         )
         
         coordinator.setRouterWithRootScene()
@@ -32,8 +27,7 @@ final class MainCoordinator: Coordinator {
     
     private lazy var tempSecondCoordinator: SecondCoordinator = {
         let coordinator = SecondCoordinator(
-            coordinatingType: .currentFlow(),
-            completion: {}
+            coordinatingType: .currentFlow()
         )
 
         coordinator.setRouterWithRootScene()
@@ -49,8 +43,7 @@ final class MainCoordinator: Coordinator {
     
     private lazy var tempThirdCoordinator: ThirdCoordinator = {
         let coordinator = ThirdCoordinator(
-            coordinatingType: .currentFlow(),
-            completion: {}
+            coordinatingType: .currentFlow()
         )
         
         coordinator.setRouterWithRootScene()
@@ -74,11 +67,9 @@ final class MainCoordinator: Coordinator {
     var flowCompletion: CompletionHandler?
 
     init(
-        router: Router = .init(navigationScene: nil),
-        completion: @escaping CompletionHandler
+        router: Router = .init(navigationScene: nil)
     ) {
         super.init(router: router)
-        flowCompletion = completion
         setupTabbarScene()
     }
     
@@ -120,7 +111,4 @@ final class MainCoordinator: Coordinator {
                 
         tabBarScene.setViewControllers(scenes, animated: true)
     }
-}
-
-extension MainCoordinator: MainCoordinatorDelegate {
 }

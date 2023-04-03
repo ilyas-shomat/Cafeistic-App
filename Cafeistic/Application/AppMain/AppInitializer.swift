@@ -13,15 +13,6 @@ class AppInitializer {
     public static let shared: AppInitializer = .init()
     public static var serloc: ServiceLocator!
     
-//    private lazy var appNavigationController: UINavigationController = {
-//        let navigationController = UINavigationController()
-//        navigationController.isNavigationBarHidden = true
-//        return navigationController
-//    }()
-    
-//    private lazy var router: Router = .init(navigationScene: appNavigationController)
-//    private lazy var appCoordinator: AppCoordinator = .init(router: router)
-    
     private lazy var appCoordinator: AppCoordinator = .init()
     
     private var networkService: LiteNetProtocol {
@@ -47,9 +38,6 @@ class AppInitializer {
     }
 
     func setupAppCoordinator() {
-//        window.rootViewController = appCoordinator.toPresentable()
-//        window.rootViewController = SignInScene.initiate()
-//        window.makeKeyAndVisible()
         appCoordinator.run()
     }
         

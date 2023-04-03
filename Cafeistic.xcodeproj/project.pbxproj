@@ -57,11 +57,11 @@
 		FD77D3822671F02F00AF8671 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD77D3812671F02F00AF8671 /* ApiResponse.swift */; };
 		FD79682226650606007C4C4A /* ApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD79682126650606007C4C4A /* ApiConstants.swift */; };
 		FD796826266507C8007C4C4A /* AuthTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD796825266507C8007C4C4A /* AuthTarget.swift */; };
-		FD7BC3D529C850BE00599A37 /* TempFirstDetailScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BC3D429C850BE00599A37 /* TempFirstDetailScene.swift */; };
-		FD7BC3DA29C8673400599A37 /* TempSecondScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BC3D929C8673400599A37 /* TempSecondScene.swift */; };
+		FD7BC3D529C850BE00599A37 /* FirstDetailScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BC3D429C850BE00599A37 /* FirstDetailScene.swift */; };
+		FD7BC3DA29C8673400599A37 /* SecondScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BC3D929C8673400599A37 /* SecondScene.swift */; };
 		FD7BC3DC29C867AA00599A37 /* SecondCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BC3DB29C867AA00599A37 /* SecondCoordinator.swift */; };
-		FD7BC3DE29C870AA00599A37 /* TempSecondDetailScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BC3DD29C870AA00599A37 /* TempSecondDetailScene.swift */; };
-		FD7BC3E129C873B900599A37 /* TempThirdScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BC3E029C873B900599A37 /* TempThirdScene.swift */; };
+		FD7BC3DE29C870AA00599A37 /* SecondDetailScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BC3DD29C870AA00599A37 /* SecondDetailScene.swift */; };
+		FD7BC3E129C873B900599A37 /* ThirdScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BC3E029C873B900599A37 /* ThirdScene.swift */; };
 		FD7BC3E329C873E800599A37 /* ThirdCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BC3E229C873E800599A37 /* ThirdCoordinator.swift */; };
 		FD8388712690464500286A87 /* ViewAccessibilityIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8388702690464500286A87 /* ViewAccessibilityIdentifier.swift */; };
 		FD83887F2690480300286A87 /* ViewAccessibilityIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8388702690464500286A87 /* ViewAccessibilityIdentifier.swift */; };
@@ -142,6 +142,7 @@
 		FDD8BB0B29D14EC0005B395C /* ThirdChild1Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD8BB0A29D14EC0005B395C /* ThirdChild1Scene.swift */; };
 		FDD8BB0D29D14ED6005B395C /* ThirdChild2Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD8BB0C29D14ED6005B395C /* ThirdChild2Scene.swift */; };
 		FDD8BB1229D2C5C3005B395C /* ThirdChild1DetailScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD8BB1129D2C5C3005B395C /* ThirdChild1DetailScene.swift */; };
+		FDD8BB1429D2F9C7005B395C /* ThirdChild2DetailScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD8BB1329D2F9C7005B395C /* ThirdChild2DetailScene.swift */; };
 		FDE2CEC626426BCA00FE1EA7 /* UIView+Corners.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE2CEC526426BCA00FE1EA7 /* UIView+Corners.swift */; };
 		FDEA5C7C265245DD00BB08A1 /* TextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEA5C7B265245DD00BB08A1 /* TextFieldCell.swift */; };
 		FDEA5CCB2652963900BB08A1 /* UIButton+SetImageTintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEA5CCA2652963800BB08A1 /* UIButton+SetImageTintColor.swift */; };
@@ -175,11 +176,10 @@
 		FDF73AFA29BF310E004B9374 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF73AF929BF310E004B9374 /* Router.swift */; };
 		FDF73AFC29BF31A0004B9374 /* NavigationScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF73AFB29BF31A0004B9374 /* NavigationScene.swift */; };
 		FDF73B0029C07D21004B9374 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF73AFF29C07D21004B9374 /* AuthCoordinator.swift */; };
-		FDF73B0229C1C25A004B9374 /* CoordinatableDelagate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF73B0129C1C25A004B9374 /* CoordinatableDelagate.swift */; };
 		FDF73B0429C1C392004B9374 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF73B0329C1C392004B9374 /* MainCoordinator.swift */; };
 		FDF73B0B29C1C561004B9374 /* TempSignInScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF73B0A29C1C561004B9374 /* TempSignInScene.swift */; };
 		FDF73B0D29C1C89D004B9374 /* TempSignUpScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF73B0C29C1C89D004B9374 /* TempSignUpScene.swift */; };
-		FDF73B0F29C46A14004B9374 /* TempFirstScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF73B0E29C46A14004B9374 /* TempFirstScene.swift */; };
+		FDF73B0F29C46A14004B9374 /* FirstScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF73B0E29C46A14004B9374 /* FirstScene.swift */; };
 		FDF73B1429C47240004B9374 /* FirstCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF73B1329C47240004B9374 /* FirstCoordinator.swift */; };
 /* End PBXBuildFile section */
 
@@ -246,11 +246,11 @@
 		FD77D3812671F02F00AF8671 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
 		FD79682126650606007C4C4A /* ApiConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConstants.swift; sourceTree = "<group>"; };
 		FD796825266507C8007C4C4A /* AuthTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTarget.swift; sourceTree = "<group>"; };
-		FD7BC3D429C850BE00599A37 /* TempFirstDetailScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempFirstDetailScene.swift; sourceTree = "<group>"; };
-		FD7BC3D929C8673400599A37 /* TempSecondScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempSecondScene.swift; sourceTree = "<group>"; };
+		FD7BC3D429C850BE00599A37 /* FirstDetailScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstDetailScene.swift; sourceTree = "<group>"; };
+		FD7BC3D929C8673400599A37 /* SecondScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScene.swift; sourceTree = "<group>"; };
 		FD7BC3DB29C867AA00599A37 /* SecondCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCoordinator.swift; sourceTree = "<group>"; };
-		FD7BC3DD29C870AA00599A37 /* TempSecondDetailScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempSecondDetailScene.swift; sourceTree = "<group>"; };
-		FD7BC3E029C873B900599A37 /* TempThirdScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempThirdScene.swift; sourceTree = "<group>"; };
+		FD7BC3DD29C870AA00599A37 /* SecondDetailScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondDetailScene.swift; sourceTree = "<group>"; };
+		FD7BC3E029C873B900599A37 /* ThirdScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdScene.swift; sourceTree = "<group>"; };
 		FD7BC3E229C873E800599A37 /* ThirdCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdCoordinator.swift; sourceTree = "<group>"; };
 		FD838814268F2FDB00286A87 /* CafeisticUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CafeisticUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD838818268F2FDB00286A87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -334,6 +334,7 @@
 		FDD8BB0A29D14EC0005B395C /* ThirdChild1Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdChild1Scene.swift; sourceTree = "<group>"; };
 		FDD8BB0C29D14ED6005B395C /* ThirdChild2Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdChild2Scene.swift; sourceTree = "<group>"; };
 		FDD8BB1129D2C5C3005B395C /* ThirdChild1DetailScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdChild1DetailScene.swift; sourceTree = "<group>"; };
+		FDD8BB1329D2F9C7005B395C /* ThirdChild2DetailScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdChild2DetailScene.swift; sourceTree = "<group>"; };
 		FDE2CEC526426BCA00FE1EA7 /* UIView+Corners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Corners.swift"; sourceTree = "<group>"; };
 		FDEA5C7B265245DD00BB08A1 /* TextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldCell.swift; sourceTree = "<group>"; };
 		FDEA5CCA2652963800BB08A1 /* UIButton+SetImageTintColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+SetImageTintColor.swift"; sourceTree = "<group>"; };
@@ -369,11 +370,10 @@
 		FDF73AF929BF310E004B9374 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		FDF73AFB29BF31A0004B9374 /* NavigationScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationScene.swift; sourceTree = "<group>"; };
 		FDF73AFF29C07D21004B9374 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
-		FDF73B0129C1C25A004B9374 /* CoordinatableDelagate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatableDelagate.swift; sourceTree = "<group>"; };
 		FDF73B0329C1C392004B9374 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		FDF73B0A29C1C561004B9374 /* TempSignInScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempSignInScene.swift; sourceTree = "<group>"; };
 		FDF73B0C29C1C89D004B9374 /* TempSignUpScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempSignUpScene.swift; sourceTree = "<group>"; };
-		FDF73B0E29C46A14004B9374 /* TempFirstScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempFirstScene.swift; sourceTree = "<group>"; };
+		FDF73B0E29C46A14004B9374 /* FirstScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScene.swift; sourceTree = "<group>"; };
 		FDF73B1329C47240004B9374 /* FirstCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -774,8 +774,8 @@
 		FD7BC3D729C8670700599A37 /* First */ = {
 			isa = PBXGroup;
 			children = (
-				FDF73B0E29C46A14004B9374 /* TempFirstScene.swift */,
-				FD7BC3D429C850BE00599A37 /* TempFirstDetailScene.swift */,
+				FDF73B0E29C46A14004B9374 /* FirstScene.swift */,
+				FD7BC3D429C850BE00599A37 /* FirstDetailScene.swift */,
 			);
 			path = First;
 			sourceTree = "<group>";
@@ -783,8 +783,8 @@
 		FD7BC3D829C8671400599A37 /* Second */ = {
 			isa = PBXGroup;
 			children = (
-				FD7BC3D929C8673400599A37 /* TempSecondScene.swift */,
-				FD7BC3DD29C870AA00599A37 /* TempSecondDetailScene.swift */,
+				FD7BC3D929C8673400599A37 /* SecondScene.swift */,
+				FD7BC3DD29C870AA00599A37 /* SecondDetailScene.swift */,
 			);
 			path = Second;
 			sourceTree = "<group>";
@@ -792,7 +792,7 @@
 		FD7BC3DF29C873A100599A37 /* Third */ = {
 			isa = PBXGroup;
 			children = (
-				FD7BC3E029C873B900599A37 /* TempThirdScene.swift */,
+				FD7BC3E029C873B900599A37 /* ThirdScene.swift */,
 			);
 			path = Third;
 			sourceTree = "<group>";
@@ -1149,6 +1149,7 @@
 			isa = PBXGroup;
 			children = (
 				FDD8BB0C29D14ED6005B395C /* ThirdChild2Scene.swift */,
+				FDD8BB1329D2F9C7005B395C /* ThirdChild2DetailScene.swift */,
 			);
 			path = ThirdChild2;
 			sourceTree = "<group>";
@@ -1394,7 +1395,6 @@
 				FDF73AEA29BF14EC004B9374 /* Coordinatable.swift */,
 				FDF73AEC29BF14F9004B9374 /* Presentable.swift */,
 				FDF73AEF29BF155C004B9374 /* Routable.swift */,
-				FDF73B0129C1C25A004B9374 /* CoordinatableDelagate.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -1620,7 +1620,7 @@
 				FD9B980C268068CF0031131F /* ProfileInfoView.swift in Sources */,
 				FDEE44CF2660EC6D0080CC66 /* DefaultNavigationControllerType.swift in Sources */,
 				FDF281B72632CED300B1829A /* StartPresenter.swift in Sources */,
-				FD7BC3D529C850BE00599A37 /* TempFirstDetailScene.swift in Sources */,
+				FD7BC3D529C850BE00599A37 /* FirstDetailScene.swift in Sources */,
 				FDACDF5F263A8BCA00689B51 /* ForgetPasswordPresenter.swift in Sources */,
 				FDACDF5E263A8BCA00689B51 /* ForgetPasswordContract.swift in Sources */,
 				FDBDEADC265E1D2500B03B9E /* ClientOrderHistoryRouter.swift in Sources */,
@@ -1636,11 +1636,11 @@
 				FDA3C8BF2677774D0042715E /* AuthenticationStore.swift in Sources */,
 				FD77D37B2671DFD400AF8671 /* ServiceLocator.swift in Sources */,
 				FD9BB1CC26410C6F00835B98 /* MealMenuCellModel.swift in Sources */,
-				FDF73B0F29C46A14004B9374 /* TempFirstScene.swift in Sources */,
+				FDF73B0F29C46A14004B9374 /* FirstScene.swift in Sources */,
 				FDA3C8C92678BBA40042715E /* AlertMessageConstant.swift in Sources */,
 				FD796826266507C8007C4C4A /* AuthTarget.swift in Sources */,
 				FDF281F42632D3AA00B1829A /* UIColor+Hex.swift in Sources */,
-				FD7BC3DA29C8673400599A37 /* TempSecondScene.swift in Sources */,
+				FD7BC3DA29C8673400599A37 /* SecondScene.swift in Sources */,
 				FDA3C8B626772D820042715E /* UserDefaultsKey.swift in Sources */,
 				FD4593812636CA3100669AB4 /* Assets.swift in Sources */,
 				FD9118AF265B7508008F122C /* ClientCurrentOrderInteractor.swift in Sources */,
@@ -1654,7 +1654,7 @@
 				FDF73B0429C1C392004B9374 /* MainCoordinator.swift in Sources */,
 				FDD8BB1229D2C5C3005B395C /* ThirdChild1DetailScene.swift in Sources */,
 				FDEE44CA2660E5680080CC66 /* ProfileViewController.swift in Sources */,
-				FD7BC3E129C873B900599A37 /* TempThirdScene.swift in Sources */,
+				FD7BC3E129C873B900599A37 /* ThirdScene.swift in Sources */,
 				FD9118B5265B9734008F122C /* ClientOrderMealCell.swift in Sources */,
 				FDACDF1D26391F7C00689B51 /* TwoButtonAlertView.swift in Sources */,
 				FDF73B1429C47240004B9374 /* FirstCoordinator.swift in Sources */,
@@ -1714,7 +1714,7 @@
 				FD6B8898263BCBCB0026D3E0 /* ClientSignUpInteractor.swift in Sources */,
 				FD6811502990F35900D1ADF5 /* EntityDefaultValues.swift in Sources */,
 				FD79682226650606007C4C4A /* ApiConstants.swift in Sources */,
-				FD7BC3DE29C870AA00599A37 /* TempSecondDetailScene.swift in Sources */,
+				FD7BC3DE29C870AA00599A37 /* SecondDetailScene.swift in Sources */,
 				FD68113C298BC2CC00D1ADF5 /* SignInView.swift in Sources */,
 				FD4593932637F1F300669AB4 /* MainButtonStyle.swift in Sources */,
 				FDA3C8A626770C890042715E /* SessionTracker.swift in Sources */,
@@ -1726,7 +1726,6 @@
 				FD03E64327529290001421DD /* MainLabeledView.swift in Sources */,
 				FDEE44CB2660E5680080CC66 /* ProfileInteractor.swift in Sources */,
 				FDB1AF54265F694F00419153 /* ClientItemOrderHistorySceneBuilder.swift in Sources */,
-				FDF73B0229C1C25A004B9374 /* CoordinatableDelagate.swift in Sources */,
 				FDCBAD30264A58F6005B9608 /* LabelCell.swift in Sources */,
 				FD6B8895263BCBCB0026D3E0 /* ClientSignUpPresenter.swift in Sources */,
 				FDF281FA2632D43800B1829A /* UITableViewCell+UI.swift in Sources */,
@@ -1750,6 +1749,7 @@
 				FDD8BB0B29D14EC0005B395C /* ThirdChild1Scene.swift in Sources */,
 				FDF73B0B29C1C561004B9374 /* TempSignInScene.swift in Sources */,
 				FDE2CEC626426BCA00FE1EA7 /* UIView+Corners.swift in Sources */,
+				FDD8BB1429D2F9C7005B395C /* ThirdChild2DetailScene.swift in Sources */,
 				FDA3C8B2267727410042715E /* KeyChainStorage.swift in Sources */,
 				FD4593A02637F3F000669AB4 /* SpinnerView.swift in Sources */,
 				FDF73AF629BF187C004B9374 /* Coordinator.swift in Sources */,

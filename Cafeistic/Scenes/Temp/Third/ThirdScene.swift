@@ -1,19 +1,18 @@
 //
-//  TempFirstDetailScene.swift
+//  ThirdScene.swift
 //  Cafeistic
 //
 //  Created by Ilyas Shomat on 20.03.2023.
 //
 
-import Foundation
 import UIKit
 
-class TempFirstDetailScene: UIViewController {
+class ThirdScene: UIViewController {
     private lazy var button1: UIButton = {
         let button = UIButton()
         button.frame = .init(x: 100, y: 100, width: 200, height: 50)
         button.backgroundColor = .blue
-        button.setTitle("open itself", for: .normal)
+        button.setTitle("Push Child1", for: .normal)
         button.addTarget(self, action: #selector(tapButton1), for: .touchUpInside)
         return button
     }()
@@ -22,12 +21,12 @@ class TempFirstDetailScene: UIViewController {
         let button = UIButton()
         button.frame = .init(x: 100, y: 400, width: 200, height: 50)
         button.backgroundColor = .blue
-        button.setTitle("pop itself", for: .normal)
+        button.setTitle("Present Child 2", for: .normal)
         button.addTarget(self, action: #selector(tapButton2), for: .touchUpInside)
         return button
     }()
     
-    var coordinatorDelegate: FirstCoordinatorDelegate?
+    var coordinatorDelegate: ThirdCoordinatorDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,16 +34,14 @@ class TempFirstDetailScene: UIViewController {
         view.backgroundColor = .white
         view.addSubview(button1)
         view.addSubview(button2)
-
         
-        title = "TempFirstDetailScene"
     }
     
     @objc private func tapButton1() {
-        coordinatorDelegate?.navigateFromTempFirstSceneToItself()
+        coordinatorDelegate?.navigateFrom_ThirdScene_To_ThirdChild1Scene()
     }
     
     @objc private func tapButton2() {
-        coordinatorDelegate?.popFromTempFristDetailSceneToTempFirstScene()
+        coordinatorDelegate?.navigateFrom_ThirdScene_To_ThirdChild2Scene()
     }
 }

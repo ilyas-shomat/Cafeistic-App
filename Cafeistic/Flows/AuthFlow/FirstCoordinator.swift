@@ -7,45 +7,42 @@
 
 import Foundation
 
-protocol FirstCoordinatorDelegate: CoordinatableDelagate {
-    func navigateFromTempFirstSceneToTempFirstDetailScene()
-    func navigateFromTempFirstSceneToItself()
-    func popFromTempFristDetailSceneToTempFirstScene()
+protocol FirstCoordinatorDelegate {
+    func navigateFrom_TempFirstScene_To_TempFirstDetailScene()
+    func navigateFrom_TempFirstScene_To_Itself()
+    func popFrom_TempFristDetailScene_To_TempFirstScene()
 }
 
 final class FirstCoordinator: Coordinator {
     override var root: Presentable { getTempFirstScene() }
-    
-    var flowCompletion: CompletionHandler?
-    
-    init(coordinatingType: CoordinatingType, completion: @escaping CompletionHandler) {
+        
+    init(coordinatingType: CoordinatingType) {
         super.init(coordinatingType: coordinatingType)
-        flowCompletion = completion
     }
     
     private func getTempFirstScene() -> Presentable {
-        let scene = TempFirstScene()
+        let scene = FirstScene()
         scene.coordinatorDelegate = self
         return scene
     }
     
     private func getTempFirstDetailScene() -> Presentable {
-        let scene = TempFirstDetailScene()
+        let scene = FirstDetailScene()
         scene.coordinatorDelegate = self
         return scene
     }
 }
 
 extension FirstCoordinator: FirstCoordinatorDelegate {
-    func navigateFromTempFirstSceneToTempFirstDetailScene() {
+    func navigateFrom_TempFirstScene_To_TempFirstDetailScene() {
         router.push(getTempFirstDetailScene(), animated: true)
     }
     
-    func navigateFromTempFirstSceneToItself() {
+    func navigateFrom_TempFirstScene_To_Itself() {
         router.push(getTempFirstDetailScene(), animated: true)
     }
     
-    func popFromTempFristDetailSceneToTempFirstScene() {
+    func popFrom_TempFristDetailScene_To_TempFirstScene() {
         router.popScene(animated: true)
     }
 }

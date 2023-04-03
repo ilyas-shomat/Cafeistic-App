@@ -16,6 +16,7 @@ final class Router: NSObject, Routable {
         super.init()
         self.navigationScene = navigationScene
         self.navigationScene?.delegate = self
+        self.navigationScene?.presentationController?.delegate = self
     }
     
     func saveSceneCompletion(scene: UIViewController, completion: @escaping () -> Void) {
@@ -32,6 +33,20 @@ extension Router: UINavigationControllerDelegate {
             !navigationScene.viewControllers.contains(poppedScene) else { return }
         
         completions.removeValue(forKey: poppedScene)
+        completion()
+    }
+    
+    func removeNavigationScene() {
+        navigationScene = nil
+    }
+}
+
+extension Router: UIAdaptivePresentationControllerDelegate {
+    func presentationControllerDidDismiss(_ presentationController: UIPresentationController) {
+        let dismissedViewController = presentationController.presentedViewController
+        guard let completion = completions[dismissedViewController] else { return }
+
+        completions.removeValue(forKey: dismissedViewController)
         completion()
     }
 }

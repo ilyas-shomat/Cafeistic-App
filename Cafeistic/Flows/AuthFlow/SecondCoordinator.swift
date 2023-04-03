@@ -8,41 +8,38 @@
 import Foundation
 
 
-protocol SecondCoordinatorDelegate: CoordinatableDelagate {
-    func navigate_From_TempSecondScene_To_TempSecondDetailScene()
-    func dismiss_From_TempSecondDetailScene_To_TempSecondScene()
+protocol SecondCoordinatorDelegate {
+    func navigateFrom_TempSecondScene_To_TempSecondDetailScene()
+    func dismissFrom_TempSecondDetailScene_To_TempSecondScene()
 }
 
 final class SecondCoordinator: Coordinator {
     override var root: Presentable { getTempSecondScene() }
-    
-    var flowCompletion: CompletionHandler?
-    
-    init(coordinatingType: CoordinatingType, completion: @escaping CompletionHandler) {
+        
+    init(coordinatingType: CoordinatingType) {
         super.init(coordinatingType: coordinatingType)
-        flowCompletion = completion
     }
     
     private func getTempSecondScene() -> Presentable {
-        let scene = TempSecondScene()
+        let scene = SecondScene()
         scene.coordinatorDelegate = self
         return scene
     }
     
     private func getTempSecondDetailScene() -> Presentable {
-        let scene = TempSecondDetailScene()
+        let scene = SecondDetailScene()
         scene.coordinatorDelegate = self
         return scene
     }
 }
 
 extension SecondCoordinator: SecondCoordinatorDelegate {
-    func navigate_From_TempSecondScene_To_TempSecondDetailScene() {
+    func navigateFrom_TempSecondScene_To_TempSecondDetailScene() {
         router.present(getTempSecondDetailScene(), animated: true)
 //        router.present(getTempSecondDetailScene(), presentationStyle: .overFullScreen, animated: true) // for FullScreen presentation
     }
     
-    func dismiss_From_TempSecondDetailScene_To_TempSecondScene() {
+    func dismissFrom_TempSecondDetailScene_To_TempSecondScene() {
         router.dismissScene(animated: true)
     }
 }

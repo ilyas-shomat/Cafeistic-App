@@ -29,10 +29,6 @@ class TempSignUpScene: UIViewController {
     }
     
     @objc private func tapButton() {
-        guard let authCoordinatorDelegate = authCoordinatorDelegate,
-              let flowCompletion = authCoordinatorDelegate.flowCompletion
-        else { return }
-        
-        flowCompletion()
+        authCoordinatorDelegate?.finishFlow()
     }
 }

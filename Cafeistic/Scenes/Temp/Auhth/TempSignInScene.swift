@@ -29,6 +29,6 @@ class TempSignInScene: UIViewController {
     }
     
     @objc private func tapButton() {
-        coordinatorDelegate?.navigateFromSignInToSignUp()
+        coordinatorDelegate?.navigateFrom_SignIn_To_SignUp()
     }
 }

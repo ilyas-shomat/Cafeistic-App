@@ -83,7 +83,6 @@ class MenuViewController: UIViewController {
         
         //MARK: - Delete code below after integrating with API
         tepmFunc()
-//        consolePrint(AuthenticationStore.shared.getToken())
     }
     
 }

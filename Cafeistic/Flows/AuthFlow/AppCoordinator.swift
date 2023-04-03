@@ -10,21 +10,6 @@ import Foundation
 final class AppCoordinator: Coordinator {
     init() {
         super.init()
-        bindDeeplinks()
-    }
-    
-    private func bindDeeplinks() {
-//        deeplinkSubject
-//            .receive(on: DispatchQueue.main)
-//            .sink{ [weak self] (coordinatable, navigationType) in
-//                switch coordinatable {
-//                case let coordinator as AuthCoordinator:
-//                    print("coordinator", coordinator)
-//                default: ()
-//                }
-//
-//            }
-//            .store(in: &cancellables)
     }
     
     func run() {
@@ -33,34 +18,28 @@ final class AppCoordinator: Coordinator {
     }
     
     private func runAuthCoordinator() {
-        var authCoordinator: AuthCoordinator?
+        let coordinator: AuthCoordinator = .init()
         
-        authCoordinator = AuthCoordinator{ [weak self] in
-            if let wSelf = self, let coordinator = authCoordinator{
-                wSelf.removeChild(coordinator)
-                wSelf.runCustomerMainCoordinator()
-            }
+        coordinator.completion = { [weak self, weak coordinator] in
+            guard let self = self, let coordinator else { return }
+            self.removeChild(coordinator)
+            self.runCustomerMainCoordinator()
         }
         
-        guard let authCoordinator else { return }
-        
-        addChild(authCoordinator)
-        authCoordinator.run()
+        addChild(coordinator)
+        coordinator.run()
     }
     
     private func runCustomerMainCoordinator() {
-        var customerMainCoordinator: MainCoordinator?
-
-        customerMainCoordinator = MainCoordinator { [weak self] in
-            if let wSelf = self, let coordinator = customerMainCoordinator{
-                wSelf.removeChild(coordinator)
-            }
+        let coordinator: MainCoordinator = .init()
+        
+        coordinator.completion = { [weak self, weak coordinator] in
+            guard let self = self, let coordinator else { return }
+            self.removeChild(coordinator)
         }
-
-        guard let customerMainCoordinator else { return }
-
-        addChild(customerMainCoordinator)
-        customerMainCoordinator.run()
+        
+        addChild(coordinator)
+        coordinator.run()
     }
     
     private func runCafeMainCoordinator() {

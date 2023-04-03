@@ -7,10 +7,6 @@
 
 import Foundation
 
-//protocol ThirdChild1CoordinatorDelegate: CoordinatableDelagate {
-//
-//}
-
 protocol ThirdChild1CoordinatorDelegate {
     func navigate_From_ThirdChild1_To_ThirdChild1Detail()
 }

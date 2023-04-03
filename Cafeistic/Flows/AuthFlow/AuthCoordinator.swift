@@ -7,40 +7,22 @@
 
 import Foundation
 
-protocol AuthCoordinatorDelegate: CoordinatableDelagate {
-    func navigateFromSignInToSignUp()
+protocol AuthCoordinatorDelegate {
+    func finishFlow()
+    func navigateFrom_SignIn_To_SignUp()
 }
  
 final class AuthCoordinator: Coordinator {
-//    override var root: Presentable { SignInScene.initiate() }
-        
     override var root: Presentable {
         let scene = TempSignInScene()
         scene.coordinatorDelegate = self
         return scene
     }
     
-    var flowCompletion: CompletionHandler?
-
-    init(completion: @escaping CompletionHandler) {
+    init() {
         super.init()
-        flowCompletion = completion
-        bindDeeplinks()
     }
     
-    private func bindDeeplinks() {
-//        deeplinkSubject
-//            .receive(on: DispatchQueue.main)
-//            .sink{ [weak self] (coordinatable, navigationType) in
-//                switch coordinatable {
-//                case let coordinator as AuthCoordinator:
-//                    print("coordinator", coordinator)
-//                default: ()
-//                }
-//
-//            }
-//            .store(in: &cancellables)
-    }
     private func getTempSignUpScene() -> TempSignUpScene {
         let scene = TempSignUpScene()
         scene.authCoordinatorDelegate = self
@@ -49,13 +31,11 @@ final class AuthCoordinator: Coordinator {
 }
 
 extension AuthCoordinator: AuthCoordinatorDelegate {
-    
-    func navigateFromSignInToSignUp() {
+    func navigateFrom_SignIn_To_SignUp() {
         router.push(getTempSignUpScene(), animated: true)
     }
     
-    func onCompleteFlow() {
-//        completion()
-//        deeplinkSubject.send((self, .setRoot))
+    func finishFlow() {
+        completion?()
     }
 }

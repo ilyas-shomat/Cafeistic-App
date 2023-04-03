@@ -1,18 +1,18 @@
 //
-//  ThirdChild2Scene.swift
+//  ThirdChild2DetailScene.swift
 //  Cafeistic
 //
-//  Created by Ilyas Shomat on 27.03.2023.
+//  Created by Ilyas Shomat on 28.03.2023.
 //
 
 import UIKit
 
-class ThirdChild2Scene: UIViewController {
+class ThirdChild2DetailScene: UIViewController {
     private lazy var button: UIButton = {
         let button = UIButton()
         button.frame = .init(x: 20, y: 300, width: 350, height: 50)
         button.backgroundColor = .blue
-        button.setTitle("Push ThirdChild1DetailScene", for: .normal)
+        button.setTitle("finish Flow", for: .normal)
         button.addTarget(self, action: #selector(tapButton), for: .touchUpInside)
         return button
     }()
@@ -24,11 +24,10 @@ class ThirdChild2Scene: UIViewController {
 
         view.backgroundColor = .white
         view.addSubview(button)
-        title = "ThirdChild2Scene"
+        title = "ThirdChild2DetailScene"
     }
     
     @objc private func tapButton() {
-//        coordinatorDelegate?.navigateFrom_ThirdChild2Scene_ThirdChild2DetailScene()
         coordinatorDelegate?.finishFlow()
     }
 }

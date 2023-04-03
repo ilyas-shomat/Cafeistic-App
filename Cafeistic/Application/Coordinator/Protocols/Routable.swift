@@ -16,14 +16,13 @@ protocol Routable: Presentable {
     func setRootScene(_ scene: Presentable?)
 
     func push(_ scene: Presentable?, animated: Bool, completion: CompletionHandler?)
-    func present(_ scene: Presentable?, presentationStyle: UIModalPresentationStyle?, animated: Bool, completion: CompletionHandler?)
+    func present(_ scene: Presentable?, presentationStyle: UIModalPresentationStyle?, animated: Bool)
     
     func popScene(animated: Bool)
     func dismissScene(animated: Bool, completion: CompletionHandler?)
-    
-//    func popToRootScene(animated: Bool)
-    
+        
     func saveSceneCompletion(scene: UIViewController, completion: @escaping () -> Void)
+    func removeNavigationScene()
 }
 
 extension Routable {
@@ -63,14 +62,14 @@ extension Routable {
         }
     }
     
-    func present(_ scene: Presentable?, presentationStyle: UIModalPresentationStyle? = nil, animated: Bool = true, completion: CompletionHandler? = nil) {
+    func present(_ scene: Presentable?, presentationStyle: UIModalPresentationStyle? = nil, animated: Bool = true) {
         guard let presentable = scene?.toPresentable else { return }
         
         if let presentationStyle = presentationStyle {
             presentable.modalPresentationStyle = presentationStyle
         }
         
-        navigationScene?.present(presentable, animated: animated, completion: completion)
+        navigationScene?.present(presentable, animated: animated)
     }
     
     func push(_ scene: Presentable?, animated: Bool, completion: CompletionHandler? = nil) {

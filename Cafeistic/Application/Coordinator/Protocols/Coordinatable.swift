@@ -20,11 +20,6 @@ enum NavigationType {
 }
 
 protocol Coordinatable: AnyObject, Presentable {
-//    var deeplinkSubject: PassthroughSubject<String?, Never> { get set }
-    
-    var deeplinkSubject: PassthroughSubject<(Coordinatable, NavigationType), Never> { get set }
-    var cancellables: Set<AnyCancellable> { get set }
-    
     var root: Presentable { get }
     var router: Routable { get set }
     var coordinatingType: CoordinatingType { get set }
@@ -32,18 +27,16 @@ protocol Coordinatable: AnyObject, Presentable {
     
 //    MARK: called when flow finishes its task
     var completion: CompletionHandler? { get set }
-    
-//    func bindDeeplinks()
-    
+        
     func run()
     func runNewFlow()
     func proceedCurrentFlow(navigationType: NavigationType)
     
-//
+//    MARK: function usable when you cannot use 'run()' function, like in TabViewController's tabs
     func setRouterWithRootScene()
     
     func addChild(_ coordinator: Coordinatable)
-    func removeChild(_ coordinator: Coordinatable)
+    func removeChild(_ coordinator: Coordinatable)    
 }
 
 extension Coordinatable {
@@ -55,16 +48,6 @@ extension Coordinatable {
             return router.toPresentable
         }
     }
-    
-//    func bindDeeplinks() {
-//        deeplinkSubject
-//            .receive(on: DispatchQueue.main)
-//            .sink { [weak self] coordinatable, navigationType in
-//
-//            }
-//            .store(in: &cancellables)
-//    }
-    
     
 //    MARK need to implement for AppCoordinator
     func run() {
@@ -83,11 +66,21 @@ extension Coordinatable {
     
     func proceedCurrentFlow(navigationType: NavigationType) {
         switch navigationType {
-        case .push:
-            router.push(root, animated: true, completion: completion)
-        case .present:
-            ()
+        case .push: pushNewFlow()
+        case .present: presentNewFlow()
         }
+    }
+    
+    private func pushNewFlow() {
+        router.push(root, animated: true, completion: completion)
+    }
+    
+    private func presentNewFlow() {
+        guard let toPresentable = root.toPresentable else { return }
+        let navigatioScene: NavigationScene = .init(rootViewController: toPresentable)
+        router.present(navigatioScene, animated: true)
+        router = Router(navigationScene: navigatioScene)
+        router.completions[navigatioScene] = completion
     }
     
     func setRouterWithRootScene() {
@@ -98,10 +91,6 @@ extension Coordinatable {
         for element in childCoordinators {
             if element === coordinator { return }
         }
-        
-//        deeplinkSubject
-//            .subscribe(coordinator.deeplinkSubject)
-//            .store(in: &coordinator.cancellables)
 
         childCoordinators.append(coordinator)
     }
